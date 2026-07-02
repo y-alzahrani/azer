@@ -1,0 +1,116 @@
+{
+  "company": "Meta",
+  "ticker": "META",
+  "report_type": "Annual",
+  "period": "FY 2022",
+  "period_end_date": "2022-12-31",
+  "currency": "USD",
+  "unit": "Millions",
+  "metrics": {
+    "revenue": 116609,
+    "cost_of_revenue": {
+      "value": 25249,
+      "source": "direct_line_item",
+      "calculation_note": "Cost of revenue — Consolidated Statements of Income, page 86"
+    },
+    "operating_expenses": {
+      "value": 62416,
+      "source": "calculated",
+      "calculation_note": "Sum of Research and development (35,338) + Marketing and sales (15,262) + General and administrative (11,816) = 62,416. Excludes Cost of revenue. From Consolidated Statements of Income, page 86."
+    },
+    "operating_income": 28944,
+    "net_income": 23200,
+    "eps": 8.59,
+    "cash_and_equivalents": {
+      "value": 14681,
+      "source": "direct_line_item",
+      "calculation_note": "Cash and cash equivalents — Consolidated Balance Sheets, page 85"
+    },
+    "short_term_debt": {
+      "value": 129,
+      "source": "direct_line_item",
+      "calculation_note": "Finance lease liabilities, current (included in Accrued expenses and other current liabilities) — Note 9 Leases, page 107. Operating lease liabilities excluded. Value from lease maturity schedule showing current finance lease liabilities of $129 million."
+    },
+    "long_term_debt": {
+      "value": 10481,
+      "source": "calculated",
+      "calculation_note": "Long-term debt (9,923) + Finance lease liabilities, non-current (558) = 10,481. Long-term debt from Consolidated Balance Sheets page 85; finance lease non-current from Note 9 Leases page 107. Operating lease liabilities excluded."
+    },
+    "net_debt": {
+      "value": -4071,
+      "source": "calculated",
+      "calculation_note": "Short-term debt (129) + Long-term debt (10,481) - Cash & Cash Equivalents (14,681) = Net debt (-4,071). Negative value indicates net cash position."
+    },
+    "operating_cash_flow": 50475,
+    "capital_expenditure": {
+      "value": 31431,
+      "source": "direct_line_item",
+      "calculation_note": "Purchases of property and equipment — Consolidated Statements of Cash Flows, page 89"
+    },
+    "free_cash_flow": {
+      "value": 18439,
+      "source": "direct_line_item",
+      "calculation_note": "Free Cash Flow — explicitly stated in the Free Cash Flow reconciliation table, page 76. Defined as net cash provided by operating activities (50,475) minus purchases of property and equipment, net (31,186) minus principal payments on finance leases (850)."
+    },
+    "total_equity": 125713,
+    "shares_outstanding": {
+      "value": 2614,
+      "source": "direct_line_item",
+      "calculation_note": "Total shares outstanding (Class A + Class B) as of December 31, 2022: 2,247 million Class A + 367 million Class B = 2,614 million. From Consolidated Statements of Stockholders' Equity, page 88."
+    },
+    "shares_weighted_average_diluted": {
+      "value": 2702,
+      "source": "direct_line_item",
+      "calculation_note": "Weighted-average shares used to compute diluted earnings per share — Consolidated Statements of Income, page 86"
+    }
+  },
+  "narrative": {
+    "sections_found": [
+      {
+        "topic": "Revenue Drivers and Advertising Performance",
+        "page_range": "54-57",
+        "summary": "Total revenue for 2022 was $116.61 billion, a 1% decrease from 2021, reflecting a $5.96 billion negative foreign exchange impact. On a constant currency basis, revenue grew 4% to $122.57 billion. Advertising revenue declined $1.29 billion (1%) due to a 16% drop in average price per ad, partially offset by an 18% increase in ad impressions delivered. Management attributed the pricing decline to reduced marketer spending amid macroeconomic headwinds, iOS-related ad targeting limitations, and regulatory constraints. Reality Labs revenue declined 5% to $2.16 billion, driven by lower Meta Quest sales volumes."
+      },
+      {
+        "topic": "Cost Structure and Restructuring Charges",
+        "page_range": "55-56, 70-72",
+        "summary": "Total costs and expenses increased 23% to $87.67 billion in 2022 from $71.18 billion in 2021. The largest driver was R&D expense, which rose 43% to $35.34 billion due to a 26% increase in engineering headcount. The company incurred $4.61 billion in restructuring charges related to facilities consolidation ($2.30 billion), employee severance ($975 million), and data center asset abandonments ($1.34 billion). These charges reduced operating margin by four percentage points and diluted EPS by $1.34. Income from operations fell 38% to $28.94 billion, with operating margin compressing from 40% to 25%."
+      },
+      {
+        "topic": "Segment Performance",
+        "page_range": "55-56, 72",
+        "summary": "Meta reports two segments: Family of Apps (FoA) and Reality Labs (RL). FoA revenue was $114.45 billion with operating income of $42.66 billion (37% margin), down from $56.95 billion in 2021. RL revenue was $2.16 billion with an operating loss of $13.72 billion, widening from a $10.19 billion loss in 2021 as R&D and payroll costs rose substantially. RL investments reduced overall operating profit by approximately $13.72 billion in 2022 and are expected to increase further. FoA accounted for 82% of total costs while RL accounted for 18%."
+      },
+      {
+        "topic": "Cash Flows and Capital Allocation",
+        "page_range": "75-76",
+        "summary": "Operating cash flow was $50.48 billion in 2022, down from $57.68 billion in 2021, primarily due to lower net income. Capital expenditures of $31.43 billion (net) reflected continued investment in data centers, servers, and network infrastructure. Free cash flow declined to $18.44 billion from $38.44 billion in 2021. The company repurchased $27.93 billion of Class A common stock (161 million shares) and ended the year with $40.74 billion in cash, cash equivalents, and marketable securities. Meta also raised $9.92 billion (net) through issuance of fixed-rate senior notes in August 2022."
+      },
+      {
+        "topic": "Liquidity and Debt",
+        "page_range": "75, 77",
+        "summary": "In August 2022, Meta issued $10.0 billion in fixed-rate senior unsecured notes in four tranches maturing between 2027 and 2062, with stated interest rates ranging from 3.50% to 4.65%. Net proceeds were $9.92 billion. Cash and marketable securities totaled $40.74 billion at year-end, down $7.26 billion from 2021. The company anticipates capital expenditures of $30–$33 billion in 2023 and has $10.87 billion remaining under its share repurchase authorization, with an additional $40 billion authorized in January 2023. Management stated that available funds are sufficient to meet operational needs for the foreseeable future."
+      },
+      {
+        "topic": "User Metrics and Engagement",
+        "page_range": "57-64",
+        "summary": "Family daily active people (DAP) averaged 2.96 billion in December 2022, up 5% year-over-year, while Family monthly active people (MAP) reached 3.74 billion, up 4%. Facebook DAUs were 2.00 billion (up 4%) and MAUs were 2.96 billion (up 2%). Annual worldwide ARPP was $31.79 (down 6%) and ARPU was $39.63 (down 3%). User growth was concentrated in lower-ARPU regions like Asia-Pacific and Rest of World, while high-ARPU regions US&Canada and Europe saw ARPU declines of 4% and 9%, respectively. Facebook and Instagram access was restricted or prohibited in Russia following the Ukraine conflict, modestly impacting European metrics."
+      },
+      {
+        "topic": "Capital Expenditure and Infrastructure Investment",
+        "page_range": "57, 75-76",
+        "summary": "Meta spent $31.43 billion on property and equipment purchases in 2022, primarily on data center construction, servers, and network infrastructure. The company pivoted its data center strategy in December 2022 toward a next-generation design, resulting in $1.34 billion in abandonment charges for cancelled projects. Management anticipates 2023 capital expenditures of approximately $30–$33 billion. Total property and equipment (gross) reached $104.49 billion at year-end, with net PP&E of $79.52 billion. Construction in progress of $25.05 billion reflects the scale of ongoing infrastructure development."
+      },
+      {
+        "topic": "Key Risks — Advertising Revenue, Regulation, and Metaverse",
+        "page_range": "14-48",
+        "summary": "Meta faces material risks from Apple's iOS changes that reduce ad targeting effectiveness, ongoing GDPR and IDPC proceedings that could require suspension of EU-US data transfers (potentially removing Facebook and Instagram from Europe), and the EU Digital Markets Act effective in early 2024. The company's metaverse investments in Reality Labs generated an operating loss of $13.72 billion in 2022 and are expected to grow, with profitability uncertain over the foreseeable future. Additional risks include antitrust litigation from the FTC and state attorneys general challenging acquisitions of Instagram and WhatsApp, a potential $9.0 billion IRS transfer pricing liability, and competitive pressure from platforms such as TikTok."
+      },
+      {
+        "topic": "Income Taxes",
+        "page_range": "73-74, 116-119",
+        "summary": "Meta's effective tax rate increased to 19.5% in 2022 from 16.7% in 2021, driven by higher tax shortfalls from share-based compensation ($471 million impact) and regulatory changes to foreign tax credits, partially offset by a larger foreign-derived intangible income (FDII) deduction. Provision for income taxes fell 29% to $5.62 billion due to lower pre-tax income. Gross unrecognized tax benefits stood at $10.76 billion, largely related to transfer pricing disputes. The IRS has issued Notices asserting up to ~$9.68 billion in additional federal tax liability related to transfer pricing for 2010–2013; Meta disputes these positions and litigation is ongoing in the Tax Court."
+      }
+    ]
+  }
+}

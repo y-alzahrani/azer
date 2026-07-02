@@ -1,0 +1,121 @@
+{
+  "company": "Aramco",
+  "ticker": "2222.SR",
+  "report_type": "Annual",
+  "period": "FY 2024",
+  "period_end_date": "2024-12-31",
+  "currency": "SAR",
+  "unit": "Millions",
+  "metrics": {
+    "revenue": 1637299,
+    "cost_of_revenue": {
+      "value": null,
+      "source": "",
+      "calculation_note": "Saudi Aramco does not present a single 'Cost of revenues' or 'COGS' line item. Operating costs are broken down into Royalties and other taxes, Purchases, Producing and manufacturing, Selling/administrative/general, Exploration, R&D, and Depreciation & amortization. No single cost of revenue subtotal is disclosed."
+    },
+    "operating_income": 774625,
+    "operating_expenses": {
+      "value": 1027049,
+      "source": "direct_line_item",
+      "calculation_note": "Operating costs — exact label used in Consolidated Statement of Income, page 9"
+    },
+    "net_income": 398422,
+    "eps": 1.63,
+    "cash_and_equivalents": {
+      "value": 216642,
+      "source": "direct_line_item",
+      "calculation_note": "Cash and cash equivalents - page 11"
+    },
+    "short_term_debt": {
+      "value": 45973,
+      "source": "direct_line_item",
+      "calculation_note": "Current portion of 'Borrowings – other than leases' per Note 20, page 51. Label: 'Borrowings – other than leases' current total. Lease liabilities (current SAR 11,584) excluded as they include operating lease components not separately identified; however, Note 20 does not separately split finance vs. operating lease liabilities within current borrowings, so only the non-lease borrowings current portion (SAR 45,973) is included here."
+    },
+    "long_term_debt": {
+      "value": 210834,
+      "source": "direct_line_item",
+      "calculation_note": "Non-current portion of 'Borrowings – other than leases' per Note 20, page 51. Label: 'Borrowings – other than leases' non-current total. Operating lease liabilities excluded; finance/capital lease liabilities are embedded in the lease liabilities line but not separately broken out in the non-current borrowings figure of SAR 210,834."
+    },
+    "net_debt": {
+      "value": 78078,
+      "source": "direct_line_item",
+      "calculation_note": "Net debt (cash) — page 28"
+    },
+    "total_equity": 1651355,
+    "operating_cash_flow": 508888,
+    "capital_expenditure": {
+      "value": 188890,
+      "source": "direct_line_item",
+      "calculation_note": "Exact label: 'Capital expenditures' in Consolidated Statement of Cash Flows, page 13"
+    },
+    "free_cash_flow": {
+      "value": 319998,
+      "source": "calculated",
+      "calculation_note": "Operating Cash Flow SAR 508,888 - Capital Expenditures SAR 188,890 = SAR 319,998"
+    },
+    "shares_outstanding": {
+      "value": 241894,
+      "source": "direct_line_item",
+      "calculation_note": "Weighted average number of ordinary shares (in millions) used for EPS calculation per Note 37, page 69. The report states 242 billion fully paid ordinary shares issued; treasury shares of 145.3 million are held, implying shares outstanding of approximately 241,855 million. The weighted average of 241,894 million (from Note 37) is used as the closest period-end proxy. Unit: millions."
+    },
+    "shares_weighted_average_diluted": {
+      "value": 241894,
+      "source": "direct_line_item",
+      "calculation_note": "Exact label: 'Weighted average number of ordinary shares (in millions)' per Note 37, page 69. Basic and diluted are the same as share plans did not have a significant dilution effect. Unit: millions."
+    }
+  },
+  "narrative": {
+    "sections_found": [
+      {
+        "topic": "Revenue and Income Performance",
+        "page_range": "9",
+        "summary": "Total revenue for FY 2024 was SAR 1,637,299 million, slightly down from SAR 1,653,281 million in 2023, reflecting lower crude oil prices and volumes. Other income related to sales (price equalization from the Government) declined to SAR 164,375 million from SAR 203,092 million. Operating income fell to SAR 774,625 million from SAR 868,287 million, and net income attributable to shareholders decreased to SAR 393,891 million from SAR 452,753 million, with earnings per share of SAR 1.63 versus SAR 1.87 in 2023."
+      },
+      {
+        "topic": "Segment Performance — Upstream and Downstream",
+        "page_range": "31-32",
+        "summary": "The Upstream segment generated earnings before interest, income taxes and zakat of SAR 801,047 million in 2024, down from SAR 863,549 million in 2023, driven by lower crude oil prices and reduced other income from the Government. The Downstream segment swung to a loss of SAR 10,998 million from a profit of SAR 21,184 million in 2023, reflecting an impairment charge of SAR 10,370 million on plant, machinery and equipment at certain domestic and international downstream facilities, as well as weaker refining and petrochemical margins. Upstream capital expenditures rose to SAR 147,135 million from SAR 123,543 million, while Downstream capex was SAR 38,989 million."
+      },
+      {
+        "topic": "Cost Structure and Impairment",
+        "page_range": "9, 33",
+        "summary": "Total operating costs were SAR 1,027,049 million in 2024, up from SAR 988,086 million in 2023, driven by higher purchases (SAR 509,430 million vs SAR 471,225 million), increased producing and manufacturing costs (SAR 110,275 million vs SAR 96,523 million), and higher depreciation and amortization (SAR 103,209 million vs SAR 97,040 million). An impairment charge of SAR 10,370 million was recognized on property, plant and equipment of certain downstream facilities due to revised cash flow projections driven by changes in market conditions and operational plans, calculated using value-in-use with pre-tax discount rates of 8.3% to 11.6%. A further write-down of SAR 1,070 million was recorded for certain downstream facilities under construction."
+      },
+      {
+        "topic": "Capital Expenditure and Investment Activity",
+        "page_range": "13, 31",
+        "summary": "Capital expenditures on a cash basis totaled SAR 188,890 million in 2024, up significantly from SAR 158,308 million in 2023, reflecting continued investment in Upstream capacity and Downstream integration. Contracted but not yet incurred capital commitments stood at SAR 223,301 million at December 31, 2024. Key investments during 2024 included the acquisition of Esmax Distribución SpA for SAR 1,373 million (Chile downstream retail), additional investments in MidOcean Holdings (LNG), a 40% stake in Gas & Oil Pakistan Limited, and a 10% stake in HORSE Powertrain Limited for SAR 2,576 million."
+      },
+      {
+        "topic": "Cash Flow and Liquidity",
+        "page_range": "13",
+        "summary": "Net cash provided by operating activities was SAR 508,888 million in 2024, down from SAR 537,814 million in 2023, primarily due to lower income before taxes and higher tax settlements. Net cash used in investing activities was minimal at SAR 2,861 million (2023: SAR 54,019 million), aided by net maturities of short-term investments of SAR 171,157 million as the company drew down its large time deposit portfolio. Net cash used in financing activities was SAR 488,358 million, reflecting dividends paid to shareholders of SAR 465,918 million and dividends to non-controlling interests of SAR 11,935 million, partially offset by new borrowings. Cash and cash equivalents increased to SAR 216,642 million from SAR 198,973 million."
+      },
+      {
+        "topic": "Debt and Capital Structure",
+        "page_range": "13, 28, 51-55",
+        "summary": "Total borrowings increased to SAR 319,290 million from SAR 290,147 million, comprising SAR 256,807 million of non-lease borrowings and SAR 62,483 million of lease liabilities. The company issued new USD-denominated GMTN notes of SAR 22,500 million (SAR 22,004 million net) and USD Sukuk of SAR 11,250 million in 2024, while repaying SAR 7,500 million of maturing 5-year notes and SAR 3,750 million of Sukuk certificates. The gearing ratio (net debt to total equity and net debt) moved to 4.5% from negative 6.3% in 2023, as short-term investments were reduced by SAR 171,157 million. The company maintains substantial undrawn revolving credit facilities of SAR 37,500 million."
+      },
+      {
+        "topic": "Dividend Policy",
+        "page_range": "69",
+        "summary": "Total dividends declared and paid in 2024 were SAR 465,918 million (SAR 1.9260 per share), up from SAR 366,674 million (SAR 1.5458 per share) in 2023. The 2024 total included SAR 161,593 million of performance-linked dividends (SAR 0.6680 per share), paid quarterly from Q3 2024 onwards. A dividend of SAR 80,104 million (SAR 0.3312 per share) was declared on March 3, 2025 for Q1 2025, comprising a base dividend of SAR 79,282 million and a performance-linked dividend of SAR 822 million."
+      },
+      {
+        "topic": "Goodwill and Intangible Asset Impairment Testing",
+        "page_range": "35-36",
+        "summary": "Goodwill of SAR 99,116 million arising from the SABIC acquisition was tested for impairment at the Downstream segment level using a 10-year discounted cash flow model with a terminal growth rate of 2.25% and a pre-tax discount rate of 11.0% (2023: 9.9%); no impairment was identified. The SABIC brand (carrying value SAR 18,140 million, indefinite useful life) was also tested with a pre-tax discount rate of 10.1% (2023: 9.1%) and no impairment was found. Sensitivity analysis indicates that pre-tax discount rates of 11.8% and 13.4% for goodwill and brand, respectively, would equate recoverable amounts to carrying amounts."
+      },
+      {
+        "topic": "Income Taxes and Zakat",
+        "page_range": "39-43",
+        "summary": "Total income tax and zakat expense was SAR 383,588 million in 2024, down from SAR 433,303 million in 2023, reflecting lower pre-tax income. The effective structure applies a 50% income tax rate on Upstream activities and 20% on Downstream activities; the 20% Downstream rate extension to December 31, 2030 is in progress and the Company expects it will be granted. Kingdom current income tax of SAR 371,648 million was the dominant component. The outstanding income tax and zakat obligation to the Government decreased to SAR 71,951 million from SAR 82,539 million, settled through a combination of direct payments and offsets against due-from-Government balances."
+      },
+      {
+        "topic": "Key Risks — Energy Transition and Commodity Prices",
+        "page_range": "15, 19",
+        "summary": "Saudi Aramco acknowledges that climate change considerations and the pace of the energy transition are key elements of its strategic planning, influencing demand forecasts, commodity price assumptions, and growth rates used in impairment testing and financial planning. The primary commodity price risk driver for impairment tests on both property, plant and equipment and goodwill/brand are forecast oil, gas, refined product, and chemical prices over 10-year projection periods. The company targets net-zero Scope 1 and Scope 2 greenhouse gas emissions by 2050 across wholly-owned operated assets, with strategies including energy efficiency improvements, renewable energy investment, carbon capture and storage, and offsetting programs."
+      }
+    ]
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "company": "Aramco",
+  "ticker": "2222.SR",
+  "report_type": "Annual",
+  "period": "FY 2021",
+  "period_end_date": "2021-12-31",
+  "currency": "SAR",
+  "unit": "Millions",
+  "metrics": {
+    "revenue": 1346930,
+    "cost_of_revenue": {
+      "value": null,
+      "source": "",
+      "calculation_note": "Saudi Aramco does not present a single 'Cost of revenue' or 'COGS' line item. The income statement presents multiple operating cost categories separately (Purchases, Producing and manufacturing, Royalties and other taxes, etc.) without a combined cost-of-revenue subtotal."
+    },
+    "operating_expenses": {
+      "value": 729840,
+      "source": "direct_line_item",
+      "calculation_note": "Operating costs — Consolidated statement of income, page 09"
+    },
+    "operating_income": 771918,
+    "net_income": 412396,
+    "eps": 1.98,
+    "cash_and_equivalents": {
+      "value": 299579,
+      "source": "direct_line_item",
+      "calculation_note": "Cash and cash equivalents — Consolidated balance sheet, page 11; also confirmed in Note 15, page 50"
+    },
+    "short_term_debt": {
+      "value": 65467,
+      "source": "calculated",
+      "calculation_note": "Current borrowings per balance sheet (page 11): Deferred consideration (33,544) + Short-term bank financing (17,351) + Commercial borrowings (10,556) + Debentures (3,750) + Sukuk (266) = 65,467. Lease liabilities (9,083) excluded as operating lease liabilities per Note 20 (page 59) context; however, Note 20 includes lease liabilities in total borrowings without distinguishing finance vs operating — excluded for conservatism. Total current borrowings per Note 20 page 54: 74,550 includes lease liabilities of 9,083, so non-lease current debt = 74,550 - 9,083 = 65,467."
+    },
+    "long_term_debt": {
+      "value": 398263,
+      "source": "calculated",
+      "calculation_note": "Non-current borrowings per Note 20 (page 54): Deferred consideration (188,723) + Commercial borrowings (52,280) + Debentures (98,449) + Sukuk (34,560) + Other financing arrangements (24,251) = 398,263. Lease liabilities (38,108) excluded as the report does not separately classify finance vs operating leases and conservatively excluded. Total non-current borrowings per balance sheet page 11: 436,371 less lease liabilities 38,108 = 398,263."
+    },
+    "net_debt": {
+      "value": 211342,
+      "source": "direct_line_item",
+      "calculation_note": "Net debt in page 30."
+    },
+    "operating_cash_flow": 522601,
+    "capital_expenditure": {
+      "value": 119645,
+      "source": "direct_line_item",
+      "calculation_note": "Capital expenditures — Consolidated statement of cash flows, page 13"
+    },
+    "free_cash_flow": {
+      "value": 402956,
+      "source": "calculated",
+      "calculation_note": "Operating Cash Flow (522,601) - CapEx (119,645) = Free Cash Flow (402,956). Consolidated statement of cash flows, page 13."
+    },
+    "total_equity": 1280668,
+    "shares_outstanding": {
+      "value": 200000,
+      "source": "direct_line_item",
+      "calculation_note": "Note 1 (page 14) states the Company's share capital is divided into 200 billion ordinary shares. Treasury shares of 88.3 million outstanding at December 31, 2021 per Note 16 (page 50). Gross shares issued = 200,000 million; net shares outstanding (excluding treasury shares) ≈ 199,912 million. Expressed in millions = 200,000 (gross) or ~199,912 net. Using gross issued shares as stated: 200,000 millions of shares."
+    },
+    "shares_weighted_average_diluted": {
+      "value": 199905,
+      "source": "direct_line_item",
+      "calculation_note": "Weighted average number of ordinary shares (in millions) — Note 37, Earnings per share, page 75. Stated as 199,905 million shares for 2021."
+    }
+  },
+  "narrative": {
+    "sections_found": [
+      {
+        "topic": "Revenue and Financial Performance",
+        "page_range": "09-10",
+        "summary": "Saudi Aramco reported revenues of SAR 1,346,930 million in 2021, up from SAR 768,109 million in 2020, driven primarily by a recovery in crude oil prices following the easing of COVID-19 pandemic restrictions and increased global energy demand. Other income related to sales (government price equalization compensation) rose to SAR 154,828 million from SAR 93,982 million. Operating income surged to SAR 771,918 million from SAR 383,360 million, and net income reached SAR 412,396 million compared to SAR 183,763 million in 2020. Earnings per share increased to SAR 1.98 from SAR 0.93."
+      },
+      {
+        "topic": "Operating Cost Structure",
+        "page_range": "09",
+        "summary": "Total operating costs were SAR 729,840 million in 2021 versus SAR 478,731 million in 2020, with the largest component being purchases of refined and crude oil products at SAR 352,377 million, reflecting higher commodity prices and expanded downstream trading activity. Royalties and other taxes paid to the Government rose to SAR 144,793 million from SAR 89,964 million, consistent with the progressive royalty scheme tied to crude oil prices. Depreciation and amortization increased to SAR 85,521 million from SAR 76,208 million, reflecting continued capital investment. Producing and manufacturing costs remained relatively stable at SAR 76,495 million."
+      },
+      {
+        "topic": "Income Taxes and Zakat",
+        "page_range": "43-45",
+        "summary": "Total income taxes and zakat expense for 2021 was SAR 357,125 million, up from SAR 188,661 million in 2020, broadly reflecting the higher pre-tax income of SAR 769,521 million. The Company is subject to a 50% income tax rate on most upstream activities and a 20% rate on Downstream activities (conditional on separating Downstream into subsidiaries by December 31, 2024). Current Kingdom income tax was SAR 338,506 million. The effective settlement of income taxes with the Government is partially accomplished through offsets against amounts due from the Government, and the income tax and zakat obligation to the Government stood at SAR 90,525 million at year-end."
+      },
+      {
+        "topic": "Capital Expenditure and Investment Activity",
+        "page_range": "13, 33-34",
+        "summary": "Capital expenditures on a cash basis totaled SAR 119,645 million in 2021 compared to SAR 101,030 million in 2020, with Upstream spending at SAR 88,758 million and Downstream at SAR 28,724 million. Capital commitments contracted but not yet incurred stood at SAR 159,145 million at year-end. Investing activities also included distributions from joint ventures and associates of SAR 4,651 million and net purchases of short-term investments of SAR 20,272 million, resulting in net cash used in investing activities of SAR 135,741 million."
+      },
+      {
+        "topic": "Cash Flow and Liquidity",
+        "page_range": "13, 30",
+        "summary": "Net cash provided by operating activities was SAR 522,601 million in 2021 versus SAR 285,297 million in 2020, driven by higher net income partially offset by increases in trade receivables and working capital. Cash and cash equivalents increased by SAR 92,347 million to SAR 299,579 million at year-end. Gearing (net debt to net debt plus equity) declined sharply to 14.2% from 23.0%, reflecting both the increase in equity and reduction in net debt from SAR 328,845 million to SAR 211,342 million. Saudi Aramco prioritizes security and liquidity in its investment of surplus cash and maintains access to SAR 97,807 million in undrawn credit facilities."
+      },
+      {
+        "topic": "Debt and Borrowings",
+        "page_range": "54-59",
+        "summary": "Total borrowings (including lease liabilities) stood at SAR 510,921 million at December 31, 2021, down from SAR 536,077 million in 2020. The largest component is deferred consideration of SAR 222,267 million representing installment payments owed to PIF for the SABIC acquisition, due through April 2028. During 2021, Saudi Aramco issued SAR 22,500 million (USD 6,000 million) in Sukuk trust certificates at various maturities and coupon rates of 0.946%–2.694%. On January 24, 2022, the Company made a partial prepayment of SAR 28,579 million on the SABIC deferred consideration."
+      },
+      {
+        "topic": "Dividends",
+        "page_range": "74",
+        "summary": "Saudi Aramco paid total dividends of SAR 281,305 million in 2021 (SAR 1.40 per share), consistent with its commitment to pay a base dividend of SAR 0.35 per share per quarter. Dividends paid in 2021 included the Q1 dividend of SAR 70,325 million which related to 2020 results. A further dividend of SAR 70,335 million was approved in March 2022 relating to Q4 2021 results. The Board also recommended a bonus share issuance of one share for every ten shares owned, pending regulatory and shareholder approval."
+      },
+      {
+        "topic": "Segment Performance",
+        "page_range": "33-34",
+        "summary": "Saudi Aramco operates two reportable segments: Upstream and Downstream, plus a Corporate segment. Upstream earnings before interest, income taxes and zakat were SAR 750,118 million in 2021, up from SAR 413,214 million in 2020, on revenues of SAR 656,066 million. Downstream returned to profitability with earnings of SAR 62,190 million versus a loss of SAR 20,170 million in 2020, with revenues of SAR 689,377 million reflecting full-year inclusion of SABIC operations and recovery in chemicals and refining markets. Geographically, In-Kingdom revenue was SAR 892,467 million and Out-of-Kingdom revenue was SAR 454,463 million for 2021."
+      },
+      {
+        "topic": "SABIC Acquisition and Goodwill Impairment Assessment",
+        "page_range": "37-38, 71-73",
+        "summary": "Saudi Aramco completed the acquisition of a 70% equity interest in SABIC from PIF in June 2020 for SAR 259,125 million, to be paid in installments through April 2028. As of December 31, 2021, the carrying value of goodwill arising from the SABIC acquisition was SAR 99,116 million and the SABIC brand intangible was SAR 18,215 million (cost), both with indefinite useful lives. Management performed annual impairment tests using 10-year discounted cash flow projections with pre-tax discount rates of 8.6% for goodwill and 7.8% for the brand, and concluded no impairment was required. Management stated that a reasonable range of changes in assumptions would not alter the impairment conclusion."
+      },
+      {
+        "topic": "Oil Pipelines Infrastructure Transactions",
+        "page_range": "71",
+        "summary": "In June 2021, Saudi Aramco sold a 49% equity interest in Aramco Oil Pipelines Company (AOPC) to EIG Pearl Holdings for SAR 46,547 million in cash, with the Company leasing usage rights to its stabilized crude oil pipelines to AOPC for 25 years in exchange for a quarterly volume-based tariff. Since EIG's distributions are contingent on the Company paying discretionary dividends to ordinary shareholders, the proceeds were classified as non-controlling interest rather than debt or gain. In December 2021, the Company also signed an agreement to sell 49% of Aramco Gas Pipelines Company (AGPC) for SAR 58,125 million, which closed in February 2022."
+      },
+      {
+        "topic": "Post-Employment Benefit Obligations",
+        "page_range": "60-63",
+        "summary": "Saudi Aramco's net post-employment benefit obligation declined significantly to SAR 40,729 million at December 31, 2021 from SAR 54,207 million in 2020, driven primarily by favorable remeasurements in pension plans resulting from higher discount rates and strong plan asset returns. Pension plan assets grew to SAR 86,888 million from SAR 78,328 million, resulting in a net pension surplus of SAR 1,384 million. Medical and other post-employment benefit obligations remained at SAR 42,113 million. The discount rate for pension obligations increased to 2.9% from 2.6%, while the healthcare cost trend rate assumption increased to 7.0% from 5.0%."
+      },
+      {
+        "topic": "Related Party Transactions",
+        "page_range": "66-67",
+        "summary": "Saudi Aramco had substantial transactions with the Saudi Arabian Government, including royalties of SAR 138,999 million, income tax payments of SAR 141,699 million, and dividends of SAR 276,335 million paid in 2021. Other income related to sales (government price equalization) of SAR 154,828 million was received from the Government. Amounts due from the Government at December 31, 2021 totaled SAR 41,317 million, primarily comprising price equalization receivables of SAR 42,960 million. The Company also had significant trading relationships with joint ventures and associates, with revenues from sales to associates of SAR 65,355 million and purchases from associates of SAR 57,214 million."
+      }
+    ]
+  }
+}

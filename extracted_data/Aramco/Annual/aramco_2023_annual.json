@@ -1,0 +1,121 @@
+{
+  "company": "Aramco",
+  "ticker": "2222.SR",
+  "report_type": "Annual",
+  "period": "FY 2023",
+  "period_end_date": "2023-12-31",
+  "currency": "SAR",
+  "unit": "Millions",
+  "metrics": {
+    "revenue": 1653281,
+    "cost_of_revenue": {
+      "value": null,
+      "source": "",
+      "calculation_note": "Saudi Aramco does not present a single 'Cost of revenues' or 'COGS' line item. Operating costs are presented as separate line items (Royalties and other taxes, Purchases, Producing and manufacturing, Selling administrative and general, Exploration, R&D, Depreciation and amortization) without a cost of revenue subtotal."
+    },
+    "operating_expenses": {
+      "value": 988086,
+      "source": "direct_line_item",
+      "calculation_note": "Operating costs — as labeled on the Consolidated statement of income, page 12"
+    },
+    "operating_income": 868287,
+    "net_income": 454764,
+    "eps": 1.87,
+    "cash_and_equivalents": {
+      "value": 198973,
+      "source": "direct_line_item",
+      "calculation_note": "Cash and cash equivalents"
+    },
+    "short_term_debt": {
+      "value": 63666,
+      "source": "direct_line_item",
+      "calculation_note": "Current Borrowings — labeled 'Borrowings' under Current liabilities on the Consolidated balance sheet, page 14 (Note 20). This includes current lease liabilities of SAR 12,107."
+    },
+    "long_term_debt": {
+      "value": 226481,
+      "source": "direct_line_item",
+      "calculation_note": "Non-current Borrowings — labeled 'Borrowings' under Non-current liabilities on the Consolidated balance sheet, page 14 (Note 20). This includes non-current lease liabilities of SAR 45,224."
+    },
+    "net_debt": {
+      "value": -102753,
+      "source": "direct_line_item",
+      "calculation_note": "Net cash — explicitly stated as 'Net cash' in Note 3(b) Capital structure management, page 31. Reported as (102,753), indicating a net cash position (more cash/liquid assets than debt). Calculated by the company as Total borrowings (290,147) less Cash and cash equivalents (198,973) less Short-term investments (184,343) less Investments in debt securities current and non-current (9,584) less Non-current cash investments (nil)."
+    },
+    "operating_cash_flow": 537814,
+    "capital_expenditure": {
+      "value": 158308,
+      "source": "direct_line_item",
+      "calculation_note": "Capital expenditures — labeled 'Capital expenditures' in the Consolidated statement of cash flows, page 16 (Note 4)"
+    },
+    "free_cash_flow": {
+      "value": 379506,
+      "source": "calculated",
+      "calculation_note": "Operating Cash Flow SAR 537,814 - CapEx SAR 158,308 = SAR 379,506"
+    },
+    "total_equity": 1737092,
+    "shares_outstanding": {
+      "value": 242000,
+      "source": "direct_line_item",
+      "calculation_note": "242 billion fully paid ordinary shares — stated in Note 1 General information, page 17: 'The Company's share capital after these increases is SAR 90,000, divided into 242 billion fully paid ordinary shares.' Converted to millions = 242,000 millions of shares."
+    },
+    "shares_weighted_average_diluted": {
+      "value": 241933,
+      "source": "direct_line_item",
+      "calculation_note": "Weighted average number of ordinary shares (in millions) — labeled as such in Note 37 Earnings per share, page 74. Value is 241,933 million shares (basic and diluted are the same as share plans had no significant dilution effect)."
+    }
+  },
+  "narrative": {
+    "sections_found": [
+      {
+        "topic": "Revenue and Income Performance",
+        "page_range": "12-13",
+        "summary": "Total revenue declined to SAR 1,653,281 million in 2023 from SAR 2,006,955 million in 2022, primarily reflecting lower crude oil prices and reduced volumes. Other income related to sales also fell to SAR 203,092 million from SAR 259,418 million. Net income attributable to shareholders decreased to SAR 452,753 million (EPS SAR 1.87) from SAR 597,215 million (EPS SAR 2.47) in 2022. Income before income taxes and zakat fell to SAR 888,067 million from SAR 1,152,962 million."
+      },
+      {
+        "topic": "Operating Segments Performance",
+        "page_range": "34-35",
+        "summary": "Saudi Aramco operates two reportable segments: Upstream and Downstream. Upstream earnings before interest, income taxes and zakat fell to SAR 863,549 million from SAR 1,092,425 million, driven by lower oil prices. Downstream earnings declined sharply to SAR 21,184 million from SAR 79,292 million, reflecting weaker petrochemical and refining margins. Capital expenditures increased to SAR 158,308 million from SAR 141,161 million, with Upstream accounting for SAR 123,543 million and Downstream SAR 32,735 million."
+      },
+      {
+        "topic": "Capital Expenditure and Investment Activity",
+        "page_range": "16, 34-36",
+        "summary": "Capital expenditures rose to SAR 158,308 million in 2023 from SAR 141,161 million in 2022, reflecting continued expansion of upstream capacity and downstream investments. Capital commitments contracted but not yet incurred stood at SAR 222,938 million at year-end. Notable investments included the acquisition of Valvoline's global products business for SAR 10,338 million and a 10% stake in Rongsheng Petrochemical for approximately SAR 12,767 million. Borrowing costs capitalized during the year totaled SAR 8,204 million at an average annualized rate of 5.36%."
+      },
+      {
+        "topic": "Cash Flow and Liquidity",
+        "page_range": "16, 31",
+        "summary": "Net cash provided by operating activities declined to SAR 537,814 million from SAR 698,152 million in 2022, largely due to lower income and higher tax settlements. Net cash used in investing activities decreased significantly to SAR 54,019 million from SAR 389,009 million, as 2022 included large short-term investment purchases. Financing activities used SAR 510,869 million, primarily for dividends of SAR 366,674 million and debt repayments of SAR 134,495 million. The company maintained a net cash position of SAR 102,753 million (gearing of -6.3%) at year-end."
+      },
+      {
+        "topic": "Debt and Capital Structure",
+        "page_range": "31, 55-58",
+        "summary": "Total borrowings decreased substantially to SAR 290,147 million from SAR 393,144 million in 2022, primarily due to the full repayment of deferred consideration owed to PIF for the SABIC acquisition (originally SAR 122,163 million), generating prepayment gains of SAR 5,775 million. Borrowings other than leases stood at SAR 232,816 million and lease liabilities at SAR 57,331 million. The company has diverse funding sources including debentures, Sukuk, Murabaha facilities, and revolving credit facilities totaling SAR 37,500 million (fully undrawn). Finance costs recognized were SAR 8,186 million."
+      },
+      {
+        "topic": "Dividend Policy",
+        "page_range": "73-74",
+        "summary": "Total dividends declared and paid in 2023 were SAR 366,674 million (SAR 1.5458 per share), up from SAR 281,318 million in 2022. Performance-linked dividends were introduced in Q3 2023 and amounted to SAR 74,035 million for the year. A Q4 2023 and Q1 2024 dividend of SAR 116,503 million (SAR 0.4815 per share) was declared on March 8, 2024, comprising a base dividend of SAR 76,096 million and a performance-linked dividend of SAR 40,407 million. The share capital was increased via bonus share issuance (1 share per 10 held) in May 2023, bringing total shares to 242 billion."
+      },
+      {
+        "topic": "Income Taxes and Zakat",
+        "page_range": "44-46",
+        "summary": "Total income tax and zakat expense fell to SAR 433,303 million from SAR 548,957 million in 2022, consistent with lower pre-tax income. The Company is subject to a 50% income tax rate on most activities and a reduced 20% rate on Downstream activities (conditional on restructuring by December 31, 2024). Current Kingdom income tax was SAR 409,931 million, deferred income tax (Kingdom) was SAR 19,638 million, and zakat was SAR 1,449 million. Net deferred income tax liabilities increased to SAR 121,889 million from SAR 104,218 million, driven largely by property, plant and equipment temporary differences."
+      },
+      {
+        "topic": "Impairment of Assets",
+        "page_range": "7-8, 35-38",
+        "summary": "An aggregate impairment charge of SAR 3,110 million was recorded on property, plant and equipment of certain Downstream facilities due to changed market conditions, based on value-in-use calculations using a pre-tax discount rate of 10.2% and recoverable amounts of SAR 10,132 million. An additional write-down of SAR 907 million was recorded on certain downstream facilities. The annual impairment test for SABIC goodwill (SAR 99,116 million) and brand (SAR 18,140 million) did not identify any impairment; pre-tax discount rates used were 9.9% for goodwill and 9.1% for brand. A fair value loss of SAR 3,219 million was recognized on Hadeed assets reclassified as held for sale."
+      },
+      {
+        "topic": "Post-Employment Benefits",
+        "page_range": "59-63",
+        "summary": "Saudi Aramco sponsors defined benefit pension plans and other post-employment benefit plans (medical, life insurance). Net benefit liability decreased to SAR 1,486 million from SAR 3,889 million, with pension plans showing a net surplus of SAR 7,784 million. Total plan assets increased to SAR 174,638 million from SAR 158,663 million, comprised mainly of bonds (SAR 75,066 million) and investment funds (SAR 62,178 million). Key actuarial assumptions include a discount rate of 5.1% for pensions and 5.3% for other benefits, with a salary growth rate of 5.5%. Employer contributions to defined benefit plans are estimated at SAR 6,871 million for 2024."
+      },
+      {
+        "topic": "Related Party Transactions and Government Payments",
+        "page_range": "66-67",
+        "summary": "Saudi Aramco made significant payments to the Government totaling approximately SAR 747,104 million in 2023, including income taxes of SAR 200,189 million, royalties of SAR 213,216 million, and dividends of SAR 333,699 million. Other income related to sales (price equalization compensation from the Government) was SAR 203,092 million, down from SAR 259,418 million in 2022. Key related party balances include amounts due from the Government of SAR 49,378 million and borrowings from Government entities of SAR 7,736 million (versus SAR 128,026 million in 2022, which included deferred PIF consideration)."
+      }
+    ]
+  }
+}

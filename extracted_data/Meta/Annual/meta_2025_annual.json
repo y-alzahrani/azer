@@ -1,0 +1,121 @@
+{
+  "company": "Meta",
+  "ticker": "META",
+  "report_type": "Annual",
+  "period": "FY 2025",
+  "period_end_date": "2025-12-31",
+  "currency": "USD",
+  "unit": "Millions",
+  "metrics": {
+    "revenue": 200966,
+    "cost_of_revenue": {
+      "value": 36175,
+      "source": "direct_line_item",
+      "calculation_note": "Cost of revenue — Consolidated Statements of Income, page 89"
+    },
+    "operating_expenses": {
+      "value": 81515,
+      "source": "calculated",
+      "calculation_note": "Sum of Research and development (57,372) + Marketing and sales (11,991) + General and administrative (12,152) = 81,515. Excludes Cost of revenue. From Consolidated Statements of Income, page 89"
+    },
+    "operating_income": 83276,
+    "net_income": 60458,
+    "eps": 23.49,
+    "cash_and_equivalents": {
+      "value": 35873,
+      "source": "direct_line_item",
+      "calculation_note": "Cash and cash equivalents — Consolidated Balance Sheets, page 88"
+    },
+    "short_term_debt": {
+      "value": null,
+      "source": "",
+      "calculation_note": "No short-term debt or current portion of long-term debt identified as a separate line item on the Consolidated Balance Sheets (page 88). Finance lease current liabilities are included in Accrued expenses and other current liabilities but not separately disclosed as a specific figure for short-term debt."
+    },
+    "long_term_debt": {
+      "value": 58744,
+      "source": "direct_line_item",
+      "calculation_note": "Long-term debt — Consolidated Balance Sheets, page 88"
+    },
+    "net_debt": {
+      "value": 22871,
+      "source": "calculated",
+      "calculation_note": "Short-term debt (0, not separately identified) + Long-term debt (58,744) - Cash & Cash Equivalents (35,873) = Net debt (22,871). Page 88"
+    },
+    "operating_cash_flow": 115800,
+    "capital_expenditure": {
+      "value": 69691,
+      "source": "direct_line_item",
+      "calculation_note": "Purchases of property and equipment — Consolidated Statements of Cash Flows, page 92-93"
+    },
+    "free_cash_flow": {
+      "value": 43585,
+      "source": "direct_line_item",
+      "calculation_note": "Free cash flow — explicitly disclosed as a non-GAAP measure in the Free Cash Flow reconciliation table, page 78. Calculated as Net cash provided by operating activities (115,800) - Purchases of property and equipment (69,691) - Principal payments on finance leases (2,524) = 43,585"
+    },
+    "total_equity": 217243,
+    "shares_outstanding": {
+      "value": 2530,
+      "source": "direct_line_item",
+      "calculation_note": "Total shares (Class A + Class B) outstanding at December 31, 2025: 2,187 million Class A + 343 million Class B = 2,530 million. From Consolidated Statements of Stockholders' Equity, page 91, and Consolidated Balance Sheets, page 88"
+    },
+    "shares_weighted_average_diluted": {
+      "value": 2574,
+      "source": "direct_line_item",
+      "calculation_note": "Shares used in computation of diluted EPS — Consolidated Statements of Income, page 89, and Note 3 Earnings per Share, page 103"
+    }
+  },
+  "narrative": {
+    "sections_found": [
+      {
+        "topic": "Revenue Drivers and Advertising Performance",
+        "page_range": "60-62",
+        "summary": "Total revenue for FY 2025 was $200.97 billion, up 22% year-over-year, driven almost entirely by advertising revenue which grew 22% to $196.18 billion. Ad impressions delivered increased 12% while average price per ad increased 9%, with the online commerce vertical being the largest contributor to advertising revenue growth. The Asia-Pacific region drove the largest volume growth in ad impressions, while price per ad growth was strongest in Europe (16% full-year) and Rest of World (approximately 15-20%). Other revenue grew 50% to $2.58 billion, driven by paid messaging from WhatsApp and Meta Verified subscriptions."
+      },
+      {
+        "topic": "Cost Structure and Operating Expenses",
+        "page_range": "73-75",
+        "summary": "Total costs and expenses increased 24% to $117.69 billion in 2025. Research and development expenses rose 31% to $57.37 billion, primarily driven by 8% headcount growth in engineering and technical functions and increased infrastructure costs related to AI initiatives. Cost of revenue grew 20% to $36.18 billion due to higher data center and technical infrastructure operational expenses, partially offset by a reduction in depreciation growth from an extension in server useful lives to 5.5 years effective January 1, 2025 (reducing depreciation by $2.92 billion). General and administrative expenses increased 25% to $12.15 billion mainly due to higher legal-related costs."
+      },
+      {
+        "topic": "Segment Performance: Family of Apps vs. Reality Labs",
+        "page_range": "62-63, 75",
+        "summary": "Family of Apps (FoA) generated $198.76 billion in revenue and $102.47 billion in operating income (52% operating margin), up 18% year-over-year. Reality Labs (RL) generated $2.21 billion in revenue (up 3%, driven by AI glasses sales growth partially offset by Meta Quest decline) but incurred an operating loss of $19.19 billion, widening by $1.46 billion (8%) due to higher employee compensation, estimated inventory losses, and technology development costs. Management expects 2026 RL operating losses to remain similar to 2025 levels, with approximately 70% of RL operating expenses allocated to wearables initiatives."
+      },
+      {
+        "topic": "Capital Expenditure and Infrastructure Investment",
+        "page_range": "77-78",
+        "summary": "Capital expenditures including principal payments on finance leases were $72.22 billion in 2025, compared to approximately $39.23 billion in 2024, reflecting a significant acceleration in infrastructure spending to support AI efforts. Purchases of property and equipment alone were $69.69 billion. Meta anticipates capital expenditures of approximately $115 billion to $135 billion in 2026 to support AI efforts and core business. As of December 31, 2025, the company had $103.77 billion in lease obligations not yet commenced (mostly data centers and network infrastructure) and $131.05 billion in non-cancelable contractual commitments."
+      },
+      {
+        "topic": "Cash Flows and Liquidity",
+        "page_range": "77-80",
+        "summary": "Operating cash flow was $115.80 billion in 2025, up from $91.33 billion in 2024, driven by increased revenue collections and lower cash income taxes ($7.58 billion in 2025 vs. $10.55 billion in 2024). Free cash flow was $43.59 billion, down from $52.10 billion in 2024, reflecting the significant increase in capital expenditures. Cash, cash equivalents, and marketable securities totaled $81.59 billion at year-end, up $3.78 billion from 2024. The company also raised $29.91 billion in net proceeds from issuance of senior unsecured notes in November 2025, bringing total long-term debt to $58.74 billion."
+      },
+      {
+        "topic": "Income Taxes and OBBBA Impact",
+        "page_range": "76-77, 121-125",
+        "summary": "The effective tax rate for 2025 was 30%, significantly higher than 12% in 2024, primarily due to the enactment of the One Big Beautiful Bill Act (OBBBA) in July 2025. Meta recorded a $15.93 billion charge in Q3 2025, including a $14.03 billion valuation allowance against U.S. federal deferred tax assets due to the anticipated impact of the Corporate Alternative Minimum Tax (CAMT). Absent this charge, the effective tax rate would have been approximately 13%. Meta expects its 2026 effective tax rate to be in the range of 13-16%. Additionally, the IRS issued a Statutory Notice of Deficiency asserting $15.89 billion in additional tax for 2017-2019 tax years related to transfer pricing, which Meta is challenging in Tax Court."
+      },
+      {
+        "topic": "Capital Return Program: Dividends and Share Repurchases",
+        "page_range": "79-80, 119-120",
+        "summary": "Meta repurchased 40 million shares of Class A common stock for $26.26 billion in 2025, leaving $25.03 billion remaining under the authorized repurchase program. Beginning Q1 2025, quarterly cash dividends were increased by 5% to $0.525 per share (from $0.50). Total dividends and dividend equivalents paid were $5.32 billion in 2025. Total capital returns (repurchases plus dividends) were $31.57 billion for the year."
+      },
+      {
+        "topic": "AI Strategy and Investments",
+        "page_range": "7-9, 19-20, 63",
+        "summary": "Meta is making significant investments in AI initiatives including generative AI and superintelligence (defined as AI surpassing human intelligence), with AI investments expected to require significantly increased infrastructure investment going forward. In 2025, Meta closed a $13.80 billion minority investment in Scale AI and entered into a data center campus co-development venture in Louisiana (20% membership interest). The company also introduced Meta Ray-Ban Display and the Meta Neural Band wearable. AI investments span advertising tools, content recommendation, new product development, and open-source Llama foundation models. Meta acknowledged risks of AI initiatives including regulatory scrutiny, intellectual property litigation related to AI training data, and competitive pressures."
+      },
+      {
+        "topic": "Key Risks: Regulatory and Legal Environment",
+        "page_range": "12-48, 51-57",
+        "summary": "Meta faces significant regulatory and legal risks including the FTC's administrative proceeding seeking major modifications to Meta's consent order (including a prohibition on using minors' data commercially), and European Commission investigations under the GDPR, DMA, and DSA resulting in fines including EUR €1.2 billion (IDPC/GDPR), EUR €798 million (Facebook Marketplace/competition), and EUR €200 million (DMA/subscription model). The company is also managing extensive youth-related litigation with trials scheduled in 2026 across multiple jurisdictions seeking damages up to the high tens of billions of dollars. The FTC's antitrust case seeking divestiture of Instagram and WhatsApp was decided in Meta's favor in November 2025, though the FTC filed an appeal in January 2026."
+      },
+      {
+        "topic": "Debt Structure and Long-term Obligations",
+        "page_range": "79-80, 111",
+        "summary": "In November 2025, Meta issued $30.0 billion in fixed-rate senior unsecured notes across six series maturing from 2030 to 2065, with stated interest rates of 4.20% to 5.75%. Total outstanding long-term debt as of December 31, 2025 was $58.74 billion (face amount $59.0 billion), with maturities ranging from 2027 through 2064. The company has no financial covenants under the notes. Future interest obligations total $2.98 billion short-term and $56.74 billion long-term. Additionally, uncommenced lease obligations of $103.77 billion will commence between 2026 and 2030."
+      }
+    ]
+  }
+}

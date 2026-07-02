@@ -1,0 +1,121 @@
+{
+  "company": "Meta",
+  "ticker": "META",
+  "report_type": "Annual",
+  "period": "FY 2023",
+  "period_end_date": "2023-12-31",
+  "currency": "USD",
+  "unit": "Millions",
+  "metrics": {
+    "revenue": 134902,
+    "cost_of_revenue": {
+      "value": 25959,
+      "source": "direct_line_item",
+      "calculation_note": "Cost of revenue — Consolidated Statements of Income, page 90"
+    },
+    "operating_expenses": {
+      "value": 62192,
+      "source": "calculated",
+      "calculation_note": "Sum of Research and development (38,483) + Marketing and sales (12,301) + General and administrative (11,408) = 62,192. Excludes cost of revenue. From Consolidated Statements of Income, page 90"
+    },
+    "operating_income": 46751,
+    "net_income": 39098,
+    "eps": 14.87,
+    "cash_and_equivalents": {
+      "value": 41862,
+      "source": "direct_line_item",
+      "calculation_note": "Cash and cash equivalents — Consolidated Balance Sheets, page 89"
+    },
+    "short_term_debt": {
+      "value": 90,
+      "source": "direct_line_item",
+      "calculation_note": "Finance lease liabilities current portion included in accrued expenses and other current liabilities — Note 8 Leases, page 111. No short-term debt or current portion of long-term debt line item on balance sheet; finance lease current = $90M"
+    },
+    "long_term_debt": {
+      "value": 18985,
+      "source": "calculated",
+      "calculation_note": "Long-term debt (18,385) + Finance lease liabilities non-current (600) = 18,985. Long-term debt from Consolidated Balance Sheets page 89; finance lease non-current from Note 8 Leases page 111. Label: 'Long-term debt'"
+    },
+    "net_debt": {
+      "value": -22787,
+      "source": "calculated",
+      "calculation_note": "Short-term debt (90) + Long-term debt (18,985) - Cash & Cash Equivalents (41,862) = Net debt (-22,787). Negative value indicates net cash position."
+    },
+    "operating_cash_flow": 71113,
+    "capital_expenditure": {
+      "value": 27266,
+      "source": "direct_line_item",
+      "calculation_note": "Purchases of property and equipment — Consolidated Statements of Cash Flows, page 94"
+    },
+    "free_cash_flow": {
+      "value": 43010,
+      "source": "direct_line_item",
+      "calculation_note": "Free cash flow — explicitly stated in Liquidity and Capital Resources section, page 80. Defined as net cash provided by operating activities (71,113) minus net purchases of property and equipment (27,045) minus principal payments on finance leases (1,058) = 43,010"
+    },
+    "total_equity": 153168,
+    "shares_outstanding": {
+      "value": 2561,
+      "source": "direct_line_item",
+      "calculation_note": "Total Class A and Class B shares issued and outstanding as of December 31, 2023 (2,211 Class A + 350 Class B = 2,561 million) — Consolidated Statements of Stockholders' Equity, page 92"
+    },
+    "shares_weighted_average_diluted": {
+      "value": 2629,
+      "source": "direct_line_item",
+      "calculation_note": "Shares used in computation of diluted earnings per share — Consolidated Statements of Income, page 90"
+    }
+  },
+  "narrative": {
+    "sections_found": [
+      {
+        "topic": "Revenue Drivers and Advertising Performance",
+        "page_range": "59-62",
+        "summary": "Total revenue for FY 2023 was $134.90 billion, a 16% increase versus 2022, driven almost entirely by advertising revenue which grew 16% to $131.95 billion. Ad impressions delivered across the Family of Apps increased 28% year-over-year, partially offset by a 9% decline in average price per ad. The growth in ad impressions was driven by increases in frequency, user growth, and expansion in Asia-Pacific and Rest of World regions. Top verticals driving advertising growth included online commerce (benefiting from Chinese-based marketers), consumer packaged goods, and entertainment and media."
+      },
+      {
+        "topic": "Segment Performance: Family of Apps vs. Reality Labs",
+        "page_range": "60-61",
+        "summary": "Family of Apps generated revenue of $133.01 billion and income from operations of $62.87 billion (47% operating margin) in 2023, up from $42.66 billion operating income in 2022. Reality Labs generated revenue of $1.90 billion (down 12% from $2.16 billion in 2022) and a loss from operations of $16.12 billion, widening from a $13.72 billion loss in 2022. The RL segment reduction in revenue was primarily driven by lower Meta Quest sales volumes. Meta expects RL operating losses to increase meaningfully in 2024."
+      },
+      {
+        "topic": "Cost Structure and Restructuring",
+        "page_range": "61-62, 75-77",
+        "summary": "Total costs and expenses in 2023 were $88.15 billion, essentially flat versus $87.67 billion in 2022, as efficiency gains offset revenue-driven cost increases. Marketing and sales expenses declined 19% to $12.30 billion due to reduced headcount and lower marketing/promotional spending. Research and development increased 9% to $38.48 billion, driven by higher share-based compensation. The company recognized $3.45 billion in restructuring charges in 2023 related to facilities consolidation ($2.51 billion) and severance ($1.17 billion), partially offset by a $224 million reversal on data center assets."
+      },
+      {
+        "topic": "Liquidity and Capital Resources",
+        "page_range": "79-81",
+        "summary": "Cash, cash equivalents, and marketable securities totaled $65.40 billion at December 31, 2023, up $24.67 billion from year-end 2022. Operating cash flow was $71.11 billion, and free cash flow was $43.01 billion. Capital expenditures (including finance lease payments) were $28.10 billion, with Meta guiding for $30-$37 billion in capital expenditures in 2024. The company raised $8.46 billion through senior unsecured notes in May 2023, and repurchased $19.77 billion of Class A common stock. An additional $50 billion share repurchase was authorized in January 2024."
+      },
+      {
+        "topic": "Key Community Metrics",
+        "page_range": "61, 64-70",
+        "summary": "Family daily active people (DAP) averaged 3.19 billion in December 2023, up 8% year-over-year, while family monthly active people (MAP) reached 3.98 billion, up 6%. Facebook DAUs increased 6% to 2.11 billion, with India, Bangladesh, and Nigeria as top growth sources. Annual worldwide ARPP was $34.72, up 9% from 2022. Beginning Q1 2024, Meta will no longer report DAUs, MAUs, ARPU, and MAP, shifting to DAP and ARPP as primary metrics."
+      },
+      {
+        "topic": "Debt and Long-term Obligations",
+        "page_range": "80, 114",
+        "summary": "As of December 31, 2023, Meta had $18.50 billion in aggregate principal of fixed-rate senior unsecured notes, including $10.0 billion issued in August 2022 and $8.50 billion issued in May 2023. Notes mature from 2027 through 2063 with stated interest rates ranging from 3.50% to 5.75%. The company has no financial covenants under the Notes. Non-cancelable contractual commitments (primarily servers and network infrastructure) totaled $16.49 billion, with $12.11 billion due in 2024."
+      },
+      {
+        "topic": "Dividend Policy and Capital Return",
+        "page_range": "57-58, 81",
+        "summary": "Meta announced its first-ever quarterly cash dividend of $0.50 per share ($2.00 annualized) on February 1, 2024, payable March 26, 2024. In 2023, the company repurchased 92 million shares for approximately $20.03 billion. As of December 31, 2023, $30.93 billion remained under the board-authorized repurchase program, with an additional $50 billion authorized in January 2024. Future dividends are subject to board discretion and capital availability."
+      },
+      {
+        "topic": "AI and Metaverse Investment Strategy",
+        "page_range": "7-9, 63",
+        "summary": "Meta is making significant investments in AI across its Family of Apps to improve content recommendations, advertising tools, and to develop generative AI features. In 2024, the company intends to focus on six key areas: AI, the metaverse, its discovery engine, monetization, regulatory readiness, and developer efficiency. Approximately 50% of Reality Labs opex in 2024 is expected for AR initiatives and 40% for VR/MR, with the segment expected to continue incurring material operating losses for the foreseeable future. The RL segment reduced 2023 overall operating profit by approximately $16.12 billion."
+      },
+      {
+        "topic": "Key Risks: Regulatory, Privacy, and Competition",
+        "page_range": "15-51",
+        "summary": "Meta faces significant regulatory risk including a EUR €1.2 billion IDPC fine and corrective orders related to data transfers, an FTC administrative proceeding seeking major consent order modifications, and compliance obligations under the GDPR, DMA, and DSA. The company acknowledges risks from Apple iOS changes that continue to impact ad targeting and measurement capabilities, as well as competition from platforms like TikTok which have reduced some user engagement. Pending IRS transfer pricing disputes could result in up to approximately $9.0 billion in additional federal tax liability plus interest and penalties if resolved unfavorably."
+      },
+      {
+        "topic": "Income Taxes",
+        "page_range": "78-79, 122-125",
+        "summary": "Meta's effective tax rate for 2023 was 17.6%, down from 19.5% in 2022, primarily due to excess tax benefits from share-based compensation ($708 million reduction in tax provision) and temporary IRS relief on foreign tax credits. The provision for income taxes increased 48% to $8.33 billion due to higher pre-tax income. The company had $11.67 billion in gross unrecognized tax benefits at year-end 2023, predominantly related to transfer pricing and R&D tax credit uncertainties. Meta expects an effective tax rate in the mid-teens for 2024 under current law assumptions."
+      }
+    ]
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "company": "Meta",
+  "ticker": "META",
+  "report_type": "Annual",
+  "period": "FY 2021",
+  "period_end_date": "2021-12-31",
+  "currency": "USD",
+  "unit": "Millions",
+  "metrics": {
+    "revenue": 117929,
+    "cost_of_revenue": {
+      "value": 22649,
+      "source": "direct_line_item",
+      "calculation_note": "Cost of revenue — Consolidated Statements of Income, page 80"
+    },
+    "operating_expenses": {
+      "value": 48527,
+      "source": "calculated",
+      "calculation_note": "Sum of Research and development (24,655) + Marketing and sales (14,043) + General and administrative (9,829) = 48,527. Excludes cost of revenue. From Consolidated Statements of Income, page 80."
+    },
+    "operating_income": 46753,
+    "net_income": 39370,
+    "eps": 13.77,
+    "cash_and_equivalents": {
+      "value": 16601,
+      "source": "direct_line_item",
+      "calculation_note": "Cash and cash equivalents — Consolidated Balance Sheets, page 79"
+    },
+    "short_term_debt": {
+      "value": 75,
+      "source": "direct_line_item",
+      "calculation_note": "Finance lease liabilities, current (included in accrued expenses and other current liabilities on balance sheet) — Note 8 Leases, page 99. No short-term debt or current portion of long-term debt line item exists on the balance sheet. Only finance lease current obligations of $75M identified."
+    },
+    "long_term_debt": {
+      "value": 506,
+      "source": "direct_line_item",
+      "calculation_note": "Finance lease liabilities, non-current — Note 8 Leases, page 99. No long-term debt or notes payable line item exists on the balance sheet. Only non-current finance lease obligations of $506M identified."
+    },
+    "net_debt": {
+      "value": -16020,
+      "source": "calculated",
+      "calculation_note": "Short-term debt (75) + Long-term debt (506) - Cash & Cash Equivalents (16,601) = Net debt (-16,020). Negative value indicates net cash position."
+    },
+    "operating_cash_flow": 57683,
+    "capital_expenditure": {
+      "value": 18567,
+      "source": "direct_line_item",
+      "calculation_note": "Purchases of property and equipment — Consolidated Statements of Cash Flows, page 83"
+    },
+    "free_cash_flow": {
+      "value": 38439,
+      "source": "direct_line_item",
+      "calculation_note": "Free cash flow — explicitly reported in Liquidity and Capital Resources section, page 71. Defined as net cash provided by operating activities (57,683) less purchases of property and equipment (18,567) less principal payments on finance leases (677)."
+    },
+    "total_equity": 124879,
+    "shares_outstanding": {
+      "value": 2741,
+      "source": "direct_line_item",
+      "calculation_note": "Total shares outstanding (Class A and Class B combined) at December 31, 2021 per Consolidated Statements of Stockholders' Equity, page 82: 2,328M Class A + 413M Class B = 2,741M total shares"
+    },
+    "shares_weighted_average_diluted": {
+      "value": 2859,
+      "source": "direct_line_item",
+      "calculation_note": "Shares used in computation of diluted earnings per share (Class A diluted) — Consolidated Statements of Income and Note 3 Earnings per Share, pages 80 and 95"
+    }
+  },
+  "narrative": {
+    "sections_found": [
+      {
+        "topic": "Revenue Drivers and Segment Performance",
+        "page_range": "50-52, 65-66",
+        "summary": "Total revenue grew 37% year-over-year to $117.9 billion in 2021, driven primarily by a 37% increase in advertising revenue to $114.9 billion. Ad impressions increased 10% while average price per ad rose 24%, with the price recovery largely attributed to the rebound from COVID-19-related declines in early 2020 and continued growth in online commerce. Reality Labs revenue doubled to $2.3 billion, driven by higher consumer hardware volumes. The company noted that advertising revenue in the second half of 2021 was adversely affected by Apple iOS privacy changes limiting ad targeting and measurement."
+      },
+      {
+        "topic": "Cost Structure and Operating Profitability",
+        "page_range": "51, 64-68",
+        "summary": "Total costs and expenses increased 34% to $71.2 billion in 2021, with operating income growing 43% to $46.8 billion and total operating margin expanding to 40% from 38%. Research and development expenses rose 34% to $24.7 billion due to a 30% increase in engineering headcount, while general and administrative costs jumped 50% to $9.8 billion primarily from higher legal-related costs. Reality Labs operating losses widened to $10.2 billion in 2021 from $6.6 billion in 2020, reducing the overall operating profit by approximately $10 billion. Share-based compensation totaled $9.2 billion in 2021, representing 8% of revenue."
+      },
+      {
+        "topic": "Cash Flows and Liquidity",
+        "page_range": "70-71",
+        "summary": "Operating cash flow increased to $57.7 billion in 2021 from $38.7 billion in 2020, driven by higher net income. Free cash flow was $38.4 billion after $18.6 billion in property and equipment purchases and $677 million in finance lease principal payments. Cash and marketable securities declined to $48.0 billion from $61.9 billion at end of 2020, primarily due to $44.5 billion in Class A share repurchases and $19.2 billion in capital expenditures. Management expects available funds and operating cash flows to be sufficient for operational needs and share repurchases for at least the next 12 months."
+      },
+      {
+        "topic": "Capital Expenditure",
+        "page_range": "51, 70",
+        "summary": "Capital expenditures including principal payments on finance leases were $19.24 billion in 2021, primarily for data centers, servers, office facilities, and network infrastructure. For 2022, management guided capital expenditures in the range of $29-34 billion, reflecting continued investment in data center capacity, technical infrastructure, and Reality Labs initiatives. The company also had significant non-cancelable contractual commitments of $23.1 billion as of December 31, 2021, primarily related to servers, network infrastructure, and Reality Labs."
+      },
+      {
+        "topic": "Share Repurchase Program",
+        "page_range": "48, 70, 104",
+        "summary": "The board authorized $75 billion in cumulative share repurchases under the ongoing program (with $25 billion added in January 2021 and $50 billion in October 2021). In 2021, Meta repurchased and retired 136 million shares of Class A common stock for $44.81 billion. As of December 31, 2021, $38.79 billion remained available for repurchases under the program, which has no expiration date."
+      },
+      {
+        "topic": "Key Business Risks",
+        "page_range": "12-45",
+        "summary": "Meta identified several material risks including the impact of Apple iOS changes on ad targeting, which adversely affected advertising revenue in the second half of 2021. Regulatory and legal risks are significant, including an ongoing IDPC inquiry into GDPR compliance for EU-US data transfers that could force suspension of Facebook and Instagram in Europe, and antitrust lawsuits from the FTC and state attorneys general seeking divestiture of Instagram and WhatsApp. The company also highlighted the risk that Reality Labs and metaverse investments may not achieve returns, with Reality Labs reducing 2021 operating profit by approximately $10 billion. Competition from TikTok and other platforms was cited as contributing to user engagement declines among younger demographics."
+      },
+      {
+        "topic": "Management Discussion — User Metrics and Monetization",
+        "page_range": "53-59",
+        "summary": "Family daily active people (DAP) grew 8% year-over-year to 2.82 billion in December 2021, while monthly active people (MAP) increased 9% to 3.59 billion. Facebook DAUs grew 5% to 1.93 billion and MAUs rose 4% to 2.91 billion, with top growth from India, Bangladesh, and Vietnam. Annual worldwide average revenue per person (ARPP) increased 22% to $33.68, while ARPU for Facebook users increased 28% to $40.96 globally. U.S. & Canada ARPU of $60.57 in Q4 2021 was more than 12 times higher than Asia-Pacific ARPU, reflecting the geographic monetization disparity."
+      },
+      {
+        "topic": "Income Taxes",
+        "page_range": "69, 105-108",
+        "summary": "The effective tax rate was 16.7% in 2021, up from 12.2% in 2020, primarily due to higher income from operations and the absence of the 2020 one-time tax election benefit related to R&D capitalization ($1.07 billion benefit in 2020). The IRS has challenged transfer pricing for 2010-2013 tax years; if the IRS prevails, additional federal tax liability could be up to approximately $9.0 billion plus interest and penalties for the 2010 year position. Gross unrecognized tax benefits totaled $9.81 billion as of December 31, 2021. Management expects the 2022 effective tax rate to be similar to 2021 under current law."
+      },
+      {
+        "topic": "Metaverse Strategy and Reality Labs Investment",
+        "page_range": "19, 25, 51-52",
+        "summary": "In October 2021, Meta announced a strategic shift to focus on building the metaverse, which management describes as the next evolution in social technology beyond two-dimensional screens. Reality Labs segment generated $2.3 billion in revenue but posted an operating loss of $10.2 billion in 2021, with losses expected to grow significantly in future periods. The company expects 2022 total expenses to be in the range of $90-95 billion as it scales investments in VR/AR hardware, software, and content. Management acknowledged limited prior experience in consumer hardware and virtual/augmented reality, and that metaverse efforts may take many years to become commercially successful."
+      },
+      {
+        "topic": "Debt and Capital Structure",
+        "page_range": "79, 98-99",
+        "summary": "Meta has no traditional long-term debt or notes payable on its balance sheet as of December 31, 2021. The company's primary financial obligations consist of operating lease liabilities ($13.9 billion total) and finance lease obligations ($581 million total), primarily for network infrastructure. With $48.0 billion in cash and marketable securities and no material debt, Meta maintains a strong net cash position. The company funds its operations and capital returns entirely through operating cash flows."
+      }
+    ]
+  }
+}

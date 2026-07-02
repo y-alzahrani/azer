@@ -1,0 +1,121 @@
+{
+  "company": "Meta",
+  "ticker": "META",
+  "report_type": "Annual",
+  "period": "FY 2024",
+  "period_end_date": "2024-12-31",
+  "currency": "USD",
+  "unit": "Millions",
+  "metrics": {
+    "revenue": 164501,
+    "cost_of_revenue": {
+      "value": 30161,
+      "source": "direct_line_item",
+      "calculation_note": "Cost of revenue — Consolidated Statements of Income, page 87"
+    },
+    "operating_expenses": {
+      "value": 64960,
+      "source": "calculated",
+      "calculation_note": "Sum of Research and development (43,873) + Marketing and sales (11,347) + General and administrative (9,740) = 64,960. Excludes Cost of revenue. From Consolidated Statements of Income, page 87"
+    },
+    "operating_income": 69380,
+    "net_income": 62360,
+    "eps": 23.86,
+    "cash_and_equivalents": {
+      "value": 43889,
+      "source": "direct_line_item",
+      "calculation_note": "Cash and cash equivalents — Consolidated Balance Sheets, page 86"
+    },
+    "short_term_debt": {
+      "value": null,
+      "source": "",
+      "calculation_note": "No current portion of long-term debt or short-term borrowings identified on the balance sheet. Operating lease liabilities, current (1,942) excluded. Finance lease liabilities current portion (76) is included within accrued expenses and other current liabilities per Note 8, page 107, but not separately labeled as short-term debt on the face of the balance sheet. No distinct short-term debt line item found."
+    },
+    "long_term_debt": {
+      "value": 28826,
+      "source": "direct_line_item",
+      "calculation_note": "Long-term debt — Consolidated Balance Sheets, page 86; represents fixed-rate senior unsecured notes net of unamortized discount and issuance costs per Note 10, page 109"
+    },
+    "net_debt": {
+      "value": -15063,
+      "source": "calculated",
+      "calculation_note": "Short-term debt (0) + Long-term debt (28,826) - Cash & Cash Equivalents (43,889) = Net debt (-15,063). Negative value indicates net cash position."
+    },
+    "operating_cash_flow": 91328,
+    "capital_expenditure": {
+      "value": 37256,
+      "source": "direct_line_item",
+      "calculation_note": "Purchases of property and equipment — Consolidated Statements of Cash Flows, page 90"
+    },
+    "free_cash_flow": {
+      "value": 52103,
+      "source": "direct_line_item",
+      "calculation_note": "Free cash flow — explicitly stated in the Free Cash Flow reconciliation table, page 77. Defined as net cash provided by operating activities (91,328) minus purchases of property and equipment (37,256) minus principal payments on finance leases (1,969) = 52,103."
+    },
+    "total_equity": 182637,
+    "shares_outstanding": {
+      "value": 2534,
+      "source": "direct_line_item",
+      "calculation_note": "Total shares (Class A and Class B common stock) at December 31, 2024: 2,190 million Class A + 344 million Class B = 2,534 million shares. From Consolidated Statements of Stockholders' Equity, page 89, and Note 13, page 116"
+    },
+    "shares_weighted_average_diluted": {
+      "value": 2614,
+      "source": "direct_line_item",
+      "calculation_note": "Shares used in computation of diluted EPS — Consolidated Statements of Income, page 87, and Note 4 Earnings per Share, page 102"
+    }
+  },
+  "narrative": {
+    "sections_found": [
+      {
+        "topic": "Revenue Performance and Drivers",
+        "page_range": "59-72",
+        "summary": "Total revenue for FY 2024 was $164.50 billion, a 22% increase compared to 2023, almost entirely driven by advertising revenue which grew 22% to $160.63 billion. Ad impressions delivered increased 11% year-over-year, and average price per ad increased 10%, driven by improvements in ad targeting and measurement tools. The online commerce vertical was the largest contributor to advertising revenue growth. On a constant currency basis, revenue would have increased 23% compared to 2023."
+      },
+      {
+        "topic": "Cost Structure and Operating Profitability",
+        "page_range": "71-75",
+        "summary": "Total costs and expenses for FY 2024 were $95.12 billion, an 8% increase from $88.15 billion in 2023. Cost of revenue increased 16% primarily due to higher data center depreciation expenses; R&D increased 14% driven by higher employee compensation (headcount grew 13%) and infrastructure costs. Marketing and sales decreased 8% and G&A decreased 15% due to lower restructuring and legal-related costs. Operating income was $69.38 billion, a 48% increase year-over-year, resulting in an operating margin of 42% versus 35% in 2023."
+      },
+      {
+        "topic": "Segment Performance: Family of Apps vs Reality Labs",
+        "page_range": "60-62, 74-75",
+        "summary": "Family of Apps (FoA) generated revenue of $162.36 billion and income from operations of $87.11 billion (operating margin 54%), up 39% from 2023. Reality Labs (RL) generated revenue of $2.15 billion but incurred an operating loss of $17.73 billion, a 10% increase in losses compared to 2023. Meta expects RL operating losses to increase further in 2025. FoA comprised 79% of total costs and expenses while RL comprised 21%."
+      },
+      {
+        "topic": "Cash Flow and Liquidity",
+        "page_range": "76-78",
+        "summary": "Operating cash flow was $91.33 billion in 2024, up significantly from $71.11 billion in 2023, driven by higher revenue collection partially offset by higher income taxes paid ($10.55 billion) and other operational spending. Free cash flow was $52.10 billion versus $43.01 billion in 2023. Cash, cash equivalents, and marketable securities totaled $77.81 billion at year-end 2024, an increase of $12.41 billion. Meta also raised $10.43 billion from issuing senior unsecured notes in August 2024."
+      },
+      {
+        "topic": "Capital Expenditure and Investment Plans",
+        "page_range": "76-77",
+        "summary": "Capital expenditures including principal payments on finance leases were $39.23 billion in 2024, consisting primarily of $37.26 billion in purchases of property and equipment for servers, data centers, and network infrastructure. Meta anticipates capital expenditures of approximately $60 to $65 billion in 2025 to support core business and generative AI efforts. The company has additional uncommenced lease obligations of approximately $34.12 billion mostly for data centers."
+      },
+      {
+        "topic": "Capital Return Program (Dividends and Share Repurchases)",
+        "page_range": "57-58, 78-79",
+        "summary": "In 2024, Meta repurchased 65 million shares of Class A common stock for $29.75 billion and paid total dividends and dividend equivalents of $5.07 billion ($2.00 per share across four quarterly payments). As of December 31, 2024, $51.28 billion remained available under the share repurchase authorization. Meta intends to continue quarterly cash dividends, subject to board approval. Total capital returns in 2024 were approximately $35.20 billion."
+      },
+      {
+        "topic": "Debt Structure",
+        "page_range": "78-79, 109",
+        "summary": "As of December 31, 2024, Meta had $29.0 billion in aggregate principal outstanding from fixed-rate senior unsecured notes (carrying value $28.83 billion net of discount and issuance costs), maturing from 2027 through 2064. In August 2024, Meta issued $10.5 billion in additional Notes. The notes bear interest at rates ranging from 3.50% to 5.75% and Meta is not subject to any financial covenants. Interest expense net of capitalized interest was $683 million in 2024."
+      },
+      {
+        "topic": "Key Business Risks",
+        "page_range": "14-49",
+        "summary": "Meta faces significant risks including regulatory and legal challenges across data privacy (GDPR, FTC consent order, DMA, DSA), antitrust litigation (FTC seeking divestiture of Instagram and WhatsApp with trial set for April 2025), and youth safety regulations globally. Apple's iOS changes continue to adversely impact ad targeting capabilities, reducing advertiser budget commitments. AI initiatives require significant investments and face regulatory scrutiny, and Reality Labs is expected to continue generating operating losses for the foreseeable future."
+      },
+      {
+        "topic": "Income Taxes",
+        "page_range": "75-76, 118-121",
+        "summary": "The effective tax rate for 2024 was 11.8%, down from 17.6% in 2023, primarily due to excess tax benefits from share-based compensation ($3.22 billion reduction) and increased research tax credits. Meta expects its effective tax rate for FY 2025 to be in the range of 12-15% based on current stock price levels. The company has ongoing IRS disputes related to transfer pricing for tax years 2010-2013 with potential additional federal tax liability estimated at up to approximately $9.0 billion plus interest and penalties."
+      },
+      {
+        "topic": "AI Strategy and Technology Investment",
+        "page_range": "6-9, 20-22, 61-62",
+        "summary": "Meta is making significant investments in AI including generative AI to improve ad targeting, content recommendation, and develop new products such as Meta AI assistant. The company released its Llama models as open source and continues to expand AI features across its family of apps. AI initiatives require increased infrastructure and headcount investment, and Meta anticipates capital expenditures of $60-65 billion in 2025 largely driven by AI infrastructure needs. The company also unveiled the Orion AR glasses prototype in 2024 as part of its longer-term wearables strategy."
+      }
+    ]
+  }
+}

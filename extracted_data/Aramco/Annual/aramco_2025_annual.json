@@ -1,0 +1,121 @@
+{
+  "company": "Aramco",
+  "ticker": "2222.SR",
+  "report_type": "Annual",
+  "period": "FY 2025",
+  "period_end_date": "2025-12-31",
+  "currency": "SAR",
+  "unit": "Millions",
+  "metrics": {
+    "revenue": 1559342,
+    "cost_of_revenue": {
+      "value": null,
+      "source": "",
+      "calculation_note": "Saudi Aramco does not present a single 'Cost of Revenue' or 'COGS' line item. The income statement presents operating costs as separate categories: Royalties and other taxes, Purchases, Producing and manufacturing, Selling administrative and general, Exploration, R&D, Depreciation and amortization, and Impairment losses. No single COGS subtotal is disclosed."
+    },
+    "operating_expenses": {
+      "value": 964382,
+      "source": "direct_line_item",
+      "calculation_note": "Operating costs — Consolidated statement of income, page 12"
+    },
+    "operating_income": 706822,
+    "net_income": 350210,
+    "eps": 1.44,
+    "cash_and_equivalents": {
+      "value": 243099,
+      "source": "direct_line_item",
+      "calculation_note": "Cash and cash equivalents — Consolidated balance sheet, page 14; also Note 15, page 50"
+    },
+    "short_term_debt": {
+      "value": 55151,
+      "source": "direct_line_item",
+      "calculation_note": "Borrowings (current) — Consolidated balance sheet, page 14; Note 20, page 54. This represents the total current borrowings line including current lease liabilities of SAR 11,986M and current borrowings other than leases of SAR 43,165M."
+    },
+    "long_term_debt": {
+      "value": 308466,
+      "source": "direct_line_item",
+      "calculation_note": "Borrowings (non-current) — Consolidated balance sheet, page 14; Note 20, page 54. This represents total non-current borrowings including non-current lease liabilities of SAR 52,308M and non-current borrowings other than leases of SAR 256,158M."
+    },
+    "net_debt": {
+      "value": 68511,
+      "source": "direct_line_item",
+      "calculation_note": "Net debt — Note 3(b) Capital structure management, page 31. Reported as SAR 68,511M. Calculated by company as: Total borrowings 363,617 - Cash and cash equivalents 243,099 - Short-term investments 14,643 - Investments in debt securities current and non-current 37,364 = Net debt 68,511."
+    },
+    "operating_cash_flow": 510798,
+    "capital_expenditure": {
+      "value": 190444,
+      "source": "direct_line_item",
+      "calculation_note": "Capital expenditures — Consolidated statement of cash flows, page 16. Exact label: 'Capital expenditures'"
+    },
+    "free_cash_flow": {
+      "value": 320354,
+      "source": "calculated",
+      "calculation_note": "Operating Cash Flow (510,798) - CapEx (190,444) = Free Cash Flow (320,354)"
+    },
+    "total_equity": 1721744,
+    "shares_outstanding": {
+      "value": 241908,
+      "source": "calculated",
+      "calculation_note": "Derived from balance sheet equity section, page 14 and Note 1, page 17. Total issued ordinary shares: 242,000 million shares per Note 1 (share capital SAR 90,000M divided into 242 billion shares), less treasury shares of 92.6 million per Note 16, page 50 = approximately 241,907.4 million shares outstanding. Converted to millions: 241,907. Note: shares are reported as full counts in the document; converted here to millions to match unit field."
+    },
+    "shares_weighted_average_diluted": {
+      "value": 241882,
+      "source": "direct_line_item",
+      "calculation_note": "Weighted average number of ordinary shares (in millions) — Note 38 Earnings per share, page 73. Exact label: 'Weighted average number of ordinary shares (in millions)'. Value stated as 241,882 million shares. Note: the report states basic and diluted EPS are the same as share plans had no significant dilution effect."
+    }
+  },
+  "narrative": {
+    "sections_found": [
+      {
+        "topic": "Revenue and Income Performance",
+        "page_range": "12",
+        "summary": "Total revenue declined 4.8% year-over-year from SAR 1,637,299M to SAR 1,559,342M in 2025, primarily reflecting lower commodity prices. Other income related to sales also fell sharply from SAR 164,375M to SAR 111,862M, reducing total revenue and other income from SAR 1,801,674M to SAR 1,671,204M. Net income attributable to shareholders decreased from SAR 393,891M to SAR 348,042M, and earnings per share declined from SAR 1.63 to SAR 1.44. Operating income fell from SAR 774,625M to SAR 706,822M, reflecting both lower revenues and higher impairment charges of SAR 32,425M versus SAR 11,834M in 2024."
+      },
+      {
+        "topic": "Segment Performance",
+        "page_range": "34-35",
+        "summary": "Saudi Aramco operates two reportable segments: Upstream and Downstream, plus a Corporate segment. Upstream EBIT declined from SAR 801,047M to SAR 731,850M, largely driven by lower oil prices and reduced royalties. Downstream EBIT remained deeply negative at SAR (9,552)M versus SAR (10,998)M in 2024, with SAR 20,363M of losses related to assets held for sale including SAR 13,395M of fair value remeasurement losses on SABIC's EP and ETP disposal groups. Corporate losses were SAR 18,539M. Upstream capital expenditures were SAR 141,635M and Downstream SAR 43,831M."
+      },
+      {
+        "topic": "Impairment and Assets Held for Sale",
+        "page_range": "6-7, 35-36, 70-71",
+        "summary": "During 2025, Saudi Aramco recognized total impairment and remeasurement losses of SAR 32,425M, comprising SAR 19,021M of PPE impairments and write-downs on Downstream assets and SAR 13,404M of remeasurement losses on disposal groups. SABIC's board authorized the divestiture of SABIC Europe B.V. (EP, enterprise value SAR 1,875M) and the Engineering Thermoplastics business (ETP, enterprise value SAR 1,688M) in December 2025, with both classified as held for sale. Net assets classified as held for sale at year-end were SAR 8,766M and associated liabilities SAR 6,444M. A PPE impairment charge of SAR 14,569M was also recognized for certain domestic and international downstream facilities due to revised cash flow projections."
+      },
+      {
+        "topic": "Cash Flow and Capital Expenditure",
+        "page_range": "16",
+        "summary": "Net cash provided by operating activities was SAR 510,798M in 2025, broadly flat versus SAR 508,888M in 2024, despite lower pre-tax income, partly due to changes in working capital and lower tax settlements. Capital expenditures amounted to SAR 190,444M (2024: SAR 188,890M), reflecting continued investment in Upstream development including the Jafurah Gas Field. Net cash used in investing activities was SAR 203,902M, while net cash used in financing activities was SAR 280,439M, primarily driven by dividends paid of SAR 332,653M. Cash and cash equivalents increased by SAR 26,457M to SAR 243,099M."
+      },
+      {
+        "topic": "Debt and Liquidity",
+        "page_range": "31, 54-58",
+        "summary": "Total borrowings increased from SAR 319,290M to SAR 363,617M, driven by new issuances including USD 5,000M in notes in June 2025 and USD 3,000M in Sukuk certificates in September 2025. Lease liabilities increased from SAR 62,483M to SAR 64,294M. Gearing (net debt to total equity plus net debt) improved slightly from 4.5% to 3.8%, supported by growing equity base. Saudi Aramco maintains significant undrawn revolving credit facilities of SAR 37,500M extended to April 2029, plus additional bilateral facilities. The company defines net debt as total borrowings less cash equivalents, short-term investments, and debt securities, resulting in net debt of SAR 68,511M at year-end."
+      },
+      {
+        "topic": "Dividends and Capital Returns",
+        "page_range": "15, 73",
+        "summary": "Total dividends declared and paid in 2025 were SAR 320,447M (SAR 1.3248 per share), a significant reduction from SAR 465,918M (SAR 1.9260 per share) in 2024, primarily because 2024 included SAR 161,593M of performance-linked dividends versus only SAR 3,288M in 2025. The base dividend was maintained at SAR 0.3312 per share per quarter. A base dividend of SAR 82,083M (SAR 0.3393 per share) was declared on March 9, 2026, reflecting a modest increase. Post period, the Board also approved a share repurchase program of up to 350 million shares over 18 months for up to SAR 11,250M."
+      },
+      {
+        "topic": "Key Transactions: Jafurah Midstream Gas Company Sale",
+        "page_range": "8, 52, 69-70",
+        "summary": "In October 2025, Saudi Aramco sold a 49% equity interest in the newly formed Jafurah Midstream Gas Company (JMGC) to Green Palm Bidco S.à r.l. for SAR 41,802M ($11,147M) cash, led by a consortium including Global Infrastructure Partners (part of BlackRock). The Company retained operational control and title to the Jafurah Field Gas Plant and Riyas NGL Fractionation Plant, leasing their development and usage rights to JMGC for 20 years. Due to the discretionary nature of JMGC's dividend distributions linked to Saudi Aramco's own shareholder dividends, the proceeds were recognized as non-controlling interest in equity rather than as a gain on sale. This was identified as a key audit matter by PwC given its complexity and materiality."
+      },
+      {
+        "topic": "Goodwill and Intangible Assets Impairment Testing",
+        "page_range": "5-6, 37-38",
+        "summary": "Saudi Aramco performed annual impairment tests on SABIC-related goodwill of SAR 99,116M (allocated to the Downstream segment) and the SABIC brand (indefinite-life intangible) of SAR 18,140M. Both tests were based on value-in-use using 10-year discounted cash flow models with a terminal growth rate of 2.25% and pre-tax discount rates of 10.5% for goodwill and 10.1% for the brand. No impairment was identified for either asset. Pre-tax discount rates of 12.3% and 12.6% respectively would be required to reduce recoverable amounts to carrying amounts, indicating moderate headroom."
+      },
+      {
+        "topic": "Income Taxes and Zakat",
+        "page_range": "42-46",
+        "summary": "Total income tax and zakat expense was SAR 352,650M in 2025, down from SAR 383,588M in 2024, reflecting lower pre-tax income. The effective tax rate remained high due to Saudi Arabia's 50% upstream corporate income tax rate, partially offset by the 20% rate on Downstream activities. Settlement of income taxes during 2025 amounted to SAR 342,422M. Net deferred tax liabilities increased from SAR 132,710M to SAR 144,779M, primarily driven by accelerated depreciation on property, plant and equipment. Pillar Two top-up taxes of SAR 595M were recognized for the first time in 2025 (nil in 2024)."
+      },
+      {
+        "topic": "Post-Employment Benefits",
+        "page_range": "59-63",
+        "summary": "Saudi Aramco's net post-employment benefit position shifted from a net asset of SAR 499M in 2024 to a net liability of SAR 1,515M in 2025, driven by adverse remeasurement movements on medical and other benefit plans. Total benefit obligations grew to SAR 186,274M (pension SAR 76,822M plus other SAR 109,452M), while plan assets increased to SAR 184,759M. Key pension assumptions include a discount rate of 5.4% and salary growth of 4.6%. Employer contributions are estimated at SAR 2,336M in 2026. Plan assets consist primarily of investment funds (SAR 70,803M), bonds (SAR 81,191M), and equity instruments (SAR 29,468M)."
+      }
+    ]
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "company": "Aramco",
+  "ticker": "2222.SR",
+  "report_type": "Annual",
+  "period": "FY 2022",
+  "period_end_date": "2022-12-31",
+  "currency": "SAR",
+  "unit": "Millions",
+  "metrics": {
+    "revenue": 2006955,
+    "cost_of_revenue": {
+      "value": null,
+      "source": "",
+      "calculation_note": "Saudi Aramco does not present a single 'Cost of revenues' or 'COGS' line item. Costs are presented as separate line items: Royalties and other taxes, Purchases, Producing and manufacturing, Selling/administrative/general, Exploration, R&D, and Depreciation & amortization, aggregated into 'Operating costs' of SAR 1,122,296 million."
+    },
+    "operating_expenses": {
+      "value": 1122296,
+      "source": "direct_line_item",
+      "calculation_note": "Consolidated statement of income, page 09 — exact label: 'Operating costs'"
+    },
+    "operating_income": 1144077,
+    "net_income": 604005,
+    "eps": 2.72,
+    "cash_and_equivalents": {
+      "value": 226047,
+      "source": "direct_line_item",
+      "calculation_note": "Cash and cash equivalents"
+    },
+    "short_term_debt": {
+      "value": 74764,
+      "source": "direct_line_item",
+      "calculation_note": "Consolidated balance sheet, page 11 — exact label: 'Borrowings' under Current liabilities, SAR 74,764 million. Note 20 (page 50) confirms this includes current portions of all borrowing types including lease liabilities."
+    },
+    "long_term_debt": {
+      "value": 318380,
+      "source": "direct_line_item",
+      "calculation_note": "Consolidated balance sheet, page 11 — exact label: 'Borrowings' under Non-current liabilities, SAR 318,380 million. Note 20 (page 50) confirms this includes lease liabilities of SAR 43,073 million non-current."
+    },
+    "net_debt": {
+      "value": -122683,
+      "source": "direct_line_item",
+      "calculation_note": "Note 3(b) Capital structure management, page 29 — exact label: 'Net (cash) / debt' reported as (122,683), indicating a net cash position. Defined as total borrowings less cash and cash equivalents, short-term investments, investments in debt securities (current and non-current), and non-current cash investments."
+    },
+    "operating_cash_flow": 698152,
+    "capital_expenditure": {
+      "value": 141161,
+      "source": "direct_line_item",
+      "calculation_note": "Consolidated statement of cash flows, page 13 — exact label: 'Capital expenditures', SAR 141,161 million"
+    },
+    "free_cash_flow": {
+      "value": 556991,
+      "source": "calculated",
+      "calculation_note": "Operating Cash Flow SAR 698,152 million - CapEx SAR 141,161 million = SAR 556,991 million"
+    },
+    "total_equity": 1666147,
+    "shares_outstanding": {
+      "value": 219913,
+      "source": "direct_line_item",
+      "calculation_note": "Note 37 Earnings per share, page 67 — weighted average shares used. For shares outstanding at period end: Note 1 (page 14) states share capital is SAR 75,000 divided into 220 billion fully paid ordinary shares; Note 16 (page 46) states treasury shares outstanding at December 31, 2022 were 76.6 million, so shares outstanding = 220,000 million - 76.6 million ≈ 219,923 million, but the weighted average of 219,913 million from Note 37 is used as the best approximation in millions."
+    },
+    "shares_weighted_average_diluted": {
+      "value": 219913,
+      "source": "direct_line_item",
+      "calculation_note": "Note 37 Earnings per share, page 67 — exact label: 'Weighted average number of ordinary shares (in millions)' = 219,913 million. Note states share plans did not have a significant dilution effect, so basic and diluted are the same."
+    }
+  },
+  "narrative": {
+    "sections_found": [
+      {
+        "topic": "Revenue and profitability drivers",
+        "page_range": "09",
+        "summary": "Saudi Aramco reported revenue of SAR 2,006,955 million in 2022, up approximately 49% from SAR 1,346,930 million in 2021, driven by higher crude oil and refined product prices following the post-pandemic demand recovery and geopolitical supply disruptions. Other income related to sales (government price equalization compensation) rose to SAR 259,418 million from SAR 154,828 million. Net income attributable to shareholders reached SAR 597,215 million (up 51%), and earnings per share increased to SAR 2.72 from SAR 1.80. Income before income taxes and zakat reached SAR 1,152,962 million, reflecting the strong commodity price environment."
+      },
+      {
+        "topic": "Operating costs and cost structure",
+        "page_range": "09, 60-61",
+        "summary": "Total operating costs rose to SAR 1,122,296 million in 2022 from SAR 729,840 million in 2021, with the largest components being purchases (SAR 490,690 million, up from SAR 352,377 million) and royalties and other taxes (SAR 341,510 million, up significantly from SAR 144,793 million due to higher oil prices under the progressive royalty scheme). Producing and manufacturing costs increased to SAR 101,912 million, and depreciation and amortization was SAR 91,618 million. Employee benefit expenses totaled SAR 54,993 million including salaries, post-retirement benefits, and share-based compensation."
+      },
+      {
+        "topic": "Taxation and government payments",
+        "page_range": "40-43, 60",
+        "summary": "Income taxes and zakat totaled SAR 548,957 million in 2022, up from SAR 357,125 million in 2021, reflecting the higher pre-tax income. The Company pays a 50% income tax rate on most activities and 20% on Downstream activities (conditional on separating Downstream into separate subsidiaries by December 31, 2024). Total payments to the Government including income taxes (SAR 232,661 million), royalties (SAR 349,270 million), and dividends (SAR 265,066 million) represented the vast majority of cash outflows. Deferred income tax liabilities increased significantly to SAR 122,311 million from SAR 74,850 million."
+      },
+      {
+        "topic": "Cash flows and liquidity",
+        "page_range": "13, 29",
+        "summary": "Net cash provided by operating activities was SAR 698,152 million in 2022, compared to SAR 522,601 million in 2021, supported by stronger earnings partially offset by working capital outflows. Capital expenditures of SAR 141,161 million (up from SAR 119,645 million) and net purchases of short-term investments of SAR 254,142 million drove net cash used in investing activities to SAR 389,009 million. Cash and cash equivalents declined to SAR 226,047 million from SAR 299,579 million, though short-term investments increased substantially to SAR 281,215 million, resulting in a net cash position (negative net debt) of SAR 122,683 million."
+      },
+      {
+        "topic": "Capital structure and gearing",
+        "page_range": "29-30",
+        "summary": "Saudi Aramco moved to a net cash position of SAR 122,683 million at December 31, 2022, compared to net debt of SAR 175,303 million at December 31, 2021, representing a gearing ratio of (7.9)% versus 12.0%. Total borrowings decreased to SAR 393,144 million from SAR 510,921 million, primarily due to SAR 66,771 million in prepayments of the PIF deferred consideration (SABIC acquisition debt). Total equity grew to SAR 1,666,147 million from SAR 1,280,668 million driven by retained earnings from strong profitability net of SAR 281,318 million in dividends paid."
+      },
+      {
+        "topic": "Dividends and capital returns",
+        "page_range": "67",
+        "summary": "The Company paid total dividends of SAR 281,318 million (SAR 1.31 per share) in 2022, consisting of four quarterly payments. Additionally, in May 2022 the EGA approved a bonus share issuance of one share for every ten held, increasing share capital by SAR 15,000 million and shares outstanding to 220 billion. A dividend of SAR 73,150 million (SAR 0.33 per share) was declared on March 10, 2023 for Q4 2022, and the Board recommended another bonus share issuance of one-for-ten, which would increase share capital to SAR 90,000 million and shares to 242 billion, pending regulatory approval."
+      },
+      {
+        "topic": "Segment performance — Upstream and Downstream",
+        "page_range": "31-32",
+        "summary": "Upstream earnings before interest, income taxes, and zakat were SAR 1,092,425 million in 2022 (vs SAR 750,118 million in 2021), driven by crude oil revenue of SAR 1,076,726 million and capital expenditures of SAR 109,789 million. Downstream earnings were SAR 79,292 million (vs SAR 62,190 million), supported by refined and chemical product revenues of SAR 835,884 million and capital expenditures of SAR 29,541 million. In-Kingdom revenue was SAR 1,293,097 million and out-of-Kingdom revenue was SAR 713,858 million, with the USA contributing SAR 223,731 million of the international total."
+      },
+      {
+        "topic": "Capital expenditures and investment commitments",
+        "page_range": "13, 62-63",
+        "summary": "Cash capital expenditures totaled SAR 141,161 million in 2022 (vs SAR 119,645 million in 2021), with Upstream accounting for SAR 109,789 million. Capital commitments contracted but not yet incurred stood at SAR 172,639 million at year-end. Significant commitments include a 20-offshore-rig lease commitment of SAR 41,468 million for ARO Drilling beginning 2023 and a 50-onshore-rig lease of SAR 23,214 million for SANAD beginning 2022. Borrowing costs capitalized in property, plant, and equipment during 2022 amounted to SAR 4,826 million at an average capitalization rate of 3.24%."
+      },
+      {
+        "topic": "Goodwill and intangible asset impairment testing (SABIC acquisition)",
+        "page_range": "35-36",
+        "summary": "Saudi Aramco performed annual impairment tests on goodwill of SAR 99,116 million (allocated to Downstream) and SABIC brand of SAR 18,140 million, both acquired in the 2020 SABIC acquisition. Value-in-use calculations used 10-year cash flow projections discounted at a pre-tax rate of 11.1% for goodwill (up from 8.6% in 2021) and 10.9% for brand (up from 7.8%), reflecting rising interest rates. No impairment was identified, and management concluded that a 1% increase in discount rates or a 1% decrease in growth rates individually would not change the outcome."
+      },
+      {
+        "topic": "Pipeline asset monetization transactions (AOPC and AGPC)",
+        "page_range": "48-49, 65",
+        "summary": "In February 2022, Saudi Aramco sold a 49% equity interest in Aramco Gas Pipelines Company (AGPC) to GreenSaif for SAR 58,125 million, following the June 2021 sale of 49% of Aramco Oil Pipelines Company (AOPC) to EIG for SAR 46,547 million. In both transactions, the Company leased pipeline usage rights to the respective entities while retaining title and operational control; the buyer receives distributions only when the Company pays discretionary dividends, so the proceeds are classified as non-controlling interests rather than gains. Net losses of AOPC and AGPC include unrealized losses of SAR 13,819 million and SAR 10,105 million respectively on financial assets measured at FVPL."
+      },
+      {
+        "topic": "Post-employment benefit obligations",
+        "page_range": "54-58",
+        "summary": "The net post-employment benefit liability decreased significantly to SAR 3,889 million at December 31, 2022, from SAR 40,729 million in 2021, primarily due to large actuarial gains from rising discount rates (pension discount rate increased to 5.4% from 2.9%; other benefits to 5.6% from 3.1%) which reduced the present value of obligations. Other benefit obligations declined from SAR 136,042 million to SAR 95,640 million due to SAR 44,351 million in remeasurement gains, while plan assets for pension benefits also fell due to negative investment returns. Total plan assets stood at SAR 158,663 million across pension and other benefit plans."
+      },
+      {
+        "topic": "Debt structure and borrowings",
+        "page_range": "50-54",
+        "summary": "Total borrowings (including lease liabilities) decreased to SAR 393,144 million from SAR 510,921 million, with the most significant reduction in deferred consideration to PIF (from SAR 222,267 million to SAR 122,163 million) following two prepayments totaling SAR 66,771 million during the year. Long-term non-lease borrowings decreased to SAR 275,307 million from SAR 398,263 million. Finance costs fell to SAR 8,882 million from SAR 12,058 million reflecting lower debt balances. In April 2022, the Company entered into new unsecured revolving credit facilities totaling SAR 37,500 million to replace expired facilities, which remained fully undrawn at year-end."
+      }
+    ]
+  }
+}

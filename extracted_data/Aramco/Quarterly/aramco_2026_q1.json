@@ -1,0 +1,121 @@
+{
+  "company": "Aramco",
+  "ticker": "2222.SR",
+  "report_type": "Quarterly",
+  "period": "Q1 2026",
+  "period_end_date": "2026-03-31",
+  "currency": "SAR",
+  "unit": "Millions",
+  "metrics": {
+    "revenue": 433101,
+    "cost_of_revenue": {
+      "value": null,
+      "source": "",
+      "calculation_note": "Aramco does not present a single Cost of Revenue or COGS subtotal. Operating costs are presented as multiple line items (Royalties, Purchases, Producing and manufacturing, Selling/admin/general, Exploration, R&D, D&A, Impairment) without a COGS subtotal."
+    },
+    "operating_expenses": {
+      "value": 244700,
+      "source": "direct_line_item",
+      "calculation_note": "Operating costs — Condensed consolidated statement of income, page 23"
+    },
+    "operating_income": 222536,
+    "net_income": 122008,
+    "eps": 0.5,
+    "cash_and_equivalents": {
+      "value": 230813,
+      "source": "direct_line_item",
+      "calculation_note": "Cash and cash equivalents — Condensed consolidated balance sheet, page 25"
+    },
+    "short_term_debt": {
+      "value": 44187,
+      "source": "direct_line_item",
+      "calculation_note": "Borrowings (Current) — other than leases, per Note 9 Borrowings table, page 34. Current borrowings other than leases = 44,187. Lease liabilities (current) excluded as operating lease component cannot be separately identified and the report does not distinguish finance vs operating leases in the current borrowings breakdown."
+    },
+    "long_term_debt": {
+      "value": 271258,
+      "source": "direct_line_item",
+      "calculation_note": "Borrowings — other than leases (Non-current) per Note 9 Borrowings table, page 34. Label: 'Borrowings – other than leases' non-current portion = 271,258."
+    },
+    "net_debt": {
+      "value": 88801,
+      "source": "direct_line_item",
+      "calculation_note": "Net debt (cash) — Gearing table in Non-IFRS measures reconciliations section, page 11. Label: 'Net debt (cash)'"
+    },
+    "operating_cash_flow": 115242,
+    "capital_expenditure": {
+      "value": 45354,
+      "source": "direct_line_item",
+      "calculation_note": "Capital expenditures — Condensed consolidated statement of cash flows, page 27. Label: 'Capital expenditures'"
+    },
+    "free_cash_flow": {
+      "value": 69888,
+      "source": "direct_line_item",
+      "calculation_note": "Free cash flow — Non-IFRS measures reconciliations section, page 9. Label: 'Free cash flow'"
+    },
+    "total_equity": 1758311,
+    "shares_outstanding": {
+      "value": 242105.88,
+      "source": "calculated",
+      "calculation_note": "Derived from EPS calculation: Net income attributable to shareholders' equity = SAR 120,131 million / EPS (basic and diluted) = SAR 0.50 per share = approximately 240,262 million shares. However, the share capital is SAR 90,000 million at a par value context. Per Note 1 (page 28), as at March 31, 2026, Government retains 81.48% direct shareholding. The Company has 240,000 million ordinary shares (share capital SAR 90,000 million / par value SAR 0.375 per share implied from IPO context). Note: exact shares outstanding not explicitly stated as a single figure in the report; using net income attributable to shareholders / EPS = 120,131 / 0.50 = 240,262 million shares. Reported in millions."
+    },
+    "shares_weighted_average_diluted": {
+      "value": 240262,
+      "source": "calculated",
+      "calculation_note": "Derived from EPS calculation on page 23: Net income attributable to shareholders' equity SAR 120,131 million / Earnings per share (basic and diluted) SAR 0.50 = 240,262 million weighted average diluted shares. Reported in millions."
+    }
+  },
+  "narrative": {
+    "sections_found": [
+      {
+        "topic": "Revenue and Financial Performance Overview",
+        "page_range": "3",
+        "summary": "Q1 2026 revenue and other income related to sales was SAR 467,236 million, up from SAR 429,612 million in Q1 2025, driven by higher crude oil prices and volumes sold as well as stronger refined and chemical product prices. Net income rose to SAR 122,008 million from SAR 97,543 million year-on-year, partially offset by higher operating costs and income taxes."
+      },
+      {
+        "topic": "Upstream Segment Performance",
+        "page_range": "4-5",
+        "summary": "Upstream adjusted EBIT increased to SAR 203,209 million in Q1 2026 from SAR 192,793 million in Q1 2025, driven by higher crude oil volumes sold and higher prices. Total hydrocarbon production reached 12.6 mmboed, up 0.3 mmboed versus the prior year period, with capital expenditures of SAR 36,927 million remaining broadly stable."
+      },
+      {
+        "topic": "Downstream Segment Performance",
+        "page_range": "6-7",
+        "summary": "Downstream adjusted EBIT improved significantly to SAR 18,806 million in Q1 2026, compared to SAR 5,223 million in Q1 2025, primarily due to stronger refining margins. Supply reliability was 96.3%, impacted by temporary disruptions at certain domestic facilities, while downstream capital expenditures declined to SAR 7,489 million."
+      },
+      {
+        "topic": "Geopolitical Disruption and Operational Response",
+        "page_range": "2, 28",
+        "summary": "Geopolitical developments in the Middle East led to shipping constraints in the Strait of Hormuz and attacks on certain Company facilities, causing Aramco to reroute crude oil through its East-West Pipeline at maximum capacity of 7.0 million bpd and utilize domestic and international storage. Management concluded the financial impact was not material to results as of March 31, 2026."
+      },
+      {
+        "topic": "Cash Flow and Capital Expenditure",
+        "page_range": "9, 27",
+        "summary": "Operating cash flow was SAR 115,242 million in Q1 2026, lower than SAR 118,908 million in Q1 2025, due to an unfavorable working capital build of approximately SAR 59,298 million partially offset by higher earnings. Free cash flow was SAR 69,888 million, and capital expenditures totaled SAR 45,354 million supporting strategic growth objectives."
+      },
+      {
+        "topic": "Dividends and Shareholder Returns",
+        "page_range": "2, 37",
+        "summary": "Aramco paid a base dividend of SAR 82,080 million ($21.9 billion) in Q1 2026, up 3.5% year-on-year, reflecting the Company's commitment to progressive dividends. A further Q1 2026 base dividend of SAR 82,087 million was declared on May 7, 2026 to be paid in Q2 2026. The Board also approved a share repurchase program of up to 350 million shares for up to SAR 11,250 million."
+      },
+      {
+        "topic": "Debt and Gearing",
+        "page_range": "11, 34-35",
+        "summary": "Aramco's gearing ratio increased to 4.8% at March 31, 2026 from 3.8% at end-2025, driven by higher net debt reflecting dividend payments and capital expenditures partly offset by operating inflows. In February 2026, the Company issued four tranches of senior unsecured notes totaling $4.0 billion under its GMTN Programme for general corporate purposes."
+      },
+      {
+        "topic": "ROACE",
+        "page_range": "10",
+        "summary": "ROACE on a trailing 12-month basis was 20.7% at March 31, 2026, slightly below the 20.8% recorded a year earlier but up from 19.8% at year-end 2025. The improvement versus Q4 2025 was driven by higher adjusted net income from stronger revenues and lower unit costs."
+      },
+      {
+        "topic": "Portfolio Optimization — SABIC Divestitures",
+        "page_range": "2, 7, 37",
+        "summary": "SABIC signed agreements in January 2026 to divest its European petrochemicals business to AEQUITA and its Engineering Thermoplastics business in the Americas and Europe to Mutares, completing previously authorized divestiture plans. A further remeasurement loss of SAR 176 million was recognized in Q1 2026 for the ETP business, with both transactions expected to close in Q3 and Q4 2026 respectively."
+      },
+      {
+        "topic": "Technology and Innovation",
+        "page_range": "8",
+        "summary": "Aramco announced plans to deploy a next-generation supercomputer with seven times greater capacity for upstream seismic and reservoir simulation, anticipated by early 2027. The Company also completed key milestones in its quantum computing program and signed an MOU with CrowdStrike to enhance AI-powered cybersecurity capabilities."
+      }
+    ]
+  }
+}
