@@ -1,6 +1,5 @@
 import json
 import os
-import yfinance as yf
 import anthropic
 
 client = anthropic.Anthropic()
@@ -18,7 +17,6 @@ def generate_summary(company, financials, docs):
 
     company_financials = financials[company]
     company_narratives = get_company_narratives(company, docs)
-
 
     prompt = f"""أنت محلل مالي متخصص. سيتم تزويدك ببيانات مالية شاملة لشركة {company} تغطي جميع الفترات المتاحة، تشمل المقاييس المالية المستخرجة والنسب المحسوبة وملخصات التقارير المالية.
 
@@ -79,7 +77,7 @@ def generate_summary(company, financials, docs):
     last_brace = clean_text.rfind("}")
     if last_brace != -1:
         if last_brace < len(clean_text) - 1:
-            print("Warning: extra text detected after closing brace — truncating")
+            print("Warning: extra text detected after closing brace - truncating")
         clean_text = clean_text[:last_brace + 1]
 
     return json.loads(clean_text)

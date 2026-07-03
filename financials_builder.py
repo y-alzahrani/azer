@@ -61,7 +61,7 @@ def load_all_documents(folder="extracted_data"):
 ##############################################################
 
 def calculate_metrics(doc):
-    """Calculates derived ratios from a single extracted document dict.
+    """Calculates derived ratios from a single extracted document.
     Returns None for any metric where required inputs are missing."""
     
     m = doc.get("metrics", {})
@@ -96,10 +96,10 @@ def calculate_metrics(doc):
     }
 
 #######################################################
-### Step 3: Build a flat entry for a single document
+### Step 3: Build financials for a single report
 #######################################################
 
-def build_document_entry(doc):
+def build_report_financials(doc):
     """Flattens extracted metrics + derived metrics into a single dict.
     Price-based ratios default to None until populate_price_metrics() runs."""
     
@@ -137,12 +137,12 @@ def build_document_entry(doc):
         "pb_ratio": None,
     }
 
-##################################################################################
-### Step 4: Build all document entries and group them into an ordered structure
-##################################################################################
+########################################################################################
+### Step 4: Build financials for all reports and group them into an ordered structure
+########################################################################################
 
-def build_all_entries(docs):
-    """Builds all document entries and groups them by company and report type, sorted chronologically.
+def build_all_financials(docs):
+    """Builds all report financials and groups them by company and report type, sorted chronologically.
  
     Returns:
         {
@@ -167,7 +167,7 @@ def build_all_entries(docs):
         if company not in financials:
             financials[company] = {"Annual": [], "Quarterly": []}
  
-        entry = build_document_entry(doc)
+        entry = build_report_financials(doc)
         financials[company][report_type].append(entry)
  
     # Sort each list chronologically

@@ -1,0 +1,111 @@
+# AZER — AI-Powered Financial Analysis Platform
+
+## Overview
+
+AZER is an AI-powered financial analysis platform that extracts key metrics and insights from company financial reports, generates analytical summaries, and provides an interactive dashboard and AI chatbot to help retail investors in the stock market make informed decisions based on actual financial data.
+
+## The Problem
+
+Retail investors in Arabic-speaking countries lack professional, accessible financial analysis tools that deliver insights in **Arabic** based on companies' published financial reports; leading to investment decisions built on incomplete or inaccurate information. Financial reports can exceed 150 pages in length, making it difficult for non-specialist investors to access and absorb the information that matters. Investors with limited English language skills face an additional obstacle, as financial reports from companies in foreign stock markets are rarely published in Arabic, limiting their ability to properly analyze and evaluate non-local companies.
+
+## The Solution
+
+AZER automates the entire pipeline from raw PDF reports to comprehensive financial analysis and insights.
+
+1. **Extract** — upload a financial report and the platform extracts all key financial metrics and management commentary using large language models
+2. **Analyze** — an interactive dashboard displays financial trends over time with charts and summary cards
+3. **Summarize** — an AI-generated summary covers positive and negative signals in company performance, and an overall outlook grounded in management commentary
+4. **Ask** — an AI chatbot answers questions about company performance in Arabic or English, grounded entirely in the extracted data
+5. **Value** — a DCF-based fair share price estimator for professional investors
+
+## Features
+
+### PDF Ingestion
+
+- Supports annual and quarterly reports written in English for Saudi and foreign companies
+- Extracts structured financial metrics (JSON) and management commentary summaries in a single API call
+
+### Financial Metrics Dashboard
+
+- 8 summary cards for the most recent period: Share Price, Market Cap, Revenue, Net Income, Net Margin, Free Cash Flow, Net Debt, Forward P/E
+- Trend charts across all available periods: Profitability, Margins, Free Cash Flow
+- Valuation cards with live share price data: P/E Ratio, Forward P/E Ratio, P/S Ratio, P/B Ratio
+
+### AI Analysis Summary
+
+- Key positive signals with specific figures and trends
+- Key negative signals and risks
+- Holistic narrative covering financial trajectory, strategic decisions, and management outlook
+
+### AI Chatbot
+
+- Grounded entirely in extracted data — no hallucination or guessing
+- Responds in the same language as the question (Arabic or English)
+- Classifies questions as metric, narrative, or hybrid and retrieves accordingly
+- Metric questions answered directly from structured financial data
+- Narrative questions answered via semantic search over management commentary summaries using ChromaDB
+- Every answer cites source section, page number, and period
+
+### DCF Valuation
+
+- Fully manual — user inputs their own assumptions
+- Historical FCF shown as reference
+- Bearish / neutral / bullish scenarios
+- Buy / Hold / Sell indicator based on safety margin
+
+## Tech Stack
+ 
+| Layer | Technology |
+|-------|-----------|
+| Frontend | React + Recharts |
+| Backend | Python + FastAPI |
+| LLM | Anthropic API (Claude Sonnet 4.6) |
+| PDF Processing | Anthropic native document understanding |
+| Vector Store | ChromaDB |
+| Market Data | yfinance |
+| Environment | uv + python-dotenv |
+ 
+## Project Structure
+
+```
+azer/
+├── extracted_data/
+│   ├── Meta/
+│   │   ├── Annual/
+│   │   └── Quarterly/
+│   └── Aramco/
+│       ├── Annual/
+│       └── Quarterly/
+├── summaries/
+│   ├── Meta_summary.json
+│   └── Aramco_summary.json
+├── prompts/
+│   ├── annual_prompt.py
+│   └── quarterly_prompt.py
+├── frontend/
+├── pdf_extractor.py          # Extracts data from raw reports
+├── financials_builder.py     # Builds structured dataset of company financials
+├── summary_generator.py      # LLM analysis
+├── chatbot.py
+├── dcf.py                    # Intrinsic value tool for experts
+├── main.py
+├── pyproject.toml
+└── .env
+```
+
+## Dataset
+ 
+| Company | Ticker | Annual Reports | Quarterly Reports |
+|---------|--------|---------------|------------------|
+| Meta Platforms | META | FY 2021 – FY 2025 | Q1 2026 |
+| Saudi Aramco | 2222.SR | FY 2021 – FY 2025 | Q1 2026 |
+ 
+**Total: 12 documents**
+
+## Metrics Extracted
+ 
+**From financial statements (LLM):**
+Revenue, Cost of Revenue, Operating Expenses, Operating Income, Net Income, EPS (diluted), Operating Cash Flow, Capital Expenditure, Free Cash Flow, Short-Term Debt, Long-Term Debt, Net Debt, Total Equity, Cash & Cash Equivalents, Shares Outstanding, Shares Weighted Average Diluted
+ 
+**Calculated in Python:**
+Operating Margin, Net Margin, Total Debt, Debt-to-Equity, Return on Equity, P/E Ratio, Forward P/E, P/S Ratio, P/B Ratio, Market Cap
