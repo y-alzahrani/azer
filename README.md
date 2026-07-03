@@ -109,3 +109,9 @@ Revenue, Cost of Revenue, Operating Expenses, Operating Income, Net Income, EPS 
  
 **Calculated in Python:**
 Operating Margin, Net Margin, Total Debt, Debt-to-Equity, Return on Equity, P/E Ratio, Forward P/E, P/S Ratio, P/B Ratio, Market Cap
+
+## Authors
+
+- Maram Alshammary
+- Reyam Albalihi
+- Yazeed Alzahrani
