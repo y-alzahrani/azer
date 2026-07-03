@@ -2,7 +2,7 @@
 
 ## Overview
 
-AZER is an AI-powered financial analysis platform that extracts key metrics and insights from company financial reports, generates analytical summaries, and provides an interactive dashboard and AI chatbot to help retail investors in the stock market make informed decisions based on actual financial data.
+AZER is an AI-powered financial analysis platform that extracts key metrics and insights from company financial reports, generates analytical summaries, and provides an interactive dashboard and AI chatbot to help retail investors make informed decisions based on actual financial data.
 
 ## The Problem
 
