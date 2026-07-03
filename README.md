@@ -86,8 +86,8 @@ azer/
 ├── pdf_extractor.py          # Extracts data from raw reports
 ├── financials_builder.py     # Builds structured dataset of company financials
 ├── summary_generator.py      # LLM analysis
-├── chatbot.py
-├── dcf.py                    # Intrinsic value tool for experts
+├── chatbot.py                # Performs direct data retrieval and semantic search
+├── dcf.py                    # Intrinsic valuation tool for experts
 ├── main.py
 ├── pyproject.toml
 └── .env
