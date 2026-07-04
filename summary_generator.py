@@ -4,6 +4,7 @@ import anthropic
 
 client = anthropic.Anthropic()
 
+
 def get_company_narratives(company, docs):
     """Extracts narrative sections from raw JSON files for a specific company, tagged by period."""
     narratives = {}
@@ -11,6 +12,7 @@ def get_company_narratives(company, docs):
         if doc["company"] == company:
             narratives[doc["period"]] = doc["narrative"]["sections_found"]
     return narratives
+
 
 def generate_summary(company, financials, docs):
     """Generates an Arabic analysis summary for a company using all available periods."""
@@ -82,6 +84,7 @@ def generate_summary(company, financials, docs):
 
     return json.loads(clean_text)
 
+
 def save_summary(company, summary, base_folder="summaries"):
     """Saves the generated summary to disk as a cache."""
     os.makedirs(base_folder, exist_ok=True)
@@ -89,6 +92,7 @@ def save_summary(company, summary, base_folder="summaries"):
     with open(summary_path, "w", encoding="utf-8") as f:
         json.dump({"summary": summary}, f, ensure_ascii=False, indent=2)
     print(f"Summary saved for {company}")
+
 
 def load_summary(company, base_folder="summaries"):
     """Loads cached summary from disk. Returns None if not found."""
@@ -98,21 +102,3 @@ def load_summary(company, base_folder="summaries"):
         with open(summary_path, encoding="utf-8") as f:
             return json.load(f)["summary"]
     return None
-
-def invalidate_summary(company, base_folder="summaries"):
-    """Deletes cached summary when a new document is uploaded for that company."""
-    summary_path = os.path.join(base_folder, f"{company}_summary.json")
-    if os.path.exists(summary_path):
-        os.remove(summary_path)
-        print(f"Summary cache invalidated for {company}")
-
-def get_or_generate_summary(company, financials, docs, base_folder="summaries"):
-    """Returns cached summary if available, otherwise generates and caches a new one."""
-    cached = load_summary(company, base_folder)
-    if cached:
-        return cached
-
-    print(f"Generating summary for {company}...")
-    summary = generate_summary(company, financials, docs)
-    save_summary(company, summary, base_folder)
-    return summary
