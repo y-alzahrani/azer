@@ -1,0 +1,5 @@
+from financials_builder import load_all_documents, build_all_financials, populate_price_metrics
+
+all_extracted_docs = load_all_documents("extracted_data")
+all_financials = build_all_financials(all_extracted_docs)
+populate_price_metrics(all_financials, all_extracted_docs)

@@ -1,4 +1,4 @@
-# AZER — AI-Powered Financial Analysis Platform
+# AZER: AI-Powered Financial Analysis Platform
 
 ## Overview
 
@@ -22,18 +22,18 @@ AZER automates the entire pipeline from raw PDF reports to comprehensive financi
 
 ### PDF Ingestion
 
-- Supports annual and quarterly reports written in English for Saudi and foreign companies
+- Supports annual and quarterly reports published in English for Saudi and foreign companies
 - Extracts structured financial metrics (JSON) and management commentary summaries in a single API call
 
 ### Financial Metrics Dashboard
 
-- 8 summary cards for the most recent period: Share Price, Market Cap, Revenue, Net Income, Net Margin, Free Cash Flow, Net Debt, Forward P/E
+- 8 cards for the most recent period: Share Price, Market Cap, Revenue, Net Income, Net Margin, Free Cash Flow, Net Debt, Forward P/E
 - Trend charts across all available periods: Profitability, Margins, Free Cash Flow
 - Valuation cards with live share price data: P/E Ratio, Forward P/E Ratio, P/S Ratio, P/B Ratio
 
 ### AI Analysis Summary
 
-- Key positive signals with specific figures and trends
+- Key positive signals with figures and trends
 - Key negative signals and risks
 - Holistic narrative covering financial trajectory, strategic decisions, and management outlook
 

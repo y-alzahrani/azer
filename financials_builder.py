@@ -215,7 +215,7 @@ def populate_price_metrics(financials, docs):
         # Fetch from yfinance
         try:
             info  = yf.Ticker(ticker).info
-            price = info.get("currentPrice") or info.get("regularMarketPrice")
+            share_price = info.get("currentPrice") or info.get("regularMarketPrice")
  
             # Trailing P/E and Forward P/E - taken directly from yfinance
             most_recent_entry["trailing_pe_ratio"] = info.get("trailingPE")
@@ -227,10 +227,11 @@ def populate_price_metrics(financials, docs):
  
         # P/S and P/B - calculated from extracted figures
         shares = most_recent_entry.get("shares_outstanding") or most_recent_entry.get("shares_weighted_average_diluted")
-        market_cap = price * shares if price and shares else None
+        market_cap = share_price * shares if share_price and shares else None
         revenue = most_recent_entry.get("revenue")
         total_equity = most_recent_entry.get("total_equity")
         
+        most_recent_entry["share_price"] = share_price
         most_recent_entry["market_cap"] = round(market_cap, 1) if market_cap else None
         most_recent_entry["ps_ratio"] = round(market_cap / revenue, 2) if market_cap and revenue else None
         most_recent_entry["pb_ratio"] = round(market_cap / total_equity, 2) if market_cap and total_equity else None
