@@ -2,9 +2,11 @@ import json
 import os
 import yfinance as yf
 
-#######################
-### Helper functions
-#######################
+
+# ------------------------------------------------------------------------------------
+# Helper functions
+# ------------------------------------------------------------------------------------
+
 
 def _get(m, field):
     """Reads a metric field regardless of shape (plain number or object with 'value' key)."""
@@ -13,22 +15,27 @@ def _get(m, field):
         return val.get("value")
     return val
  
+
 def _safe_divide(a, b):
     if a is None or b is None or b == 0:
         return None
     return a / b
  
+
 def _round(value, decimals=4):
     if value is None:
         return None
     return round(value, decimals)
 
-################################################################
-### Step 1: Load all documents from the extracted data folder
-################################################################
+
+# ------------------------------------------------------------------------------------
+# Step 1: Load all documents from the extracted data folder
+# ------------------------------------------------------------------------------------
+
 
 def load_all_documents(folder="extracted_data"):
-    """Reads all JSON files from the extracted_data folder.
+    """
+    Reads all JSON files from the extracted_data folder.
  
     extracted_data folder structure:
         extracted_data/
@@ -39,7 +46,8 @@ def load_all_documents(folder="extracted_data"):
                     *.json
  
     Returns:
-        Flat list of all document dicts."""
+        Flat list of all document dicts.
+    """
     
     docs = []
     
@@ -56,13 +64,17 @@ def load_all_documents(folder="extracted_data"):
                                 docs.append(json.load(f))
     return docs
 
-##############################################################
-### Step 2: Calculate derived metrics for a single document
-##############################################################
+
+# ------------------------------------------------------------------------------------
+# Step 2: Calculate derived metrics for a single document
+# ------------------------------------------------------------------------------------
+
 
 def calculate_metrics(doc):
-    """Calculates derived ratios from a single extracted document.
-    Returns None for any metric where required inputs are missing."""
+    """
+    Calculates derived ratios from a single extracted document.
+    Returns None for any metric where required inputs are missing.
+    """
     
     m = doc.get("metrics", {})
  
@@ -95,13 +107,17 @@ def calculate_metrics(doc):
         "return_on_equity": return_on_equity,
     }
 
-#######################################################
-### Step 3: Build financials for a single report
-#######################################################
+
+# ------------------------------------------------------------------------------------
+# Step 3: Build financials for a single report
+# ------------------------------------------------------------------------------------
+
 
 def build_report_financials(doc):
-    """Flattens extracted metrics + derived metrics into a single dict.
-    Price-based ratios default to None until populate_price_metrics() runs."""
+    """
+    Flattens extracted metrics + derived metrics into a single dict.
+    Price-based ratios default to None until populate_price_metrics() runs.
+    """
     
     m = doc["metrics"]
     derived = calculate_metrics(doc)
@@ -126,6 +142,7 @@ def build_report_financials(doc):
         "total_debt": derived["total_debt"],
         "net_debt": _get(m, "net_debt"),
         "total_equity": m["total_equity"],
+        "share_price": None,
         "market_cap": None,
         "shares_outstanding": _get(m, "shares_outstanding"),
         "shares_weighted_average_diluted": _get(m, "shares_weighted_average_diluted"),
@@ -137,12 +154,15 @@ def build_report_financials(doc):
         "pb_ratio": None,
     }
 
-########################################################################################
-### Step 4: Build financials for all reports and group them into an ordered structure
-########################################################################################
+
+# ------------------------------------------------------------------------------------
+# Step 4: Build financials for all reports and group them into an ordered structure
+# ------------------------------------------------------------------------------------
+
 
 def build_all_financials(docs):
-    """Builds all report financials and groups them by company and report type, sorted chronologically.
+    """
+    Builds all report financials and groups them by company and report type, sorted chronologically.
  
     Returns:
         {
@@ -177,16 +197,20 @@ def build_all_financials(docs):
  
     return financials
 
-#################################################################################
-### Step 5: Populate price-based ratios for the most recent period per company
-#################################################################################
+
+# ------------------------------------------------------------------------------------
+# Step 5: Populate price-based ratios for the most recent period per company
+# ------------------------------------------------------------------------------------
+
 
 def populate_price_metrics(financials, docs):
-    """Fetches live share price data from Yahoo Finance and fills in valuation ratios
+    """
+    Fetches live share price data from Yahoo Finance and fills in valuation ratios
     for the single most recent period per company (across annual and quarterly reports).
  
     Trailing P/E and Forward P/E: taken directly from yfinance (trailingPE, forwardPE).
-    P/S and P/B: calculated from extracted figures using live price."""
+    P/S and P/B: calculated from extracted figures using live price.
+    """
 
     # Build ticker lookup from docs
     tickers = {doc["company"]: doc["ticker"] for doc in docs}

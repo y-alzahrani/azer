@@ -9,17 +9,20 @@ from prompts.quarterly_prompt import quarterly_prompt
 load_dotenv()
 client = anthropic.Anthropic()
 
+
 MAX_TOKENS = {
     "Annual": 6000,
     "Quarterly": 4000
 }
 
+
 def extract_report(pdf_path, company, report_type):
-    """Extracts financial metrics and topic summaries from a PDF report.
+    """
+    Extracts financial metrics and topic summaries from a PDF report.
 
     Args:
         pdf_path: Path to the PDF file
-        company: Canonical company name selected by the user
+        company: Company name selected by the user
         report_type: "Annual" or "Quarterly" - selected by the user in the UI
 
     Returns:
@@ -105,7 +108,8 @@ def extract_report(pdf_path, company, report_type):
 
 
 def save_result(result, base_folder, filename):
-    """Saves extracted result to disk under the correct company and report type subfolder.
+    """
+    Saves extracted result to disk under the correct company and report type subfolder.
 
     Folder structure:
         extracted_data/
