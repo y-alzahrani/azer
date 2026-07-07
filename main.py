@@ -12,9 +12,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
  
 from pdf_extractor import extract_report, save_result
-from financials_builder import load_all_documents, build_all_financials, populate_price_metrics
+from financials_builder import load_all_documents, build_all_financials, populate_price_metrics, build_all_narratives
 from summary_generator import generate_summary, save_summary, load_summary
-from chatbot import build_all_narratives
 from dcf import calculate_scenarios
 
 

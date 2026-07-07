@@ -259,3 +259,14 @@ def populate_price_metrics(financials, docs):
         most_recent_entry["market_cap"] = round(market_cap, 1) if market_cap else None
         most_recent_entry["ps_ratio"] = round(market_cap / revenue, 2) if market_cap and revenue else None
         most_recent_entry["pb_ratio"] = round(market_cap / total_equity, 2) if market_cap and total_equity else None
+
+
+def build_all_narratives(docs):
+    narratives = {}
+    for doc in docs:
+        company = doc["company"]
+        period = doc["period"]
+        if company not in narratives:
+            narratives[company] = {}
+        narratives[company][period] = doc["narrative"]["sections_found"]
+    return narratives
