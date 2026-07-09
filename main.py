@@ -336,14 +336,12 @@ class DCFRequest(BaseModel):
     bearish_growth_rate: float
     neutral_growth_rate: float
     bullish_growth_rate: float
-    buy_threshold: float = 20.0
-    sell_threshold: float = -10.0
  
  
 @app.post("/dcf/calculate")
 def calculate_dcf(request: DCFRequest):
     """
-    Runs DCF calculation for bearish, neutral, and bullish scenarios.
+    Runs DCF model for bearish, neutral, and bullish scenarios.
     Returns intrinsic value per share and safety margin for each scenario.
     """
     financials = app_state["financials"]
@@ -386,9 +384,7 @@ def calculate_dcf(request: DCFRequest):
         share_price=share_price,
         bearish_growth_rate=request.bearish_growth_rate,
         neutral_growth_rate=request.neutral_growth_rate,
-        bullish_growth_rate=request.bullish_growth_rate,
-        buy_threshold=request.buy_threshold,
-        sell_threshold=request.sell_threshold,
+        bullish_growth_rate=request.bullish_growth_rate
     )
  
     return {
