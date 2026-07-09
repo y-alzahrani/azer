@@ -16,7 +16,7 @@ export default function Navbar() {
       zIndex: 100,
       background: 'rgba(17,17,17,0.92)',
       backdropFilter: 'blur(12px)',
-      borderBottom: '1px solid var(--border)',
+      borderBottom: '1.5px solid var(--border)',
       padding: '0 2rem',
       height: '56px',
       display: 'flex',
@@ -54,7 +54,7 @@ export default function Navbar() {
               color: isActive ? 'var(--accent)' : 'var(--text-1)',
               textDecoration: 'none',
               paddingBottom: '3px',
-              borderBottom: isActive ? '1px solid var(--accent)' : '2px solid transparent',
+              borderBottom: isActive ? '1.5px solid var(--accent)' : '2px solid transparent',
               transition: 'color 0.2s, border-color 0.2s',
             })}
           >

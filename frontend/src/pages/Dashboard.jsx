@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 import {
   BarChart, Bar, LineChart, Line,
   XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid
@@ -14,9 +15,18 @@ function fmt(value, unit) {
   if (value == null) return '—'
   const abs = Math.abs(value)
   const sign = value < 0 ? '-' : ''
-  if (abs >= 1_000_000) return `\u200E${sign}${(abs / 1_000_000).toFixed(2)} ترليون`
-  if (abs >= 1_000)     return `\u200E${sign}${(abs / 1_000).toFixed(2)} مليار`
-  return `\u200E${sign}${abs.toFixed(2)} مليون`
+
+  // Normalize to actual value first
+  let actual
+  if (unit === 'Thousands')  actual = abs * 1_000
+  else if (unit === 'Millions') actual = abs * 1_000_000
+  else if (unit === 'Billions') actual = abs * 1_000_000_000
+  else actual = abs  // raw figures
+
+  if (actual >= 1_000_000_000_000) return `\u200E${sign}${(actual / 1_000_000_000_000).toFixed(2)} ترليون`
+  if (actual >= 1_000_000_000)     return `\u200E${sign}${(actual / 1_000_000_000).toFixed(2)} مليار`
+  if (actual >= 1_000_000)         return `\u200E${sign}${(actual / 1_000_000).toFixed(2)} مليون`
+  return `\u200E${sign}${actual.toFixed(2)}`
 }
 
 function fmtPct(value) {
@@ -68,6 +78,7 @@ export default function Dashboard() {
   const [summary, setSummary]         = useState(null)
   const [summaryLoading, setSummaryLoading] = useState(false)
   const [loading, setLoading]         = useState(false)
+  const location = useLocation()
 
   // Load company list
   useEffect(() => {
@@ -76,7 +87,11 @@ export default function Dashboard() {
       .then(data => {
         const names = Object.keys(data)
         setCompanies(names)
-        if (names.length > 0) setCompany(names[0])
+        if (location.state?.company && names.includes(location.state.company)) {
+          setCompany(location.state.company)
+        } else if (names.length > 0) {
+          setCompany(names[0])
+        }
       })
   }, [])
 
@@ -127,7 +142,7 @@ export default function Dashboard() {
     { label: 'هامش الربح الصافي',    value: fmtPct(current.net_margin) },
     { label: 'التدفق النقدي الحر',   value: current.free_cash_flow ? fmt(current.free_cash_flow, unit) + ` ${fmtCurrency(currency)}` : '—' },
     { label: 'صافي الدين',           value: current.net_debt ? fmt(current.net_debt, unit) + ` ${fmtCurrency(currency)}` : '—' },
-    { label: 'سعر السهم / الأرباح المستقبلية',          value: current.forward_pe_ratio ? (current.forward_pe_ratio).toFixed(1) : '—' },
+    { label: 'مكرر الأرباح المستقبلي',          value: current.forward_pe_ratio ? (current.forward_pe_ratio).toFixed(1) : '—' },
   ] : []
 
   // ── Render ─────────────────────────────────────────────────────────────
@@ -137,7 +152,7 @@ export default function Dashboard() {
     fontSize: '14px',
     background: 'var(--surface)',
     color: 'var(--text-1)',
-    border: '1px solid var(--border-2)',
+    border: '1.6px solid var(--border-2)',
     borderRadius: 'var(--radius)',
     padding: '1px 10px',
     marginTop: '2.5px',
@@ -146,10 +161,11 @@ export default function Dashboard() {
     direction: 'rtl',
   }
 
+
   return (
     <div style={{ maxWidth: '1350px', margin: '0 auto', padding: '2rem' }}>
 
-      {/* ── Company + Period selector ─── */}
+{/* ── Company + Period selector ─── */}
       <div style={{
         display: 'flex',
         alignItems: 'center',
@@ -173,9 +189,9 @@ export default function Dashboard() {
 
       {!loading && current && (
         <>
-          {/* ── ١. المؤشرات الرئيسية ─── */}
+          {/* ── ١. مؤشرات الفترة الأخيرة ─── */}
           <section style={{ marginBottom: '2.5rem' }}>
-            <SectionHeader title="المؤشرات الرئيسية" />
+            <SectionHeader title="مؤشرات الفترة الأخيرة" />
             <div style={{
               display: 'grid',
               gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
@@ -196,7 +212,7 @@ export default function Dashboard() {
                   onClick={() => setChartType(type)}
                   style={{
                     fontFamily: 'var(--font)',
-                    fontSize: '13px',
+                    fontSize: '14px',
                     fontWeight: '500',
                     background: chartType === type ? 'var(--accent)' : 'var(--surface-2)',
                     color: chartType === type ? 'white' : 'var(--text-2)',
@@ -204,6 +220,7 @@ export default function Dashboard() {
                     borderRadius: 'var(--radius)',
                     padding: '6px 16px',
                     cursor: 'pointer',
+                    marginBottom: '5px'
                   }}
                 >
                   {type === 'Annual' ? 'سنوي' : 'ربعي'}
@@ -228,7 +245,7 @@ export default function Dashboard() {
                       tick={{ fill: 'var(--text-2)', fontSize: 13, fontFamily: 'var(--font)', direction: 'ltr' }} 
                       width={50} 
                     />
-                    <Tooltip contentStyle={TOOLTIP_STYLE} formatter={(v) => [fmt(v), 'الإيرادات']} labelFormatter={(label) => label.replace('FY ', '')}/>
+                    <Tooltip contentStyle={TOOLTIP_STYLE} formatter={(v) => [fmt(v, unit), 'الإيرادات']} labelFormatter={(label) => label.replace('FY ', '')}/>
                     <Bar dataKey="revenue" fill="#F87171" radius={[4,4,0,0]} />
                   </BarChart>
                 </ResponsiveContainer>
@@ -249,7 +266,7 @@ export default function Dashboard() {
                       tick={{ fill: 'var(--text-2)', fontSize: 13, fontFamily: 'var(--font)', direction: 'ltr' }} 
                       width={50} 
                     />
-                    <Tooltip contentStyle={TOOLTIP_STYLE} formatter={(v) => [fmt(v), 'الربح التشغيلي']} labelFormatter={(label) => label.replace('FY ', '')} />
+                    <Tooltip contentStyle={TOOLTIP_STYLE} formatter={(v) => [fmt(v, unit), 'الربح التشغيلي']} labelFormatter={(label) => label.replace('FY ', '')} />
                     <Bar dataKey="operating_income" fill="#60A5FA" radius={[4,4,0,0]} />
                   </BarChart>
                 </ResponsiveContainer>
@@ -270,7 +287,7 @@ export default function Dashboard() {
                       tick={{ fill: 'var(--text-2)', fontSize: 13, fontFamily: 'var(--font)', direction: 'ltr' }} 
                       width={50} 
                     />
-                    <Tooltip contentStyle={TOOLTIP_STYLE} formatter={(v) => [fmt(v), 'صافي الربح']} labelFormatter={(label) => label.replace('FY ', '')} />
+                    <Tooltip contentStyle={TOOLTIP_STYLE} formatter={(v) => [fmt(v, unit), 'صافي الربح']} labelFormatter={(label) => label.replace('FY ', '')} />
                     <Bar dataKey="net_income" fill="#34D399" radius={[4,4,0,0]} />
                   </BarChart>
                 </ResponsiveContainer>
@@ -291,7 +308,7 @@ export default function Dashboard() {
                       tick={{ fill: 'var(--text-2)', fontSize: 13, fontFamily: 'var(--font)', direction: 'ltr' }} 
                       width={50} 
                     />
-                    <Tooltip contentStyle={TOOLTIP_STYLE} formatter={(v) => [fmt(v), 'التدفق النقدي الحر']} labelFormatter={(label) => label.replace('FY ', '')} />
+                    <Tooltip contentStyle={TOOLTIP_STYLE} formatter={(v) => [fmt(v, unit), 'التدفق النقدي الحر']} labelFormatter={(label) => label.replace('FY ', '')} />
                     <Bar dataKey="free_cash_flow" fill="#ffd755" radius={[4,4,0,0]} />
                   </BarChart>
                 </ResponsiveContainer>
@@ -354,7 +371,7 @@ export default function Dashboard() {
                       tick={{ fill: 'var(--text-2)', fontSize: 13, fontFamily: 'var(--font)', direction: 'ltr' }} 
                       width={50} 
                     />
-                    <Tooltip contentStyle={TOOLTIP_STYLE} formatter={(v) => [fmt(v), 'النقد وما يعادله']} labelFormatter={(label) => label.replace('FY ', '')} />
+                    <Tooltip contentStyle={TOOLTIP_STYLE} formatter={(v) => [fmt(v, unit), 'النقد وما يعادله']} labelFormatter={(label) => label.replace('FY ', '')} />
                     <Bar dataKey="cash_and_equivalents" fill="#34D399" radius={[4,4,0,0]} />
                   </BarChart>
                 </ResponsiveContainer>
@@ -375,7 +392,7 @@ export default function Dashboard() {
                       tick={{ fill: 'var(--text-2)', fontSize: 13, fontFamily: 'var(--font)', direction: 'ltr' }} 
                       width={50} 
                     />
-                    <Tooltip contentStyle={TOOLTIP_STYLE} formatter={(v) => [fmt(v), 'إجمالي الديون']} labelFormatter={(label) => label.replace('FY ', '')} />
+                    <Tooltip contentStyle={TOOLTIP_STYLE} formatter={(v) => [fmt(v, unit), 'إجمالي الديون']} labelFormatter={(label) => label.replace('FY ', '')} />
                     <Bar dataKey="total_debt" fill="#F87171" radius={[4,4,0,0]} />
                   </BarChart>
                 </ResponsiveContainer>
@@ -396,7 +413,7 @@ export default function Dashboard() {
                       tick={{ fill: 'var(--text-2)', fontSize: 13, fontFamily: 'var(--font)', direction: 'ltr' }} 
                       width={50} 
                     />
-                    <Tooltip contentStyle={TOOLTIP_STYLE} formatter={(v) => [fmt(v), 'صافي الدين']} labelFormatter={(label) => label.replace('FY ', '')} />
+                    <Tooltip contentStyle={TOOLTIP_STYLE} formatter={(v) => [fmt(v, unit), 'صافي الدين']} labelFormatter={(label) => label.replace('FY ', '')} />
                     <Line dataKey="net_debt" stroke="#FBBF24" strokeWidth={2} dot={{ fill: '#FBBF24', r: 4 }} />
                   </LineChart>
                 </ResponsiveContainer>
