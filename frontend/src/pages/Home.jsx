@@ -6,7 +6,7 @@ export default function Home() {
 
   return (
     <div style={{
-      minHeight: 'calc(75vh - 56px)',
+      minHeight: 'calc(80vh - 56px)',
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
@@ -44,7 +44,7 @@ export default function Home() {
         lineHeight: 1.5,
         marginBottom: '1.1rem',
       }}>
-        منصة للتحليل المالي للشركات باستخدام الذكاء الاصطناعي
+        منصة تحليل مالي للشركات باستخدام الذكاء الاصطناعي
       </p>
 
       <p style={{
@@ -53,7 +53,7 @@ export default function Home() {
         maxWidth: '600px',
         fontWeight: '400',
         lineHeight: 1.5,
-        marginBottom: '1.6rem'
+        marginBottom: '3.5rem'
       }}>
         ارفع تقاريرك المالية واحصل على تحليلات وملخصات تساعدك في قراراتك الاستثمارية
       </p>
@@ -63,13 +63,13 @@ export default function Home() {
         onClick={() => setShowUpload(true)}
         style={{
           fontFamily: 'var(--font)',
-          fontSize: '15px',
+          fontSize: '14px',
           fontWeight: '500',
           background: 'var(--accent)',
           color: 'white',
           border: 'none',
           borderRadius: 'var(--radius)',
-          padding: '10px 24px',
+          padding: '8px 18px',
           cursor: 'pointer',
         }}
       >

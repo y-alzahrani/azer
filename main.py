@@ -6,9 +6,11 @@ All endpoints for the AZER financial analysis platform.
 import os
 import tempfile
 from contextlib import asynccontextmanager
+import shutil
  
 from fastapi import FastAPI, UploadFile, File, Form, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import FileResponse
 from pydantic import BaseModel
  
 from pdf_extractor import extract_report, save_result
@@ -201,11 +203,16 @@ async def extract_endpoint(
                 "message": f"{company} - {ordered_result['period']} already exists. Confirm overwrite."
             }
  
-        # Generate filename and save
+        # Generate filename and save JSON
         period_slug = ordered_result["period"].lower().replace(" ", "_")
         company_slug = company.lower()
         filename = f"{company_slug}_{period_slug}.json"
         save_result(ordered_result, "extracted_data", filename)
+
+        # Save original PDF
+        pdf_folder = os.path.join("reports", company, report_type)
+        os.makedirs(pdf_folder, exist_ok=True)
+        shutil.copy(tmp_path, os.path.join(pdf_folder, filename.replace(".json", ".pdf")))
  
         # Rebuild app state to include the new document
         rebuild_state()
@@ -249,6 +256,11 @@ async def confirm_overwrite_endpoint(
         company_slug = company.lower()
         filename = f"{company_slug}_{period_slug}.json"
         save_result(ordered_result, "extracted_data", filename)
+
+        # Save original PDF
+        pdf_folder = os.path.join("reports", company, report_type)
+        os.makedirs(pdf_folder, exist_ok=True)
+        shutil.copy(tmp_path, os.path.join(pdf_folder, filename.replace(".json", ".pdf")))
  
         rebuild_state()
  
@@ -260,6 +272,32 @@ async def confirm_overwrite_endpoint(
  
     finally:
         os.unlink(tmp_path)
+
+
+@app.get("/pdf/{company}/{report_type}/{filename}")
+def get_pdf(company: str, report_type: str, filename: str):
+    """Serves the original PDF report file."""
+    pdf_path = os.path.join("reports", company, report_type, filename)
+    if not os.path.exists(pdf_path):
+        raise HTTPException(status_code=404, detail="PDF not found")
+    return FileResponse(pdf_path, media_type="application/pdf")
+
+
+@app.delete("/delete/{company}/{report_type}/{filename}")
+def delete_report(company: str, report_type: str, filename: str):
+    """Deletes an extracted document and its PDF."""
+    json_path = os.path.join("extracted_data", company, report_type, filename)
+    pdf_path = os.path.join("reports", company, report_type, filename.replace(".json", ".pdf"))
+
+    if not os.path.exists(json_path):
+        raise HTTPException(status_code=404, detail="Document not found")
+
+    os.remove(json_path)
+    if os.path.exists(pdf_path):
+        os.remove(pdf_path)
+
+    rebuild_state()
+    return {"status": "deleted"}
 
 
 # ---------------------------------------------------------------------------

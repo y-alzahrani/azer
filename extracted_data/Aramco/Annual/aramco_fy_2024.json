@@ -13,12 +13,12 @@
       "source": "",
       "calculation_note": "Saudi Aramco does not present a single 'Cost of revenues' or 'COGS' line item. Operating costs are broken down into Royalties and other taxes, Purchases, Producing and manufacturing, Selling/administrative/general, Exploration, R&D, and Depreciation & amortization. No single cost of revenue subtotal is disclosed."
     },
-    "operating_income": 774625,
     "operating_expenses": {
       "value": 1027049,
       "source": "direct_line_item",
       "calculation_note": "Operating costs — exact label used in Consolidated Statement of Income, page 9"
     },
+    "operating_income": 774625,
     "net_income": 398422,
     "eps": 1.63,
     "cash_and_equivalents": {
@@ -41,7 +41,6 @@
       "source": "direct_line_item",
       "calculation_note": "Net debt (cash) — page 28"
     },
-    "total_equity": 1651355,
     "operating_cash_flow": 508888,
     "capital_expenditure": {
       "value": 188890,
@@ -53,6 +52,7 @@
       "source": "calculated",
       "calculation_note": "Operating Cash Flow SAR 508,888 - Capital Expenditures SAR 188,890 = SAR 319,998"
     },
+    "total_equity": 1651355,
     "shares_outstanding": {
       "value": 241894,
       "source": "direct_line_item",

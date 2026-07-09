@@ -236,7 +236,7 @@ export default function UploadModal({ onClose }) {
                 style={{ ...BTN_SECONDARY, whiteSpace: 'nowrap' }}
                 onClick={() => setAddingCompany(true)}
               >
-                إضافة +
+                إضافة شركة
               </button>
             </div>
           ) : (
