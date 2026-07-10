@@ -369,7 +369,7 @@ export default function DCF() {
                     <div key={i} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px' }}>
                       <span style={{ fontSize: '12px', color: 'var(--text-2)' }}>سنة {i + 1}</span>
                       <input
-                        style={{ ...INPUT_STYLE, width: '110px', textAlign: 'center' }}
+                        style={{ ...INPUT_STYLE, width: '110px', textAlign: 'center', marginBottom: '0.7rem' }}
                         type="number"
                         value={fcf}
                         onChange={e => handleFcfChange(i, e.target.value)}
@@ -396,7 +396,7 @@ export default function DCF() {
                   color: 'white',
                   border: 'none',
                   borderRadius: 'var(--radius)',
-                  padding: '10px 32px',
+                  padding: '10px 24px',
                   cursor: calculating || !wacc || !terminalGrowth || projectedFcfs.length === 0 ? 'not-allowed' : 'pointer',
                   opacity: calculating || !wacc || !terminalGrowth || projectedFcfs.length === 0 ? 0.6 : 1,
                 }}
@@ -418,7 +418,7 @@ export default function DCF() {
                   cursor: 'pointer',
                 }}
               >
-                إعادة تعيين
+                مسح
               </button>
             </div>
           </div>
@@ -476,7 +476,7 @@ export default function DCF() {
 
           {/* ── Disclaimer ── */}
           <p style={{ fontSize: '13px', color: 'var(--text-1)', textAlign: 'center', lineHeight: 1.6 }}>
-            هذا التقدير مبني على افتراضاتك الشخصية وهو حساس جدًا للأرقام المدخلة.
+            هذا التقدير مبني على افتراضاتك الشخصية ويتأثر بشدة بالأرقام المدخلة.
           </p>
         </>
       )}

@@ -5,9 +5,7 @@ import './styles/global.css'
 import Home from './pages/Home'
 import MyDocuments from './pages/MyDocuments'
 import DCF from './pages/DCF'
-
-// Placeholder pages — to be built
-function Chat()      { return <div style={{ padding: '2rem', color: 'var(--text-1)' }}>المحادثة — قريباً</div> }
+import Chat from './pages/Chat'
 
 export default function App() {
   return (
