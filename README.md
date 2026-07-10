@@ -115,3 +115,8 @@ Operating Margin, Net Margin, Total Debt, Debt-to-Equity, Return on Equity, P/E 
 - Maram Alshammary
 - Reyam Albalihi
 - Yazeed Alzahrani
+
+## License
+
+Copyright © 2026 AZER.
+All Rights Reserved.
