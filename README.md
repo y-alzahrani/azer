@@ -31,7 +31,7 @@ AZER automates the entire pipeline from raw PDF reports to comprehensive financi
 - Trend charts across all available periods: Profitability, Margins, Free Cash Flow
 - Valuation cards with live share price data: P/E Ratio, Forward P/E Ratio, P/S Ratio, P/B Ratio
 
-### AI Analysis Summary
+### AI Summary
 
 - Key positive signals with figures and trends
 - Key negative signals and risks
@@ -50,8 +50,7 @@ AZER automates the entire pipeline from raw PDF reports to comprehensive financi
 
 - Fully manual — user inputs their own assumptions
 - Historical FCF shown as reference
-- Bearish / neutral / bullish scenarios
-- Buy / Hold / Sell indicator based on safety margin
+- Undervalued / Fairly Valued / Overvalued indicator based on safety margin
 
 ## Tech Stack
  
@@ -76,6 +75,13 @@ azer/
 │   └── Aramco/
 │       ├── Annual/
 │       └── Quarterly/
+├── reports/                  # created automatically on first upload, not committed to Git
+│   ├── Meta/
+│   │   ├── Annual/
+│   │   └── Quarterly/
+│   └── Aramco/
+│       ├── Annual/
+│       └── Quarterly/
 ├── summaries/
 │   ├── Meta_summary.json
 │   └── Aramco_summary.json
@@ -83,14 +89,31 @@ azer/
 │   ├── annual_prompt.py
 │   └── quarterly_prompt.py
 ├── frontend/
-├── pdf_extractor.py          # Extracts data from raw reports
+│   └── src/
+│       ├── components/
+│       │   ├── Navbar.jsx
+│       │   ├── SummaryCard.jsx
+│       │   ├── SectionHeader.jsx
+│       │   └── UploadModal.jsx
+│       ├── pages/
+│       │   ├── Home.jsx
+│       │   ├── Dashboard.jsx
+│       │   ├── MyDocuments.jsx
+│       │   ├── Chat.jsx
+│       │   └── DCF.jsx
+│       ├── styles/
+│       │   └── global.css
+│       ├── App.jsx
+│       └── main.jsx
+├── pdf_extractor.py          # Extracts financial data from PDF reports
 ├── financials_builder.py     # Builds structured dataset of company financials
-├── summary_generator.py      # LLM analysis
-├── chatbot.py                # Performs direct data retrieval and semantic search
-├── dcf.py                    # Intrinsic valuation tool for experts
-├── main.py
-├── pyproject.toml
-└── .env
+├── summary_generator.py      # Generates summaries using LLM
+├── chatbot.py                # Query router and answer generation
+├── dcf.py                    # DCF valuation calculations
+├── main.py                   # FastAPI backend - all API endpoints
+├── pyproject.toml            # Python dependencies and project configuration
+├── .env                      # Environment variables (not committed to Git)
+└── LICENSE
 ```
 
 ## Dataset
@@ -105,10 +128,10 @@ azer/
 ## Metrics Extracted
  
 **From financial statements (LLM):**
-Revenue, Cost of Revenue, Operating Expenses, Operating Income, Net Income, EPS (diluted), Operating Cash Flow, Capital Expenditure, Free Cash Flow, Short-Term Debt, Long-Term Debt, Net Debt, Total Equity, Cash & Cash Equivalents, Shares Outstanding, Shares Weighted Average Diluted
+Revenue, Cost of Revenue, Operating Expenses, Operating Income, Net Income, EPS (Diluted), Operating Cash Flow, Capital Expenditure, Free Cash Flow, Short-Term Debt, Long-Term Debt, Net Debt, Total Equity, Cash & Cash Equivalents, Shares Outstanding, Weighted Average Shares Outstanding (Diluted)
  
 **Calculated in Python:**
-Operating Margin, Net Margin, Total Debt, Debt-to-Equity, Return on Equity, P/E Ratio, Forward P/E, P/S Ratio, P/B Ratio, Market Cap
+Operating Margin, Net Profit Margin, Total Debt, Debt-to-Equity, P/E Ratio, Forward P/E, P/S Ratio, P/B Ratio, Market Cap
 
 ## Authors
 
