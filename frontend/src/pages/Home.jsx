@@ -29,7 +29,7 @@ export default function Home() {
       </h1>
 
       <p style={{
-        fontSize: '14px',
+        fontSize: '15px',
         color: 'var(--accent)',
         letterSpacing: '0.25em',
         marginBottom: '1.1rem',
@@ -63,7 +63,7 @@ export default function Home() {
         onClick={() => setShowUpload(true)}
         style={{
           fontFamily: 'var(--font)',
-          fontSize: '14px',
+          fontSize: '15px',
           fontWeight: '500',
           background: 'var(--accent)',
           color: 'white',

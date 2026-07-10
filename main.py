@@ -16,7 +16,7 @@ from pydantic import BaseModel
 from pdf_extractor import extract_report, save_result
 from financials_builder import load_all_documents, build_all_financials, populate_price_metrics, build_all_narratives
 from summary_generator import generate_summary, save_summary, load_summary
-from dcf import calculate_scenarios
+from dcf import dcf_valuation, get_valuation_label
 
 
 # ---------------------------------------------------------------------------
@@ -330,38 +330,81 @@ def chat_endpoint(request: ChatRequest):
 
 class DCFRequest(BaseModel):
     company: str
+    projected_fcfs: list[float]
     wacc: float
     terminal_growth_rate: float
-    projection_years: int = 5
-    bearish_growth_rate: float
-    neutral_growth_rate: float
-    bullish_growth_rate: float
+
+
+@app.get("/dcf/{company}")
+def get_dcf_data(company):
+    """
+    Returns reference data for the DCF page:
+    base FCF, net debt, share price, and historical FCF with YoY growth rates.
+    """
+    financials = app_state["financials"]
+    if company not in financials:
+        raise HTTPException(status_code=404, detail=f"Company '{company}' not found")
  
+    annual_entries = financials[company]["Annual"]
+    if not annual_entries:
+        raise HTTPException(status_code=400, detail="No annual data available")
  
+    # Historical FCF with YoY growth rate
+    fcf_history = []
+    for i, entry in enumerate(annual_entries):
+        fcf = entry.get("free_cash_flow")
+        prev_fcf = annual_entries[i - 1].get("free_cash_flow") if i > 0 else None
+        yoy_growth = ((fcf - prev_fcf) / abs(prev_fcf) * 100) if fcf and prev_fcf else None
+        fcf_history.append({
+            "period": entry["period"],
+            "free_cash_flow": fcf,
+            "yoy_growth_pct": round(yoy_growth, 1) if yoy_growth is not None else None,
+        })
+ 
+    latest_annual = annual_entries[-1]
+ 
+    # Share price from most recent entry across annual and quarterly
+    most_recent_entry = None
+    most_recent_date = None
+    for report_type in ("Annual", "Quarterly"):
+        entries = financials[company][report_type]
+        if entries:
+            entry = entries[-1]
+            if most_recent_date is None or entry["period_end_date"] > most_recent_date:
+                most_recent_date = entry["period_end_date"]
+                most_recent_entry = entry
+ 
+    return {
+        "company": company,
+        "currency": latest_annual["currency"],
+        "unit": latest_annual["unit"],
+        "base_fcf": latest_annual.get("free_cash_flow"),
+        "net_debt": latest_annual.get("net_debt"),
+        "share_price": most_recent_entry.get("share_price") if most_recent_entry else None,
+        "shares": latest_annual.get("shares_outstanding") or latest_annual.get("shares_weighted_average_diluted"),
+        "fcf_history": fcf_history,
+    }
+
+
 @app.post("/dcf/calculate")
 def calculate_dcf(request: DCFRequest):
     """
-    Runs DCF model for bearish, neutral, and bullish scenarios.
-    Returns intrinsic value per share and safety margin for each scenario.
+    Runs DCF calculation using user-provided projected FCF values.
+    Returns intrinsic value per share, safety margin, and valuation label.
     """
     financials = app_state["financials"]
     if request.company not in financials:
         raise HTTPException(status_code=404, detail=f"Company '{request.company}' not found")
  
-    # Base FCF, shares, and net debt from most recent annual entry
     annual_entries = financials[request.company]["Annual"]
     if not annual_entries:
         raise HTTPException(status_code=400, detail="No annual data available for DCF")
  
     latest_annual = annual_entries[-1]
-    base_fcf = latest_annual.get("free_cash_flow")
     shares = latest_annual.get("shares_outstanding") or latest_annual.get("shares_weighted_average_diluted")
     net_debt = latest_annual.get("net_debt") or 0
  
-    if base_fcf is None:
-        raise HTTPException(status_code=400, detail="Free cash flow data not available")
- 
-    # Share price from the most recent entry across annual and quarterly
+    # Share price from most recent entry
     most_recent_entry = None
     most_recent_date = None
     for report_type in ("Annual", "Quarterly"):
@@ -374,27 +417,37 @@ def calculate_dcf(request: DCFRequest):
  
     share_price = most_recent_entry.get("share_price") if most_recent_entry else None
  
-    scenarios = calculate_scenarios(
-        base_fcf=base_fcf,
+    result = dcf_valuation(
+        projected_fcfs_input=request.projected_fcfs,
         wacc=request.wacc,
         terminal_growth_rate=request.terminal_growth_rate,
-        projection_years=request.projection_years,
         shares=shares,
         net_debt=net_debt,
-        share_price=share_price,
-        bearish_growth_rate=request.bearish_growth_rate,
-        neutral_growth_rate=request.neutral_growth_rate,
-        bullish_growth_rate=request.bullish_growth_rate
+    )
+ 
+    if result is None:
+        raise HTTPException(status_code=400, detail="WACC must be greater than terminal growth rate")
+ 
+    intrinsic = result["intrinsic_value_per_share"]
+    safety_margin = (
+        (intrinsic - share_price) / intrinsic * 100
+        if intrinsic and share_price else None
     )
  
     return {
         "company": request.company,
-        "base_fcf": base_fcf,
-        "net_debt": net_debt,
         "currency": latest_annual["currency"],
         "unit": latest_annual["unit"],
         "wacc": request.wacc,
         "terminal_growth_rate": request.terminal_growth_rate,
-        "projection_years": request.projection_years,
-        "scenarios": scenarios,
+        "projected_fcfs_input": result["projected_fcfs_input"],
+        "discounted_fcfs": result["discounted_fcfs"],
+        "terminal_value": result["terminal_value"],
+        "enterprise_value": result["enterprise_value"],
+        "net_debt": result["net_debt"],
+        "equity_value": result["equity_value"],
+        "intrinsic_value_per_share": intrinsic,
+        "current_price": share_price,
+        "safety_margin_pct": round(safety_margin, 1) if safety_margin is not None else None,
+        "valuation_label": get_valuation_label(safety_margin),
     }

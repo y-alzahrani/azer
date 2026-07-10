@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom'
 
 const links = [
   { to: '/documents', label: 'مستنداتي'          },
-  { to: '/dcf',       label: 'تقييم سعر السهم'   },
+  { to: '/dcf',       label: 'تقييم السهم'   },
   { to: '/chat',      label: 'المساعد الذكي'      },
   { to: '/dashboard', label: 'لوحة المعلومات'     },
   { to: '/',          label: 'الرئيسية', end: true },
