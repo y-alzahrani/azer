@@ -75,7 +75,7 @@ azer/
 │   └── Aramco/
 │       ├── Annual/
 │       └── Quarterly/
-├── reports/                  # created automatically on first upload, not committed to Git
+├── reports/                  # Created automatically on first upload, not committed to Git
 │   ├── Meta/
 │   │   ├── Annual/
 │   │   └── Quarterly/
