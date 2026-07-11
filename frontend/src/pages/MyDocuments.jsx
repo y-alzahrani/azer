@@ -76,7 +76,7 @@ export default function MyDocuments() {
 
   return (
     <div style={{
-      maxWidth: '750px',
+      maxWidth: '1000px',
       margin: '0 auto',
       padding: '2rem',
       direction: 'rtl',
@@ -176,10 +176,10 @@ export default function MyDocuments() {
               <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '15px' }}>
                 <thead>
                   <tr style={{ background: 'var(--surface-2)' }}>
-                    <th style={{ padding: '10px 1.25rem', color: 'var(--text-2)', fontWeight: '500', textAlign: 'center' }}>الفترة</th>
-                    <th style={{ padding: '10px 1.25rem', color: 'var(--text-2)', fontWeight: '500', textAlign: 'center' }}>نوع التقرير</th>
-                    <th style={{ padding: '10px 1.25rem', color: 'var(--text-2)', fontWeight: '500', textAlign: 'center' }}>تاريخ نهاية الفترة</th>
-                    <th style={{ padding: '10px 1.25rem' }}></th>
+                    <th style={{ padding: '10px 2.6rem', color: 'var(--text-2)', fontWeight: '500', textAlign: 'center', borderBottom: '1px solid var(--border)' }}>الفترة</th>
+                    <th style={{ padding: '10px 1.25rem', color: 'var(--text-2)', fontWeight: '500', textAlign: 'center', borderBottom: '1px solid var(--border)' }}>نوع التقرير</th>
+                    <th style={{ padding: '10px 1.25rem', color: 'var(--text-2)', fontWeight: '500', textAlign: 'center', borderBottom: '1px solid var(--border)' }}>تاريخ نهاية الفترة</th>
+                    <th style={{ padding: '10px 1.25rem', color: 'var(--text-2)', fontWeight: '500', textAlign: 'center', borderBottom: '1px solid var(--border)' }}>الإجراءات</th>
                   </tr>
                 </thead>
                 <tbody>

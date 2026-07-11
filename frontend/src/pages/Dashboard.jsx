@@ -163,7 +163,7 @@ export default function Dashboard() {
 
 
   return (
-    <div style={{ maxWidth: '1350px', margin: '0 auto', padding: '2rem' }}>
+    <div style={{ maxWidth: '1330px', margin: '0 auto', padding: '2rem' }}>
 
 {/* ── Company + Period selector ─── */}
       <div style={{
@@ -245,7 +245,7 @@ export default function Dashboard() {
                       tick={{ fill: 'var(--text-2)', fontSize: 13, fontFamily: 'var(--font)', direction: 'ltr' }} 
                       width={50} 
                     />
-                    <Tooltip contentStyle={TOOLTIP_STYLE} formatter={(v) => [fmt(v, unit), 'الإيرادات']} labelFormatter={(label) => label.replace('FY ', '')}/>
+                    <Tooltip contentStyle={TOOLTIP_STYLE} formatter={(v) => [fmt(v, unit), 'الإيرادات']} labelFormatter={(label) => label.replace('FY ', '')} cursor={{ fill: 'rgba(255,255,255,0.1)' }}/>
                     <Bar dataKey="revenue" fill="#F87171" radius={[4,4,0,0]} />
                   </BarChart>
                 </ResponsiveContainer>
@@ -266,7 +266,7 @@ export default function Dashboard() {
                       tick={{ fill: 'var(--text-2)', fontSize: 13, fontFamily: 'var(--font)', direction: 'ltr' }} 
                       width={50} 
                     />
-                    <Tooltip contentStyle={TOOLTIP_STYLE} formatter={(v) => [fmt(v, unit), 'الربح التشغيلي']} labelFormatter={(label) => label.replace('FY ', '')} />
+                    <Tooltip contentStyle={TOOLTIP_STYLE} formatter={(v) => [fmt(v, unit), 'الربح التشغيلي']} labelFormatter={(label) => label.replace('FY ', '')} cursor={{ fill: 'rgba(255,255,255,0.1)' }}/>
                     <Bar dataKey="operating_income" fill="#60A5FA" radius={[4,4,0,0]} />
                   </BarChart>
                 </ResponsiveContainer>
@@ -287,7 +287,7 @@ export default function Dashboard() {
                       tick={{ fill: 'var(--text-2)', fontSize: 13, fontFamily: 'var(--font)', direction: 'ltr' }} 
                       width={50} 
                     />
-                    <Tooltip contentStyle={TOOLTIP_STYLE} formatter={(v) => [fmt(v, unit), 'صافي الربح']} labelFormatter={(label) => label.replace('FY ', '')} />
+                    <Tooltip contentStyle={TOOLTIP_STYLE} formatter={(v) => [fmt(v, unit), 'صافي الربح']} labelFormatter={(label) => label.replace('FY ', '')} cursor={{ fill: 'rgba(255,255,255,0.1)' }}/>
                     <Bar dataKey="net_income" fill="#34D399" radius={[4,4,0,0]} />
                   </BarChart>
                 </ResponsiveContainer>
@@ -308,7 +308,7 @@ export default function Dashboard() {
                       tick={{ fill: 'var(--text-2)', fontSize: 13, fontFamily: 'var(--font)', direction: 'ltr' }} 
                       width={50} 
                     />
-                    <Tooltip contentStyle={TOOLTIP_STYLE} formatter={(v) => [fmt(v, unit), 'التدفق النقدي الحر']} labelFormatter={(label) => label.replace('FY ', '')} />
+                    <Tooltip contentStyle={TOOLTIP_STYLE} formatter={(v) => [fmt(v, unit), 'التدفق النقدي الحر']} labelFormatter={(label) => label.replace('FY ', '')} cursor={{ fill: 'rgba(255,255,255,0.1)' }}/>
                     <Bar dataKey="free_cash_flow" fill="#ffd755" radius={[4,4,0,0]} />
                   </BarChart>
                 </ResponsiveContainer>
@@ -371,7 +371,7 @@ export default function Dashboard() {
                       tick={{ fill: 'var(--text-2)', fontSize: 13, fontFamily: 'var(--font)', direction: 'ltr' }} 
                       width={50} 
                     />
-                    <Tooltip contentStyle={TOOLTIP_STYLE} formatter={(v) => [fmt(v, unit), 'النقد وما يعادله']} labelFormatter={(label) => label.replace('FY ', '')} />
+                    <Tooltip contentStyle={TOOLTIP_STYLE} formatter={(v) => [fmt(v, unit), 'النقد وما يعادله']} labelFormatter={(label) => label.replace('FY ', '')} cursor={{ fill: 'rgba(255,255,255,0.1)' }}/>
                     <Bar dataKey="cash_and_equivalents" fill="#34D399" radius={[4,4,0,0]} />
                   </BarChart>
                 </ResponsiveContainer>
@@ -392,7 +392,7 @@ export default function Dashboard() {
                       tick={{ fill: 'var(--text-2)', fontSize: 13, fontFamily: 'var(--font)', direction: 'ltr' }} 
                       width={50} 
                     />
-                    <Tooltip contentStyle={TOOLTIP_STYLE} formatter={(v) => [fmt(v, unit), 'إجمالي الديون']} labelFormatter={(label) => label.replace('FY ', '')} />
+                    <Tooltip contentStyle={TOOLTIP_STYLE} formatter={(v) => [fmt(v, unit), 'إجمالي الديون']} labelFormatter={(label) => label.replace('FY ', '')} cursor={{ fill: 'rgba(255,255,255,0.1)' }}/>
                     <Bar dataKey="total_debt" fill="#F87171" radius={[4,4,0,0]} />
                   </BarChart>
                 </ResponsiveContainer>

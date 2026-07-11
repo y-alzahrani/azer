@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import MyDocuments from './pages/MyDocuments'
 import DCF from './pages/DCF'
 import Chat from './pages/Chat'
+import Glossary from './pages/Glossary'
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
         <Route path="/documents" element={<MyDocuments />} />
         <Route path="/chat"      element={<Chat />} />
         <Route path="/dcf"       element={<DCF />} />
+        <Route path="/glossary" element={<Glossary />} />
       </Routes>
     </BrowserRouter>
   )

@@ -95,10 +95,10 @@ function fmtCurrency(currency) {
 
 function getValuationColor(label) {
   if (label?.includes('بشكل كبير') && label?.includes('أقل')) return '#4ADE80'
-  if (label?.includes('أقل')) return '#86EFAC'
-  if (label?.includes('مقيّم بقيمته العادلة')) return '#f1ff77'
-  if (label?.includes('بشكل كبير') && label?.includes('أكثر')) return '#F87171'
-  if (label?.includes('أكثر')) return '#FCA5A5'
+  if (label?.includes('أقل')) return '#84ffb1'
+  if (label?.includes('مقيّم بقيمته العادلة')) return '#F59E0B'
+  if (label?.includes('بشكل كبير') && label?.includes('أكثر')) return '#ff5959'
+  if (label?.includes('أكثر')) return '#ff8383'
   return 'var(--text-2)'
 }
 
@@ -399,6 +399,7 @@ export default function DCF() {
                   padding: '10px 24px',
                   cursor: calculating || !wacc || !terminalGrowth || projectedFcfs.length === 0 ? 'not-allowed' : 'pointer',
                   opacity: calculating || !wacc || !terminalGrowth || projectedFcfs.length === 0 ? 0.6 : 1,
+                  marginRight: '0.6rem'
                 }}
               >
                 {calculating ? 'جارٍ الحساب...' : 'أحسب'}

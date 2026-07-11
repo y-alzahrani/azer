@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom'
 
 const links = [
+  { to: '/glossary', label: 'المصطلحات المالية' },
   { to: '/documents', label: 'مستنداتي'          },
   { to: '/dcf',       label: 'تقييم السهم'   },
   { to: '/chat',      label: 'المساعد المالي'      },
@@ -24,12 +25,12 @@ export default function Navbar() {
       justifyContent: 'space-between',
     }}>
 
-      {/* Logo — right side (RTL) */}
+      {/* Logo */}
       <div style={{
         fontFamily: 'var(--font)',
         fontSize: '22px',
         fontWeight: '700',
-        letterSpacing: '0.05em',
+        letterSpacing: '0.08em',
         color: 'var(--text-1)',
         display: 'flex',
         alignItems: 'center',
@@ -40,7 +41,7 @@ export default function Navbar() {
         <span style={{ color: 'var(--accent)', fontSize: '15px', marginBottom: '0px' }}>✦</span>
       </div>
 
-      {/* Nav links — left side (RTL) */}
+      {/* Nav links */}
       <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
         {links.map(({ to, label, end }) => (
           <NavLink

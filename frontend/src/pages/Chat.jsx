@@ -246,7 +246,7 @@ export default function Chat() {
             fontFamily: 'var(--font)',
             fontSize: '14px',
             fontWeight: '500',
-            background: loading || !input.trim() ? 'var(--surface-2)' : 'var(--accent)',
+            background: loading || !input.trim() ? 'var(--surface-2)' : '#a973ffcd',
             color: loading || !input.trim() ? 'var(--text-3)' : 'white',
             border: 'none',
             borderRadius: 'var(--radius)',
