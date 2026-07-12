@@ -44,7 +44,7 @@ export default function Home() {
         lineHeight: 1.5,
         marginBottom: '1.1rem',
       }}>
-        منصة تحليل مالي للشركات باستخدام الذكاء الاصطناعي
+        منصة تحليل مالي للشركات مدعومة بالذكاء الاصطناعي
       </p>
 
       <p style={{

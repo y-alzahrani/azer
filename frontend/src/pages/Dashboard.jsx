@@ -447,7 +447,7 @@ export default function Dashboard() {
                 { label: 'ربحية السهم',        value: current.eps ? `${current.eps.toFixed(2)} ${fmtCurrency(currency)}` : '—' },
                 { label: 'السعر / الأرباح (لآخر 12 شهر)',        value: current.trailing_pe_ratio ? (current.trailing_pe_ratio).toFixed(1) : '—' },
                 { label: 'السعر / الأرباح (للـ 12 شهرًا القادمة)',value: current.forward_pe_ratio ? (current.forward_pe_ratio).toFixed(1) : '—' },
-                { label: 'السعر / المبيعات',        value: current.ps_ratio ? (current.ps_ratio).toFixed(1) : '—' },
+                { label: 'السعر / الإيرادات',        value: current.ps_ratio ? (current.ps_ratio).toFixed(1) : '—' },
                 { label: 'السعر / القيمة الدفترية',        value: current.pb_ratio ? (current.pb_ratio).toFixed(1) : '—' },
               ].map(card => (
                 <SummaryCard key={card.label} label={card.label} value={card.value} />

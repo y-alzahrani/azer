@@ -18,7 +18,7 @@ export default function Glossary() {
     {
       name: 'صافي الربح',
       nameEn: 'Net Income',
-      definition: 'يقيس نسبة ما تحتفظ به الشركة من إيراداتها بعد خصم جميع التكاليف والضرائب.',
+      definition: 'ما تحتفظ به الشركة من إيراداتها بعد خصم جميع التكاليف والضرائب.',
       high: 'الشركة مربحة وتخلق قيمة للمساهمين',
       low: 'الشركة لا تحقق مكاسب كافية',
     },
@@ -32,7 +32,7 @@ export default function Glossary() {
     {
       name: 'هامش الربح الصافي',
       nameEn: 'Net Margin',
-      definition: 'نسبة صافي الربح إلى الإيرادات — تقيس كم تحتفظ الشركة من كل ريال من المبيعات بعد جميع التكاليف والضرائب.',
+      definition: 'نسبة صافي الربح إلى الإيرادات — يقيس نسبة الربح المتبقي من الإيرادات بعد خصم جميع التكاليف والضرائب.',
       high: 'الشركة تحول نسبة كبيرة من إيراداتها إلى أرباح',
       low: 'قد يدل على تكاليف مرتفعة أو ضغوط تنافسية',
     },
@@ -56,6 +56,8 @@ export default function Glossary() {
       definition: 'مجموع القروض والسندات والتمويلات الأخرى التي تلتزم الشركة بسدادها.',
       high: 'قد يشكل عبئًا ماليًا في حال تراجع الأرباح',
       low: 'مخاطر مالية أقل واستقرارًا أكبر خلال الأزمات',
+      positive: true,
+      negative: true
     },
     {
       name: 'صافي الدين',
@@ -63,13 +65,23 @@ export default function Glossary() {
       definition: 'إجمالي الديون مطروحًا منه النقد وما يعادله.',
       high: 'ديون الشركة تتجاوز ما تملكه من نقد',
       low: 'الشركة تملك نقدًا أكثر من ديونها',
+      positive: true,
+      negative: true
     },
     {
       name: 'نسبة الدين إلى حقوق الملكية',
       nameEn: 'Debt / Equity Ratio',
-      definition: 'إجمالي الديون مقسومًا على حقوق الملكية — يقيس مدى اعتماد الشركة على الدين لتمويل أصولها.',
-      high: 'الشركة تعتمد بشكل كبير على الدين — إشارة سلبية',
-      low: 'الشركة تعتمد أساسًا على أموال مساهميها في تمويل عملياتها',
+      definition: 'إجمالي الديون مقسومًا على حقوق الملكية — يقيس مدى اعتماد الشركة على الدين لتمويل أعمالها.',
+      high: 'الشركة تعتمد بشكل كبير على الدين في تمويل أعمالها — إشارة سلبية',
+      low: 'الشركة تعتمد بشكل أساسي على أموال مساهميها',
+      positive: true,
+      negative: true
+    },
+    {
+      name: 'الأسهم القائمة',
+      nameEn: 'Shares Outstanding',
+      definition: 'إجمالي عدد أسهم الشركة التي يملكها جميع المساهمين حاليًا.',
+      noHighLow: true
     },
     {
       name: 'القيمة السوقية',
@@ -89,24 +101,27 @@ export default function Glossary() {
       name: 'مكرر الأرباح الحالي',
       nameEn: 'P/E Ratio',
       definition: 'سعر السهم مقسومًا على ربحية السهم — يُظهر كم يدفع المستثمر مقابل كل ريال من أرباح الشركة.',
-      high: 'السهم مبالغ في تقييمه أو أن المستثمرين يتوقعون نموًا في الأرباح',
-      low: 'السهم رخيص مقارنة بما تحققه الشركة من أرباح أو أن المستثمرين يتوقعون تراجعًا في الأرباح',
+      high: 'السهم مبالغ في تقييمه أو يتوقع المستثمرون نموًا في الأرباح',
+      low: 'السهم رخيص مقارنة بالأرباح أو يتوقع المستثمرون تراجعًا في الأرباح',
+      neutral: true
     },
     {
       name: 'مكرر الأرباح المستقبلي',
       nameEn: 'Forward P/E Ratio',
-      definition: 'سعر السهم مقسومًا على الأرباح المتوقعة للسهم — يعكس توقعات المستثمرين للأرباح المستقبلية.',
-      high: 'الأرباح المتوقعة أقل من الحالية — قد يدل على تراجع متوقع',
+      definition: 'سعر السهم مقسومًا على الأرباح المتوقعة للسهم خلال الـ 12 شهرًا القادمة — يعكس توقعات المستثمرين للأرباح المستقبلية.',
+      high: 'الأرباح المتوقعة أقل من الحالية',
       low: 'الأرباح المتوقعة أعلى من الحالية — إشارة نمو إيجابية',
       highLabel: 'أعلى من مكرر الأرباح الحالي',
       lowLabel: 'أقل من مكرر الأرباح الحالي',
+      neutral: true
     },
     {
       name: 'مكرر المبيعات',
       nameEn: 'P/S Ratio',
       definition: 'القيمة السوقية مقسومة على الإيرادات — يُستخدم لتقييم الشركات التي لا تحقق أرباحًا بعد.',
-      high: 'السهم غالي نسبةً لإيرادات الشركة — قد يكون مبالغًا في تقييمه أو أن المستثمرين يتوقعون نموًا في الأرباح مستقبلاً',
+      high: 'السهم غالي نسبةً لإيرادات الشركة — قد يكون مبالغًا في تقييمه أو أن المستثمرين يتوقعون نموًا للأرباح في المستقبل',
       low: 'قد يعني فرصة للشراء أو يعكس شكوكًا حول قدرة الشركة على تحقيق الأرباح',
+      neutral: true
     },
     {
       name: 'مكرر القيمة الدفترية',
@@ -115,6 +130,23 @@ export default function Glossary() {
       high: 'قد يعني مبالغة في تقييم السهم أو أن المستثمرين يتوقعون نموًا للشركة',
       low: 'قد يعني أن السهم رخيص نسبةً لأصول الشركة أو أن الشركة تواجه تحديات',
       lowLabel: 'أقل من 1',
+      neutral: true
+    },
+    {
+      name: 'متوسط تكلفة رأس المال',
+      nameEn: 'WACC',
+      definition: 'المعدل الذي تدفعه الشركة في المتوسط لجميع مموليها (المستثمرين والدائنين) لتمويل أعمالها.',
+      high: 'تكلفة تمويل مرتفعة تؤدي إلى انخفاض في القيمة الجوهرية المقدّرة للشركة',
+      low: 'تكلفة تمويل منخفضة ترتفع معها القيمة الجوهرية المقدّرة للشركة',
+      positive: 'var(--positive)',
+      negative: 'var(--negative)'
+    },
+    {
+      name: 'معدل النمو النهائي',
+      nameEn: 'Terminal Growth Rate',
+      definition: 'معدل النمو المتوقع للتدفقات النقدية على المدى البعيد — لا يمكن أن يتجاوز معدل نمو الاقتصاد.',
+      high: 'افتراض متفائل يرفع القيمة الجوهرية',
+      low: 'افتراض متحفظ يخفض القيمة الجوهرية',
     },
   ]
 
@@ -164,15 +196,16 @@ export default function Glossary() {
             </p>
 
             {/* High / Low */}
+            {!metric.noHighLow && (
             <div style={{ display: 'flex', gap: '12px' }}>
               <div style={{
                 flex: 1,
-                background: 'rgba(74, 222, 128, 0.08)',
-                border: '1px solid rgba(74, 222, 128, 0.2)',
+                background: metric.neutral ? 'rgba(160, 160, 160, 0.05)' : metric.negative ? 'rgba(248,113,113,0.08)' : 'rgba(74,222,128,0.08)',
+                border: `1px solid ${metric.neutral ? 'rgba(160,160,160,0.2)' : metric.negative ? 'rgba(248,113,113,0.2)' : 'rgba(74,222,128,0.2)'}`,
                 borderRadius: 'var(--radius)',
                 padding: '8px 12px',
               }}>
-                <span style={{ fontSize: '13px', color: 'var(--positive)', fontWeight: '600', display: 'block', marginBottom: '4px' }}>
+                <span style={{ fontSize: '13px', color: metric.neutral ? 'var(--text-1)' : metric.negative ? 'var(--negative)' : 'var(--positive)', fontWeight: '600', display: 'block', marginBottom: '4px' }}>
                   {metric.highLabel || 'مرتفع'}
                 </span>
                 <span style={{ fontSize: '13px', color: 'var(--text-2)' }}>
@@ -181,12 +214,12 @@ export default function Glossary() {
               </div>
               <div style={{
                 flex: 1,
-                background: 'rgba(248, 113, 113, 0.08)',
-                border: '1px solid rgba(248, 113, 113, 0.2)',
+                background: metric.neutral ? 'rgba(160, 160, 160, 0.05)' : metric.positive ? 'rgba(74,222,128,0.08)' : 'rgba(248,113,113,0.08)',
+                border: `1px solid ${metric.neutral ? 'rgba(160,160,160,0.2)' : metric.positive ? 'rgba(74,222,128,0.2)' : 'rgba(248,113,113,0.2)'}`,
                 borderRadius: 'var(--radius)',
                 padding: '8px 12px',
               }}>
-                <span style={{ fontSize: '13px', color: 'var(--negative)', fontWeight: '600', display: 'block', marginBottom: '4px' }}>
+                <span style={{ fontSize: '13px', color: metric.neutral ? 'var(--text-1)' : metric.positive ? 'var(--positive)' : 'var(--negative)', fontWeight: '600', display: 'block', marginBottom: '4px' }}>
                   {metric.lowLabel || 'منخفض'}
                 </span>
                 <span style={{ fontSize: '13px', color: 'var(--text-2)' }}>
@@ -194,6 +227,7 @@ export default function Glossary() {
                 </span>
               </div>
             </div>
+            )}
 
           </div>
         ))}
