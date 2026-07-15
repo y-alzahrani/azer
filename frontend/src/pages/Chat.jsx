@@ -1,4 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
+import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
 
 const API = 'http://localhost:8000'
 
@@ -38,7 +40,11 @@ export default function Chat() {
       const res = await fetch(`${API}/chat`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ message: userMessage, company }),
+        body: JSON.stringify({ 
+        message: userMessage, 
+        company,
+        history: messages.map(m => ({ role: m.role === 'bot' ? 'assistant' : 'user', content: m.text }))
+      }),
       })
       const data = await res.json()
       setMessages(prev => [...prev, { role: 'bot', text: data.response, citations: data.citations }])
@@ -175,7 +181,22 @@ export default function Chat() {
               lineHeight: 1.7,
               wordBreak: 'break-word',
             }}>
-              <p style={{ margin: 0, whiteSpace: 'pre-wrap' }}>{msg.text}</p>
+              <ReactMarkdown 
+                remarkPlugins={[remarkGfm]}
+                components={{
+                  table: ({node, ...props}) => (
+                    <table style={{ borderCollapse: 'collapse', width: '100%', margin: '8px 0' }} {...props} />
+                  ),
+                  th: ({node, ...props}) => (
+                    <th style={{ padding: '6px 12px', borderBottom: '1px solid var(--border-2)', color: 'var(--text-2)', fontWeight: '500', textAlign: 'right' }} {...props} />
+                  ),
+                  td: ({node, ...props}) => (
+                    <td style={{ padding: '6px 12px', borderBottom: '1px solid var(--border)', color: 'var(--text-1)', textAlign: 'right' }} {...props} />
+                  ),
+                }}
+              >
+                {msg.text}
+              </ReactMarkdown>
               {msg.citations && msg.citations.length > 0 && (
                 <div style={{ marginTop: '8px', paddingTop: '8px', borderTop: '1px solid var(--border)' }}>
                   {msg.citations.map((cite, j) => (

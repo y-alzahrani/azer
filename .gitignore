@@ -3,4 +3,5 @@
 __pycache__/
 *.pyc
 reports/
+prompts/
 financials_and_narratives_builder.ipynb

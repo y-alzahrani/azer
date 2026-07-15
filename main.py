@@ -14,8 +14,9 @@ from fastapi.responses import FileResponse
 from pydantic import BaseModel
  
 from pdf_extractor import extract_report, save_result
-from financials_builder import load_all_documents, build_all_financials, populate_price_metrics, build_all_narratives
+from financials_builder import load_all_documents, build_all_financials, populate_price_metrics
 from summary_generator import generate_summary, save_summary, load_summary
+from chatbot import chat, build_all_narratives
 from dcf import dcf_valuation, get_valuation_label
 
 
@@ -301,26 +302,27 @@ def delete_report(company: str, report_type: str, filename: str):
 
 
 # ---------------------------------------------------------------------------
-# Chat
+# Chatbot
 # ---------------------------------------------------------------------------
  
 
 class ChatRequest(BaseModel):
     message: str
     company: str
- 
- 
+    history: list = []
+
+
 @app.post("/chat")
 def chat_endpoint(request: ChatRequest):
-    """
-    Receives a chatbot message and returns a response with citations.
-    Placeholder chatbot.py will implement the actual logic.
-    """
-    # TODO: import and call chatbot logic once chatbot.py is ready
-    return {
-        "response": "bla bla",
-        "citations": []
-    }
+    """Receives a chatbot message and returns a response with citations."""
+    result = chat(
+        question=request.message,
+        company=request.company,
+        all_financials=app_state["financials"],
+        all_narratives=app_state["narratives"],
+        history=request.history,
+    )
+    return result
 
 
 # ---------------------------------------------------------------------------

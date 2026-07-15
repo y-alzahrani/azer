@@ -3,8 +3,8 @@ import base64
 import json
 import os
 from dotenv import load_dotenv
-from prompts.annual_prompt import annual_prompt
-from prompts.quarterly_prompt import quarterly_prompt
+from prompts.annual_prompt import ANNUAL_PROMPT
+from prompts.quarterly_prompt import QUARTERLY_PROMPT
  
 load_dotenv()
 client = anthropic.Anthropic()
@@ -29,7 +29,7 @@ def extract_report(pdf_path, company, report_type):
         Tuple of (ordered_result dict, raw result text) or None if extraction fails
     """
 
-    active_prompt = annual_prompt if report_type == "Annual" else quarterly_prompt
+    active_prompt = ANNUAL_PROMPT if report_type == "Annual" else QUARTERLY_PROMPT
     max_tokens = MAX_TOKENS[report_type]
 
     with open(pdf_path, "rb") as f:

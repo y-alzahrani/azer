@@ -1,5 +1,5 @@
 """
-DCF Valuation Model
+DCF Valuation Module
 
 Calculates intrinsic value per share using a discounted cash flow model.
 Framed as fair value estimation, not a prediction or investment recommendation.
