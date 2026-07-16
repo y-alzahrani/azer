@@ -308,16 +308,13 @@ def delete_report(company: str, report_type: str, filename: str):
 
 class ChatRequest(BaseModel):
     message: str
-    company: str
     history: list = []
-
 
 @app.post("/chat")
 def chat_endpoint(request: ChatRequest):
     """Receives a chatbot message and returns a response with citations."""
     result = chat(
         question=request.message,
-        company=request.company,
         all_financials=app_state["financials"],
         all_narratives=app_state["narratives"],
         history=request.history,

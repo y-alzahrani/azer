@@ -5,23 +5,10 @@ import remarkGfm from 'remark-gfm'
 const API = 'http://localhost:8000'
 
 export default function Chat() {
-  const [companies, setCompanies] = useState([])
-  const [company, setCompany] = useState('')
   const [messages, setMessages] = useState([])
   const [input, setInput] = useState('')
   const [loading, setLoading] = useState(false)
   const bottomRef = useRef(null)
-
-  // Load companies
-  useEffect(() => {
-    fetch(`${API}/documents`)
-      .then(r => r.json())
-      .then(data => {
-        const names = Object.keys(data)
-        setCompanies(names)
-        if (names.length > 0) setCompany(names[0])
-      })
-  }, [])
 
   // Scroll to bottom when messages change
   useEffect(() => {
@@ -40,11 +27,13 @@ export default function Chat() {
       const res = await fetch(`${API}/chat`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ 
-        message: userMessage, 
-        company,
-        history: messages.map(m => ({ role: m.role === 'bot' ? 'assistant' : 'user', content: m.text }))
-      }),
+        body: JSON.stringify({
+          message: userMessage,
+          history: messages.map(m => ({
+            role: m.role === 'bot' ? 'assistant' : 'user',
+            content: m.text
+          }))
+        }),
       })
       const data = await res.json()
       setMessages(prev => [...prev, { role: 'bot', text: data.response, citations: data.citations }])
@@ -62,18 +51,17 @@ export default function Chat() {
     }
   }
 
-  const selectStyle = {
-    fontFamily: 'var(--font)',
-    fontSize: '14px',
-    background: 'var(--surface)',
-    color: 'var(--text-1)',
-    border: '1.9px solid var(--border-2)',
-    borderRadius: 'var(--radius)',
-    padding: '4px 12px',
-    cursor: 'pointer',
-    outline: 'none',
-    direction: 'rtl',
-  }
+  function isArabic(text) {
+  const arabicChars = (text.match(/[\u0600-\u06FF]/g) || []).length
+  const latinChars = (text.match(/[a-zA-Z]/g) || []).length
+  return arabicChars > latinChars
+}
+
+  const suggestions = [
+    'كم بلغت إيرادات أرامكو في آخر سنة؟',
+    'ماذا قالت إدارة Meta عن خطط الذكاء الاصطناعي؟',
+    'كيف تغير هامش الربح الصافي لأرامكو عبر السنوات؟',
+  ]
 
   return (
     <div style={{
@@ -88,22 +76,13 @@ export default function Chat() {
     }}>
 
       {/* Header */}
-      <div style={{
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        marginBottom: '1.5rem',
-        flexShrink: 0,
-      }}>
+      <div style={{ marginBottom: '1.5rem', flexShrink: 0 }}>
         <h1 style={{ fontSize: '22px', fontWeight: '700', color: 'var(--text-1)' }}>
           المساعد المالي
         </h1>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-          <span style={{ fontSize: '14px', color: 'var(--text-2)' }}>الشركة:</span>
-          <select style={selectStyle} value={company} onChange={e => setCompany(e.target.value)}>
-            {companies.map(c => <option key={c} value={c}>{c}</option>)}
-          </select>
-        </div>
+        <p style={{ fontSize: '13px', color: 'var(--text-2)', marginTop: '4px' }}>
+          اسأل عن أي شركة متاحة في النظام
+        </p>
       </div>
 
       {/* Message list */}
@@ -124,21 +103,16 @@ export default function Chat() {
             flexDirection: 'column',
             alignItems: 'center',
             justifyContent: 'center',
-            color: 'var(--text-3)',
-            gap: '12px',
+            gap: '16px',
           }}>
             <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
               <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
             </svg>
-            <p style={{ fontSize: '15px', color: 'var(--text-2)', marginBottom: '1rem' }}>
-              اسأل عن أداء {company} المالي
+            <p style={{ fontSize: '15px', color: 'var(--text-2)', marginBottom: '8px' }}>
+              اسأل عن أداء أي شركة في النظام
             </p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', alignItems: 'center' }}>
-              {[
-                `كم بلغت إيرادات ${company} في آخر سنة؟`,
-                `كيف تغير هامش الربح الصافي لـ ${company} عبر السنوات؟`,
-                `ماذا قالت إدارة ${company} عن خططها المستقبلية؟`,
-              ].map((suggestion, i) => (
+              {suggestions.map((suggestion, i) => (
                 <button
                   key={i}
                   onClick={() => setInput(suggestion)}
@@ -169,7 +143,7 @@ export default function Chat() {
           }}>
             <div style={{
               maxWidth: '75%',
-              background: msg.role === 'user' ? '#a973ffcd' : 'var(--surface)',
+              background: msg.role === 'user' ? '#B48FF0' : 'var(--surface)',
               color: 'var(--text-1)',
               border: msg.role === 'bot' ? '1px solid var(--border)' : 'none',
               borderRadius: msg.role === 'user'
@@ -177,26 +151,31 @@ export default function Chat() {
                 : 'var(--radius-lg) var(--radius-lg) 4px var(--radius-lg)',
               padding: '12px 16px',
               fontSize: '14px',
-              fontWeight: '500',
               lineHeight: 1.7,
               wordBreak: 'break-word',
+              direction: msg.role === 'bot' ? (isArabic(msg.text) ? 'rtl' : 'ltr') : 'rtl',
+              textAlign: msg.role === 'bot' ? (isArabic(msg.text) ? 'right' : 'left') : 'right',
             }}>
-              <ReactMarkdown 
-                remarkPlugins={[remarkGfm]}
-                components={{
-                  table: ({node, ...props}) => (
-                    <table style={{ borderCollapse: 'collapse', width: '100%', margin: '8px 0' }} {...props} />
-                  ),
-                  th: ({node, ...props}) => (
-                    <th style={{ padding: '6px 12px', borderBottom: '1px solid var(--border-2)', color: 'var(--text-2)', fontWeight: '500', textAlign: 'right' }} {...props} />
-                  ),
-                  td: ({node, ...props}) => (
-                    <td style={{ padding: '6px 12px', borderBottom: '1px solid var(--border)', color: 'var(--text-1)', textAlign: 'right' }} {...props} />
-                  ),
-                }}
-              >
-                {msg.text}
-              </ReactMarkdown>
+              {msg.role === 'bot' ? (
+                <ReactMarkdown
+                  remarkPlugins={[remarkGfm]}
+                  components={{
+                    table: ({node, ...props}) => (
+                      <table style={{ borderCollapse: 'collapse', width: '100%', margin: '8px 0' }} {...props} />
+                    ),
+                    th: ({node, ...props}) => (
+                      <th style={{ padding: '6px 12px', borderBottom: '1px solid var(--border-2)', color: 'var(--text-2)', fontWeight: '500', textAlign: 'right' }} {...props} />
+                    ),
+                    td: ({node, ...props}) => (
+                      <td style={{ padding: '6px 12px', borderBottom: '1px solid var(--border)', color: 'var(--text-1)', textAlign: 'right' }} {...props} />
+                    ),
+                  }}
+                >
+                  {msg.text}
+                </ReactMarkdown>
+              ) : (
+                <p style={{ margin: 0, whiteSpace: 'pre-wrap' }}>{msg.text}</p>
+              )}
               {msg.citations && msg.citations.length > 0 && (
                 <div style={{ marginTop: '8px', paddingTop: '8px', borderTop: '1px solid var(--border)' }}>
                   {msg.citations.map((cite, j) => (
@@ -242,13 +221,12 @@ export default function Chat() {
           value={input}
           onChange={e => setInput(e.target.value)}
           onKeyDown={handleKeyDown}
-          placeholder="أكتب سؤالك هنا..."
+          placeholder="اكتب سؤالك هنا..."
           rows={1}
           style={{
             flex: 1,
             fontFamily: 'var(--font)',
             fontSize: '14px',
-            fontWeight: '400',
             background: 'var(--surface)',
             color: 'var(--text-1)',
             border: '1px solid var(--border-2)',
@@ -266,8 +244,8 @@ export default function Chat() {
           style={{
             fontFamily: 'var(--font)',
             fontSize: '14px',
-            fontWeight: '500',
-            background: loading || !input.trim() ? 'var(--surface-2)' : '#a973ffcd',
+            fontWeight: '600',
+            background: loading || !input.trim() ? 'var(--surface-2)' : 'var(--accent)',
             color: loading || !input.trim() ? 'var(--text-3)' : 'white',
             border: 'none',
             borderRadius: 'var(--radius)',
