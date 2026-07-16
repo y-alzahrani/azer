@@ -43,7 +43,8 @@ AZER automates the entire pipeline from raw PDF reports to comprehensive financi
 - Responds in the same language as the question (Arabic or English)
 - Classifies questions as metric, narrative, or hybrid and retrieves accordingly
 - Metric questions answered directly from structured financial data
-- Narrative questions answered via semantic search over management commentary summaries using ChromaDB
+- Narrative questions answered by passing management commentary summaries to LLM
+- Maintains conversation history for natural follow-up questions
 - Every answer cites source section, page number, and period
 
 ### DCF Valuation
@@ -60,7 +61,6 @@ AZER automates the entire pipeline from raw PDF reports to comprehensive financi
 | Backend | Python + FastAPI |
 | LLM | Anthropic API (Claude Sonnet 4.6) |
 | PDF Processing | Anthropic native document understanding |
-| Vector Store | ChromaDB |
 | Market Data | yfinance |
 | Environment | uv + python-dotenv |
  
@@ -87,7 +87,10 @@ azer/
 │   └── Aramco_summary.json
 ├── prompts/
 │   ├── annual_prompt.py
-│   └── quarterly_prompt.py
+│   ├── quarterly_prompt.py
+│   ├── summary_prompt.py
+│   ├── router_prompt.py
+│   └── answer_prompt.py
 ├── frontend/
 │   └── src/
 │       ├── components/
@@ -127,11 +130,11 @@ azer/
 
 ## Metrics Extracted
  
-**From financial statements (LLM):**
+**From financial statements (using LLM):**
 Revenue, Cost of Revenue, Operating Expenses, Operating Income, Net Income, EPS (Diluted), Operating Cash Flow, Capital Expenditure, Free Cash Flow, Short-Term Debt, Long-Term Debt, Net Debt, Total Equity, Cash & Cash Equivalents, Shares Outstanding, Weighted Average Shares Outstanding (Diluted)
  
 **Calculated in Python:**
-Operating Margin, Net Profit Margin, Total Debt, Debt-to-Equity, P/E Ratio, Forward P/E, P/S Ratio, P/B Ratio, Market Cap
+Operating Margin, Net Profit Margin, Total Debt, Debt-to-Equity, Return on Equity, P/E Ratio, Forward P/E, P/S Ratio, P/B Ratio, Market Cap
 
 ## Authors
 

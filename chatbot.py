@@ -288,10 +288,12 @@ def chat(question, all_financials, all_narratives, history=None):
 
     # Handle followup - answer from history only, no new retrieval
     if classification == "followup":
+        last_company = detected_company or list(all_financials.keys())[0]
+        metric_context = get_metric_context(all_financials, last_company, None, None)
         answer = generate_answer(
             question=question,
-            detected_company=detected_company,
-            metric_context=None,
+            detected_company=last_company,
+            metric_context=metric_context,
             narrative_context=None,
             history=history,
         )

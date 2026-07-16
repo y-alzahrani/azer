@@ -80,9 +80,6 @@ export default function Chat() {
         <h1 style={{ fontSize: '22px', fontWeight: '700', color: 'var(--text-1)' }}>
           المساعد المالي
         </h1>
-        <p style={{ fontSize: '13px', color: 'var(--text-2)', marginTop: '4px' }}>
-          اسأل عن أي شركة متاحة في النظام
-        </p>
       </div>
 
       {/* Message list */}
@@ -109,7 +106,7 @@ export default function Chat() {
               <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
             </svg>
             <p style={{ fontSize: '15px', color: 'var(--text-2)', marginBottom: '8px' }}>
-              اسأل عن أداء أي شركة في النظام
+              اسأل عن أي شركة موجودة في النظام
             </p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', alignItems: 'center' }}>
               {suggestions.map((suggestion, i) => (
@@ -143,7 +140,7 @@ export default function Chat() {
           }}>
             <div style={{
               maxWidth: '75%',
-              background: msg.role === 'user' ? '#B48FF0' : 'var(--surface)',
+              background: msg.role === 'user' ? '#a973ffcd' : 'var(--surface)',
               color: 'var(--text-1)',
               border: msg.role === 'bot' ? '1px solid var(--border)' : 'none',
               borderRadius: msg.role === 'user'
@@ -244,7 +241,7 @@ export default function Chat() {
           style={{
             fontFamily: 'var(--font)',
             fontSize: '14px',
-            fontWeight: '600',
+            fontWeight: '500',
             background: loading || !input.trim() ? 'var(--surface-2)' : 'var(--accent)',
             color: loading || !input.trim() ? 'var(--text-3)' : 'white',
             border: 'none',
