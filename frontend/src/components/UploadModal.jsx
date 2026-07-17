@@ -143,7 +143,7 @@ export default function UploadModal({ onClose }) {
         <div style={MODAL_BOX}>
           <div style={{ textAlign: 'center', padding: '0.1rem 0' }}>
             <h2 style={{ fontSize: '18px', fontWeight: '550', color: 'var(--positive)', marginBottom: '1.0rem' }}>
-              تم استخراج البيانات بنجاح
+              تم استخلاص البيانات بنجاح
             </h2>
             <p style={{ fontSize: '16px', color: 'var(--text-2)', marginBottom: '1.5rem' }}>
               {resultData?.company} — {resultData?.period}

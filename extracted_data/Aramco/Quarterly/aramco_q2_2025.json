@@ -1,0 +1,121 @@
+{
+  "company": "Aramco",
+  "ticker": "2222.SR",
+  "report_type": "Quarterly",
+  "period": "Q2 2025",
+  "period_end_date": "2025-06-30",
+  "currency": "SAR",
+  "unit": "Millions",
+  "metrics": {
+    "revenue": 836754,
+    "cost_of_revenue": {
+      "value": null,
+      "source": "",
+      "calculation_note": "Aramco does not present a single 'Cost of revenues' or 'COGS' subtotal in its income statement. Operating costs are broken out into separate line items (Royalties and other taxes, Purchases, Producing and manufacturing, Selling/administrative/general, Exploration, R&D, Depreciation and amortization) without a COGS subtotal."
+    },
+    "operating_expenses": {
+      "value": 478301,
+      "source": "direct_line_item",
+      "calculation_note": "Operating costs — Six months 2025, Condensed consolidated statement of income, page 28"
+    },
+    "operating_income": 358453,
+    "net_income": 182565,
+    "eps": 0.75,
+    "cash_and_equivalents": {
+      "value": 179118,
+      "source": "direct_line_item",
+      "calculation_note": "Cash and cash equivalents — Condensed consolidated balance sheet at June 30, 2025, page 30"
+    },
+    "short_term_debt": {
+      "value": 34172,
+      "source": "direct_line_item",
+      "calculation_note": "Borrowings – other than leases, Current total of SAR 34,172 at June 30, 2025 — Note 9, Borrowings table, page 39. Operating lease liabilities excluded; finance lease liabilities (part of lease liabilities current of SAR 12,676) are included per the note but the borrowings-other-than-leases current figure of 34,172 is used as the primary short-term debt figure excluding leases per instructions."
+    },
+    "long_term_debt": {
+      "value": 251298,
+      "source": "direct_line_item",
+      "calculation_note": "Borrowings – other than leases, Non-current total of SAR 251,298 at June 30, 2025 — Note 9, Borrowings table, page 39. Operating lease liabilities excluded."
+    },
+    "net_debt": {
+      "value": 115594,
+      "source": "direct_line_item",
+      "calculation_note": "Net debt (cash) — Gearing table, Non-IFRS measures reconciliations and definitions section, page 13. Reported as SAR 115,594 at June 30, 2025."
+    },
+    "operating_cash_flow": 222192,
+    "capital_expenditure": {
+      "value": 93217,
+      "source": "direct_line_item",
+      "calculation_note": "Capital expenditures — Condensed consolidated statement of cash flows, Six months 2025, page 32"
+    },
+    "free_cash_flow": {
+      "value": 128975,
+      "source": "direct_line_item",
+      "calculation_note": "Free cash flow — Non-IFRS measures reconciliations and definitions section, Free cash flow table, Six months 2025, page 11. Defined as net cash provided by operating activities less capital expenditures."
+    },
+    "total_equity": 1676116,
+    "shares_outstanding": {
+      "value": null,
+      "source": "",
+      "calculation_note": "Total shares outstanding at period end date not explicitly stated as a single labeled line item in the report. Share capital is SAR 90,000 million but par value per share is not stated in this interim report to derive count."
+    },
+    "shares_weighted_average_diluted": {
+      "value": 242000,
+      "source": "calculated",
+      "calculation_note": "Derived from EPS disclosure: Net income attributable to shareholders' equity for Six months 2025 = SAR 181,308 million; EPS (basic and diluted) = SAR 0.75 per share; implied weighted average shares = 181,308 / 0.75 = ~241,744 million shares, approximately 242,000 million shares. Source: Condensed consolidated statement of income, page 28."
+    }
+  },
+  "narrative": {
+    "sections_found": [
+      {
+        "topic": "Revenue and Profitability Drivers",
+        "page_range": "4-5",
+        "summary": "H1 2025 revenue fell to SAR 836,754 million from SAR 908,458 million in H1 2024, primarily due to lower crude oil prices (average $71.5/bbl vs $84.3/bbl) and lower refined and chemical product prices, partially offset by higher volumes sold. Net income declined to SAR 182,565 million from SAR 211,281 million, cushioned by lower royalties, lower purchases, and a reduced income tax and zakat burden."
+      },
+      {
+        "topic": "Operating Cost Structure",
+        "page_range": "4-5, 28",
+        "summary": "Total operating costs for H1 2025 were SAR 478,301 million, down from SAR 499,959 million in H1 2024, driven primarily by lower production royalties reflecting both lower crude oil prices and a lower average effective royalty rate. This was partially offset by higher producing and manufacturing expenses due to increased labor, utilities, and other costs."
+      },
+      {
+        "topic": "Upstream Segment Performance",
+        "page_range": "6-7",
+        "summary": "Upstream Adjusted EBIT for H1 2025 was SAR 360,296 million ($96.1 billion), down from SAR 414,435 million in H1 2024, predominantly due to lower crude oil prices partially offset by lower royalties. Total hydrocarbon production reached 12.8 mmboed in Q2 2025, with capital expenditures of SAR 71,842 million relatively stable year-over-year as crude oil increment and gas expansion projects progressed."
+      },
+      {
+        "topic": "Downstream Segment Performance",
+        "page_range": "8-9",
+        "summary": "Downstream Adjusted EBIT improved significantly to SAR 13,895 million for H1 2025 from SAR 1,834 million in H1 2024, driven by stronger refining margins. Capital expenditures rose 33% to SAR 19,134 million, reflecting progress on major projects including S-OIL's Shaheen steam cracker (approximately 75% complete) and the SATORP Amiral expansion. Supply reliability remained at 100%."
+      },
+      {
+        "topic": "Cash Flow and Capital Expenditure",
+        "page_range": "11, 32",
+        "summary": "Operating cash flow for H1 2025 was SAR 222,192 million, down from SAR 242,555 million in H1 2024, driven by lower earnings and unfavorable working capital movements. Free cash flow declined to SAR 128,975 million from SAR 156,443 million, reflecting both lower operating cash generation and higher capital expenditures, primarily in Downstream."
+      },
+      {
+        "topic": "Liquidity, Debt and Gearing",
+        "page_range": "3, 13, 39-40",
+        "summary": "Gearing rose to 6.5% at June 30, 2025 from 5.3% at March 31, 2025 and (0.5)% at June 30, 2024, reflecting increased net debt driven by dividend payments and capital expenditures. Total borrowings reached SAR 348,444 million, including a new $5.0 billion international bond issuance in June 2025 split across 5-, 10-, and 30-year tranches, and the extension of a SAR 11,250 million Sukuk maturity to 2032."
+      },
+      {
+        "topic": "Dividend Policy and Shareholder Returns",
+        "page_range": "2, 43",
+        "summary": "Aramco paid total dividends of SAR 160,216 million ($42.7 billion) in H1 2025, comprising base dividends of SAR 158,572 million and performance-linked dividends of SAR 1,644 million. The Board declared a Q2 2025 base dividend of SAR 79,291 million ($21.1 billion) and a performance-linked dividend of SAR 822 million ($0.2 billion), payable in Q3 2025."
+      },
+      {
+        "topic": "Return on Capital Employed (ROACE)",
+        "page_range": "12",
+        "summary": "ROACE on a trailing 12-month rolling basis declined to 18.7% for the period ended June 30, 2025, compared to 19.9% for the period ended March 31, 2025 and 21.8% for the period ended June 30, 2024. The decline was driven by lower earnings due to reduced revenue and other income, partially offset by lower operating costs and taxes."
+      },
+      {
+        "topic": "Capital Commitments and Pipeline Projects",
+        "page_range": "7, 41",
+        "summary": "Capital expenditures contracted but not yet incurred stood at SAR 197,711 million at June 30, 2025. Key projects in progress include the Berri and Marjan crude oil increments (on track for 2025 completion adding 550 mbpd combined), the Zuluf increment (2026), and the Jafurah Gas Plant phase one (2025 target), reflecting Aramco's strategy to grow both crude oil MSC and gas production capacity."
+      },
+      {
+        "topic": "Sustainability and New Energies Investment",
+        "page_range": "10",
+        "summary": "Aramco signed power purchase agreements in July 2025 to develop seven new renewable energy projects totaling 15 GWac capacity with a combined investment of approximately SAR 31.1 billion ($8.3 billion), retaining a 30% stake. The company also expanded its AI computing capacity 20-fold to over 500 PetaFLOPS and deployed an Iron-Vanadium flow battery system, reflecting its broader digital and energy transition strategy."
+      }
+    ]
+  }
+}

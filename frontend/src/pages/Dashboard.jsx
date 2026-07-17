@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import {
   BarChart, Bar, LineChart, Line,
   XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid
@@ -79,6 +80,7 @@ export default function Dashboard() {
   const [summaryLoading, setSummaryLoading] = useState(false)
   const [loading, setLoading]         = useState(false)
   const location = useLocation()
+  const navigate = useNavigate()
 
   // Load company list
   useEffect(() => {
@@ -598,6 +600,7 @@ export default function Dashboard() {
 
       {/* ── Floating chatbot button ─── */}
       <button
+        onClick={() => navigate('/chat')}
         style={{
           position: 'fixed',
           bottom: '28px',

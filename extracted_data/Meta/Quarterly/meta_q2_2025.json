@@ -1,0 +1,116 @@
+{
+  "company": "Meta",
+  "ticker": "META",
+  "report_type": "Quarterly",
+  "period": "Q2 2025",
+  "period_end_date": "2025-06-30",
+  "currency": "USD",
+  "unit": "Millions",
+  "metrics": {
+    "revenue": 47516,
+    "cost_of_revenue": {
+      "value": 8491,
+      "source": "direct_line_item",
+      "calculation_note": "Cost of revenue — Condensed Consolidated Statements of Income, page 5"
+    },
+    "operating_expenses": {
+      "value": 18584,
+      "source": "calculated",
+      "calculation_note": "Research and development (12,942) + Marketing and sales (2,979) + General and administrative (2,663) = 18,584 — Condensed Consolidated Statements of Income, page 5. Cost of revenue excluded."
+    },
+    "operating_income": 20441,
+    "net_income": 18337,
+    "eps": 7.14,
+    "cash_and_equivalents": {
+      "value": 12005,
+      "source": "direct_line_item",
+      "calculation_note": "Cash and cash equivalents — Condensed Consolidated Balance Sheets, page 6"
+    },
+    "short_term_debt": {
+      "value": null,
+      "source": "",
+      "calculation_note": "No short-term debt or current portion of long-term debt identified on the Condensed Consolidated Balance Sheets (page 6). Operating lease liabilities (current) excluded. No finance lease current liabilities separately presented."
+    },
+    "long_term_debt": {
+      "value": 28832,
+      "source": "direct_line_item",
+      "calculation_note": "Long-term debt — Condensed Consolidated Balance Sheets, page 6"
+    },
+    "net_debt": {
+      "value": 16827,
+      "source": "calculated",
+      "calculation_note": "Short-term debt (0) + Long-term debt (28,832) - Cash & Cash Equivalents (12,005) = Net debt (16,827) — Balance Sheet, page 6"
+    },
+    "operating_cash_flow": 25561,
+    "capital_expenditure": {
+      "value": 16538,
+      "source": "direct_line_item",
+      "calculation_note": "Purchases of property and equipment — Condensed Consolidated Statements of Cash Flows, page 7"
+    },
+    "free_cash_flow": {
+      "value": 8549,
+      "source": "direct_line_item",
+      "calculation_note": "Free cash flow — Reconciliation of GAAP to Non-GAAP Results, page 9. Calculated as Net cash provided by operating activities (25,561) minus Purchases of property and equipment (16,538) minus Principal payments on finance leases (474)."
+    },
+    "total_equity": 195070,
+    "shares_outstanding": {
+      "value": null,
+      "source": "",
+      "calculation_note": "Total shares outstanding at period end date not explicitly stated in the document. Only weighted-average shares are provided."
+    },
+    "shares_weighted_average_diluted": {
+      "value": 2570,
+      "source": "direct_line_item",
+      "calculation_note": "Weighted-average shares used to compute earnings per share — Diluted — Condensed Consolidated Statements of Income, page 5"
+    }
+  },
+  "narrative": {
+    "sections_found": [
+      {
+        "topic": "Revenue and Profitability",
+        "page_range": "1",
+        "summary": "Q2 2025 revenue grew 22% year-over-year to $47.52 billion, driven by an 11% increase in ad impressions and a 9% rise in average price per ad. Operating margin expanded to 43% from 38%, with net income increasing 36% to $18.34 billion."
+      },
+      {
+        "topic": "Cost Structure",
+        "page_range": "1, 5",
+        "summary": "Total costs and expenses rose 12% year-over-year to $27.07 billion, with R&D as the largest component at $12.94 billion. The slower growth in costs relative to revenue drove significant operating leverage."
+      },
+      {
+        "topic": "Capital Expenditure",
+        "page_range": "1, 2, 7",
+        "summary": "Capital expenditures including finance lease payments were $17.01 billion in Q2 2025, with full-year 2025 guidance narrowed to $66-72 billion. Management expects another year of significant CapEx dollar growth in 2026 to support AI infrastructure."
+      },
+      {
+        "topic": "Cash Flow and Liquidity",
+        "page_range": "1, 7, 9",
+        "summary": "Operating cash flow was $25.56 billion for Q2 2025, while free cash flow declined to $8.55 billion from $10.90 billion in Q2 2024, reflecting the sharp increase in capital expenditures. Cash, equivalents, and marketable securities totaled $47.07 billion at period end."
+      },
+      {
+        "topic": "Capital Return Program",
+        "page_range": "1, 7",
+        "summary": "Meta repurchased $9.76 billion of Class A common stock and paid $1.33 billion in dividends and dividend equivalents during Q2 2025. For the six months ended June 30, 2025, total share repurchases were $22.92 billion."
+      },
+      {
+        "topic": "Segment Performance",
+        "page_range": "8",
+        "summary": "Family of Apps generated $47.15 billion in revenue and $24.97 billion in operating income in Q2 2025, while Reality Labs contributed $370 million in revenue but recorded an operating loss of $4.53 billion, slightly wider than the prior year."
+      },
+      {
+        "topic": "Forward Guidance and Outlook",
+        "page_range": "2",
+        "summary": "Q3 2025 revenue is guided to $47.5–$50.5 billion, with full-year 2025 total expenses expected at $114–$118 billion. Management flagged that 2026 expense growth will exceed 2025 levels, driven primarily by infrastructure depreciation and employee compensation."
+      },
+      {
+        "topic": "Key Risks — Regulatory",
+        "page_range": "2",
+        "summary": "Meta faces increasing regulatory risk in the EU under the Digital Markets Act, particularly regarding its Less Personalized Ads offering. The European Commission may impose further modifications that could materially reduce European revenue as early as Q3 2025."
+      },
+      {
+        "topic": "User Engagement Metrics",
+        "page_range": "1",
+        "summary": "Family daily active people reached 3.48 billion on average in June 2025, a 6% year-over-year increase, reflecting continued growth in Meta's global user base across its Family of Apps."
+      }
+    ]
+  }
+}

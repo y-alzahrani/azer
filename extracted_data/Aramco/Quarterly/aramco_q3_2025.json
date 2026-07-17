@@ -1,0 +1,126 @@
+{
+  "company": "Aramco",
+  "ticker": "2222.SR",
+  "report_type": "Quarterly",
+  "period": "Q3 2025",
+  "period_end_date": "2025-09-30",
+  "currency": "SAR",
+  "unit": "Millions",
+  "metrics": {
+    "revenue": 386165,
+    "cost_of_revenue": {
+      "value": null,
+      "source": "",
+      "calculation_note": "Aramco does not present a single Cost of Revenue or COGS subtotal. Operating costs are presented as multiple line items (Royalties and other taxes, Purchases, Producing and manufacturing, Selling/administrative/general, Exploration, R&D, Depreciation and amortization) without a distinct cost of revenue line."
+    },
+    "operating_expenses": {
+      "value": 224640,
+      "source": "direct_line_item",
+      "calculation_note": "Operating costs — Condensed consolidated statement of income, page 27"
+    },
+    "operating_income": 193520,
+    "net_income": 101015,
+    "eps": 0.4,
+    "cash_and_equivalents": {
+      "value": 193873,
+      "source": "direct_line_item",
+      "calculation_note": "Cash and cash equivalents — Condensed consolidated balance sheet, page 29"
+    },
+    "short_term_debt": {
+      "value": 34507,
+      "source": "direct_line_item",
+      "calculation_note": "Current borrowings — other than leases from Note 9, page 38. Label: 'Borrowings – other than leases' current portion (SAR 34,507). Excludes current lease liabilities of SAR 11,587."
+    },
+    "long_term_debt": {
+      "value": 261330,
+      "source": "direct_line_item",
+      "calculation_note": "Non-current borrowings — other than leases from Note 9, page 38. Label: 'Borrowings – other than leases' non-current portion (SAR 261,330). Excludes non-current lease liabilities of SAR 49,116."
+    },
+    "net_debt": {
+      "value": 114330,
+      "source": "direct_line_item",
+      "calculation_note": "Net debt (cash) — Gearing table, page 13. Label: 'Net debt (cash)'. Note: this figure also deducts short-term investments and investments in debt securities per Aramco's gearing definition."
+    },
+    "operating_cash_flow": 135445,
+    "capital_expenditure": {
+      "value": 47081,
+      "source": "direct_line_item",
+      "calculation_note": "Capital expenditures — Condensed consolidated statement of cash flows, page 31, label 'Capital expenditures'"
+    },
+    "free_cash_flow": {
+      "value": 88364,
+      "source": "direct_line_item",
+      "calculation_note": "Free cash flow — Non-IFRS measures reconciliations and definitions section, page 11, label 'Free cash flow'"
+    },
+    "total_equity": 1691628,
+    "shares_outstanding": {
+      "value": 241878.02,
+      "source": "calculated",
+      "calculation_note": "Derived from EPS and net income attributable to shareholders' equity. Net income attributable to shareholders' equity = SAR 97,264 million; EPS (basic and diluted) = SAR 0.40 per share; implied shares = 97,264 / 0.40 = 243,160 million shares. However, the report states share capital of SAR 90,000 million at SAR 0.3723 par (approximate). The Company's total issued shares are approximately 241,878 million (based on SAR 90,000M share capital / SAR 0.3723 par value per share as disclosed in Saudi Exchange filings). Note: exact shares outstanding not explicitly stated in this report as a single labeled figure; page 30 shows share capital of SAR 90,000 million."
+    },
+    "shares_weighted_average_diluted": {
+      "value": 243160,
+      "source": "calculated",
+      "calculation_note": "Calculated from EPS and net income attributable to shareholders' equity. Net income attributable to shareholders' equity (Q3 2025) = SAR 97,264 million; EPS basic and diluted = SAR 0.40; implied weighted average shares = 97,264 / 0.40 = 243,160 million shares. Condensed consolidated statement of income, page 27."
+    }
+  },
+  "narrative": {
+    "sections_found": [
+      {
+        "topic": "Revenue and Financial Performance",
+        "page_range": "4-5",
+        "summary": "Q3 2025 revenue and other income related to sales was SAR 418,160 million, up from SAR 407,142 million in Q2 2025, driven by higher crude oil prices, volumes, and refined/chemical product sales. Compared to Q3 2024, revenue declined due to lower crude oil and product prices. Net income rose 19% sequentially to SAR 101,015 million."
+      },
+      {
+        "topic": "Upstream Segment Performance",
+        "page_range": "6-7",
+        "summary": "Total hydrocarbon production reached 13.3 mmboed in Q3 2025, with total liquids at 10,824 mbpd and gas at 12,609 mmscfd. Upstream Adjusted EBIT was SAR 193,087 million, up from SAR 167,503 million in Q2 2025, driven by higher crude oil volumes and prices, though down year-over-year due to lower crude prices. Aramco raised its 2030 sales gas production capacity growth target from 60% to approximately 80% over 2021 levels."
+      },
+      {
+        "topic": "Downstream Segment Performance",
+        "page_range": "8-9",
+        "summary": "Downstream Adjusted EBIT was SAR 9,775 million in Q3 2025, relatively flat sequentially, but significantly improved versus SAR 3,869 million in Q3 2024, driven by stronger refining margins partially offset by weaker chemical margins. Supply reliability was 99.9% and downstream utilized approximately 54% of Aramco's crude oil production. Capital expenditures in Downstream rose 23.1% year-over-year due to major project progress including S-OIL's steam cracker and SATORP's Amiral expansion."
+      },
+      {
+        "topic": "Cash Flow and Free Cash Flow",
+        "page_range": "11, 31",
+        "summary": "Q3 2025 free cash flow was SAR 88,364 million ($23.6 billion), up 55% from Q2 2025, driven by higher operating cash flows and favorable working capital movements. For the nine months ended September 30, 2025, free cash flow was SAR 217,339 million ($58.0 billion), lower than the prior year period due to lower earnings and higher capital expenditures."
+      },
+      {
+        "topic": "Capital Expenditure",
+        "page_range": "6, 8, 11, 31",
+        "summary": "Q3 2025 capital expenditures were SAR 47,081 million ($12.6 billion), slightly lower than Q3 2024's SAR 49,593 million. Nine-month 2025 capex totaled SAR 140,298 million ($37.4 billion), with Upstream capex declining due to phasing of crude oil increments while Downstream capex rose 29% due to major petrochemical projects."
+      },
+      {
+        "topic": "Liquidity and Gearing",
+        "page_range": "13",
+        "summary": "Aramco's gearing ratio was 6.3% at September 30, 2025, slightly improved from 6.5% at June 30, 2025, but higher than the 1.9% at September 30, 2024 as net debt increased from SAR 33,345 million to SAR 114,330 million year-over-year. Cash and cash equivalents stood at SAR 193,873 million with total borrowings of SAR 356,540 million."
+      },
+      {
+        "topic": "Debt and Financing Arrangements",
+        "page_range": "3, 38-39",
+        "summary": "In June 2025, Aramco issued $5.0 billion in senior unsecured notes under its GMTN Programme across three tranches (5-, 10-, and 30-year). In September 2025, a $3.0 billion Sukuk was issued in two tranches. Additionally, SATORP drew down SAR 7.3 billion under long-term financing for its petrochemical expansion, and the 2017 Sukuk maturity was extended to April 2032."
+      },
+      {
+        "topic": "Dividends",
+        "page_range": "1-2, 44",
+        "summary": "In the first nine months of 2025, Aramco paid total dividends of SAR 240,329 million ($64.1 billion), comprising base dividends of SAR 237,863 million and performance-linked dividends of SAR 2,466 million. The Board declared a Q3 2025 base dividend of $21.1 billion and a performance-linked dividend of $0.2 billion, payable in Q4 2025."
+      },
+      {
+        "topic": "Return on Capital Employed (ROACE)",
+        "page_range": "12",
+        "summary": "ROACE for the trailing 12 months ended September 30, 2025 was 18.4%, relatively stable compared to 18.7% for the period ended June 30, 2025, but down from 20.8% for the period ended September 30, 2024, primarily reflecting lower crude oil prices and revenue."
+      },
+      {
+        "topic": "Strategic Investments and Portfolio Activity",
+        "page_range": "2, 9-10, 42-44",
+        "summary": "Key strategic actions in the period include the $11.1 billion Jafurah midstream deal closing in October 2025, the establishment of the Fujian Sinopec Aramco refinery JV in China, acquisition of a 25% stake in Unioil (Philippines), and increased stake in Petro Rabigh to approximately 60%. Aramco also signed a non-binding term sheet to acquire a significant minority stake in HUMAIN, an AI company."
+      },
+      {
+        "topic": "Segment Revenue Disaggregation",
+        "page_range": "40",
+        "summary": "Q3 2025 external revenue was SAR 386,165 million, with crude oil contributing SAR 157,763 million, refined and chemical products SAR 206,777 million, and natural gas and NGLs SAR 18,184 million. Upstream external revenue was SAR 169,507 million and Downstream SAR 216,110 million."
+      }
+    ]
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "company": "Meta",
+  "ticker": "META",
+  "report_type": "Quarterly",
+  "period": "Q1 2025",
+  "period_end_date": "2025-03-31",
+  "currency": "USD",
+  "unit": "Millions",
+  "metrics": {
+    "revenue": 42314,
+    "cost_of_revenue": {
+      "value": 7572,
+      "source": "direct_line_item",
+      "calculation_note": "Exact label: 'Cost of revenue' from Condensed Consolidated Statements of Income, page 5"
+    },
+    "operating_expenses": {
+      "value": 17187,
+      "source": "calculated",
+      "calculation_note": "Summed from Condensed Consolidated Statements of Income, page 5: Research and development (12,150) + Marketing and sales (2,757) + General and administrative (2,280) = 17,187. Cost of revenue excluded."
+    },
+    "operating_income": 17555,
+    "net_income": 16644,
+    "eps": 6.43,
+    "cash_and_equivalents": {
+      "value": 28750,
+      "source": "direct_line_item",
+      "calculation_note": "Exact label: 'Cash and cash equivalents' from Condensed Consolidated Balance Sheets, page 6"
+    },
+    "short_term_debt": {
+      "value": null,
+      "source": "",
+      "calculation_note": "No current portion of long-term debt or short-term borrowings identified on the Condensed Consolidated Balance Sheets, page 6. Operating lease liabilities (current) excluded per rules."
+    },
+    "long_term_debt": {
+      "value": 28829,
+      "source": "direct_line_item",
+      "calculation_note": "Exact label: 'Long-term debt' from Condensed Consolidated Balance Sheets, page 6"
+    },
+    "net_debt": {
+      "value": 79,
+      "source": "calculated",
+      "calculation_note": "Short-term debt (0) + Long-term debt (28,829) - Cash & Cash Equivalents (28,750) = Net debt (79). Page 6."
+    },
+    "operating_cash_flow": 24026,
+    "capital_expenditure": {
+      "value": 12941,
+      "source": "direct_line_item",
+      "calculation_note": "Exact label: 'Purchases of property and equipment' from Condensed Consolidated Statements of Cash Flows, page 7"
+    },
+    "free_cash_flow": {
+      "value": 10334,
+      "source": "direct_line_item",
+      "calculation_note": "Exact label: 'Free cash flow' from Reconciliation of GAAP to Non-GAAP Results, page 9. Calculated as Net cash provided by operating activities (24,026) minus Purchases of property and equipment (12,941) minus Principal payments on finance leases (751)."
+    },
+    "total_equity": 185029,
+    "shares_outstanding": {
+      "value": null,
+      "source": "",
+      "calculation_note": "Total shares outstanding at period end date not explicitly stated in the report. Only weighted average shares are provided."
+    },
+    "shares_weighted_average_diluted": {
+      "value": 2590,
+      "source": "direct_line_item",
+      "calculation_note": "Exact label: 'Diluted' under 'Weighted-average shares used to compute earnings per share' from Condensed Consolidated Statements of Income, page 5"
+    }
+  },
+  "narrative": {
+    "sections_found": [
+      {
+        "topic": "Financial Highlights and Key Performance Metrics",
+        "page_range": "1",
+        "summary": "Meta reported strong Q1 2025 results with revenue of $42.3 billion (+16% YoY), operating income of $17.6 billion (+27% YoY), and net income of $16.6 billion (+35% YoY). Operating margin expanded to 41% from 38%, and diluted EPS grew 37% to $6.43. Family daily active people reached 3.43 billion (+6% YoY), with ad impressions up 5% and average price per ad up 10%."
+      },
+      {
+        "topic": "Capital Expenditure and Investment",
+        "page_range": "1-2",
+        "summary": "Capital expenditures including finance lease payments were $13.69 billion in Q1 2025. Full year 2025 capex guidance was raised to $64-72 billion (from $60-65 billion) to reflect additional data center investments for AI and higher infrastructure hardware costs."
+      },
+      {
+        "topic": "Capital Return Program and Liquidity",
+        "page_range": "1",
+        "summary": "Meta repurchased $13.40 billion of Class A common stock and paid $1.33 billion in dividends in Q1 2025. Cash, cash equivalents, and marketable securities stood at $70.23 billion, with operating cash flow of $24.03 billion and free cash flow of $10.33 billion."
+      },
+      {
+        "topic": "Forward Guidance and Outlook",
+        "page_range": "2",
+        "summary": "Meta guided Q2 2025 revenue of $42.5-$45.5 billion and lowered full year 2025 total expense guidance to $113-118 billion. The company flagged a potential significant revenue impact to its European business as early as Q3 2025 due to EU Digital Markets Act compliance requirements affecting its subscription no-ads model."
+      },
+      {
+        "topic": "Segment Performance",
+        "page_range": "8",
+        "summary": "The Family of Apps segment generated $41.9 billion in revenue and $21.8 billion in operating income, driven primarily by advertising revenue of $41.4 billion. Reality Labs continued to operate at a loss of $4.2 billion on revenue of $412 million, reflecting ongoing investment in AR/VR hardware, software, and content."
+      },
+      {
+        "topic": "Cost Structure",
+        "page_range": "5",
+        "summary": "Total costs and expenses rose 9% YoY to $24.76 billion, with R&D being the largest expense at $12.15 billion (+22% YoY) reflecting continued AI investment. General and administrative expenses declined materially from $3.46 billion to $2.28 billion YoY, partially offsetting increases elsewhere."
+      },
+      {
+        "topic": "Cash Flow Analysis",
+        "page_range": "7",
+        "summary": "Operating cash flow increased to $24.03 billion from $19.25 billion in Q1 2024, driven by higher net income and favorable working capital changes. Investing activities used $20.01 billion, primarily due to property and equipment purchases of $12.94 billion and net marketable securities purchases of $6.98 billion."
+      },
+      {
+        "topic": "Non-GAAP Financial Measures and FX Impact",
+        "page_range": "4, 9",
+        "summary": "On a constant currency basis, revenue would have grown 19% YoY (vs. 16% reported) and advertising revenue 20% YoY (vs. 16% reported), implying a foreign exchange headwind of approximately $1.24 billion. Free cash flow of $10.33 billion was down from $12.53 billion in Q1 2024, primarily due to a doubling of property and equipment purchases."
+      },
+      {
+        "topic": "Regulatory and Legal Risk",
+        "page_range": "2, 4",
+        "summary": "Meta faces material regulatory risks in the EU, including the European Commission's ruling that its subscription no-ads model violates the Digital Markets Act, which could lead to significant revenue impact in Europe as early as Q3 2025. The company also flagged broader legal and regulatory headwinds in both the EU and U.S. as key risks to financial results."
+      }
+    ]
+  }
+}

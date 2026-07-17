@@ -123,10 +123,10 @@ azer/
  
 | Company | Ticker | Annual Reports | Quarterly Reports |
 |---------|--------|---------------|------------------|
-| Meta Platforms | META | FY 2021 – FY 2025 | Q1 2026 |
-| Saudi Aramco | 2222.SR | FY 2021 – FY 2025 | Q1 2026 |
+| Meta Platforms | META | FY 2021 – FY 2025 | Q1 2026, Q1-Q3 2025 |
+| Saudi Aramco | 2222.SR | FY 2021 – FY 2025 | Q1 2026, Q1-Q3 2025 |
  
-**Total: 12 documents**
+**Total: 18 documents**
 
 ## Metrics Extracted
  
