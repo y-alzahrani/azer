@@ -1,0 +1,111 @@
+{
+  "company": "STC",
+  "ticker": "7010.SR",
+  "report_type": "Quarterly",
+  "period": "Q1 2026",
+  "period_end_date": "2026-03-31",
+  "currency": "SAR",
+  "unit": "Thousands",
+  "metrics": {
+    "revenue": 19938710,
+    "cost_of_revenue": {
+      "value": 10166292,
+      "source": "direct_line_item",
+      "calculation_note": "Cost of revenues — Interim Condensed Consolidated Statement of Profit or Loss, page 4"
+    },
+    "operating_expenses": {
+      "value": 5794370,
+      "source": "direct_line_item",
+      "calculation_note": "TOTAL OPERATING EXPENSES — Interim Condensed Consolidated Statement of Profit or Loss, page 4"
+    },
+    "operating_income": 3978048,
+    "net_income": 3767536,
+    "eps": 0.74,
+    "cash_and_equivalents": {
+      "value": 19552846,
+      "source": "direct_line_item",
+      "calculation_note": "Cash and cash equivalents from banking and non-banking operations — Interim Condensed Consolidated Statement of Financial Position, page 4; breakdown in Note 20, page 21"
+    },
+    "short_term_debt": {
+      "value": 794906,
+      "source": "direct_line_item",
+      "calculation_note": "Short term borrowings — Interim Condensed Consolidated Statement of Financial Position (Current Liabilities), page 4"
+    },
+    "long_term_debt": {
+      "value": 21679775,
+      "source": "direct_line_item",
+      "calculation_note": "Long term borrowings — Interim Condensed Consolidated Statement of Financial Position (Non-Current Liabilities), page 4"
+    },
+    "net_debt": {
+      "value": 2921835,
+      "source": "calculated",
+      "calculation_note": "Short-term borrowings (794,906) + Long-term borrowings (21,679,775) - Cash and cash equivalents (19,552,846) = Net debt (2,921,835)"
+    },
+    "operating_cash_flow": 5584736,
+    "capital_expenditure": {
+      "value": 1700054,
+      "source": "direct_line_item",
+      "calculation_note": "Purchase of property and equipment, intangible assets, and investment properties — Interim Condensed Consolidated Statement of Cash Flows, page 6"
+    },
+    "free_cash_flow": {
+      "value": 3884682,
+      "source": "calculated",
+      "calculation_note": "Operating Cash Flow (5,584,736) - CapEx (1,700,054) = Free Cash Flow (3,884,682)"
+    },
+    "total_equity": 87549749,
+    "shares_outstanding": {
+      "value": 4989807,
+      "source": "direct_line_item",
+      "calculation_note": "Number of outstanding shares 'in thousands' as at 31 March 2026 — Note 17, Share Capital, page 20. Value reported in thousands; kept in thousands to match unit field."
+    },
+    "shares_weighted_average_diluted": {
+      "value": 4989807,
+      "source": "calculated",
+      "calculation_note": "Derived from Net profit attributable to equity holders of the Parent Company (3,696,279 thousands SAR) divided by Diluted EPS (0.74 SAR) = approximately 4,995,000 thousands shares. However, the report states basic and diluted EPS are both 0.74, and outstanding shares are 4,989,807 thousands. Given rounding, the weighted average diluted shares is approximately 4,995,000 thousands — exact figure not separately disclosed in the report."
+    }
+  },
+  "narrative": {
+    "sections_found": [
+      {
+        "topic": "Segment Performance — Revenue",
+        "page_range": "10-11",
+        "summary": "The stc parent entity was the largest revenue contributor at SAR 13.0 billion in Q1 2026, followed by Channels (SAR 3.5 billion) and Solutions (SAR 3.0 billion). Total consolidated revenues grew to SAR 19.9 billion from SAR 19.2 billion in Q1 2025, with the Kingdom of Saudi Arabia accounting for SAR 17.6 billion of total revenues."
+      },
+      {
+        "topic": "Segment Performance — Gross Profit",
+        "page_range": "11",
+        "summary": "Consolidated gross profit increased to SAR 9.8 billion in Q1 2026 from SAR 9.1 billion in Q1 2025. The stc parent entity generated the largest gross profit at SAR 7.6 billion, while STC Bank and Specialized showed strong year-on-year growth in gross profit contribution."
+      },
+      {
+        "topic": "Capital Expenditure and Asset Acquisitions",
+        "page_range": "13",
+        "summary": "The Group acquired property and equipment totaling SAR 1.1 billion in Q1 2026 and made net additions to intangible assets of SAR 603 million, significantly lower than SAR 2.7 billion in Q1 2025. Total depreciation, amortization and impairment was SAR 2.6 billion for the quarter."
+      },
+      {
+        "topic": "Cash Flows",
+        "page_range": "6",
+        "summary": "Net cash generated from operating activities was SAR 5.6 billion in Q1 2026, up sharply from SAR 2.3 billion in Q1 2025. Financing activities generated SAR 4.4 billion, driven by proceeds from new borrowings of SAR 7.5 billion (including an international sukuk issuance of SAR 7.5 billion equivalent to USD 2 billion), while investing activities used SAR 3.7 billion, resulting in a net increase in cash of SAR 6.2 billion."
+      },
+      {
+        "topic": "Debt and Borrowings",
+        "page_range": "20",
+        "summary": "During Q1 2026, the Company issued international sukuk amounting to SAR 7.5 billion (USD 2.0 billion) in two tranches: a 5-year tranche of USD 750 million and a 10-year tranche of USD 1.25 billion, through an offshore special purpose vehicle. As a result, long-term borrowings increased to SAR 21.7 billion from SAR 14.4 billion at year-end 2025."
+      },
+      {
+        "topic": "Dividend Policy",
+        "page_range": "22",
+        "summary": "The Company maintains a minimum quarterly dividend of SAR 0.55 per share for three years from Q4 2024 through Q3 2027, as approved by the Board and General Assembly. Dividends for Q4 2025 were distributed at SAR 0.55 per share and Q1 2026 dividends at SAR 0.55 per share are also planned for distribution."
+      },
+      {
+        "topic": "Financial Assets and Investments",
+        "page_range": "14",
+        "summary": "The Group's financial assets totaled SAR 26.8 billion as at 31 March 2026, including listed equity investments of SAR 9.2 billion measured at FVOCI and sukuk holdings of SAR 5.9 billion at amortized cost. STV fund, categorized within Level 3 fair value hierarchy, represented the largest investment fund holding at SAR 4.7 billion."
+      },
+      {
+        "topic": "Contingent Liabilities and Legal Matters",
+        "page_range": "21",
+        "summary": "The Group has outstanding letters of guarantee of SAR 5.2 billion and letters of credit of SAR 1.7 billion. A pending customer claim of SAR 742 million related to fibre optic network construction is assessed by management as having no merit, and stc Kuwait is defending a lawsuit by Kuwaiti regulatory authorities seeking reimbursement of previously adjudicated amounts."
+      }
+    ]
+  }
+}

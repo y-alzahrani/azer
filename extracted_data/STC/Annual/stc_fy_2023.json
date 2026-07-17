@@ -1,0 +1,136 @@
+{
+  "company": "STC",
+  "ticker": "7010.SR",
+  "report_type": "Annual",
+  "period": "FY 2023",
+  "period_end_date": "2023-12-31",
+  "currency": "SAR",
+  "unit": "Thousands",
+  "metrics": {
+    "revenue": 72336611,
+    "cost_of_revenue": {
+      "value": 34532921,
+      "source": "direct_line_item",
+      "calculation_note": "Cost of revenues — Consolidated Statement of Profit or Loss, page 10"
+    },
+    "operating_expenses": {
+      "value": 23603256,
+      "source": "direct_line_item",
+      "calculation_note": "TOTAL OPERATING EXPENSES — Consolidated Statement of Profit or Loss, page 10"
+    },
+    "operating_income": 14200434,
+    "net_income": 13419479,
+    "eps": 2.66,
+    "cash_and_equivalents": {
+      "value": 13414125,
+      "source": "direct_line_item",
+      "calculation_note": "Cash and cash equivalents — Consolidated Statement of Financial Position, page 9; detailed in Note 20, page 67"
+    },
+    "short_term_debt": {
+      "value": 8315728,
+      "source": "direct_line_item",
+      "calculation_note": "Short term borrowings — Consolidated Statement of Financial Position (Current Liabilities), page 9; detailed in Note 27, page 74"
+    },
+    "long_term_debt": {
+      "value": 13641768,
+      "source": "direct_line_item",
+      "calculation_note": "Long term borrowings — Consolidated Statement of Financial Position (Non-Current Liabilities), page 9; detailed in Note 27, page 74"
+    },
+    "net_debt": {
+      "value": 8543371,
+      "source": "calculated",
+      "calculation_note": "Short-term borrowings (8,315,728) + Long-term borrowings (13,641,768) - Cash and cash equivalents (13,414,125) = Net debt (8,543,371)"
+    },
+    "operating_cash_flow": 22417558,
+    "capital_expenditure": {
+      "value": 9569269,
+      "source": "calculated",
+      "calculation_note": "Sum of Purchase of property and equipment (7,237,282) + Purchase of intangible assets (2,331,987) from Consolidated Statement of Cash Flows, page 12"
+    },
+    "free_cash_flow": {
+      "value": 12848289,
+      "source": "calculated",
+      "calculation_note": "Operating Cash Flow (22,417,558) - CapEx (9,569,269) = Free Cash Flow (12,848,289)"
+    },
+    "total_equity": 81615166,
+    "shares_outstanding": {
+      "value": 4984506,
+      "source": "direct_line_item",
+      "calculation_note": "Number of outstanding shares — Note 22, page 69; expressed in thousands"
+    },
+    "shares_weighted_average_diluted": {
+      "value": 5000000,
+      "source": "direct_line_item",
+      "calculation_note": "Weighted average number of ordinary shares for the purposes of calculating diluted earnings per share — Note 42, page 86; expressed in thousands"
+    }
+  },
+  "narrative": {
+    "sections_found": [
+      {
+        "topic": "Revenue Performance and Disaggregation",
+        "page_range": "51, 83",
+        "summary": "Total consolidated revenues grew to SAR 72.3 billion in 2023 from SAR 67.4 billion in 2022, an increase of approximately 7.3%. The largest segment contributor was the parent stc entity at SAR 49.2 billion, followed by Channels at SAR 14.2 billion and Solutions at SAR 11.0 billion. By type, rendering of services accounted for SAR 60.1 billion while sale of devices contributed SAR 12.2 billion. Geographically, SAR 63.8 billion was generated within the Kingdom of Saudi Arabia, with SAR 8.5 billion from international operations."
+      },
+      {
+        "topic": "Cost Structure and Gross Profit",
+        "page_range": "52, 84",
+        "summary": "Cost of revenues increased to SAR 34.5 billion from SAR 30.0 billion, primarily driven by higher cost of devices, equipment and software (SAR 13.6 billion) and network access charges (SAR 5.9 billion), though government charges declined to SAR 4.9 billion partly due to a SAR 724 million provision reversal. Gross profit remained relatively stable at SAR 37.8 billion (2022: SAR 37.4 billion), with the gross margin compressing slightly as revenue growth outpaced gross profit improvement. The stc parent entity contributed SAR 30.5 billion of gross profit, the largest segment contributor."
+      },
+      {
+        "topic": "Operating Expenses and Operating Profit",
+        "page_range": "10, 84-85",
+        "summary": "Total operating expenses were SAR 23.6 billion (2022: SAR 22.3 billion), comprising selling and marketing expenses of SAR 5.9 billion, general and administrative expenses of SAR 7.2 billion, and depreciation, amortization and impairment of SAR 10.5 billion. Operating profit declined to SAR 14.2 billion from SAR 15.1 billion, reflecting the cost of an early retirement program (SAR 863 million versus SAR 366 million in 2022) and higher depreciation charges related to the expanded asset base from acquisitions. General and administrative costs rose by SAR 1 billion year-on-year, largely driven by employee costs increasing to SAR 4.9 billion."
+      },
+      {
+        "topic": "Net Income and Earnings Per Share",
+        "page_range": "10, 86",
+        "summary": "Net profit increased to SAR 13.4 billion in 2023 from SAR 12.4 billion in 2022, supported by significantly higher finance income (SAR 1.5 billion versus SAR 0.6 billion), net other gains of SAR 1.3 billion (including a SAR 1.3 billion gain on land sale), and a reversal in associate/joint venture losses (net share of SAR 53 million income versus SAR 1.2 billion loss in 2022). Profit attributable to equity holders of the parent was SAR 13.3 billion. Diluted EPS improved to SAR 2.66 from SAR 2.43."
+      },
+      {
+        "topic": "Segment Performance",
+        "page_range": "51-53",
+        "summary": "The Group disclosed eleven named operating segments plus other segments. stc (parent) remained the dominant contributor with SAR 49.2 billion in revenues and SAR 30.5 billion in gross profit, though its gross profit was marginally lower than the prior year. Channels showed strong growth (SAR 14.2 billion, up from SAR 11.5 billion) with gross profit improving to SAR 3.1 billion. Tawal's revenues grew materially to SAR 3.3 billion (from SAR 2.9 billion) following the United Group towers acquisition, with assets expanding from SAR 11.9 billion to SAR 18.5 billion. Solutions revenues grew to SAR 11.0 billion driven by the CCC acquisition."
+      },
+      {
+        "topic": "Business Combinations and Acquisitions",
+        "page_range": "44-45",
+        "summary": "Three significant acquisitions were completed in 2023. TAWAL acquired three telecommunications tower companies in Bulgaria, Croatia and Slovenia from United Group for approximately SAR 5 billion, generating provisional goodwill of SAR 4.65 billion; the transaction is supported by a 20-year master services agreement with United Group. Solutions acquired Contact Center Company (CCC) for SAR 513.7 million, recognizing SAR 143.9 million of goodwill and SAR 146.2 million of identified intangible assets. Tawal also completed the acquisition of AWAL Telecom in Pakistan for SAR 27 million. Total acquisition-related costs of SAR 23.6 million were expensed."
+      },
+      {
+        "topic": "Capital Expenditure and Investment Activities",
+        "page_range": "12, 53",
+        "summary": "Capital expenditure on property and equipment was SAR 7.2 billion (2022: SAR 5.5 billion), while intangible asset purchases totaled SAR 2.3 billion, partly reflecting the SAR 427 million in-flight and satellite spectrum licenses acquired in January 2023. Total additions to property, equipment, intangible assets and goodwill by segment reached SAR 17.3 billion (2022: SAR 10.2 billion), with Tawal contributing SAR 6.0 billion and stc contributing SAR 9.2 billion. Investment activities used SAR 28.4 billion in net cash, significantly higher than the SAR 8.6 billion used in 2022, reflecting the large acquisitions and investments in financial assets including the Telefonica stake."
+      },
+      {
+        "topic": "Cash Flows and Liquidity",
+        "page_range": "12, 87, 91-92",
+        "summary": "Operating cash flow declined to SAR 22.4 billion from SAR 26.4 billion in 2022, partly due to changes in working capital including a SAR 2.4 billion increase in contract assets and costs. Cash and cash equivalents ended the year at SAR 13.4 billion, down from SAR 17.8 billion, as significant investment outflows were only partially offset by SAR 11.8 billion of new borrowings. The Group maintained SAR 5.9 billion in unused financing facilities and targets a Debt/EBITDA ratio of 200% or below (actual: 89%) and Debt/(Debt+Equity) of 50% or below (actual: 21%)."
+      },
+      {
+        "topic": "Debt and Borrowings",
+        "page_range": "74-75, 87",
+        "summary": "Total borrowings increased substantially to SAR 21.96 billion at year-end from SAR 10.49 billion in 2022, driven by SAR 11.8 billion of new facilities primarily to fund the TAWAL European towers acquisition. Key instruments include a USD 1.25 billion international sukuk at 3.89% maturing May 2029 (SAR 4.68 billion), a SAR 2 billion domestic sukuk maturing June 2024 (classified as current), and a USD-denominated murabaha of approximately SAR 5.96 billion maturing September 2024. The debt mix is predominantly US Dollar denominated with some Saudi Riyal, Malaysian Ringgit, Kuwaiti Dinar and Bahraini Dinar facilities."
+      },
+      {
+        "topic": "Strategic Investments — Telefonica Stake",
+        "page_range": "64-65, 79",
+        "summary": "In Q3 2023, the Group completed the purchase of a 4.9% direct shareholding in Telefonica, classified as FVOCI with a carrying value of SAR 4.13 billion. An advance collateral of SAR 4.47 billion was also placed pending regulatory approval for an additional contingent 5% stake. The Group entered into options and forward contracts to hedge share price risk, with a hedge ratio of 1:1; the forward contract generated a fair value loss of SAR 260 million recognized in profit or loss, while dividends of SAR 173 million were received. Total exposure to Telefonica-related instruments (shares, collateral, options) represents one of the largest single investment commitments."
+      },
+      {
+        "topic": "Dividend Policy and Distributions",
+        "page_range": "96",
+        "summary": "The Group maintains a minimum dividend policy of SAR 0.40 per share per quarter. Cash dividends of SAR 0.40 per share were distributed for Q4 2022 and Q1–Q3 2023, with Q4 2023 distributions also declared at SAR 0.40 per share. Following the year end on 19 February 2024, the board recommended an additional special dividend of SAR 1.00 per share for FY 2023, subject to General Assembly approval. Total dividends paid to parent company equity holders during 2023 were approximately SAR 7.975 billion."
+      },
+      {
+        "topic": "Property and Equipment",
+        "page_range": "54-56",
+        "summary": "Net book value of property and equipment increased to SAR 48.1 billion from SAR 46.6 billion, with gross cost rising to SAR 141.0 billion. Additions in 2023 were SAR 8.7 billion, primarily directed to telecommunication network and equipment (capital work-in-progress of SAR 8.3 billion transferred from additions). Depreciation and impairment for the year was SAR 6.8 billion, allocated mainly to cost of revenues (SAR 5.7 billion). Land with ongoing legal title transfer totaled SAR 49 million at year-end, down from SAR 85 million."
+      },
+      {
+        "topic": "Intangible Assets and Goodwill",
+        "page_range": "57-60",
+        "summary": "Intangible assets and goodwill increased sharply to SAR 17.3 billion from SAR 11.8 billion, driven almost entirely by the SAR 4.82 billion of goodwill arising from 2023 acquisitions (primarily Tawal's European towers: SAR 4.65 billion provisional). Telecommunication licenses had a net book value of SAR 4.7 billion covering operations in Saudi Arabia, Kuwait and Bahrain. Computer software net book value increased to SAR 4.6 billion. Total amortization and impairment for the year was SAR 2.6 billion, with the largest component recognized in general and administrative expenses (SAR 1.8 billion)."
+      }
+    ]
+  }
+}

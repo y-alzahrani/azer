@@ -1,0 +1,111 @@
+{
+  "company": "STC",
+  "ticker": "7010.SR",
+  "report_type": "Annual",
+  "period": "FY 2022",
+  "period_end_date": "2022-12-31",
+  "currency": "SAR",
+  "unit": "Thousands",
+  "metrics": {
+    "revenue": 67431546,
+    "cost_of_revenue": {
+      "value": 30038291,
+      "source": "direct_line_item",
+      "calculation_note": "Cost of revenues — Consolidated Statement of Profit or Loss, page 10"
+    },
+    "operating_expenses": {
+      "value": 22304814,
+      "source": "direct_line_item",
+      "calculation_note": "Total Operating Expenses — Consolidated Statement of Profit or Loss, page 10"
+    },
+    "operating_income": 15088441,
+    "net_income": 12386922,
+    "eps": 2.43,
+    "cash_and_equivalents": {
+      "value": 17794393,
+      "source": "direct_line_item",
+      "calculation_note": "Cash and cash equivalents — Consolidated Statement of Financial Position, page 9; Note 20, page 57"
+    },
+    "short_term_debt": {
+      "value": 276783,
+      "source": "direct_line_item",
+      "calculation_note": "Short term borrowings — Consolidated Statement of Financial Position (Current Liabilities), page 9; Note 27, page 63"
+    },
+    "long_term_debt": {
+      "value": 10213750,
+      "source": "direct_line_item",
+      "calculation_note": "Long term borrowings — Consolidated Statement of Financial Position (Non-Current Liabilities), page 9; Note 27, page 63"
+    },
+    "net_debt": {
+      "value": -7303860,
+      "source": "calculated",
+      "calculation_note": "Short-term borrowings (276,783) + Long-term borrowings (10,213,750) - Cash and cash equivalents (17,794,393) = Net debt (-7,303,860); negative value indicates net cash position"
+    },
+    "operating_cash_flow": 26354390,
+    "capital_expenditure": {
+      "value": 7701814,
+      "source": "calculated",
+      "calculation_note": "Purchase of property and equipment (5,496,469) + Purchase of intangible assets (2,205,345) = 7,701,814 — Consolidated Statement of Cash Flows (Investing Activities), page 12"
+    },
+    "free_cash_flow": {
+      "value": 18652576,
+      "source": "calculated",
+      "calculation_note": "Operating Cash Flow (26,354,390) - CapEx (7,701,814) = Free Cash Flow (18,652,576)"
+    },
+    "total_equity": 76025592,
+    "shares_outstanding": {
+      "value": 4982178,
+      "source": "direct_line_item",
+      "calculation_note": "Outstanding shares as at the end of the year (in thousands) — Note 42, page 73; 4,982,178 thousand shares"
+    },
+    "shares_weighted_average_diluted": {
+      "value": 5000000,
+      "source": "direct_line_item",
+      "calculation_note": "Weighted average number of ordinary shares for the purposes of calculating diluted earnings per share — Note 42, page 73; 5,000,000 thousand shares"
+    }
+  },
+  "narrative": {
+    "sections_found": [
+      {
+        "topic": "Revenue Performance and Segment Analysis",
+        "page_range": "43-45",
+        "summary": "Total consolidated revenues grew 7% year-on-year to SR 67.4 billion in 2022 from SR 63.0 billion in 2021, driven primarily by the stc parent segment (SR 48.8 billion) and Solutions (SR 8.8 billion). Channels segment revenues declined sharply from SR 20.6 billion to SR 11.5 billion due to a reclassification under a new framework agreement that changed Channels from a principal to an agent, resulting in net-basis revenue reporting. Revenues from the Kingdom of Saudi Arabia totalled SR 60.9 billion, representing approximately 90% of total revenues, with SR 6.5 billion generated outside the Kingdom."
+      },
+      {
+        "topic": "Cost Structure and Gross Profit",
+        "page_range": "43-44, 71",
+        "summary": "Cost of revenues increased to SR 30.0 billion in 2022 from SR 29.2 billion in 2021, resulting in gross profit of SR 37.4 billion compared to SR 33.8 billion in 2021, implying a gross margin improvement. Key cost drivers include cost of devices/equipment/software (SR 10.7 billion), government charges (SR 5.5 billion), and network access charges (SR 4.4 billion, which benefited from a non-recurring SR 1.1 billion provision reversal). Total operating expenses were SR 22.3 billion, with depreciation, amortization and impairment contributing SR 10.0 billion."
+      },
+      {
+        "topic": "Net Income and Earnings Per Share",
+        "page_range": "10, 73",
+        "summary": "Net profit for 2022 was SR 12.4 billion, up from SR 11.6 billion in 2021, representing approximately 7% growth. Net profit attributable to equity holders of the Parent Company was SR 12.2 billion (2021: SR 11.3 billion). Basic EPS was SR 2.44 and diluted EPS was SR 2.43, compared to SR 2.27 and SR 2.26 in 2021 respectively, based on approximately 5.0 billion weighted average diluted shares following the capital increase via bonus share issuance in Q3 2022."
+      },
+      {
+        "topic": "Cash Flow and Liquidity",
+        "page_range": "12, 76",
+        "summary": "Net cash generated from operating activities was SR 26.4 billion in 2022, significantly higher than SR 11.2 billion in 2021, partly due to favorable working capital movements including trade receivables collections improving by SR 1.5 billion. Cash and cash equivalents increased from SR 8.3 billion at year-start to SR 17.8 billion at year-end. The Group had unused financing facilities of SR 5.8 billion as at 31 December 2022 and maintains a debt-to-EBITDA ratio of 42%, well within its internal target of 200% or below."
+      },
+      {
+        "topic": "Capital Expenditure and Investment Activity",
+        "page_range": "12, 45",
+        "summary": "The Group invested SR 5.5 billion in property and equipment and SR 2.2 billion in intangible assets during 2022, for total capital expenditure of approximately SR 7.7 billion. By segment, the stc parent accounted for SR 6.8 billion of additions to property, equipment, intangibles and goodwill. Contractual commitments for future acquisitions of property, equipment and intangible assets amounted to SR 4.7 billion as at 31 December 2022. The Group also acquired new subsidiaries (Giza Systems and E-Portal) for a combined consideration of SR 736 million."
+      },
+      {
+        "topic": "Capital Structure, Debt and Dividends",
+        "page_range": "58, 63-64, 80",
+        "summary": "Share capital was increased from SR 20 billion to SR 50 billion during Q3 2022 through a bonus share issuance of 3 billion shares funded by SR 30 billion of retained earnings. Total borrowings stood at SR 10.5 billion (long-term: SR 10.2 billion; short-term: SR 277 million), consisting primarily of international USD-denominated sukuk (SR 4.7 billion at 3.89%) and a domestic SAR sukuk (SR 2.0 billion). The dividend policy was adjusted following the capital increase to a minimum of SR 0.40 per share per quarter; dividends paid to equity holders of the Parent Company during 2022 totalled SR 8.0 billion."
+      },
+      {
+        "topic": "Impairment of Investments in Associates and Joint Ventures",
+        "page_range": "41-42",
+        "summary": "The Group recorded a combined net share in results and impairment of associates and joint ventures of SR 1.2 billion loss in 2022 (2021: SR 778 million loss). A significant impairment of SR 1.3 billion was recorded against the Group's investment in Binariang GSM Sdn Bhd (BGSM, Malaysia) due to declining market conditions and lower quoted share prices of the underlying investment, using a value-in-use method with a WACC of 6.1%-7.2% and terminal growth rate of 2.3%-2.6%. Arabsat also had an impairment of SR 79.4 million recorded, offset partially by small positive contributions from other associates."
+      },
+      {
+        "topic": "Trade Receivables and Credit Risk",
+        "page_range": "56-57",
+        "summary": "Gross trade receivables decreased from SR 27.6 billion to SR 25.6 billion during 2022, with an impairment allowance of SR 2.5 billion (2021: SR 2.8 billion), resulting in net trade receivables of SR 23.2 billion. Government entity receivables represented SR 19.3 billion of gross balances, of which SR 3.0 billion were aged more than two years. The overall ECL rate on trade receivables was 9.6% as at 31 December 2022. Revenues from government entities for 2022 amounted to SR 13.8 billion."
+      }
+    ]
+  }
+}

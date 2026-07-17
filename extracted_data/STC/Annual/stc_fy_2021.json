@@ -1,0 +1,111 @@
+{
+  "company": "STC",
+  "ticker": "7010.SR",
+  "report_type": "Annual",
+  "period": "FY 2021",
+  "period_end_date": "2021-12-31",
+  "currency": "SAR",
+  "unit": "Thousands",
+  "metrics": {
+    "revenue": 63416977,
+    "cost_of_revenue": {
+      "value": 29622948,
+      "source": "direct_line_item",
+      "calculation_note": "Cost of revenues — Consolidated Statement of Profit or Loss, page 10"
+    },
+    "operating_expenses": {
+      "value": 20666274,
+      "source": "direct_line_item",
+      "calculation_note": "TOTAL OPERATING EXPENSES — Consolidated Statement of Profit or Loss, page 10"
+    },
+    "operating_income": 13127755,
+    "net_income": 11594697,
+    "eps": 5.66,
+    "cash_and_equivalents": {
+      "value": 8281301,
+      "source": "direct_line_item",
+      "calculation_note": "Cash and cash equivalents — Consolidated Statement of Financial Position, page 9; detail in Note 19, page 55"
+    },
+    "short_term_debt": {
+      "value": 1456684,
+      "source": "direct_line_item",
+      "calculation_note": "Short term borrowings — Consolidated Statement of Financial Position, page 9; Note 26, page 60"
+    },
+    "long_term_debt": {
+      "value": 7846606,
+      "source": "direct_line_item",
+      "calculation_note": "Long term borrowings — Consolidated Statement of Financial Position, page 9; Note 26, page 60"
+    },
+    "net_debt": {
+      "value": 1021989,
+      "source": "calculated",
+      "calculation_note": "Short-term borrowings (1,456,684) + Long-term borrowings (7,846,606) - Cash and cash equivalents (8,281,301) = Net debt (1,021,989)"
+    },
+    "operating_cash_flow": 11220155,
+    "capital_expenditure": {
+      "value": 8209974,
+      "source": "calculated",
+      "calculation_note": "Additions to property and equipment (6,030,788) + Additions to intangible assets (2,179,186) = 8,209,974 — Consolidated Statement of Cash Flows, page 12"
+    },
+    "free_cash_flow": {
+      "value": 3010181,
+      "source": "calculated",
+      "calculation_note": "Operating Cash Flow (11,220,155) - CapEx (8,209,974) = Free Cash Flow (3,010,181)"
+    },
+    "total_equity": 71385979,
+    "shares_outstanding": {
+      "value": 1997149,
+      "source": "direct_line_item",
+      "calculation_note": "The number of outstanding shares as at 31 December 2021 — Note 21, page 56; in thousands"
+    },
+    "shares_weighted_average_diluted": {
+      "value": 2000000,
+      "source": "direct_line_item",
+      "calculation_note": "Weighted average number of ordinary shares for the purposes of calculating diluted earnings per share — Note 41, page 69; in thousands"
+    }
+  },
+  "narrative": {
+    "sections_found": [
+      {
+        "topic": "Revenue and Segment Performance",
+        "page_range": "10, 42-44",
+        "summary": "Total revenues grew 7.6% to SR 63.4 billion in 2021 from SR 58.95 billion in 2020, driven by both service rendering (SR 53.5 billion) and device sales (SR 9.8 billion). Saudi Telecom Company (parent) contributed SR 45.4 billion and Channels by stc contributed SR 20.6 billion in segment revenues before eliminations of SR 20.4 billion. Revenues from government entities totalled approximately SR 12.2 billion, representing a significant customer concentration. Outside the Kingdom, revenues reached SR 5.0 billion, with domestic revenues of SR 58.4 billion."
+      },
+      {
+        "topic": "Cost Structure and Gross Profit",
+        "page_range": "10, 43, 67",
+        "summary": "Cost of revenues increased significantly to SR 29.6 billion (2020: SR 25.0 billion), primarily driven by higher cost of devices and equipment (SR 10.0 billion), government charges which surged to SR 5.85 billion (2020: SR 3.81 billion), and network access charges of SR 4.97 billion. Gross profit consequently declined slightly to SR 33.8 billion (2020: SR 33.95 billion), with gross margin compressing due to the higher government commercial service provisioning fees. Total operating expenses of SR 20.7 billion were lower than the prior year's SR 21.2 billion, reflecting reduced selling and marketing expenses and G&A costs."
+      },
+      {
+        "topic": "Operating Income and Net Profit",
+        "page_range": "10-11",
+        "summary": "Operating profit improved to SR 13.13 billion from SR 12.73 billion in 2020. Net profit before zakat and income tax was SR 12.64 billion (2020: SR 12.36 billion). After zakat and income tax of SR 1.04 billion, net profit reached SR 11.59 billion (2020: SR 11.19 billion). Net profit attributable to equity holders of the parent was SR 11.31 billion, yielding basic and diluted EPS of SR 5.66 (2020: SR 5.50). Significant headwinds included an SR 778 million share of losses and impairment from associates and joint ventures, mainly from Arabsat (SR 554 million loss share plus SR 550 million impairment provision) and BGSM (SR 177 million impairment)."
+      },
+      {
+        "topic": "Cash Flow and Capital Expenditure",
+        "page_range": "12",
+        "summary": "Net cash from operating activities was SR 11.22 billion (2020: SR 28.32 billion), with the large decline driven by a SR 11.24 billion increase in trade receivables primarily related to government entity balances. Capital expenditure totalled SR 8.21 billion (additions to property and equipment of SR 6.03 billion plus intangible assets of SR 2.18 billion), down from SR 10.84 billion in 2020. Net cash used in investing activities was SR 1.71 billion, significantly improved from SR 17.43 billion in 2020, aided by SR 3.56 billion proceeds from the Solutions IPO and SR 2.33 billion net proceeds from financial assets. Dividends paid to parent shareholders totalled SR 9.95 billion, resulting in a net decrease in cash of SR 730 million."
+      },
+      {
+        "topic": "Liquidity and Debt Position",
+        "page_range": "60, 69, 72",
+        "summary": "Total borrowings stood at SR 9.30 billion (current: SR 1.46 billion, non-current: SR 7.85 billion), flat compared to SR 8.96 billion in 2020. The debt portfolio comprises primarily Sukuk (SR 6.67 billion) and murabaha facilities in various currencies. Debt to EBITDA remained at 41% and debt to (debt + equity) at 12%, both well within the Group's target thresholds of 200% and 50% respectively. The Group maintained SR 5.63 billion in unused financing facilities and expects to meet obligations through operating cash flows, cash reserves and maturing financial assets."
+      },
+      {
+        "topic": "Trade Receivables and Credit Risk",
+        "page_range": "54",
+        "summary": "Gross trade receivables surged to SR 27.2 billion (2020: SR 17.3 billion), with the allowance for impairment decreasing slightly to SR 2.76 billion, resulting in net trade receivables of SR 24.4 billion. Government entity receivables alone stood at SR 21.6 billion, with SR 7.6 billion outstanding more than one year but less than two years, and SR 1.3 billion over two years. The overall ECL rate improved to 10.1% (2020: 16.5%) reflecting changes in the aging mix. Impairment charges on trade receivables of SR 844 million were recorded in selling and marketing expenses."
+      },
+      {
+        "topic": "Equity and Dividends",
+        "page_range": "13, 15, 76-77",
+        "summary": "Total equity increased to SR 71.39 billion from SR 65.27 billion, driven by net profit of SR 11.59 billion and other comprehensive income of SR 417 million, partially offset by dividends paid. Other reserves improved significantly from negative SR 3.26 billion to positive SR 1.57 billion, mainly due to SR 3.63 billion gain from the Solutions IPO transaction with non-controlling interests. The Company distributed SR 9.99 billion in dividends to parent shareholders (approximately SR 5 per share for 2021) under a policy of a minimum SR 1 per share per quarter. Non-controlling interests grew to SR 2.12 billion, reflecting new NCI from Solutions (20%) and stc Bank (15%)."
+      },
+      {
+        "topic": "Key Risks and Contingencies",
+        "page_range": "74",
+        "summary": "The Group faces a significant withholding tax dispute with ZATCA totalling SR 1,500 million related to international operators' network rental fees for years 2004-2015; the Group submitted a reconsideration petition and believes no additional provisions are warranted. A separate government fees claim of SR 782 million related to devices sold in instalments from 2018 to Q1 2021 has been objected to within statutory deadlines. Outstanding letters of guarantee totalled SR 4.70 billion and letters of credit SR 1.39 billion at year-end. The Group's COVID-19 impact was assessed as not significant given the resilient nature of the telecom sector."
+      }
+    ]
+  }
+}

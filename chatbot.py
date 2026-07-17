@@ -123,7 +123,7 @@ def get_metric_context(all_financials, company, periods, field):
         matched = [e for e in entries if any(p.lower() in e["period"].lower() for p in periods)]
         if matched:
             return matched
-
+    
     return entries
 
 
@@ -206,7 +206,7 @@ def format_narrative_context(narrative_data):
     return "\n".join(lines)
 
 
-def generate_answer(question, detected_company, metric_context, narrative_context, history):
+def generate_answer(question, detected_company, metric_context, narrative_context, history, available_companies=None):
     """
     Generates an answer using the retrieved context and conversation history.
 
@@ -222,10 +222,11 @@ def generate_answer(question, detected_company, metric_context, narrative_contex
     metric_str = format_metric_context(metric_context) if metric_context else ""
     narrative_str = format_narrative_context(narrative_context) if narrative_context else ""
 
+    company_str = detected_company or f"غير محددة. الشركات المتاحة في النظام: {', '.join(available_companies or [])}"
     system_prompt = ANSWER_PROMPT.format(
-        company=detected_company,
-        metric_context=metric_str,
-        narrative_context=narrative_str,
+    company=company_str,
+    metric_context=metric_str,
+    narrative_context=narrative_str,
     )
 
     # Build messages list with conversation history
@@ -279,13 +280,6 @@ def chat(question, all_financials, all_narratives, history=None):
     detected_company = routing.get("company")
     periods = routing.get("periods")
 
-    # Handle clarify - ask user to specify company
-    if classification == "clarify" or not detected_company:
-        return {
-            "response": f"عن أي شركة تودّ الاستفسار؟ الشركات المتاحة في النظام: {', '.join(available_companies)}.",
-            "citations": []
-        }
-
     # Handle followup - answer from history only, no new retrieval
     if classification == "followup":
         last_company = detected_company or list(all_financials.keys())[0]
@@ -296,15 +290,20 @@ def chat(question, all_financials, all_narratives, history=None):
             metric_context=metric_context,
             narrative_context=None,
             history=history,
+            available_companies=available_companies
         )
         return {"response": answer, "citations": []}
 
-    # If company not in system
-    if detected_company not in all_financials:
-        return {
-            "response": f"عذراً، لا تتوفر بيانات لشركة '{detected_company}' في النظام. الشركات المتاحة هي: {', '.join(available_companies)}.",
-            "citations": []
-        }
+    if classification == "general" or not detected_company:
+        answer = generate_answer(
+            question=question,
+            detected_company=None,
+            metric_context=None,
+            narrative_context=None,
+            history=history,
+            available_companies=available_companies
+        )
+        return {"response": answer, "citations": []}
 
     # Step 2: Retrieve context based on classification
     metric_context = None
@@ -323,6 +322,7 @@ def chat(question, all_financials, all_narratives, history=None):
         metric_context=metric_context,
         narrative_context=narrative_context,
         history=history,
+        available_companies=available_companies
     )
 
     return {

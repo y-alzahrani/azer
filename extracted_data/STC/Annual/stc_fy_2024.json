@@ -1,0 +1,116 @@
+{
+  "company": "STC",
+  "ticker": "7010.SR",
+  "report_type": "Annual",
+  "period": "FY 2024",
+  "period_end_date": "2024-12-31",
+  "currency": "SAR",
+  "unit": "Thousands",
+  "metrics": {
+    "revenue": 75893413,
+    "cost_of_revenue": {
+      "value": 38593003,
+      "source": "direct_line_item",
+      "calculation_note": "Cost of revenues — Consolidated Statement of Profit or Loss, page 10"
+    },
+    "operating_expenses": {
+      "value": 22874772,
+      "source": "direct_line_item",
+      "calculation_note": "TOTAL OPERATING EXPENSES — Consolidated Statement of Profit or Loss, page 10"
+    },
+    "operating_income": 14425638,
+    "net_income": 24916243,
+    "eps": 4.94,
+    "cash_and_equivalents": {
+      "value": 15543441,
+      "source": "direct_line_item",
+      "calculation_note": "Cash and cash equivalents — Consolidated Statement of Financial Position, page 9; Note 20, page 79"
+    },
+    "short_term_debt": {
+      "value": 391584,
+      "source": "direct_line_item",
+      "calculation_note": "Short term borrowings — Consolidated Statement of Financial Position, page 9; Note 27, page 87"
+    },
+    "long_term_debt": {
+      "value": 14740155,
+      "source": "direct_line_item",
+      "calculation_note": "Long term borrowings — Consolidated Statement of Financial Position, page 9; Note 27, page 87"
+    },
+    "net_debt": {
+      "value": -411702,
+      "source": "calculated",
+      "calculation_note": "Short-term borrowings (391,584) + Long-term borrowings (14,740,155) - Cash and cash equivalents (15,543,441) = Net debt (-411,702)"
+    },
+    "operating_cash_flow": 19885337,
+    "capital_expenditure": {
+      "value": 11762918,
+      "source": "calculated",
+      "calculation_note": "Sum of: Purchase of property and equipment (7,951,795) + Purchase of intangible assets (3,811,123) — Consolidated Statement of Cash Flows, page 12"
+    },
+    "free_cash_flow": {
+      "value": 8122419,
+      "source": "calculated",
+      "calculation_note": "Operating Cash Flow (19,885,337) - CapEx (11,762,918) = Free Cash Flow (8,122,419)"
+    },
+    "total_equity": 92485047,
+    "shares_outstanding": {
+      "value": 4986916,
+      "source": "direct_line_item",
+      "calculation_note": "Number of outstanding shares 'in thousands' as at 31 December 2024 — Note 22, page 82 and Note 42, page 100"
+    },
+    "shares_weighted_average_diluted": {
+      "value": 5000000,
+      "source": "direct_line_item",
+      "calculation_note": "Weighted average number of ordinary shares for the purposes of calculating diluted earnings per share — Note 42, page 100"
+    }
+  },
+  "narrative": {
+    "sections_found": [
+      {
+        "topic": "Revenue Performance and Segment Analysis",
+        "page_range": "55-58",
+        "summary": "Group revenues from continuing operations reached SR 75.9 billion in 2024, up from SR 71.8 billion in 2023, representing approximately 5.7% growth. The stc parent entity contributed SR 49.6 billion, followed by Channels at SR 15.1 billion and Solutions at SR 12.1 billion. Revenue from the Kingdom of Saudi Arabia was SR 67.1 billion (88% of total), while international revenue was SR 8.8 billion. Government entities accounted for SR 12.7 billion of revenues (down from SR 13.5 billion in 2023). Rendering of services was the dominant revenue category at SR 63.3 billion versus device sales of SR 12.5 billion."
+      },
+      {
+        "topic": "Cost Structure and Profitability",
+        "page_range": "10, 98-99",
+        "summary": "Cost of revenues rose to SR 38.6 billion in 2024 from SR 37.0 billion in 2023, driven by higher costs of devices/equipment/software (SR 14.6 billion) and employee costs (SR 5.5 billion), partially offset by lower network access charges (SR 8.1 billion, which benefited from a SR 1.5 billion reversal of withholding tax provision). Gross profit improved to SR 37.3 billion (49.2% margin) from SR 34.7 billion (48.4% margin). Operating profit was SR 14.4 billion, up from SR 13.2 billion, while net profit from continuing operations was SR 10.9 billion compared to SR 12.7 billion in 2023. The early retirement program cost SR 2.6 billion in 2024 versus SR 0.9 billion in 2023, significantly impacting operating results."
+      },
+      {
+        "topic": "Discontinued Operations — TAWAL Sale",
+        "page_range": "68-70",
+        "summary": "In December 2024, stc completed the sale of a controlling interest in TAWAL (telecommunications towers) and Digital Infrastructure for Investment Company to the Public Investment Fund (PIF), recognizing a total gain of SR 12.9 billion. Cash consideration received was SR 5.7 billion, with an additional SR 3.2 billion settled via dividend payables to PIF, and non-cash consideration of SR 1.0 billion (43% stake in GLIC). The retained 43.06% interest in the new combined entity (Digital Infrastructure for Investment Company) was fair-valued using discounted cash flow methodology with a WACC of 9%-10% and terminal growth of 2.3%-2.5%. Net profit from discontinued operations totaled SR 14.0 billion, driving total group net profit to SR 24.9 billion for 2024."
+      },
+      {
+        "topic": "Capital Expenditure and Investment Activity",
+        "page_range": "12, 58",
+        "summary": "Total additions to property, equipment, intangibles and goodwill were SR 13.1 billion in 2024, down from SR 17.6 billion in 2023 (which included significant TAWAL capex of SR 6.3 billion). The stc parent entity accounted for SR 9.3 billion of 2024 capex additions, followed by Center3 at SR 2.7 billion. Cash used in investing activities (continuing operations) was SR 7.2 billion, largely directed at purchasing property/equipment (SR 7.95 billion) and intangible assets (SR 3.81 billion), partially offset by proceeds from the TAWAL sale (SR 4.06 billion net of cash). The Group maintained contractual commitments for property and equipment of SR 7.3 billion at year-end."
+      },
+      {
+        "topic": "Cash Flow and Liquidity",
+        "page_range": "12, 105-106",
+        "summary": "Net cash from operating activities was SR 19.9 billion in 2024 (versus SR 22.4 billion in 2023), with the decline partly attributable to higher trade receivables growth and contract asset increases. Cash and cash equivalents rose to SR 15.5 billion at year-end from SR 13.4 billion, bolstered by TAWAL transaction proceeds. The Group held an additional SR 15.2 billion in short-term murabahas with maturities of 3-12 months. Unused financing facilities totaled SR 4.8 billion. The Debt/EBITDA ratio improved significantly to 63% from 98% due to debt reduction from TAWAL deconsolidation and EBITDA growth."
+      },
+      {
+        "topic": "Debt and Capital Structure",
+        "page_range": "87-88, 101",
+        "summary": "Total borrowings fell to SR 15.1 billion at end-2024 from SR 22.0 billion at end-2023, primarily due to the deconsolidation of TAWAL's SR 13.6 billion debt upon loss of control. Key debt instruments include a USD 1.25 billion international sukuk at 3.89% maturing in 2029 (SR 4.68 billion) and a USD 1.6 billion murabaha (SR 6.0 billion) maturing in March 2029. The Debt/(Debt+Equity) ratio improved to 14% from 21%. The Group adopted an Islamic Cross Currency Profit Rate Swap (EUR 1.47 billion notional) to hedge EUR forex risk, designated as a net investment hedge and cash flow hedge from Q3 2024."
+      },
+      {
+        "topic": "Dividend Policy",
+        "page_range": "110",
+        "summary": "The Board approved a new three-year dividend policy in August 2024 (ratified by General Assembly in November 2024) setting a minimum quarterly dividend of SR 0.55 per share from Q4 2024 through Q3 2027, up from the prior SR 0.40 per share. For 2024, dividends distributed included SR 0.40 per quarter for Q4 2023 and Q1-Q3 2024, plus an additional SR 1.00 per share special dividend approved by the General Assembly in April 2024 for 2023. Following year-end, the Board recommended an additional special dividend of SR 2.00 per share for 2024, subject to General Assembly approval. Treasury shares held under the long-term incentives program are excluded from dividend entitlements."
+      },
+      {
+        "topic": "Trade Receivables and Credit Risk",
+        "page_range": "78-79",
+        "summary": "Gross trade receivables grew to SR 25.6 billion from SR 23.8 billion, with an impairment allowance of SR 3.38 billion (ECL rate of 13.2%, up from 10.0% in 2023). Government entity receivables totaled SR 18.6 billion, with SR 3.2 billion aged more than two years. Impairment additions of SR 1.38 billion were charged in 2024, significantly above the SR 0.45 billion added in 2023, reflecting increased focus on provisioning aged balances. The Group uses a provision matrix for retail customers and individual assessment for government, related parties and key private customers."
+      },
+      {
+        "topic": "Investments in Associates and Joint Ventures",
+        "page_range": "49-54",
+        "summary": "Following the TAWAL disposal, the Group's investment in associates increased dramatically to SR 9.7 billion (2023: SR 1.3 billion), with the new Digital Infrastructure for Investment Company associate valued at SR 8.1 billion (carrying goodwill and fair value adjustments of SR 4.9 billion pending PPA completion). The BGSM joint venture (25% in Malaysian telecom holding company) recorded a SR 764 million impairment in 2024 due to declining market conditions, reducing its carrying value to SR 2.5 billion. Arabsat (36.66%) contributed SR 34.6 million to equity earnings. Net share of results from associates and joint ventures was a loss of SR 666 million versus a gain of SR 53 million in 2023."
+      }
+    ]
+  }
+}

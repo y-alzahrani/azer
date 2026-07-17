@@ -124,9 +124,10 @@ azer/
 | Company | Ticker | Annual Reports | Quarterly Reports |
 |---------|--------|---------------|------------------|
 | Meta Platforms | META | FY 2021 – FY 2025 | Q1 2026, Q1-Q3 2025 |
-| Saudi Aramco | 2222.SR | FY 2021 – FY 2025 | Q1 2026, Q1-Q3 2025 |
+| Saudi Aramco | 2222 | FY 2021 – FY 2025 | Q1 2026, Q1-Q3 2025 |
+| Saudi Telecom Company | 7010 | FY 2021 – FY 2025 | Q1 2026 |
  
-**Total: 18 documents**
+**Total: 24 documents**
 
 ## Metrics Extracted
  

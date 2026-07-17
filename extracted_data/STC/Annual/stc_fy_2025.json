@@ -1,0 +1,116 @@
+{
+  "company": "STC",
+  "ticker": "7010.SR",
+  "report_type": "Annual",
+  "period": "FY 2025",
+  "period_end_date": "2025-12-31",
+  "currency": "SAR",
+  "unit": "Thousands",
+  "metrics": {
+    "revenue": 77818675,
+    "cost_of_revenue": {
+      "value": 40118986,
+      "source": "direct_line_item",
+      "calculation_note": "Cost of revenues — Consolidated Statement of Profit or Loss, page 212"
+    },
+    "operating_expenses": {
+      "value": 23261425,
+      "source": "direct_line_item",
+      "calculation_note": "TOTAL OPERATING EXPENSES — Consolidated Statement of Profit or Loss, page 212"
+    },
+    "operating_income": 14438264,
+    "net_income": 14828030,
+    "eps": 2.97,
+    "cash_and_equivalents": {
+      "value": 13376071,
+      "source": "direct_line_item",
+      "calculation_note": "Cash and cash equivalents from banking and non-banking operations — Consolidated Statement of Financial Position, page 211; Note 20, page 271"
+    },
+    "short_term_debt": {
+      "value": 787160,
+      "source": "direct_line_item",
+      "calculation_note": "Short term borrowings — Consolidated Statement of Financial Position, page 211"
+    },
+    "long_term_debt": {
+      "value": 14404268,
+      "source": "direct_line_item",
+      "calculation_note": "Long term borrowings — Consolidated Statement of Financial Position, page 211"
+    },
+    "net_debt": {
+      "value": 1815357,
+      "source": "calculated",
+      "calculation_note": "Short-term borrowings (787,160) + Long-term borrowings (14,404,268) - Cash and cash equivalents (13,376,071) = Net debt (1,815,357)"
+    },
+    "operating_cash_flow": 18283163,
+    "capital_expenditure": {
+      "value": 11794671,
+      "source": "direct_line_item",
+      "calculation_note": "Purchase of property and equipment, intangible assets, and investment properties — Consolidated Statement of Cash Flows, page 214"
+    },
+    "free_cash_flow": {
+      "value": 6488492,
+      "source": "calculated",
+      "calculation_note": "Operating Cash Flow (18,283,163) - CapEx (11,794,671) = Free Cash Flow (6,488,492)"
+    },
+    "total_equity": 86386340,
+    "shares_outstanding": {
+      "value": 5000000,
+      "source": "direct_line_item",
+      "calculation_note": "Authorized, issued and fully paid capital comprises 5 billion fully paid ordinary shares — Note 22, page 273; reported in thousands: 5,000,000"
+    },
+    "shares_weighted_average_diluted": {
+      "value": 5000000,
+      "source": "direct_line_item",
+      "calculation_note": "Weighted average number of ordinary shares for the purposes of calculating diluted earnings per share — Note 41, page 290; reported in thousands: 5,000,000"
+    }
+  },
+  "narrative": {
+    "sections_found": [
+      {
+        "topic": "Revenue and Net Profit Performance",
+        "page_range": "164-165",
+        "summary": "stc group achieved revenues of SAR 77,819 million in FY2025, representing 2.5% year-on-year growth driven primarily by a 3.4% increase in commercial unit revenues and 10.8% growth in carrier and wholesale revenues. Net profit attributable to shareholders was SAR 14,828 million; excluding non-recurring items, net profit growth was approximately 12.5%. EBITDA reached SAR 24,469 million, up 6.1% on an adjusted basis, while gross profit was SAR 37,700 million. The prior year net profit of SAR 24,689 million included a SAR 13,973 million gain from the TAWAL disposal."
+      },
+      {
+        "topic": "Segment Performance",
+        "page_range": "252-255",
+        "summary": "stc KSA remained the dominant segment with SAR 51,119 million in revenues, while Channels contributed SAR 14,085 million and Solutions SAR 12,730 million. International subsidiaries stc Kuwait and stc Bahrain generated SAR 4,180 million and SAR 1,968 million respectively. STC Bank grew revenues 11% to SAR 1,401 million following its official digital bank launch in early 2025. Inter-segment eliminations amounted to SAR 11,499 million. Total Group assets were SAR 157,477 million."
+      },
+      {
+        "topic": "Capital Expenditure and Infrastructure Investment",
+        "page_range": "214, 256-263",
+        "summary": "Capital expenditure on property, equipment, and intangible assets amounted to SAR 11,795 million in 2025. Key investments included commissioning 1,261 new 5G sites bringing the total to 10,803, connecting 152,769 new FTTH households for a cumulative 3.75 million connections, and expanding the telco cloud footprint to nine data centers. center3 committed SAR 37.5 billion in additional investment to reach 1 GW data center capacity by 2030. Contractual commitments totalled SAR 9,488 million at year-end."
+      },
+      {
+        "topic": "Operating Cash Flow and Liquidity",
+        "page_range": "166-167, 214",
+        "summary": "Net cash generated from operating activities was SAR 18,283 million in FY2025, down from SAR 19,885 million in FY2024. Investing activities generated SAR 2,546 million, primarily due to net proceeds from short-term murabahas of SAR 13,472 million partially offset by capital expenditure. Financing activities consumed SAR 23,001 million, largely from SAR 20,955 million in dividends paid to equity holders. Cash and cash equivalents declined to SAR 13,376 million from SAR 15,543 million. The Group maintained unused financing facilities of SAR 15,467 million."
+      },
+      {
+        "topic": "Debt and Capital Structure",
+        "page_range": "166-169, 278-279",
+        "summary": "Total borrowings at year-end were SAR 15,191 million (current: SAR 787 million; non-current: SAR 14,404 million), broadly stable versus SAR 15,132 million in 2024. The Group's debt comprises a USD 1,250 million international Sukuk at 3.89% maturing 2029, a USD 6,000 million murabaha, and various subsidiary facilities. Debt-to-EBITDA was 62% and debt-to-(debt+equity) was 15%, well within targets. The Group holds strong credit ratings: Fitch A+, S&P A+, Moody's Aa3, and Tasneef AAA."
+      },
+      {
+        "topic": "Dividend Policy and Distributions",
+        "page_range": "201-202, 298-299",
+        "summary": "stc's dividend policy commits to a minimum of SAR 0.55 per share per quarter from Q4 2024 through Q3 2027. In 2025, regular quarterly dividends of SAR 0.55 per share were distributed for Q4 2024, Q1, Q2, and Q3 2025, and the General Assembly approved a special dividend of SAR 2.00 per share for FY2024. Total cash dividends distributed in 2025 reached SAR 21 billion (SAR 20,955 million to equity holders). The Q4 2025 dividend of SAR 0.55 per share is payable in March 2026."
+      },
+      {
+        "topic": "Revenue Drivers and Cost Structure",
+        "page_range": "286-289",
+        "summary": "Revenue comprised SAR 63,312 million from rendering of services (81.4%), SAR 12,634 million from device sales (16.2%), and SAR 1,873 million from other sources including digital banking. Cost of revenues totalled SAR 40,119 million, with the largest components being cost of devices/equipment/software (SAR 14,196 million), network access charges (SAR 10,094 million), employee costs (SAR 5,544 million), and government charges (SAR 5,418 million). Selling and marketing expenses were SAR 6,372 million and general and administrative expenses were SAR 6,859 million."
+      },
+      {
+        "topic": "Key Risks and Risk Management",
+        "page_range": "50-71",
+        "summary": "Principal risks include cybersecurity threats (including quantum computing risks), data privacy compliance, business continuity disruptions, evolving regulatory requirements, supply chain concentration, strategic competitive dynamics, and AI adoption governance challenges. The Group achieved ISO 31000 and ISO 27001 certifications and enhanced its risk appetite framework during the year. A comprehensive Business Continuity Management system aligned with ISO 22301 is maintained, with 12 large-scale disaster recovery drills conducted and 11,091 resilience tests performed across network layers."
+      },
+      {
+        "topic": "Associates and Investments",
+        "page_range": "245-251",
+        "summary": "The Group holds a 43.06% stake in Digital Infrastructure for Investment Company (DIIC), which owns tower infrastructure previously held by subsidiary TAWAL; the carrying value of this associate was SAR 8,422 million. The Group's 25% stake in Malaysian joint venture Binariang GSM (BGSM) has a carrying value of SAR 2,758 million. stc increased its voting rights in Telefonica from 4.97% to 9.97% in Q1 2025, and the listed equity investment had a fair value of SAR 8,707 million at year-end. Net share in results of associates and joint ventures was a gain of SAR 295 million versus a loss of SAR 666 million in the prior year."
+      }
+    ]
+  }
+}

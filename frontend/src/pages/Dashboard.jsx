@@ -46,6 +46,22 @@ function fmtCurrency(currency) {
   return currency
 }
 
+function makeTickFormatter(unit) {
+  return (v) => {
+    let actual = v
+    if (unit === 'Thousands') actual = v * 1_000
+    else if (unit === 'Millions') actual = v * 1_000_000
+    else if (unit === 'Billions') actual = v * 1_000_000_000
+    const abs = Math.abs(actual)
+    const sign = actual < 0 ? '-' : ''
+    const fmt = (n) => Number.isInteger(n) || n % 1 === 0 ? n.toFixed(0) : n.toFixed(2)
+    if (abs >= 1_000_000_000_000) return `\u200E${sign}${fmt(abs/1_000_000_000_000)}T`
+    if (abs >= 1_000_000_000)     return `\u200E${sign}${fmt(abs/1_000_000_000)}B`
+    if (abs >= 1_000_000)         return `\u200E${sign}${fmt(abs/1_000_000)}M`
+    return `\u200E${sign}${abs.toFixed(0)}`
+  }
+}
+
 const CHART_STYLE = {
   background: 'var(--surface)',
   border: '1px solid var(--border)',
@@ -239,11 +255,7 @@ export default function Dashboard() {
                     <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
                     <XAxis dataKey="period" tickFormatter={v => v.replace('FY ', '')} tick={{ fill: 'var(--text-2)', fontSize: 13, fontFamily: 'var(--font)' }} />
                     <YAxis domain={['auto', 'auto']}
-                      tickFormatter={v => {
-                        if (Math.abs(v) >= 1_000_000) return `${(v/1_000_000).toFixed(1)}T`
-                        if (Math.abs(v) >= 1_000) return `${(v/1_000).toFixed(0)}B`
-                        return v
-                      }}
+                      tickFormatter={makeTickFormatter(unit)}
                       tick={{ fill: 'var(--text-2)', fontSize: 13, fontFamily: 'var(--font)', direction: 'ltr' }} 
                       width={50} 
                     />
@@ -260,11 +272,7 @@ export default function Dashboard() {
                     <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
                     <XAxis dataKey="period" tickFormatter={v => v.replace('FY ', '')} tick={{ fill: 'var(--text-2)', fontSize: 13, fontFamily: 'var(--font)' }} />
                     <YAxis domain={['auto', 'auto']}
-                      tickFormatter={v => {
-                        if (Math.abs(v) >= 1_000_000) return `${(v/1_000_000).toFixed(1)}T`
-                        if (Math.abs(v) >= 1_000) return `${(v/1_000).toFixed(0)}B`
-                        return v
-                      }}
+                      tickFormatter={makeTickFormatter(unit)}
                       tick={{ fill: 'var(--text-2)', fontSize: 13, fontFamily: 'var(--font)', direction: 'ltr' }} 
                       width={50} 
                     />
@@ -281,11 +289,7 @@ export default function Dashboard() {
                     <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
                     <XAxis dataKey="period" tickFormatter={v => v.replace('FY ', '')} tick={{ fill: 'var(--text-2)', fontSize: 13, fontFamily: 'var(--font)' }} />
                     <YAxis domain={['auto', 'auto']}
-                      tickFormatter={v => {
-                        if (Math.abs(v) >= 1_000_000) return `${(v/1_000_000).toFixed(1)}T`
-                        if (Math.abs(v) >= 1_000) return `${(v/1_000).toFixed(0)}B`
-                        return v
-                      }}
+                      tickFormatter={makeTickFormatter(unit)}
                       tick={{ fill: 'var(--text-2)', fontSize: 13, fontFamily: 'var(--font)', direction: 'ltr' }} 
                       width={50} 
                     />
@@ -302,11 +306,7 @@ export default function Dashboard() {
                     <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
                     <XAxis dataKey="period" tickFormatter={v => v.replace('FY ', '')} tick={{ fill: 'var(--text-2)', fontSize: 13, fontFamily: 'var(--font)' }} />
                     <YAxis domain={['auto', 'auto']}
-                      tickFormatter={v => {
-                        if (Math.abs(v) >= 1_000_000) return `${(v/1_000_000).toFixed(1)}T`
-                        if (Math.abs(v) >= 1_000) return `${(v/1_000).toFixed(0)}B`
-                        return v
-                      }}
+                      tickFormatter={makeTickFormatter(unit)}
                       tick={{ fill: 'var(--text-2)', fontSize: 13, fontFamily: 'var(--font)', direction: 'ltr' }} 
                       width={50} 
                     />
@@ -330,7 +330,7 @@ export default function Dashboard() {
                   <LineChart data={annualData} margin={{ right: 15, left: 0, top: 10}}>
                     <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
                     <XAxis dataKey="period" tickFormatter={v => v.replace('FY ', '')} padding={{ left: 30, right: 30 }} tick={{ fill: 'var(--text-2)', fontSize: 13, fontFamily: 'var(--font)' }} />
-                    <YAxis domain={['auto', 'auto']} tickFormatter={v => `${(v*100).toFixed(0)}%`} tick={{ fill: 'var(--text-2)', fontSize: 13, fontFamily: 'var(--font)', direction: 'ltr' }} width={44} />
+                    <YAxis domain={['auto', 'auto']} tickFormatter={v => `${(v*100).toFixed(1)}%`} tick={{ fill: 'var(--text-2)', fontSize: 13, fontFamily: 'var(--font)', direction: 'ltr' }} width={44} />
                     <Tooltip contentStyle={TOOLTIP_STYLE} formatter={(v) => [fmtPct(v), 'هامش الربح التشغيلي']} labelFormatter={(label) => label.replace('FY ', '')} />
                     <Line dataKey="operating_margin" stroke="var(--accent)" strokeWidth={2} dot={{ fill: 'var(--accent)', r: 4 }} />
                   </LineChart>
@@ -343,7 +343,7 @@ export default function Dashboard() {
                   <LineChart data={annualData} margin={{ right: 15, left: 0, top: 10}}>
                     <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
                     <XAxis dataKey="period" tickFormatter={v => v.replace('FY ', '')} padding={{ left: 30, right: 30 }} tick={{ fill: 'var(--text-2)', fontSize: 13, fontFamily: 'var(--font)' }} />
-                    <YAxis domain={['auto', 'auto']} tickFormatter={v => `${(v*100).toFixed(0)}%`} tick={{ fill: 'var(--text-2)', fontSize: 13, fontFamily: 'var(--font)', direction: 'ltr' }} width={44} />
+                    <YAxis domain={['auto', 'auto']} tickFormatter={v => `${(v*100).toFixed(1)}%`} tick={{ fill: 'var(--text-2)', fontSize: 13, fontFamily: 'var(--font)', direction: 'ltr' }} width={44} />
                     <Tooltip contentStyle={TOOLTIP_STYLE} formatter={(v) => [fmtPct(v), 'هامش الربح الصافي']} labelFormatter={(label) => label.replace('FY ', '')} />
                     <Line dataKey="net_margin" stroke="#60A5FA" strokeWidth={2} dot={{ fill: '#60A5FA', r: 4 }} />
                   </LineChart>
@@ -365,11 +365,7 @@ export default function Dashboard() {
                     <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
                     <XAxis dataKey="period" tickFormatter={v => v.replace('FY ', '')} tick={{ fill: 'var(--text-2)', fontSize: 13, fontFamily: 'var(--font)' }} />
                     <YAxis domain={['auto', 'auto']}
-                      tickFormatter={v => {
-                        if (Math.abs(v) >= 1_000_000) return `${(v/1_000_000).toFixed(1)}T`
-                        if (Math.abs(v) >= 1_000) return `${(v/1_000).toFixed(0)}B`
-                        return v
-                      }}
+                      tickFormatter={makeTickFormatter(unit)}
                       tick={{ fill: 'var(--text-2)', fontSize: 13, fontFamily: 'var(--font)', direction: 'ltr' }} 
                       width={50} 
                     />
@@ -386,11 +382,7 @@ export default function Dashboard() {
                     <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
                     <XAxis dataKey="period" tickFormatter={v => v.replace('FY ', '')} tick={{ fill: 'var(--text-2)', fontSize: 13, fontFamily: 'var(--font)' }} />
                     <YAxis domain={['auto', 'auto']}
-                      tickFormatter={v => {
-                        if (Math.abs(v) >= 1_000_000) return `${(v/1_000_000).toFixed(1)}T`
-                        if (Math.abs(v) >= 1_000) return `${(v/1_000).toFixed(0)}B`
-                        return v
-                      }}
+                      tickFormatter={makeTickFormatter(unit)}
                       tick={{ fill: 'var(--text-2)', fontSize: 13, fontFamily: 'var(--font)', direction: 'ltr' }} 
                       width={50} 
                     />
@@ -407,11 +399,7 @@ export default function Dashboard() {
                     <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
                     <XAxis dataKey="period" padding={{ left: 30, right: 30 }} tickFormatter={v => v.replace('FY ', '')} tick={{ fill: 'var(--text-2)', fontSize: 13, fontFamily: 'var(--font)' }} />
                     <YAxis domain={['auto', 'auto']}
-                      tickFormatter={v => {
-                        if (Math.abs(v) >= 1_000_000) return `${(v/1_000_000).toFixed(1)}T`
-                        if (Math.abs(v) >= 1_000) return `${(v/1_000).toFixed(0)}B`
-                        return v
-                      }}
+                      tickFormatter={makeTickFormatter(unit)}
                       tick={{ fill: 'var(--text-2)', fontSize: 13, fontFamily: 'var(--font)', direction: 'ltr' }} 
                       width={50} 
                     />
@@ -427,7 +415,7 @@ export default function Dashboard() {
                   <LineChart data={annualData} margin={{ right: 15, left: 0, top: 10}}>
                     <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
                     <XAxis dataKey="period" padding={{ left: 30, right: 30 }} tickFormatter={v => v.replace('FY ', '')} tick={{ fill: 'var(--text-2)', fontSize: 13, fontFamily: 'var(--font)' }} />
-                    <YAxis domain={['auto', 'auto']} tickFormatter={v => v.toFixed(2)} tick={{ fill: 'var(--text-2)', fontSize: 13, fontFamily: 'var(--font)', direction: 'ltr' }} width={44} />
+                    <YAxis domain={['auto', 'auto']} tickFormatter={v => v.toFixed(3)} tick={{ fill: 'var(--text-2)', fontSize: 13, fontFamily: 'var(--font)', direction: 'ltr' }} width={44} />
                     <Tooltip contentStyle={TOOLTIP_STYLE} formatter={(v) => [v.toFixed(2), 'نسبة الدين إلى حقوق الملكية']} labelFormatter={(label) => label.replace('FY ', '')} />
                     <Line dataKey="debt_to_equity" stroke="#A78BFA" strokeWidth={2} dot={{ fill: '#A78BFA', r: 4 }} />
                   </LineChart>
