@@ -1,0 +1,148 @@
+{
+  "company": "Sipchem",
+  "ticker": "2310.SR",
+  "report_type": "Annual",
+  "period": "FY 2023",
+  "period_end_date": "2023-12-31",
+  "currency": "SAR",
+  "unit": "Thousands",
+  "metrics": {
+    "revenue": {
+      "value": 7617941,
+      "source": "direct_line_item",
+      "source_note": "Revenue — Consolidated statement of profit or loss, page 10"
+    },
+    "cost_of_revenue": {
+      "value": 5449474,
+      "source": "direct_line_item",
+      "source_note": "Cost of revenues — Consolidated statement of profit or loss, page 10"
+    },
+    "operating_expenses": {
+      "value": 749499,
+      "source": "calculated",
+      "source_note": "Selling and distribution expenses (234,553) + General and administrative expenses (514,946) = 749,499 — Consolidated statement of profit or loss, page 10"
+    },
+    "operating_income": {
+      "value": 1418968,
+      "source": "direct_line_item",
+      "source_note": "Operating profit — Consolidated statement of profit or loss, page 10"
+    },
+    "net_income": {
+      "value": 1356344,
+      "source": "direct_line_item",
+      "source_note": "Profit for the year — Consolidated statement of profit or loss, page 10"
+    },
+    "eps": {
+      "value": 1.6,
+      "source": "direct_line_item",
+      "source_note": "Diluted earnings per share — Consolidated statement of profit or loss, page 10"
+    },
+    "cash_and_equivalents": {
+      "value": 1504040,
+      "source": "direct_line_item",
+      "source_note": "Cash and cash equivalents — Consolidated statement of financial position, page 8"
+    },
+    "short_term_debt": {
+      "value": 535339,
+      "source": "calculated",
+      "source_note": "Current portion of long term borrowings (338,464) + Short term borrowings (196,875) = 535,339 — Note 21.2, page 58; Consolidated statement of financial position, page 9"
+    },
+    "long_term_debt": {
+      "value": 2017382,
+      "source": "direct_line_item",
+      "source_note": "Long term borrowings — Consolidated statement of financial position, page 8"
+    },
+    "net_debt": {
+      "value": 1048681,
+      "source": "calculated",
+      "source_note": "Short-term debt (535,339) + Long-term debt (2,017,382) - Cash & Cash Equivalents (1,504,040) = Net debt (1,048,681)"
+    },
+    "operating_cash_flow": {
+      "value": 2339661,
+      "source": "direct_line_item",
+      "source_note": "Net cash generated from operating activities — Consolidated statement of cash flows, page 15"
+    },
+    "capital_expenditure": {
+      "value": 731847,
+      "source": "calculated",
+      "source_note": "Payments for purchase of property, plant and equipment (729,202) + Payments for purchase of intangibles (2,645) = 731,847 — Consolidated statement of cash flows, page 15; also corroborated by Segment Information capital expenditure total in Note 4, page 37"
+    },
+    "free_cash_flow": {
+      "value": 1607814,
+      "source": "calculated",
+      "source_note": "Operating Cash Flow (2,339,661) - CapEx (731,847) = Free Cash Flow (1,607,814)"
+    },
+    "starting_equity": {
+      "value": 16736823,
+      "source": "direct_line_item",
+      "source_note": "Total equity as at 1 January 2023 — Consolidated statement of changes in equity, page 12"
+    },
+    "ending_equity": {
+      "value": 16422326,
+      "source": "direct_line_item",
+      "source_note": "Total equity as at 31 December 2023 — Consolidated statement of financial position, page 8"
+    },
+    "shares_outstanding": {
+      "value": 733333,
+      "source": "direct_line_item",
+      "source_note": "Authorized, issued and fully paid shares as at 31 December — number of shares 733,333,300 — Note 20, page 55; converted to Thousands = 733,333"
+    },
+    "shares_weighted_average_diluted": {
+      "value": 733333,
+      "source": "direct_line_item",
+      "source_note": "Weighted average number of shares used in calculating dilutive earnings per share 733,333 (thousands) — Note 33, page 70"
+    }
+  },
+  "narrative": [
+    {
+      "topic": "Revenue and Profitability",
+      "page_range": "10",
+      "summary": "Consolidated revenue declined significantly to SAR 7.6 billion in 2023 from SAR 10.3 billion in 2022, a drop of approximately 26%, driven by lower product selling prices across all segments. Gross profit fell from SAR 4.8 billion to SAR 2.2 billion, compressing the gross margin from approximately 47% to 28%. Operating profit declined from SAR 4.0 billion to SAR 1.4 billion, and net profit attributable to equity holders dropped from SAR 3.6 billion to SAR 1.2 billion. Basic EPS decreased from SAR 4.96 to SAR 1.62 per share."
+    },
+    {
+      "topic": "Segment Performance",
+      "page_range": "37-38",
+      "summary": "The Group operates five segments: Basic Chemicals, Intermediate Chemicals, Polymers, Trading, and Corporate & Others. All segments recorded sharp declines in operating profit compared to 2022; for example, Basic Chemicals fell from SAR 1.66 billion to SAR 754 million, and Intermediate Chemicals from SAR 1.31 billion to SAR 84 million. The Polymers segment remained the largest contributor to external revenue at SAR 2.7 billion, while the Trading segment had the highest total revenue but modest operating profit of SAR 110 million. Revenue from external customers in Saudi Arabia was SAR 892 million versus SAR 6.7 billion from foreign countries."
+    },
+    {
+      "topic": "Cost Structure",
+      "page_range": "10, 69-70",
+      "summary": "Cost of revenues in 2023 was SAR 5.4 billion, broadly flat versus SAR 5.4 billion in 2022, despite a significant fall in revenue, reflecting high fixed-cost production operations. The main cost components were cost of inventories (SAR 3.8 billion), depreciation and amortization (SAR 827 million), and employee-related costs (SAR 442 million). General and administrative expenses increased slightly to SAR 515 million from SAR 496 million. Selling and distribution expenses declined from SAR 296 million to SAR 235 million, primarily reflecting lower freight and shipping costs."
+    },
+    {
+      "topic": "Cash Flows and Liquidity",
+      "page_range": "14-15",
+      "summary": "Operating cash flow remained robust at SAR 2.3 billion in 2023, down from SAR 5.3 billion in 2022, broadly reflecting the decline in profitability. Capital expenditure totaled SAR 732 million, focused on plant improvements and enhancements. Cash used in financing activities was SAR 2.7 billion, driven mainly by SAR 1.45 billion in dividends paid to shareholders and SAR 1.09 billion in long-term borrowing repayments. Cash and cash equivalents declined from SAR 2.5 billion at the start of the year to SAR 1.5 billion at year-end."
+    },
+    {
+      "topic": "Capital Expenditure and Investment Activity",
+      "page_range": "14-15, 42-44",
+      "summary": "The Group invested SAR 729 million in property, plant and equipment and SAR 2.6 million in intangibles during 2023, compared to SAR 585 million and SAR 47 million respectively in 2022. Capital work in progress rose to SAR 1.09 billion, largely comprising advances for plant improvements. Borrowing costs capitalized amounted to SAR 14.8 million. The Group also received SAR 228 million in dividends from its associate TSOC, and made a SAR 9.4 million investment in a joint venture."
+    },
+    {
+      "topic": "Debt and Capital Structure",
+      "page_range": "58-59",
+      "summary": "Total loans and borrowings fell from SAR 3.3 billion at end-2022 to SAR 2.6 billion at end-2023, as the Group repaid SAR 1.09 billion in long-term debt and drew a new short-term loan of SAR 197 million from Saudi Exim Bank. Long-term borrowings consist primarily of Shari'a-compliant facilities at SAIBOR plus a fixed margin. The Group was in compliance with financial covenants on its main facilities as of 31 December 2023, though SAT's SIDF loan had covenant breaches for which a waiver was obtained. Future debt maturities are spread across 2024–2028."
+    },
+    {
+      "topic": "Impairment Assessment of Non-Current Assets",
+      "page_range": "3-5, 44, 48, 52-53",
+      "summary": "Management identified impairment indicators for IDC and for the investment in SAMAPCO during 2023, primarily due to significant declines in market prices and current-period operating losses. Detailed impairment assessments using discounted cash flow (value-in-use) models were performed, applying a 9% discount rate and a 2.5% long-term growth rate. In all cases, recoverable amounts exceeded carrying amounts, so no impairment loss was recognized. Goodwill of SAR 630 million was also tested annually with no impairment identified; sensitivity analyses showed the headroom would be eliminated by modest changes in assumptions (e.g., a discount rate increase to 9.8%–10.2% for goodwill CGUs)."
+    },
+    {
+      "topic": "Dividend Policy",
+      "page_range": "70",
+      "summary": "The Board of Directors declared two cash dividend distributions in 2023: SAR 1.25 per share for H1 2023 (total SAR 906 million, paid July 2023) and SAR 0.75 per share for H2 2023 (total SAR 544 million, paid December 2023), bringing the full-year dividend to SAR 2.00 per share totaling SAR 1.45 billion. This represents a reduction compared to 2022 dividends of SAR 2.4 billion (SAR 3.25 per share), reflecting the lower earnings environment. Dividends paid to non-controlling interests in subsidiaries amounted to SAR 259 million."
+    },
+    {
+      "topic": "Key Risks — Market and Commodity Price Risk",
+      "page_range": "61-62",
+      "summary": "The Group's primary market risk is commodity price risk, as production inputs such as propane, ethane, ethylene, and propylene are correlated to crude oil prices, and selling prices are tied to global petrochemical markets. The Group partially mitigates this through long-term fixed-price procurement contracts where available. Interest rate risk on floating-rate borrowings is managed through interest rate swap arrangements (a cash flow hedge with a fair value of SAR 34.2 million at year-end). Foreign currency risk is considered immaterial, as Saudi Riyals is pegged to USD and non-USD exposures (AUD and Euros) are not significant."
+    },
+    {
+      "topic": "Equity and Reserves",
+      "page_range": "12-13, 55-57",
+      "summary": "Total equity decreased from SAR 16.7 billion at the start of 2023 to SAR 16.4 billion at year-end, primarily because dividends of SAR 1.7 billion exceeded the retained profit contribution. Other comprehensive income of SAR 60 million mainly reflected re-measurement gains on defined benefit obligations (SAR 23 million) and changes in the cash flow hedge reserve (SAR 34 million). The Company transferred SAR 117 million to statutory reserve in 2023 in accordance with its by-laws, though the statutory reserve requirement has been abolished under new KSA regulations. Treasury shares amount to 8.2 million shares at year-end."
+    }
+  ]
+}

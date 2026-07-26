@@ -1,0 +1,148 @@
+{
+  "company": "Sipchem",
+  "ticker": "2310.SR",
+  "report_type": "Annual",
+  "period": "FY 2024",
+  "period_end_date": "2024-12-31",
+  "currency": "SAR",
+  "unit": "Thousands",
+  "metrics": {
+    "revenue": {
+      "value": 7060592,
+      "source": "direct_line_item",
+      "source_note": "Revenue — Consolidated statement of profit or loss, page 10"
+    },
+    "cost_of_revenue": {
+      "value": 5621095,
+      "source": "direct_line_item",
+      "source_note": "Cost of revenues — Consolidated statement of profit or loss, page 10"
+    },
+    "operating_expenses": {
+      "value": 809582,
+      "source": "calculated",
+      "source_note": "Selling and distribution expenses (239,873) + General and administrative expenses (569,709) = 809,582. No single 'total operating expenses' line item exists; cost of revenues excluded. Consolidated statement of profit or loss, page 10"
+    },
+    "operating_income": {
+      "value": 682915,
+      "source": "direct_line_item",
+      "source_note": "Operating profit — Consolidated statement of profit or loss, page 10"
+    },
+    "net_income": {
+      "value": 466215,
+      "source": "direct_line_item",
+      "source_note": "Profit for the year — Consolidated statement of profit or loss, page 10"
+    },
+    "eps": {
+      "value": 0.58,
+      "source": "direct_line_item",
+      "source_note": "Diluted earnings per share — Consolidated statement of profit or loss, page 10"
+    },
+    "cash_and_equivalents": {
+      "value": 957994,
+      "source": "direct_line_item",
+      "source_note": "Cash and cash equivalents — Consolidated statement of financial position, page 8; Note 19, page 55"
+    },
+    "short_term_debt": {
+      "value": 485289,
+      "source": "calculated",
+      "source_note": "Current portion of long term borrowings (322,289) + Short term borrowings (163,000) = 485,289. Operating lease liabilities excluded. Note 21.2, page 58; Consolidated statement of financial position, page 9"
+    },
+    "long_term_debt": {
+      "value": 1604105,
+      "source": "direct_line_item",
+      "source_note": "Long term borrowings (non-current) — Consolidated statement of financial position, page 8; Note 21.2, page 58"
+    },
+    "net_debt": {
+      "value": 1131400,
+      "source": "calculated",
+      "source_note": "Short-term debt (485,289) + Long-term debt (1,604,105) - Cash & Cash Equivalents (957,994) = Net debt (1,131,400)"
+    },
+    "operating_cash_flow": {
+      "value": 1374342,
+      "source": "direct_line_item",
+      "source_note": "Net cash generated from operating activities — Consolidated statement of cash flows, page 14"
+    },
+    "capital_expenditure": {
+      "value": 658884,
+      "source": "calculated",
+      "source_note": "Payments for purchase of property, plant and equipment (657,604) + Payments for purchase of intangibles (1,280) = 658,884. Consolidated statement of cash flows, page 14"
+    },
+    "free_cash_flow": {
+      "value": 715458,
+      "source": "calculated",
+      "source_note": "Operating Cash Flow (1,374,342) - CapEx (658,884) = Free Cash Flow (715,458)"
+    },
+    "starting_equity": {
+      "value": 16422326,
+      "source": "direct_line_item",
+      "source_note": "Total equity as at 1 January 2024 — Consolidated statement of changes in equity, page 12"
+    },
+    "ending_equity": {
+      "value": 15970301,
+      "source": "direct_line_item",
+      "source_note": "Total equity as at 31 December 2024 — Consolidated statement of financial position, page 8; Consolidated statement of changes in equity, page 12"
+    },
+    "shares_outstanding": {
+      "value": 733333,
+      "source": "direct_line_item",
+      "source_note": "Authorized, issued and fully paid shares as at 31 December 2024: 733,333,300 shares — Note 20, page 55. Converted to thousands to match unit field."
+    },
+    "shares_weighted_average_diluted": {
+      "value": 733333,
+      "source": "direct_line_item",
+      "source_note": "Weighted average number of shares used in calculating dilutive earnings per share: 733,333 (thousands) — Note 32/33, page 71"
+    }
+  },
+  "narrative": [
+    {
+      "topic": "Revenue and Gross Profit Performance",
+      "page_range": "10, 37-38",
+      "summary": "Total revenue declined by approximately 7.3% from SAR 7.62 billion in 2023 to SAR 7.06 billion in 2024, primarily due to lower market prices across product segments. Gross profit fell significantly from SAR 2.17 billion to SAR 1.44 billion, reflecting margin compression driven by higher cost of revenues relative to selling prices. The Marketing segment remained the largest revenue contributor with external customer sales of approximately SAR 4.85 billion, while the Polymers and Basic Chemicals segments experienced notable revenue reductions. The Intermediate Chemicals segment recorded a gross loss of SAR 79 million in 2024 versus a SAR 198 million gross profit in 2023."
+    },
+    {
+      "topic": "Operating Profit and Net Income",
+      "page_range": "10, 37-38",
+      "summary": "Operating profit declined sharply from SAR 1.42 billion in 2023 to SAR 683 million in 2024, driven by the fall in gross profit and a share of loss from equity accounted investees of SAR 151 million (versus a share of profit of SAR 52 million in 2023). Profit before zakat and income tax fell from SAR 1.36 billion to SAR 448 million. Net profit for the year was SAR 466 million, down from SAR 1.36 billion in 2023, with profit attributable to equity holders of SAR 426 million compared to SAR 1.17 billion in the prior year. Basic and diluted EPS declined to SAR 0.59 and SAR 0.58 respectively from SAR 1.62 and SAR 1.60 in 2023."
+    },
+    {
+      "topic": "Segment Performance",
+      "page_range": "37-38",
+      "summary": "The Basic Chemicals segment remained profitable with an operating profit of SAR 585 million, though lower than the SAR 754 million recorded in 2023. The Intermediate Chemicals segment reported an operating loss of SAR 221 million in 2024 compared to an operating profit of SAR 84 million in 2023, largely due to weak acetic acid and vinyl acetate monomer pricing. The Polymers segment operating profit fell significantly from SAR 477 million to SAR 121 million. The Marketing segment contributed operating profit of SAR 109 million, broadly stable year on year. The Corporate and Others segment reported a loss before zakat and tax of SAR 72 million primarily due to the large share of losses from equity accounted investees."
+    },
+    {
+      "topic": "Cash Flow and Liquidity",
+      "page_range": "14-15",
+      "summary": "Net cash generated from operating activities decreased from SAR 2.34 billion in 2023 to SAR 1.37 billion in 2024, reflecting lower profitability and adverse working capital movements including increased trade receivables and prepayments. Cash used in investing activities was SAR 377 million (2023: SAR 580 million), driven by capital expenditure of approximately SAR 659 million partially offset by net short-term investment redemptions. Financing activities consumed SAR 1.54 billion, including SAR 637 million in long-term borrowing repayments and SAR 725 million in dividends paid to shareholders and SAR 176 million to non-controlling interests. As a result, cash and cash equivalents decreased from SAR 1.50 billion to SAR 958 million at year-end."
+    },
+    {
+      "topic": "Capital Expenditure and Capital Work in Progress",
+      "page_range": "41-43",
+      "summary": "Total capital expenditure incurred during 2024 amounted to SAR 707 million (2023: SAR 732 million), with SAR 658 million in cash payments per the cash flow statement. Capital work in progress stood at SAR 1.14 billion at year-end (2023: SAR 1.09 billion), comprising advances and costs related to plant construction, expansion, and enhancements. The Group also contracted but not yet incurred capital commitments of approximately SAR 1.47 billion as at 31 December 2024, significantly higher than SAR 306 million in 2023. Borrowing costs capitalized in 2024 amounted to SAR 50.3 million at a weighted average interest rate."
+    },
+    {
+      "topic": "Debt and Capital Structure",
+      "page_range": "58-59",
+      "summary": "Total loans and borrowings decreased from SAR 2.55 billion at end-2023 to SAR 2.09 billion at end-2024, reflecting net repayments. The loan portfolio is predominantly Shari'a-compliant facilities carrying floating SAIBOR-based charges. Long-term borrowings stood at SAR 1.60 billion with maturities extending through 2028 and beyond. Total equity declined from SAR 16.42 billion to SAR 15.97 billion due to dividends paid exceeding net profit generated. The gearing ratio (total liabilities to total liabilities and equity) increased modestly as equity declined. SAT was in breach of certain SIDF loan covenants but obtained a waiver letter."
+    },
+    {
+      "topic": "Impairment Assessment of Non-Current Assets",
+      "page_range": "4-5, 43, 48-49, 52",
+      "summary": "Management identified impairment indicators for the IDC, Acetyls, and Polymers CGUs, as well as for the investment in SAMAPCO, due to significant declines in market prices. Detailed discounted cash flow impairment assessments were performed using a 3-year forecast horizon, a terminal growth rate of 2.5%, and a discount rate of 8.5% (reduced from 9.0% in 2023). No impairment loss was recognized in 2024 across property, plant and equipment, intangibles, equity accounted investees, or goodwill, as recoverable amounts exceeded carrying amounts in all cases. Goodwill of SAR 630.5 million (allocated to Al Waha and SEPC CGUs) was also tested without impairment, though sensitivity analysis indicates the Al Waha goodwill would be impaired if discount rates rise to 9.1% or selling prices fall 3.0%."
+    },
+    {
+      "topic": "Dividends",
+      "page_range": "71",
+      "summary": "The Board of Directors declared two cash dividends totaling SAR 1.00 per share (SAR 725 million in aggregate) for 2024: an interim dividend of SAR 0.50 per share approved in June 2024 and paid in July 2024, and a second-half dividend of SAR 0.50 per share approved in November 2024 and paid in December 2024. This compares to total dividends of SAR 2.00 per share (SAR 1.45 billion) paid in 2023. The reduction reflects lower profitability and the need to preserve liquidity given weaker market conditions."
+    },
+    {
+      "topic": "Investments in Equity Accounted Investees",
+      "page_range": "46-49",
+      "summary": "The Group's total investment in equity accounted investees declined from SAR 3.80 billion to SAR 3.67 billion, driven by a net share of losses of SAR 151 million including SAR 106 million from SAMAPCO and SAR 27 million from TSOC. SAMAPCO reported a net loss of SAR 212 million in 2024 due to lower market prices for caustic soda and chlorine despite revenue of SAR 619 million. TSOC performed positively with revenue of SAR 1.14 billion and net profit of SAR 23 million, and during 2024 acquired the remaining 25% of SAMCO through its subsidiary SAAC. The Group did not recognize any impairment on its equity accounted investees as recoverable amounts remained above carrying values."
+    },
+    {
+      "topic": "Zakat and Tax",
+      "page_range": "67-69",
+      "summary": "Zakat payable declined sharply from SAR 299.7 million to SAR 62.3 million at year-end 2024, primarily because management reversed SAR 134.3 million of previously recorded provisions following finalization of Sipchem's zakat status with ZATCA for all years up to 2018. Current year zakat charge was SAR 13.6 million and a prior year credit of SAR 136.6 million was also recognized. Total deferred tax liabilities increased from SAR 44.8 million to SAR 107.8 million mainly due to temporary differences on property, plant and equipment arising from the IPC subsidiary. Income tax expense of SAR 36.9 million relates primarily to foreign shareholders' shares of adjusted profits in Saudi subsidiaries."
+    }
+  ]
+}

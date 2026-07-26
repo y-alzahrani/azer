@@ -52,7 +52,8 @@
       "source": "calculated",
       "calculation_note": "Operating Cash Flow (522,601) - CapEx (119,645) = Free Cash Flow (402,956). Consolidated statement of cash flows, page 13."
     },
-    "total_equity": 1280668,
+    "starting_equity": 1101094,
+    "ending_equity": 1280668,
     "shares_outstanding": {
       "value": 200000,
       "source": "direct_line_item",
@@ -64,8 +65,7 @@
       "calculation_note": "Weighted average number of ordinary shares (in millions) — Note 37, Earnings per share, page 75. Stated as 199,905 million shares for 2021."
     }
   },
-  "narrative": {
-    "sections_found": [
+  "narrative": [
       {
         "topic": "Revenue and Financial Performance",
         "page_range": "09-10",
@@ -128,4 +128,3 @@
       }
     ]
   }
-}

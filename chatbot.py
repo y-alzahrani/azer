@@ -20,6 +20,7 @@ client = anthropic.Anthropic()
 # Build all narratives
 # ---------------------------------------------------------------------------
 
+
 def build_all_narratives(docs):
     """
     Extracts narrative sections from all documents, organized by company and period.
@@ -39,7 +40,7 @@ def build_all_narratives(docs):
         period = doc["period"]
         if company not in narratives:
             narratives[company] = {}
-        narratives[company][period] = doc["narrative"]["sections_found"]
+        narratives[company][period] = doc["narrative"]
     return narratives
 
 
@@ -105,6 +106,7 @@ def route_question(question, available_companies, history=None):
 # Retrieval
 # ---------------------------------------------------------------------------
 
+
 def get_metric_context(all_financials, company, periods, field):
     """
     Retrieves financial metrics for a specific company and period(s).
@@ -150,6 +152,7 @@ def get_narrative_context(all_narratives, company, periods):
 # ---------------------------------------------------------------------------
 # Answer generation
 # ---------------------------------------------------------------------------
+
 
 def format_metric_context(metric_entries):
     """Formats metric entries for the answer prompt."""
@@ -251,6 +254,7 @@ def generate_answer(question, detected_company, metric_context, narrative_contex
 # ---------------------------------------------------------------------------
 # Main chatbot function
 # ---------------------------------------------------------------------------
+
 
 def chat(question, all_financials, all_narratives, history=None):
     """

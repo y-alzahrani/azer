@@ -52,7 +52,8 @@
       "source": "direct_line_item",
       "calculation_note": "Free cash flow — explicitly disclosed as a non-GAAP measure in the Free Cash Flow reconciliation table, page 78. Calculated as Net cash provided by operating activities (115,800) - Purchases of property and equipment (69,691) - Principal payments on finance leases (2,524) = 43,585"
     },
-    "total_equity": 217243,
+    "starting_equity": 182637,
+    "ending_equity": 217243,
     "shares_outstanding": {
       "value": 2530,
       "source": "direct_line_item",
@@ -64,8 +65,7 @@
       "calculation_note": "Shares used in computation of diluted EPS — Consolidated Statements of Income, page 89, and Note 3 Earnings per Share, page 103"
     }
   },
-  "narrative": {
-    "sections_found": [
+  "narrative": [
       {
         "topic": "Revenue Drivers and Advertising Performance",
         "page_range": "60-62",
@@ -118,4 +118,3 @@
       }
     ]
   }
-}

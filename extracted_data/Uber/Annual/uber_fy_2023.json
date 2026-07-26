@@ -1,0 +1,143 @@
+{
+  "company": "Uber",
+  "ticker": "UBER",
+  "report_type": "Annual",
+  "period": "FY 2023",
+  "period_end_date": "2023-12-31",
+  "currency": "USD",
+  "unit": "Millions",
+  "metrics": {
+    "revenue": {
+      "value": 37281,
+      "source": "direct_line_item",
+      "source_note": "Revenue — Consolidated Statements of Operations, page 75 and page 53"
+    },
+    "cost_of_revenue": {
+      "value": 22457,
+      "source": "direct_line_item",
+      "source_note": "Cost of revenue, exclusive of depreciation and amortization shown separately below — Consolidated Statements of Operations, page 75"
+    },
+    "operating_expenses": {
+      "value": 36171,
+      "source": "direct_line_item",
+      "source_note": "Total costs and expenses — Consolidated Statements of Operations, page 75"
+    },
+    "operating_income": {
+      "value": 1110,
+      "source": "direct_line_item",
+      "source_note": "Income (loss) from operations — Consolidated Statements of Operations, page 75"
+    },
+    "net_income": {
+      "value": 1887,
+      "source": "direct_line_item",
+      "source_note": "Net income (loss) attributable to Uber Technologies, Inc. — Consolidated Statements of Operations, page 75"
+    },
+    "eps": {
+      "value": 0.87,
+      "source": "direct_line_item",
+      "source_note": "Diluted net income (loss) per share attributable to Uber Technologies, Inc. common stockholders — Consolidated Statements of Operations, page 75"
+    },
+    "cash_and_equivalents": {
+      "value": 4680,
+      "source": "direct_line_item",
+      "source_note": "Cash and cash equivalents — Consolidated Balance Sheets, page 74, as of December 31, 2023"
+    },
+    "short_term_debt": {
+      "value": 25,
+      "source": "direct_line_item",
+      "source_note": "Current portion of long-term debt (Less: current portion of long-term debt) — Consolidated Balance Sheets, page 74 and Note 8, page 105. The current portion of long-term debt is $25 million as of December 31, 2023."
+    },
+    "long_term_debt": {
+      "value": 9459,
+      "source": "direct_line_item",
+      "source_note": "Long-term debt, net of current portion — Consolidated Balance Sheets, page 74, as of December 31, 2023"
+    },
+    "net_debt": {
+      "value": 4804,
+      "source": "calculated",
+      "source_note": "Short-term debt (25) + Long-term debt (9,459) - Cash & Cash Equivalents (4,680) = Net debt (4,804)"
+    },
+    "operating_cash_flow": {
+      "value": 3585,
+      "source": "direct_line_item",
+      "source_note": "Net cash provided by (used in) operating activities — Consolidated Statements of Cash Flows, page 80 and page 82"
+    },
+    "capital_expenditure": {
+      "value": 223,
+      "source": "direct_line_item",
+      "source_note": "Purchases of property and equipment — Consolidated Statements of Cash Flows, page 80"
+    },
+    "free_cash_flow": {
+      "value": 3362,
+      "source": "direct_line_item",
+      "source_note": "Free cash flow — Reconciliations of Non-GAAP Financial Measures, page 62. Calculated as Net cash provided by operating activities (3,585) minus Purchases of property and equipment (223) = Free cash flow (3,362)"
+    },
+    "starting_equity": {
+      "value": 8074,
+      "source": "direct_line_item",
+      "source_note": "Total equity, Balance as of December 31, 2022 — Consolidated Statements of Redeemable Non-Controlling Interests and Equity, page 79"
+    },
+    "ending_equity": {
+      "value": 12028,
+      "source": "direct_line_item",
+      "source_note": "Total equity, Balance as of December 31, 2023 — Consolidated Statements of Redeemable Non-Controlling Interests and Equity, page 79"
+    },
+    "shares_outstanding": {
+      "value": 2071.144,
+      "source": "direct_line_item",
+      "source_note": "2,071,144 shares issued and outstanding — Consolidated Balance Sheets, page 74, as of December 31, 2023. Shares reflected in thousands per the financial statement header; converted to millions."
+    },
+    "shares_weighted_average_diluted": {
+      "value": 2091.782,
+      "source": "direct_line_item",
+      "source_note": "Diluted weighted-average common stock outstanding: 2,091,782 (thousands) — Consolidated Statements of Operations, page 75. Converted to millions."
+    }
+  },
+  "narrative": [
+    {
+      "topic": "Revenue Drivers and Segment Performance",
+      "page_range": "50-58",
+      "summary": "Total revenue grew 17% year-over-year to $37.3 billion in FY2023. Mobility revenue rose 41% to $19.8 billion driven by a 31% increase in Gross Bookings and higher trip volumes, though partially offset by $368 million in business model changes reclassifying promotions as contra-revenue. Delivery revenue grew 12% to $12.2 billion as Delivery Gross Bookings expanded 14%, supported by increased delivery orders and higher basket sizes, offset by $796 million in similar contra-revenue reclassifications. Freight revenue declined 24% to $5.2 billion due to lower revenue per load and volume amid a challenging freight market cycle."
+    },
+    {
+      "topic": "Cost Structure and Operating Profitability",
+      "page_range": "53-58",
+      "summary": "Total costs and expenses were $36.2 billion in FY2023, up from $33.7 billion in FY2022, yielding income from operations of $1.1 billion versus a loss of $1.8 billion in the prior year. Cost of revenue (exclusive of D&A) rose 14% to $22.5 billion, driven by higher Driver payments and incentives ($1.6 billion increase) and increased insurance expense ($1.4 billion). Sales and marketing expenses decreased 8% to $4.4 billion, mainly due to business model changes reclassifying $1.2 billion as contra-revenue. General and administrative expenses declined 14% to $2.7 billion, reflecting lower legal settlements and other corporate expenses."
+    },
+    {
+      "topic": "Net Income and Other Income/Expense",
+      "page_range": "53, 55-56",
+      "summary": "Net income attributable to Uber was $1.9 billion in FY2023, compared to a net loss of $9.1 billion in FY2022. The improvement was substantially aided by a $1.6 billion pre-tax unrealized gain on debt and equity securities (including a $985 million gain on Aurora, $443 million on Didi, $84 million on Joby, and $80 million on Grab), versus a $7.0 billion unrealized loss in 2022. Interest income increased $345 million to $484 million reflecting a larger investment portfolio and higher yields. Income tax provision was $213 million, representing an effective tax rate of 9.2%, driven partly by the deferred U.S. tax impact related to equity investments."
+    },
+    {
+      "topic": "Key Operating Metrics and Adjusted EBITDA",
+      "page_range": "50, 59-62",
+      "summary": "Monthly Active Platform Consumers (MAPCs) reached 150 million in Q4 2023, up 15% year-over-year, and annual Trips grew 24% to 9.4 billion. Total Gross Bookings increased 19% (20% on a constant currency basis) to $137.9 billion. Adjusted EBITDA improved 137% to $4.1 billion, with Mobility Adjusted EBITDA of $5.0 billion (up 50%) and Delivery Adjusted EBITDA of $1.5 billion (up 173%), partially offset by Freight Adjusted EBITDA loss of $64 million and Corporate G&A and Platform R&D costs of $2.4 billion."
+    },
+    {
+      "topic": "Cash Flows and Liquidity",
+      "page_range": "62-64",
+      "summary": "Operating cash flow was $3.6 billion in FY2023, up from $642 million in FY2022, reflecting $2.2 billion net income and significant non-cash adjustments including $1.9 billion stock-based compensation and $1.6 billion unrealized gains on equity securities; operating cash flow was reduced by approximately $789 million in HMRC VAT payments. Investing activities used $3.2 billion, primarily for $8.8 billion in marketable securities purchases offset by $5.1 billion in maturities/sales and $721 million from the sale of an equity method investment. The company ended the year with $5.4 billion in unrestricted cash, cash equivalents and short-term investments, and remains in compliance with all debt covenants."
+    },
+    {
+      "topic": "Capital Expenditure and Long-Term Commitments",
+      "page_range": "62-64",
+      "summary": "Capital expenditures were $223 million in FY2023, down from $252 million in FY2022. As of December 31, 2023, Uber had $3.0 billion in non-cancelable purchase commitments, including $2.7 billion in cloud computing services agreements through November 2029. The company also authorized a $7.0 billion share repurchase program in February 2024. Long-term debt totaled $9.5 billion with maturities ranging from 2025 to 2030, and the company issued $1.73 billion in 0.875% Convertible Senior Notes due 2028 during November 2023."
+    },
+    {
+      "topic": "Risk Factors — Operational and Legal",
+      "page_range": "10-45",
+      "summary": "Key operational risks include potential driver reclassification as employees, which could substantially increase compensation costs and alter the business model; Uber has over 150,000 arbitration demands and various government investigations on this matter. Competitive risks are significant given low barriers to entry, low switching costs, and well-capitalized rivals in every major segment including Lyft, DoorDash, and Amazon. Cybersecurity risks are material — a September 2022 incident compromised internal systems, and historical breaches (2014 and 2016) resulted in $148 million in settlements and ongoing FTC consent decree obligations through 2038. Additionally, AI/ML usage, climate-related regulatory requirements, and exposure to macroeconomic conditions are identified as growing risk areas."
+    },
+    {
+      "topic": "Debt and Capital Structure",
+      "page_range": "105-110",
+      "summary": "As of December 31, 2023, total long-term debt was approximately $9.6 billion in aggregate principal, comprising the 2030 Refinanced Term Loans ($1.986 billion at SOFR+2.75%), 2026 Senior Notes ($1.5 billion at 8.0%), 2027 Senior Notes ($1.2 billion at 7.5%), 2028 Senior Notes ($500 million at 6.25%), 2029 Senior Notes ($1.5 billion at 4.5%), 2025 Convertible Notes ($1.15 billion at 0%), and 2028 Convertible Notes ($1.725 billion at 0.875%). In November 2023, Uber issued the 2028 Convertible Notes and used proceeds to redeem the 2025 Senior Notes and partially repay the 2030 Term Loans. The company also entered into capped call transactions costing $141 million to reduce potential dilution upon conversion of the 2028 Convertible Notes."
+    },
+    {
+      "topic": "Minority Investments and Equity Stakes",
+      "page_range": "95-101",
+      "summary": "Uber holds significant minority investments including Didi ($2.245 billion, non-marketable equity), Grab ($1.806 billion, marketable equity), Aurora ($1.425 billion, marketable equity), and various others totaling $6.1 billion on the balance sheet. In FY2023, aggregate unrealized gains on debt and equity securities were $1.6 billion, reversing the $7.0 billion unrealized loss in FY2022. Uber completed the divestiture of its stake in MLU B.V. (Yandex Taxi JV) for $703 million in April 2023 and divested the non-ridesharing Careem Technologies business to e& in December 2023, recognizing a $204 million gain. These equity stakes introduce significant volatility into net income due to fair value changes."
+    }
+  ]
+}

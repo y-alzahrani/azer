@@ -12,12 +12,18 @@ from fastapi import FastAPI, UploadFile, File, Form, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
 from pydantic import BaseModel
+import asyncio
+import httpx
+from concurrent.futures import ThreadPoolExecutor
+from report_finder import find_report as _find_report
  
 from pdf_extractor import extract_report, save_result
 from financials_builder import load_all_documents, build_all_financials, populate_price_metrics
 from summary_generator import generate_summary, save_summary, load_summary
 from chatbot import chat, build_all_narratives
 from dcf import dcf_valuation, get_valuation_label
+
+_executor = ThreadPoolExecutor(max_workers=2)
 
 
 # ---------------------------------------------------------------------------
@@ -201,6 +207,7 @@ async def extract_endpoint(
             return {
                 "status": "duplicate",
                 "period": ordered_result["period"],
+                "company": ordered_result["company"],
                 "message": f"{company} - {ordered_result['period']} already exists. Confirm overwrite."
             }
  
@@ -230,7 +237,7 @@ async def extract_endpoint(
         }
  
     finally:
-        os.unlink(tmp_path)  # Always delete temp file
+        os.unlink(tmp_path)  # Delete temp file
  
  
 @app.post("/extract/confirm-overwrite")
@@ -450,3 +457,155 @@ def calculate_dcf(request: DCFRequest):
         "safety_margin_pct": round(safety_margin, 1) if safety_margin is not None else None,
         "valuation_label": get_valuation_label(safety_margin),
     }
+
+
+# ---------------------------------------------------------------------------
+# Report Finder
+# ---------------------------------------------------------------------------
+ 
+ 
+class FindReportRequest(BaseModel):
+    company: str
+    period: str
+ 
+ 
+@app.post("/find-report")
+async def find_report_endpoint(request: FindReportRequest):
+    """
+    Uses the report finder agent (web search + Playwright) to locate
+    the official PDF report for a given company and period.
+    Returns the financial reports page URL and PDF URL for user confirmation.
+    """
+    loop = asyncio.get_event_loop()
+    result = await loop.run_in_executor(
+        _executor,
+        _find_report,
+        request.company,
+        request.period,
+    )
+    return result
+ 
+ 
+# ---------------------------------------------------------------------------
+# Extract from URL
+# ---------------------------------------------------------------------------
+ 
+ 
+class ExtractFromUrlRequest(BaseModel):
+    pdf_url: str
+    company: str
+    report_type: str
+ 
+ 
+@app.post("/extract-from-url")
+async def extract_from_url_endpoint(request: ExtractFromUrlRequest):
+    """
+    Downloads a PDF from a URL, runs extraction, saves the JSON,
+    and rebuilds app state. Called after user confirms the agent result.
+    """
+    if request.report_type not in ("Annual", "Quarterly"):
+        raise HTTPException(status_code=400, detail="report_type must be 'Annual' or 'Quarterly'")
+ 
+    # Download PDF from URL
+    try:
+        async with httpx.AsyncClient(timeout=60, follow_redirects=True) as client:
+            response = await client.get(request.pdf_url)
+            if response.status_code != 200:
+                raise HTTPException(status_code=400, detail=f"Failed to download PDF: HTTP {response.status_code}")
+            pdf_bytes = response.content
+    except httpx.RequestError as e:
+        raise HTTPException(status_code=400, detail=f"Failed to download PDF: {e}")
+ 
+    # Save to temp file
+    with tempfile.NamedTemporaryFile(delete=False, suffix=".pdf") as tmp:
+        tmp.write(pdf_bytes)
+        tmp_path = tmp.name
+ 
+    try:
+        result = extract_report(tmp_path, request.company, request.report_type)
+        if result is None:
+            raise HTTPException(status_code=500, detail="Extraction failed")
+ 
+        ordered_result, _ = result
+ 
+        # Check for duplicate
+        existing_periods = [
+            doc["period"] for doc in app_state["docs"]
+            if doc["company"] == request.company
+        ]
+        if ordered_result["period"] in existing_periods:
+            return {
+                "status": "duplicate",
+                "period": ordered_result["period"],
+                "company": ordered_result["company"],
+                "message": f"{request.company} - {ordered_result['period']} already exists. Confirm overwrite.",
+            }
+ 
+        # Save JSON
+        period_slug = ordered_result["period"].lower().replace(" ", "_")
+        company_slug = request.company.lower()
+        filename = f"{company_slug}_{period_slug}.json"
+        save_result(ordered_result, "extracted_data", filename)
+ 
+        # Save PDF
+        pdf_folder = os.path.join("reports", request.company, request.report_type)
+        os.makedirs(pdf_folder, exist_ok=True)
+        shutil.copy(tmp_path, os.path.join(pdf_folder, filename.replace(".json", ".pdf")))
+ 
+        rebuild_state()
+ 
+        return {
+            "status": "success",
+            "company": ordered_result["company"],
+            "ticker": ordered_result["ticker"],
+            "period": ordered_result["period"],
+            "period_end_date": ordered_result["period_end_date"],
+            "report_type": ordered_result["report_type"],
+            "currency": ordered_result["currency"],
+            "unit": ordered_result["unit"],
+        }
+ 
+    finally:
+        os.unlink(tmp_path)
+
+
+@app.post("/extract-from-url/confirm-overwrite")
+async def extract_from_url_overwrite_endpoint(request: ExtractFromUrlRequest):
+    """Re-runs extraction from URL and overwrites existing document after user confirmation."""
+    if request.report_type not in ("Annual", "Quarterly"):
+        raise HTTPException(status_code=400, detail="report_type must be 'Annual' or 'Quarterly'")
+
+    async with httpx.AsyncClient(timeout=60, follow_redirects=True) as client:
+        response = await client.get(request.pdf_url)
+        if response.status_code != 200:
+            raise HTTPException(status_code=400, detail=f"Failed to download PDF: HTTP {response.status_code}")
+        pdf_bytes = response.content
+
+    with tempfile.NamedTemporaryFile(delete=False, suffix=".pdf") as tmp:
+        tmp.write(pdf_bytes)
+        tmp_path = tmp.name
+
+    try:
+        result = extract_report(tmp_path, request.company, request.report_type)
+        if result is None:
+            raise HTTPException(status_code=500, detail="Extraction failed")
+
+        ordered_result, _ = result
+        period_slug = ordered_result["period"].lower().replace(" ", "_")
+        company_slug = request.company.lower()
+        filename = f"{company_slug}_{period_slug}.json"
+        save_result(ordered_result, "extracted_data", filename)
+
+        pdf_folder = os.path.join("reports", request.company, request.report_type)
+        os.makedirs(pdf_folder, exist_ok=True)
+        shutil.copy(tmp_path, os.path.join(pdf_folder, filename.replace(".json", ".pdf")))
+
+        rebuild_state()
+
+        return {
+            "status": "overwritten",
+            "company": ordered_result["company"],
+            "period": ordered_result["period"],
+        }
+    finally:
+        os.unlink(tmp_path)

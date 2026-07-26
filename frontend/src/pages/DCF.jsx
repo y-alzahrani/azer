@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import COMPANIES from '../companies.json'
 
 const API = 'http://localhost:8000'
 
@@ -107,6 +108,10 @@ export default function DCF() {
   const [company, setCompany] = useState('')
   const [refData, setRefData] = useState(null)
   const [loadingRef, setLoadingRef] = useState(false)
+  const companyDisplay = (() => {
+    const match = COMPANIES.find(c => c.name === company)
+    return match?.market === 'Tadawul' ? match.name_ar : company
+  })()
 
   // Inputs
   const [wacc, setWacc] = useState('')
@@ -234,7 +239,7 @@ export default function DCF() {
     fontSize: '15px',
     background: 'var(--surface)',
     color: 'var(--text-1)',
-    border: '1.9px solid var(--border-2)',
+    border: '2.4px solid var(--border-2)',
     borderRadius: 'var(--radius)',
     padding: '4px 12px',
     cursor: 'pointer',
@@ -257,7 +262,11 @@ export default function DCF() {
           تقييم السهم
         </h1>
         <select style={selectStyle} value={company} onChange={e => { setCompany(e.target.value); handleReset() }}>
-          {companies.map(c => <option key={c} value={c}>{c}</option>)}
+          {companies.map(c => <option key={c} value={c}>
+              {COMPANIES.find(m => m.name === c)?.market === 'Tadawul' 
+                ? COMPANIES.find(m => m.name === c)?.name_ar 
+                : c}
+            </option>)}
         </select>
       </div>
 

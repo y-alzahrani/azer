@@ -1,0 +1,138 @@
+{
+  "company": "Sipchem",
+  "ticker": "2310.SR",
+  "report_type": "Annual",
+  "period": "FY 2025",
+  "period_end_date": "2025-12-31",
+  "currency": "SAR",
+  "unit": "Thousands",
+  "metrics": {
+    "revenue": {
+      "value": 6809747,
+      "source": "direct_line_item",
+      "source_note": "Revenue — Consolidated Statement of Profit or Loss, page 9"
+    },
+    "cost_of_revenue": {
+      "value": 6553034,
+      "source": "direct_line_item",
+      "source_note": "Cost of revenue — Consolidated Statement of Profit or Loss, page 9"
+    },
+    "operating_expenses": {
+      "value": 785014,
+      "source": "calculated",
+      "source_note": "Selling and distribution expenses (211,755) + General and administrative expenses (573,259) = 785,014. No single 'Total operating expenses' line item exists; cost of revenue excluded. Consolidated Statement of Profit or Loss, page 9"
+    },
+    "operating_income": {
+      "value": -528301,
+      "source": "direct_line_item",
+      "source_note": "Operating (loss) / profit — Consolidated Statement of Profit or Loss, page 9"
+    },
+    "net_income": {
+      "value": -772434,
+      "source": "direct_line_item",
+      "source_note": "(Loss) / profit for the year — Consolidated Statement of Profit or Loss, page 9"
+    },
+    "eps": {
+      "value": -1.17,
+      "source": "direct_line_item",
+      "source_note": "Diluted (loss) / earnings per share — Consolidated Statement of Profit or Loss, page 9"
+    },
+    "cash_and_equivalents": {
+      "value": 1338709,
+      "source": "direct_line_item",
+      "source_note": "Cash and cash equivalents — Consolidated Statement of Financial Position, page 7"
+    },
+    "short_term_debt": {
+      "value": 825106,
+      "source": "calculated",
+      "source_note": "Current portion of long term borrowings (575,106) + Short term borrowings (250,000) = 825,106. Operating lease liabilities excluded. Note 21.2, page 59; Consolidated Statement of Financial Position, page 8"
+    },
+    "long_term_debt": {
+      "value": 1879558,
+      "source": "direct_line_item",
+      "source_note": "Long term borrowings — Consolidated Statement of Financial Position, page 7; Note 21.2, page 59. Operating lease liabilities excluded."
+    },
+    "net_debt": {
+      "value": 1365955,
+      "source": "calculated",
+      "source_note": "Short-term debt (825,106) + Long-term debt (1,879,558) - Cash & Cash Equivalents (1,338,709) = Net debt (1,365,955)"
+    },
+    "operating_cash_flow": {
+      "value": 1197491,
+      "source": "direct_line_item",
+      "source_note": "Net cash inflow from operating activities — Consolidated Statement of Cash Flows, page 13"
+    },
+    "capital_expenditure": {
+      "value": 553686,
+      "source": "calculated",
+      "source_note": "Payments for purchase of property, plant and equipment (502,231) + Payments for purchase of intangibles (51,455) = 553,686. Consolidated Statement of Cash Flows, page 13"
+    },
+    "free_cash_flow": {
+      "value": 643805,
+      "source": "calculated",
+      "source_note": "Operating Cash Flow (1,197,491) - CapEx (553,686) = Free Cash Flow (643,805)"
+    },
+    "starting_equity": {
+      "value": 15970301,
+      "source": "direct_line_item",
+      "source_note": "Total equity as at 1 January 2025 — Consolidated Statement of Changes in Equity, page 11"
+    },
+    "ending_equity": {
+      "value": 14332775,
+      "source": "direct_line_item",
+      "source_note": "Total equity as at 31 December 2025 — Consolidated Statement of Financial Position, page 7; Consolidated Statement of Changes in Equity, page 11"
+    },
+    "shares_outstanding": {
+      "value": 733333,
+      "source": "direct_line_item",
+      "source_note": "Authorized, issued and fully paid shares — 733,333,300 shares as at 31 December 2025 @ SAR 10 each. Note 20, page 56. Converted to thousands."
+    },
+    "shares_weighted_average_diluted": {
+      "value": 733333,
+      "source": "direct_line_item",
+      "source_note": "Weighted average number of shares used in calculating dilutive earnings per share — 733,333 (thousands). Note 33, page 72. Reported as 733,333 (in thousands of shares)."
+    }
+  },
+  "narrative": [
+    {
+      "topic": "Revenue and Financial Performance",
+      "page_range": "9, 15",
+      "summary": "Revenue declined by approximately 3.5% to SAR 6.81 billion in 2025 from SAR 7.06 billion in 2024, primarily due to a decline in sales prices of petrochemical products. Cost of revenue surged to SAR 6.55 billion (2024: SAR 5.62 billion), driven by higher feedstock prices and impairment losses of SAR 300 million, resulting in gross profit collapsing to SAR 257 million from SAR 1.44 billion. The Group recorded a net loss of SAR 772 million for 2025 compared to a net profit of SAR 466 million in 2024. Management believes the decline in sales prices is short-term and expects improvement in the next twelve months."
+    },
+    {
+      "topic": "Impairment of Non-Current Assets",
+      "page_range": "3-5, 43-44, 49-50",
+      "summary": "Management identified impairment indicators across multiple cash-generating units (IDC, Acetyls, Al-Waha, Polymers, SAMAPCO, SCC) due to adverse performance versus budgets. An impairment loss of SAR 100 million was recognized for IDC's plant and machinery, and SAR 200 million for SCC following a decision to temporarily cease its ethyl acetate operations, totalling SAR 300 million on property, plant and equipment. Additionally, the Group recognized an impairment of SAR 171 million on its investment in SAMAPCO (joint venture), where SAMAPCO itself recorded a SAR 500 million impairment. Value-in-use calculations used a discount rate of 8.25% and a terminal growth rate of 2.5%."
+    },
+    {
+      "topic": "Segment Performance",
+      "page_range": "37-38",
+      "summary": "The Group operates five segments: Basic Chemicals, Intermediate Chemicals, Polymers, Marketing, and Corporate & Others. Basic Chemicals delivered operating profit of SAR 302 million on revenue of SAR 2.08 billion, while Intermediate Chemicals reported a severe operating loss of SAR 897 million on revenue of SAR 1.87 billion, largely due to impairment losses of SAR 200 million allocated to this segment. The Polymers segment reported an operating loss of SAR 102 million despite revenues of SAR 2.32 billion. The Marketing segment remained profitable with operating income of SAR 85 million on revenues of SAR 4.48 billion."
+    },
+    {
+      "topic": "Cash Flow and Liquidity",
+      "page_range": "13-14",
+      "summary": "Operating cash inflows remained positive at SAR 1.20 billion (2024: SAR 1.37 billion), supported by working capital improvements including a SAR 254 million reduction in inventories. Investing outflows were SAR 400 million, with capital expenditure of SAR 553.7 million partly offset by SAR 203 million in dividend proceeds from associate TSOC and SAR 170 million in short-term investment redemptions. Financing activities included SAR 1.39 billion in new long-term borrowings and outflows of SAR 847 million in dividends and SAR 862 million in long-term debt repayments. Cash and cash equivalents increased by SAR 381 million to SAR 1.34 billion at year-end."
+    },
+    {
+      "topic": "Debt and Capital Structure",
+      "page_range": "59-60, 65",
+      "summary": "Total loans and borrowings increased to SAR 2.70 billion at end-2025 from SAR 2.09 billion at end-2024, as the Group drew SAR 1.39 billion in new long-term Shari'a-compliant facilities while repaying SAR 862 million. The Group was largely compliant with its financial covenants, except for Al-Waha (debt service coverage ratio breach with a waiver obtained) and SAT (current ratio and capital expenditure covenants breached, leading to reclassification of SAT's non-current SIDF borrowings as current). Total equity declined to SAR 14.33 billion from SAR 15.97 billion, primarily due to the net loss and SAR 847 million in dividends paid."
+    },
+    {
+      "topic": "Dividends",
+      "page_range": "72",
+      "summary": "Despite reporting a net loss for the year, the Group distributed total cash dividends of SAR 725.1 million to shareholders in 2025, comprising two interim payments of SAR 0.50 per share each (SAR 362.6 million on 17 July 2025 and SAR 362.6 million on 15 December 2025). Non-controlling interests also received dividends of SAR 122.25 million, entirely from IMC. The dividends were approved by the Board of Directors under a delegation of authority from the General Assembly."
+    },
+    {
+      "topic": "Investment in Equity Accounted Investees",
+      "page_range": "47-50",
+      "summary": "The Group's carrying value of equity-accounted investees declined slightly to SAR 3.63 billion from SAR 3.67 billion, with TSOC (32.55% associate) being the largest holding at SAR 3.28 billion. TSOC recorded a significant gain of SAR 2.03 billion from debt restructuring by its subsidiaries, of which Sipchem's share was SAR 429 million. This was partially offset by SAMAPCO's total impairment (carrying amount reduced to nil), SAMAPCO losses, and a fair value adjustment of SAR 52.9 million related to the completion of PPA for SAMCO acquisition. LSIG's carrying amount was also reduced to nil due to accumulated losses."
+    },
+    {
+      "topic": "Key Risks and Forward Guidance",
+      "page_range": "15, 35-36, 75",
+      "summary": "Management identified key risks including commodity price volatility (propane, ethylene, propylene linked to crude oil), interest rate sensitivity (SAR 13.5 million impact per 50bps change on floating-rate debt), and operational risks from plant shutdowns (SCC, SSPC). The SSPC subsidiary is undergoing formal liquidation following a 2022 fire incident and board resolution in November 2025. Subsequent to year-end, heightened geopolitical tensions in the Middle East were identified as a non-adjusting post-balance-sheet event with uncertain financial impact that management could not reliably estimate at the date of authorization."
+    }
+  ]
+}

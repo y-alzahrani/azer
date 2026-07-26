@@ -52,7 +52,8 @@
       "source": "calculated",
       "calculation_note": "Operating Cash Flow (510,798) - CapEx (190,444) = Free Cash Flow (320,354)"
     },
-    "total_equity": 1721744,
+    "starting_equity": 1651355,
+    "ending_equity": 1721744,
     "shares_outstanding": {
       "value": 241908,
       "source": "calculated",
@@ -64,8 +65,7 @@
       "calculation_note": "Weighted average number of ordinary shares (in millions) — Note 38 Earnings per share, page 73. Exact label: 'Weighted average number of ordinary shares (in millions)'. Value stated as 241,882 million shares. Note: the report states basic and diluted EPS are the same as share plans had no significant dilution effect."
     }
   },
-  "narrative": {
-    "sections_found": [
+  "narrative": [
       {
         "topic": "Revenue and Income Performance",
         "page_range": "12",
@@ -118,4 +118,3 @@
       }
     ]
   }
-}

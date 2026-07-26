@@ -52,7 +52,8 @@
       "source": "direct_line_item",
       "calculation_note": "Free Cash Flow — explicitly stated in the Free Cash Flow reconciliation table, page 76. Defined as net cash provided by operating activities (50,475) minus purchases of property and equipment, net (31,186) minus principal payments on finance leases (850)."
     },
-    "total_equity": 125713,
+    "starting_equity": 124879,
+    "ending_equity": 125713,
     "shares_outstanding": {
       "value": 2614,
       "source": "direct_line_item",
@@ -64,8 +65,7 @@
       "calculation_note": "Weighted-average shares used to compute diluted earnings per share — Consolidated Statements of Income, page 86"
     }
   },
-  "narrative": {
-    "sections_found": [
+  "narrative": [
       {
         "topic": "Revenue Drivers and Advertising Performance",
         "page_range": "54-57",
@@ -113,4 +113,3 @@
       }
     ]
   }
-}

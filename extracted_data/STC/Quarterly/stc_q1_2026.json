@@ -52,7 +52,8 @@
       "source": "calculated",
       "calculation_note": "Operating Cash Flow (5,584,736) - CapEx (1,700,054) = Free Cash Flow (3,884,682)"
     },
-    "total_equity": 87549749,
+    "starting_equity": 86386340,
+    "ending_equity": 87549749,
     "shares_outstanding": {
       "value": 4989807,
       "source": "direct_line_item",
@@ -64,8 +65,7 @@
       "calculation_note": "Derived from Net profit attributable to equity holders of the Parent Company (3,696,279 thousands SAR) divided by Diluted EPS (0.74 SAR) = approximately 4,995,000 thousands shares. However, the report states basic and diluted EPS are both 0.74, and outstanding shares are 4,989,807 thousands. Given rounding, the weighted average diluted shares is approximately 4,995,000 thousands — exact figure not separately disclosed in the report."
     }
   },
-  "narrative": {
-    "sections_found": [
+  "narrative": [
       {
         "topic": "Segment Performance — Revenue",
         "page_range": "10-11",
@@ -108,4 +108,3 @@
       }
     ]
   }
-}

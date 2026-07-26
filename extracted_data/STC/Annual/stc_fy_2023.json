@@ -52,7 +52,8 @@
       "source": "calculated",
       "calculation_note": "Operating Cash Flow (22,417,558) - CapEx (9,569,269) = Free Cash Flow (12,848,289)"
     },
-    "total_equity": 81615166,
+    "starting_equity": 76025592,
+    "ending_equity": 81615166,
     "shares_outstanding": {
       "value": 4984506,
       "source": "direct_line_item",
@@ -64,8 +65,7 @@
       "calculation_note": "Weighted average number of ordinary shares for the purposes of calculating diluted earnings per share — Note 42, page 86; expressed in thousands"
     }
   },
-  "narrative": {
-    "sections_found": [
+  "narrative": [
       {
         "topic": "Revenue Performance and Disaggregation",
         "page_range": "51, 83",
@@ -133,4 +133,3 @@
       }
     ]
   }
-}

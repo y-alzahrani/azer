@@ -2,7 +2,7 @@
 
 ## Overview
 
-AZER is an AI-powered financial analysis platform that extracts key metrics and insights from company financial reports, generates analytical summaries, and provides an interactive dashboard and AI chatbot to help retail investors make informed decisions based on actual financial data.
+AZER is an AI-powered financial analysis platform that extracts key metrics and insights from companies' financial reports, generates analytical summaries, and provides an interactive dashboard and AI chatbot to help retail investors make informed decisions based on actual financial data.
 
 ## The Problem
 
@@ -19,6 +19,14 @@ AZER automates the entire pipeline from raw PDF reports to comprehensive financi
 5. **Value** — a DCF-based fair share price estimator for professional investors
 
 ## Features
+
+### Report Sourcing Agent
+
+- Automatically finds and downloads official financial reports from company investor relations pages
+- Two-step pipeline: web search to locate the IR page, then Playwright to render and extract PDF links
+- Handles JavaScript-heavy IR pages that standard HTTP fetching cannot access
+- Returns financial reports page URL and PDF download link for user verification before extraction
+- Graceful fallback to manual upload when automation fails
 
 ### PDF Ingestion
 
@@ -61,6 +69,7 @@ AZER automates the entire pipeline from raw PDF reports to comprehensive financi
 | Backend | Python + FastAPI |
 | LLM | Anthropic API (Claude Sonnet 4.6) |
 | PDF Processing | Anthropic native document understanding |
+| Web Automation | Playwright |
 | Market Data | yfinance |
 | Environment | uv + python-dotenv |
  
@@ -69,25 +78,12 @@ AZER automates the entire pipeline from raw PDF reports to comprehensive financi
 ```
 azer/
 ├── extracted_data/
-│   ├── Meta/
-│   │   ├── Annual/
-│   │   └── Quarterly/
-│   └── Aramco/
-│       ├── Annual/
-│       └── Quarterly/
-├── reports/                  # Created automatically on first upload, not committed to Git
-│   ├── Meta/
-│   │   ├── Annual/
-│   │   └── Quarterly/
-│   └── Aramco/
-│       ├── Annual/
-│       └── Quarterly/
+├── reports/                       # Created automatically on first upload, not committed to Git
 ├── summaries/
-│   ├── Meta_summary.json
-│   └── Aramco_summary.json
-├── prompts/
-│   ├── annual_prompt.py
-│   ├── quarterly_prompt.py
+├── prompts/                       # Not committed to Git
+│   ├── extraction_prompt.py
+│   ├── reports_search_prompt.py
+│   ├── pdf_selection_prompt.py
 │   ├── summary_prompt.py
 │   ├── router_prompt.py
 │   └── answer_prompt.py
@@ -101,33 +97,41 @@ azer/
 │       ├── pages/
 │       │   ├── Home.jsx
 │       │   ├── Dashboard.jsx
+│       │   ├── Chatbot.jsx
+│       │   ├── DCF.jsx
 │       │   ├── MyDocuments.jsx
-│       │   ├── Chat.jsx
-│       │   └── DCF.jsx
+│       │   └── Glossary.jsx
 │       ├── styles/
 │       │   └── global.css
 │       ├── App.jsx
 │       └── main.jsx
-├── pdf_extractor.py          # Extracts financial data from PDF reports
-├── financials_builder.py     # Builds structured dataset of company financials
-├── summary_generator.py      # Generates summaries using LLM
-├── chatbot.py                # Query router and answer generation
-├── dcf.py                    # DCF valuation calculations
-├── main.py                   # FastAPI backend - all API endpoints
-├── pyproject.toml            # Python dependencies and project configuration
-├── .env                      # Environment variables (not committed to Git)
+├── report_finder.py               # Finds report on official company website
+├── pdf_extractor.py               # Extracts financial data from PDF reports
+├── financials_builder.py          # Builds structured dataset of company financials
+├── summary_generator.py           # Generates summaries using LLM
+├── chatbot.py                     # Query router and answer generation
+├── dcf.py                         # DCF valuation calculations
+├── main.py                        # FastAPI backend - all API endpoints
+├── pyproject.toml                 # Python dependencies and project configuration
+├── .env                           # Environment variables (not committed to Git)
 └── LICENSE
 ```
 
-## Dataset
+## Validated Dataset
+
+The following dataset was used for development and validation:
  
 | Company | Ticker | Annual Reports | Quarterly Reports |
 |---------|--------|---------------|------------------|
 | Meta Platforms | META | FY 2021 – FY 2025 | Q1 2026, Q1-Q3 2025 |
 | Saudi Aramco | 2222 | FY 2021 – FY 2025 | Q1 2026, Q1-Q3 2025 |
 | Saudi Telecom Company | 7010 | FY 2021 – FY 2025 | Q1 2026 |
- 
-**Total: 24 documents**
+| Sahara International Petrochemical Co. | 2310 | FY 2022 – FY 2025 | Q1 2026 |
+| Uber Technologies | UBER | FY 2022 – FY 2025 | Q1 2026 |
+
+The platform supports any company whose official financial reports are publicly available.
+
+**Total: 34 documents**
 
 ## Metrics Extracted
  
@@ -135,15 +139,10 @@ azer/
 Revenue, Cost of Revenue, Operating Expenses, Operating Income, Net Income, EPS (Diluted), Operating Cash Flow, Capital Expenditure, Free Cash Flow, Short-Term Debt, Long-Term Debt, Net Debt, Total Equity, Cash & Cash Equivalents, Shares Outstanding, Weighted Average Shares Outstanding (Diluted)
  
 **Calculated in Python:**
-Operating Margin, Net Profit Margin, Total Debt, Debt-to-Equity, Return on Equity, P/E Ratio, Forward P/E, P/S Ratio, P/B Ratio, Market Cap
+Gross Profit, Operating Margin, Net Profit Margin, Total Debt, Debt-to-Equity, Return on Equity, P/S Ratio, P/B Ratio, Market Cap
 
 ## Authors
 
 - Maram Alshammary
 - Reyam Albalihi
 - Yazeed Alzahrani
-
-## License
-
-Copyright © 2026 AZER.
-All Rights Reserved.

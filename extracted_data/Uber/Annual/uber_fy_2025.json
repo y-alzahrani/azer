@@ -1,0 +1,153 @@
+{
+  "company": "Uber",
+  "ticker": "UBER",
+  "report_type": "Annual",
+  "period": "FY 2025",
+  "period_end_date": "2025-12-31",
+  "currency": "USD",
+  "unit": "Millions",
+  "metrics": {
+    "revenue": {
+      "value": 52017,
+      "source": "direct_line_item",
+      "source_note": "Revenue — Consolidated Statements of Operations, page 73"
+    },
+    "cost_of_revenue": {
+      "value": 31338,
+      "source": "direct_line_item",
+      "source_note": "Cost of revenue, exclusive of depreciation and amortization shown separately below — Consolidated Statements of Operations, page 73"
+    },
+    "operating_expenses": {
+      "value": 15114,
+      "source": "calculated",
+      "source_note": "Sum of Operations and support (2,854) + Sales and marketing (4,898) + Research and development (3,402) + General and administrative (3,241) + Depreciation and amortization (719) = 15,114. No single 'Total operating expenses' line item excluding cost of revenue was presented — Consolidated Statements of Operations, page 73"
+    },
+    "operating_income": {
+      "value": 5565,
+      "source": "direct_line_item",
+      "source_note": "Income from operations — Consolidated Statements of Operations, page 73"
+    },
+    "net_income": {
+      "value": 10053,
+      "source": "direct_line_item",
+      "source_note": "Net income attributable to Uber Technologies, Inc. — Consolidated Statements of Operations, page 73"
+    },
+    "eps": {
+      "value": 4.73,
+      "source": "direct_line_item",
+      "source_note": "Diluted net income per share attributable to Uber Technologies, Inc. common stockholders — Consolidated Statements of Operations, page 73"
+    },
+    "cash_and_equivalents": {
+      "value": 7105,
+      "source": "direct_line_item",
+      "source_note": "Cash and cash equivalents — Consolidated Balance Sheets, page 72"
+    },
+    "short_term_debt": {
+      "value": 0,
+      "source": "direct_line_item",
+      "source_note": "Current portion of long-term debt was $0 as of December 31, 2025 (was $1,150 in 2024 representing 2025 Convertible Notes which matured and were repaid during 2025). Accrued and other current liabilities breakdown shows Current portion of long-term debt = $0 — Note 9, page 104"
+    },
+    "long_term_debt": {
+      "value": 10521,
+      "source": "direct_line_item",
+      "source_note": "Long-term debt, net of current portion — Consolidated Balance Sheets, page 72"
+    },
+    "net_debt": {
+      "value": 3416,
+      "source": "calculated",
+      "source_note": "Short-term debt (0) + Long-term debt (10,521) - Cash & Cash Equivalents (7,105) = Net debt (3,416)"
+    },
+    "operating_cash_flow": {
+      "value": 10099,
+      "source": "direct_line_item",
+      "source_note": "Net cash provided by operating activities — Consolidated Statements of Cash Flows, page 78"
+    },
+    "capital_expenditure": {
+      "value": 336,
+      "source": "direct_line_item",
+      "source_note": "Purchases of property and equipment — Consolidated Statements of Cash Flows, page 78"
+    },
+    "free_cash_flow": {
+      "value": 9763,
+      "source": "direct_line_item",
+      "source_note": "Free cash flow — Reconciliations of Non-GAAP Financial Measures, page 61 (also confirmed as Operating Cash Flow (10,099) - CapEx (336) = 9,763)"
+    },
+    "starting_equity": {
+      "value": 22383,
+      "source": "direct_line_item",
+      "source_note": "Total equity as of December 31, 2024 (Balance as of December 31, 2024) — Consolidated Statements of Redeemable Non-Controlling Interests and Equity, page 76/79"
+    },
+    "ending_equity": {
+      "value": 27918,
+      "source": "direct_line_item",
+      "source_note": "Total equity as of December 31, 2025 (Balance as of December 31, 2025) — Consolidated Statements of Redeemable Non-Controlling Interests and Equity, page 79"
+    },
+    "shares_outstanding": {
+      "value": 2067.905,
+      "source": "direct_line_item",
+      "source_note": "2,067,905 shares issued and outstanding (reflected in thousands) — Consolidated Balance Sheets, page 72"
+    },
+    "shares_weighted_average_diluted": {
+      "value": 2119.689,
+      "source": "direct_line_item",
+      "source_note": "Diluted weighted-average common stock outstanding of 2,119,689 (reflected in thousands) — Consolidated Statements of Operations, page 73"
+    }
+  },
+  "narrative": [
+    {
+      "topic": "Revenue and Gross Bookings Performance",
+      "page_range": "49-57",
+      "summary": "Revenue increased 18% year-over-year to $52.0 billion in 2025, driven by a 19% increase in Gross Bookings to $193.5 billion. Mobility revenue grew 18% to $29.7 billion and Delivery revenue grew 25% to $17.2 billion, while Freight revenue declined 1% to $5.1 billion due to challenging freight market conditions. Monthly Active Platform Consumers reached 202 million in Q4 2025, up 18%, and total Trips grew 20% to 13.6 billion for the year. Management attributed the increase primarily to higher Trip volumes across both Mobility and Delivery segments, with Delivery also benefiting from a $568 million increase in advertising revenue."
+    },
+    {
+      "topic": "Cost Structure and Operating Expenses",
+      "page_range": "53-57",
+      "summary": "Cost of revenue (excluding D&A) rose 18% to $31.3 billion, primarily due to a $1.6 billion increase in Driver payments and incentives for Mobility, a $1.6 billion increase in Courier payments for Delivery, and an $851 million increase in insurance expense. Total costs and expenses grew from $41.2 billion in 2024 to $46.5 billion in 2025, representing 89% of revenue versus 94% in 2024. General and administrative expenses declined 11% to $3.2 billion, primarily due to a $549 million decrease in legal-related accruals and expenses. Income from operations nearly doubled to $5.6 billion from $2.8 billion, improving operating margin from 6% to 11%."
+    },
+    {
+      "topic": "Net Income and Tax Benefits",
+      "page_range": "51-52, 56",
+      "summary": "Net income attributable to Uber was $10.1 billion in 2025, including a significant $5.0 billion tax benefit from the release of the Netherlands' deferred tax asset valuation allowance, as the company reached a 12-quarter cumulative income position in that jurisdiction. The provision for income taxes was a benefit of $4.3 billion for 2025 compared to a benefit of $5.8 billion in 2024 (which reflected $6.4 billion U.S. federal and state valuation allowance releases). Excluding the valuation allowance release, underlying operating profitability improved substantially, with Adjusted EBITDA growing 35% to $8.7 billion."
+    },
+    {
+      "topic": "Segment Performance",
+      "page_range": "57-59",
+      "summary": "Mobility Adjusted EBITDA grew 22% to $7.9 billion, driven by higher Gross Bookings of 17%, partially offset by increased Driver payments, insurance, and network costs. Delivery Adjusted EBITDA surged 45% to $3.6 billion, supported by a 22% increase in Delivery Gross Bookings and a $568 million increase in advertising revenue, offset by higher Courier payments and employee costs. Freight Adjusted EBITDA improved 55% to a loss of $33 million, reflecting lower Carrier payments despite a 1% revenue decline. Corporate G&A and Platform R&D costs increased $298 million year-over-year to $2.7 billion."
+    },
+    {
+      "topic": "Liquidity, Cash Flow and Capital Resources",
+      "page_range": "61-64",
+      "summary": "Operating cash flow increased 42% to $10.1 billion in 2025, and free cash flow was $9.8 billion. The company ended 2025 with $7.1 billion in cash and cash equivalents and $7.6 billion in unrestricted cash, cash equivalents, and short-term investments. Investing activities used $3.6 billion, primarily for $21.4 billion in marketable securities purchases (largely offset by $20.0 billion in maturities/sales) and $815 million for business acquisitions including Trendyol GO. The company redeemed $1.2 billion of the 2025 Convertible Notes in Q4 2025 and issued $2.25 billion in new senior notes (2031 and 2035 maturities) while redeeming $1.2 billion of older notes."
+    },
+    {
+      "topic": "Debt and Capital Structure",
+      "page_range": "62-63, 100-104",
+      "summary": "As of December 31, 2025, Uber had $10.6 billion in total outstanding debt principal across several instruments including $1.725 billion 2028 Convertible Notes, $1.125 billion 2028 Exchangeable Senior Notes backed by Aurora Class A shares, and senior notes ranging from 2029 to 2054 maturities. In September 2025, the company issued $2.25 billion in new senior notes and used proceeds to redeem $700 million of 2027 notes and $500 million of 2028 notes. The company also established a $2.0 billion commercial paper program in June 2025 with no amounts outstanding at year end. In July 2025, the board authorized an additional $20 billion for share repurchases (totaling $27 billion authorization), with $19.2 billion remaining as of year end."
+    },
+    {
+      "topic": "Share Repurchases",
+      "page_range": "47, 62-63",
+      "summary": "Uber repurchased 80.0 million shares for $6.5 billion during 2025, including a $1.5 billion accelerated share repurchase completed in Q1 2025. In Q4 2025, repurchases totaled approximately 21.4 million shares at an average price ranging from approximately $84 to $95 per share. The total Share Repurchase Program authorization of $27.0 billion ($7.0 billion approved in February 2024 plus $20.0 billion approved in July 2025) had $19.2 billion remaining as of December 31, 2025. Share count declined from 2,107,953 thousand at end of 2024 to 2,067,905 thousand at end of 2025."
+    },
+    {
+      "topic": "Key Risks — Driver Classification and Legal Proceedings",
+      "page_range": "11-14, 115-119",
+      "summary": "The classification of Drivers as independent contractors versus employees remains a significant ongoing risk across multiple jurisdictions. In the U.S., the California AG lawsuit remains pending post-Proposition 22, the New Jersey DOL audit covering 2019-2023 is being litigated, and the California EDD settlement was reached in September 2025 and paid in January 2026. Internationally, Swiss social security rulings, a French URSSAF social security assessment (June 2025), and the November 2025 New Zealand Supreme Court ruling that four drivers are employees while logged in illustrate the global scope of this risk. Reclassification could require significant additional compensation costs, benefits, and social security contributions that management estimates would materially impact the business."
+    },
+    {
+      "topic": "Key Risks — Autonomous Vehicles and Competitive Environment",
+      "page_range": "16-17",
+      "summary": "Uber faces intensifying competition from autonomous vehicle developers including Waymo (which has both its own commercialized fleet and vehicles on Uber's platform), Tesla, and Amazon's Zoox. The company has made substantial investments in commercial partnerships with autonomous vehicle companies and holds a significant stake in Aurora, whose stock declined resulting in an $802 million unrealized loss in 2025. If competitors deploy autonomous vehicles before Uber can offer them at scale, the cost advantage of autonomous vehicles could allow competitors to undercut Uber's pricing significantly. The company's 2028 Exchangeable Senior Notes are secured by approximately 48% of its Aurora Class A common stock."
+    },
+    {
+      "topic": "Non-Income Tax Matters — UK VAT",
+      "page_range": "62-63, 117-118",
+      "summary": "HMRC has issued multiple assessments totaling approximately $1.8 billion (£1.4 billion) disputing Uber UK's application of VAT Order 1987 for the period March 2022 through September 2024. Uber paid the assessments to proceed with the appeal process and recorded the payments as a receivable in other assets, as management believes it will prevail on appeal. A legislative change effective January 2, 2026, means UK Private Hire Operators can no longer apply VAT Order 1987, so Uber UK ceased using this treatment after that date. HMRC has expressed intent not to enforce assessments pending resolution of a competitor appeal on a related matter."
+    },
+    {
+      "topic": "Acquisitions and Investments",
+      "page_range": "120-122",
+      "summary": "In June 2025, Uber acquired an 85% controlling stake in Trendyol GO, Turkey's online meal and grocery delivery business, for $694 million in cash, recording $712 million in goodwill and $132 million of intangible assets. As of December 31, 2025, Uber's investment portfolio included Grab ($2.7 billion), Didi ($3.0 billion), Aurora ($1.3 billion), and various other equity investments totaling approximately $9.2 billion. In February 2026, Uber entered an agreement to acquire Getir's food delivery business in Turkey for $435 million, expected to close in H2 2026. The company also invested $676 million in non-marketable equity securities during 2025."
+    }
+  ]
+}

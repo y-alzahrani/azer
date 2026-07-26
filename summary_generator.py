@@ -11,7 +11,7 @@ def get_company_narratives(company, docs):
     narratives = {}
     for doc in docs:
         if doc["company"] == company:
-            narratives[doc["period"]] = doc["narrative"]["sections_found"]
+            narratives[doc["period"]] = doc["narrative"]
     return narratives
 
 

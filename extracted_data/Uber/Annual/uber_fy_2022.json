@@ -1,0 +1,148 @@
+{
+  "company": "Uber",
+  "ticker": "UBER",
+  "report_type": "Annual",
+  "period": "FY 2022",
+  "period_end_date": "2022-12-31",
+  "currency": "USD",
+  "unit": "Millions",
+  "metrics": {
+    "revenue": {
+      "value": 31877,
+      "source": "direct_line_item",
+      "source_note": "Revenue - Consolidated Statements of Operations, page 74"
+    },
+    "cost_of_revenue": {
+      "value": 19659,
+      "source": "direct_line_item",
+      "source_note": "Cost of revenue, exclusive of depreciation and amortization shown separately below - Consolidated Statements of Operations, page 74"
+    },
+    "operating_expenses": {
+      "value": 14050,
+      "source": "calculated",
+      "source_note": "Sum of Operations and support (2,413) + Sales and marketing (4,756) + Research and development (2,798) + General and administrative (3,136) + Depreciation and amortization (947) = 14,050 - Consolidated Statements of Operations, page 74"
+    },
+    "operating_income": {
+      "value": -1832,
+      "source": "direct_line_item",
+      "source_note": "Loss from operations - Consolidated Statements of Operations, page 74"
+    },
+    "net_income": {
+      "value": -9141,
+      "source": "direct_line_item",
+      "source_note": "Net loss attributable to Uber Technologies, Inc. - Consolidated Statements of Operations, page 74"
+    },
+    "eps": {
+      "value": -4.65,
+      "source": "direct_line_item",
+      "source_note": "Diluted net loss per share attributable to Uber Technologies, Inc. common stockholders - Consolidated Statements of Operations, page 74"
+    },
+    "cash_and_equivalents": {
+      "value": 4208,
+      "source": "direct_line_item",
+      "source_note": "Cash and cash equivalents - Consolidated Balance Sheets, page 73"
+    },
+    "short_term_debt": {
+      "value": 27,
+      "source": "direct_line_item",
+      "source_note": "Current portion of long-term debt (labeled as 'Less: current portion of long-term debt' of $27M) - Note 8, Long-Term Debt and Revolving Credit Arrangements, page 107"
+    },
+    "long_term_debt": {
+      "value": 9265,
+      "source": "direct_line_item",
+      "source_note": "Long-term debt, net of current portion - Consolidated Balance Sheets, page 73"
+    },
+    "net_debt": {
+      "value": 5084,
+      "source": "calculated",
+      "source_note": "Short-term debt (27) + Long-term debt (9,265) - Cash & Cash Equivalents (4,208) = Net debt (5,084)"
+    },
+    "operating_cash_flow": {
+      "value": 642,
+      "source": "direct_line_item",
+      "source_note": "Net cash provided by (used in) operating activities - Consolidated Statements of Cash Flows, page 79"
+    },
+    "capital_expenditure": {
+      "value": 252,
+      "source": "direct_line_item",
+      "source_note": "Purchases of property and equipment - Consolidated Statements of Cash Flows, page 79"
+    },
+    "free_cash_flow": {
+      "value": 390,
+      "source": "direct_line_item",
+      "source_note": "Free cash flow - Reconciliations of Non-GAAP Financial Measures, page 61 (also confirmed as Operating Cash Flow (642) - CapEx (252) = Free Cash Flow (390))"
+    },
+    "starting_equity": {
+      "value": 15145,
+      "source": "direct_line_item",
+      "source_note": "Total equity, Balance as of December 31, 2021 - Consolidated Statements of Redeemable Non-Controlling Interests and Equity, page 78"
+    },
+    "ending_equity": {
+      "value": 8074,
+      "source": "direct_line_item",
+      "source_note": "Total equity, Balance as of December 31, 2022 - Consolidated Statements of Redeemable Non-Controlling Interests and Equity, page 78"
+    },
+    "shares_outstanding": {
+      "value": 2005.486,
+      "source": "direct_line_item",
+      "source_note": "2,005,486 shares issued and outstanding (in thousands) as of December 31, 2022 - Consolidated Balance Sheets, page 73; converted to millions = 2,005.486"
+    },
+    "shares_weighted_average_diluted": {
+      "value": 1974.928,
+      "source": "direct_line_item",
+      "source_note": "Diluted weighted-average common stock outstanding of 1,974,928 (in thousands) - Consolidated Statements of Operations, page 74; converted to millions = 1,974.928"
+    }
+  },
+  "narrative": [
+    {
+      "topic": "Revenue Drivers and Segment Performance",
+      "page_range": "49-57",
+      "summary": "Revenue increased $14.4 billion or 83% to $31.9 billion in 2022, driven by a 28% increase in Gross Bookings ($115.4 billion). Mobility revenue grew 102% to $14.0 billion, aided by a $3.9 billion net increase from UK business model changes and COVID-19 recovery boosting trip volumes. Delivery revenue grew 30% to $10.9 billion driven by higher order volumes and basket sizes, while Freight revenue surged 226% to $6.9 billion primarily due to the Transplace acquisition. MAPCs reached 131 million in Q4 2022, up 11% year-over-year, and total Trips grew 20% to 7.6 billion."
+    },
+    {
+      "topic": "Cost Structure and Operating Expenses",
+      "page_range": "53-55",
+      "summary": "Cost of revenue increased 110% to $19.7 billion (62% of revenue), largely driven by a $3.3 billion increase in Freight Carrier payments from Transplace, a $2.7 billion rise in UK Mobility Driver payments, a $1.4 billion increase in insurance expense, and a $1.4 billion increase in Courier payments. Operating loss improved significantly from $(3.8) billion in 2021 to $(1.8) billion in 2022. Sales and marketing expenses decreased slightly by 1% to $4.8 billion, while R&D grew 36% to $2.8 billion primarily due to increased stock-based compensation and headcount costs."
+    },
+    {
+      "topic": "Net Loss and Investment Impairments",
+      "page_range": "49-50, 55-56",
+      "summary": "Net loss attributable to Uber was $(9.1) billion in 2022, compared to $(496) million in 2021, primarily driven by a $7.0 billion pre-tax unrealized loss on debt and equity securities. This included a $3.0 billion loss on Aurora investments, $2.1 billion on Grab, $1.0 billion on Didi, and $747 million on Zomato. Stock-based compensation expense was $1.8 billion. Despite the large net loss, Adjusted EBITDA improved by $2.5 billion to $1.7 billion."
+    },
+    {
+      "topic": "Liquidity and Capital Resources",
+      "page_range": "61-63",
+      "summary": "Uber ended 2022 with $4.3 billion in unrestricted cash, cash equivalents, and short-term investments. Operating cash flow was $642 million, which included a cash outflow of approximately $733 million related to the resolution of UK HMRC VAT claims. Free cash flow was $390 million. Net cash used in investing activities was $1.6 billion, primarily reflecting $1.7 billion in purchases of marketable securities. The company believes its existing sources of funding and revolving credit facility are sufficient to meet operational needs for at least the next 12 months."
+    },
+    {
+      "topic": "Debt and Capital Structure",
+      "page_range": "107-110",
+      "summary": "As of December 31, 2022, total outstanding indebtedness was $9.4 billion aggregate principal, comprising term loans, senior notes (2025-2029), and $1.15 billion of 0% convertible notes due 2025. The company entered into an amendment to its Revolving Credit Facility in April 2022, extending maturity to April 2027 and reducing minimum liquidity covenant from $1.5 billion to $1.0 billion. There was no balance outstanding on the Revolving Credit Facility at year end. The company was in compliance with all debt covenants as of December 31, 2022."
+    },
+    {
+      "topic": "Driver Classification Legal and Regulatory Risks",
+      "page_range": "12-15, 47-48, 121-123",
+      "summary": "Uber faces significant ongoing legal challenges globally regarding the classification of drivers as independent contractors versus employees. Key proceedings include the California Attorney General lawsuit (stayed pending appeals), Massachusetts AG lawsuit (summary judgment briefing through August 2023), and UK Supreme Court ruling that drivers are 'workers,' which resulted in Uber treating 70,000+ UK drivers as workers and paying holiday pay and minimum wage. As of December 31, 2022, Uber had paid approximately $521 million to resolve classification claims from U.S. drivers in arbitration. These proceedings pose material risk of reclassification expenses and fundamental business model changes."
+    },
+    {
+      "topic": "Cash Flow and Free Cash Flow",
+      "page_range": "61-62, 79-80",
+      "summary": "Operating cash flow was $642 million for FY 2022 versus $(445) million in FY 2021, reflecting improved operating performance offset by the $733 million HMRC VAT settlement payment. Capital expenditures were $252 million, down from $298 million in 2021. Free cash flow improved to $390 million from $(743) million in 2021. Investing activities used $1.6 billion, primarily in marketable securities purchases, while financing activities provided $15 million, including proceeds from subsidiary stock sales partially offset by finance lease and Careem Note repayments."
+    },
+    {
+      "topic": "Segment Adjusted EBITDA and Profitability Progress",
+      "page_range": "56-59",
+      "summary": "Adjusted EBITDA improved $2.5 billion year-over-year to $1.7 billion in 2022. Mobility Adjusted EBITDA grew 107% to $3.3 billion driven by strong revenue growth, while Delivery turned profitable with $551 million Adjusted EBITDA versus a $(348) million loss in 2021. Freight Adjusted EBITDA reached breakeven at $0 versus $(130) million in 2021. Corporate G&A and Platform R&D costs increased $256 million to $2.1 billion, partially offsetting segment gains. The company ended 2022 with nearly 12 million Uber One, Uber Pass, Eats Pass, and Rides Pass membership subscribers."
+    },
+    {
+      "topic": "Key Risks",
+      "page_range": "10-45",
+      "summary": "Uber faces numerous material risks including driver/courier misclassification lawsuits globally that could require reclassification as employees with significant cost implications, intense competition in mobility, delivery, and freight markets with low switching costs, and significant historical and projected operating losses with an accumulated deficit of $32.8 billion. Cybersecurity and data privacy risks are material, as evidenced by a September 2022 cybersecurity incident, the 2016 data breach, and ongoing FTC consent decrees. Regulatory risks include evolving TNC laws, autonomous vehicle regulations, climate-related policies, and antitrust scrutiny across major markets."
+    },
+    {
+      "topic": "Management's Discussion – Forward Guidance and Growth Strategy",
+      "page_range": "47-52",
+      "summary": "Management's strategy centers on cross-platform network effects, expansion of advertising (exceeding 315,000 active advertisers in Q4 2022), and growing the Uber One membership program to nearly 12 million members. The company expects operating expenses to increase in absolute terms but decrease as a percentage of revenue as efficiency improves. COVID-19 recovery is expected to continue normalizing seasonal patterns. Uber plans continued investment in Mobility, Delivery, and Freight technology, and noted $2.9 billion in cloud computing commitments through November 2029 signed in November 2022."
+    }
+  ]
+}

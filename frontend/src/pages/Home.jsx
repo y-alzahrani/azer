@@ -55,7 +55,7 @@ export default function Home() {
         lineHeight: 1.5,
         marginBottom: '3.5rem'
       }}>
-        ارفع تقاريرك المالية واحصل على تحليلات وملخصات تساعدك في قراراتك الاستثمارية
+        أرفع التقارير المالية للشركات وأحصل على تحليلات وملخصات تساعدك في قراراتك الاستثمارية
       </p>
 
 
@@ -73,7 +73,7 @@ export default function Home() {
           cursor: 'pointer',
         }}
       >
-        رفع تقرير
+        إضافة تقرير
       </button>
 
       {showUpload && <UploadModal onClose={() => setShowUpload(false)} />}

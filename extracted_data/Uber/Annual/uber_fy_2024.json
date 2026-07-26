@@ -1,0 +1,153 @@
+{
+  "company": "Uber",
+  "ticker": "UBER",
+  "report_type": "Annual",
+  "period": "FY 2024",
+  "period_end_date": "2024-12-31",
+  "currency": "USD",
+  "unit": "Millions",
+  "metrics": {
+    "revenue": {
+      "value": 43978,
+      "source": "direct_line_item",
+      "source_note": "Revenue — Consolidated Statements of Operations, page 75"
+    },
+    "cost_of_revenue": {
+      "value": 26651,
+      "source": "direct_line_item",
+      "source_note": "Cost of revenue, exclusive of depreciation and amortization shown separately below — Consolidated Statements of Operations, page 75"
+    },
+    "operating_expenses": {
+      "value": 14488,
+      "source": "calculated",
+      "source_note": "Sum of Operations and support (2,732) + Sales and marketing (4,337) + Research and development (3,109) + General and administrative (3,639) + Depreciation and amortization (711) = 14,528. Note: Total costs and expenses per income statement is 41,179 which includes cost of revenue. Operating expenses excluding cost of revenue = 41,179 - 26,651 = 14,528. Consolidated Statements of Operations, page 75"
+    },
+    "operating_income": {
+      "value": 2799,
+      "source": "direct_line_item",
+      "source_note": "Income from operations — Consolidated Statements of Operations, page 75"
+    },
+    "net_income": {
+      "value": 9856,
+      "source": "direct_line_item",
+      "source_note": "Net income attributable to Uber Technologies, Inc. — Consolidated Statements of Operations, page 75"
+    },
+    "eps": {
+      "value": 4.56,
+      "source": "direct_line_item",
+      "source_note": "Diluted net income per share attributable to Uber Technologies, Inc. common stockholders — Consolidated Statements of Operations, page 75"
+    },
+    "cash_and_equivalents": {
+      "value": 5893,
+      "source": "direct_line_item",
+      "source_note": "Cash and cash equivalents — Consolidated Balance Sheets as of December 31, 2024, page 74"
+    },
+    "short_term_debt": {
+      "value": 1150,
+      "source": "direct_line_item",
+      "source_note": "Current portion of long-term debt (1,150) — included within Accrued and other current liabilities on Consolidated Balance Sheets page 74 and detailed in Note 9 page 109 and Note 8 page 103. The 2025 Convertible Notes ($1,150M) mature December 15, 2025 and are classified as current."
+    },
+    "long_term_debt": {
+      "value": 8347,
+      "source": "direct_line_item",
+      "source_note": "Long-term debt, net of current portion — Consolidated Balance Sheets as of December 31, 2024, page 74"
+    },
+    "net_debt": {
+      "value": 3604,
+      "source": "calculated",
+      "source_note": "Short-term debt (1,150) + Long-term debt (8,347) - Cash & Cash Equivalents (5,893) = Net debt (3,604). Consolidated Balance Sheets, page 74"
+    },
+    "operating_cash_flow": {
+      "value": 7137,
+      "source": "direct_line_item",
+      "source_note": "Net cash provided by operating activities — Consolidated Statements of Cash Flows, Year Ended December 31, 2024, page 80"
+    },
+    "capital_expenditure": {
+      "value": 242,
+      "source": "direct_line_item",
+      "source_note": "Purchases of property and equipment — Consolidated Statements of Cash Flows, Year Ended December 31, 2024, page 80"
+    },
+    "free_cash_flow": {
+      "value": 6895,
+      "source": "direct_line_item",
+      "source_note": "Free cash flow — Reconciliations of Non-GAAP Financial Measures, page 62. Operating Cash Flow (7,137) - CapEx (242) = Free Cash Flow (6,895)"
+    },
+    "starting_equity": {
+      "value": 12028,
+      "source": "direct_line_item",
+      "source_note": "Total equity as of December 31, 2023 (Balance as of December 31, 2023) — Consolidated Statements of Redeemable Non-Controlling Interests and Equity, page 78-79"
+    },
+    "ending_equity": {
+      "value": 22383,
+      "source": "direct_line_item",
+      "source_note": "Total equity as of December 31, 2024 (Balance as of December 31, 2024) — Consolidated Statements of Redeemable Non-Controlling Interests and Equity, page 79"
+    },
+    "shares_outstanding": {
+      "value": 2107.953,
+      "source": "direct_line_item",
+      "source_note": "2,107,953 shares issued and outstanding (reflected in thousands) as of December 31, 2024 — Consolidated Balance Sheets, page 74. Converted to millions: 2,107.953"
+    },
+    "shares_weighted_average_diluted": {
+      "value": 2150.508,
+      "source": "direct_line_item",
+      "source_note": "Diluted weighted-average common stock outstanding: 2,150,508 (in thousands) — Consolidated Statements of Operations, page 75. Converted to millions: 2,150.508"
+    }
+  },
+  "narrative": [
+    {
+      "topic": "Revenue and Gross Bookings Performance",
+      "page_range": "49-50",
+      "summary": "Total revenue grew 18% year-over-year to $44.0 billion in 2024, driven by an 18% increase in Gross Bookings to $162.8 billion (21% on a constant currency basis). Mobility Gross Bookings grew 25% and Delivery Gross Bookings grew 17% year-over-year on a constant currency basis, both primarily driven by higher trip volumes. Revenue growth was partially offset by business model changes in some countries that classified certain sales and marketing costs as contra-revenue, negatively impacting revenue by $863 million in Mobility and $713 million in Delivery."
+    },
+    {
+      "topic": "Segment Performance",
+      "page_range": "57-58",
+      "summary": "Mobility revenue increased $5.3 billion (26%) and Mobility Adjusted EBITDA rose $1.5 billion (31%) year-over-year to $6.5 billion, driven by higher trip volumes partially offset by a $1.3 billion increase in Driver payments and incentives and a $1.3 billion increase in insurance expense. Delivery revenue increased $1.5 billion (13%) and Delivery Adjusted EBITDA rose $965 million (64%) to $2.5 billion, supported by a $461 million increase in advertising revenue. Freight revenue declined $104 million (2%) and Freight Adjusted EBITDA worsened by $10 million to negative $74 million due to lower revenue per load from challenging freight market conditions."
+    },
+    {
+      "topic": "Cost Structure and Operating Expenses",
+      "page_range": "54-56",
+      "summary": "Cost of revenue increased $4.2 billion (19%) to $26.7 billion, mainly from a $1.3 billion increase in insurance expense, a $1.3 billion increase in Driver payments, a $718 million increase in Courier payments, and a $303 million increase in credit card processing costs. General and administrative expenses surged 36% to $3.6 billion, primarily due to $753 million of additional legal-related accruals and expenses. Research and development and sales and marketing expenses each slightly declined, while total operating expenses grew to $41.2 billion, resulting in income from operations of $2.8 billion (vs. $1.1 billion in 2023)."
+    },
+    {
+      "topic": "Net Income and Tax Benefit",
+      "page_range": "52-53, 57",
+      "summary": "Net income attributable to Uber was $9.9 billion in 2024, compared to $1.9 billion in 2023. This significant improvement was primarily driven by a $6.4 billion income tax benefit resulting from the release of the valuation allowance on U.S. federal and state deferred tax assets, reflecting sustained U.S. profitability. Additionally, a $1.8 billion pre-tax unrealized gain on equity securities (including $723 million on Grab, $629 million on Aurora, and $357 million on Didi) contributed to the strong result."
+    },
+    {
+      "topic": "Liquidity and Capital Resources",
+      "page_range": "63-65",
+      "summary": "Net cash provided by operating activities nearly doubled to $7.1 billion in 2024 (from $3.6 billion in 2023), driven by $9.8 billion of net income and a $2.8 billion increase in accrued insurance reserves. The company ended 2024 with $5.9 billion in cash and cash equivalents and $7.0 billion in unrestricted cash, cash equivalents and short-term investments. During Q4 2024, Uber redeemed $2.0 billion of outstanding debt, and in January 2025 announced a $1.5 billion accelerated share repurchase agreement."
+    },
+    {
+      "topic": "Debt and Capital Structure",
+      "page_range": "103-108",
+      "summary": "Total outstanding debt was $9.575 billion as of December 31, 2024, consisting of senior notes maturing from 2027 to 2054 and convertible notes due 2025 and 2028. During 2024, Uber issued $4.0 billion in new senior notes (2030, 2034, and 2054 maturities), used proceeds to repay the 2030 Refinanced Term Loans ($1.97 billion) and redeem the 2026 Senior Note ($1.5 billion), and partially redeemed $500 million of the 2027 Senior Note. A new $5.0 billion unsecured revolving credit facility was established in September 2024, with no balance drawn as of year-end."
+    },
+    {
+      "topic": "Share Repurchase Program",
+      "page_range": "65, 112-113",
+      "summary": "Uber's board authorized a $7.0 billion share repurchase program in February 2024. During 2024, the company repurchased and retired 17.8 million shares for $1.3 billion, leaving $5.8 billion available under the program as of December 31, 2024. In January 2025, Uber entered into an accelerated share repurchase agreement for an additional $1.5 billion, completed in Q1 2025."
+    },
+    {
+      "topic": "Key Operational Metrics",
+      "page_range": "49, 59-60",
+      "summary": "Monthly Active Platform Consumers (MAPCs) reached 171 million in Q4 2024, up 14% year-over-year. Total Trips grew 19% to 11.3 billion for the full year. Adjusted EBITDA improved 60% to $6.5 billion, with the largest contributions from Mobility ($6.5 billion) and Delivery ($2.5 billion). As of December 31, 2024, Uber One membership reached 30 million, and approximately 61% of first-time Delivery consumers were new to the platform."
+    },
+    {
+      "topic": "Driver Classification Legal Risks",
+      "page_range": "11-14, 121-122",
+      "summary": "Uber faces significant ongoing legal proceedings globally regarding the classification of drivers as independent contractors versus employees, including cases in California, the UK, Switzerland, and multiple other jurisdictions. In June 2024, the Massachusetts Attorney General lawsuit was resolved with drivers remaining classified as independent contractors. California's Proposition 22 remains in effect but faces ongoing legal challenges. Reclassification of drivers as employees would impose significant additional costs including wages, benefits, and social security contributions, and could fundamentally alter Uber's business model."
+    },
+    {
+      "topic": "Insurance Reserves and Liabilities",
+      "page_range": "67-68, 74",
+      "summary": "Total insurance reserves grew to $9.8 billion as of December 31, 2024 ($2.8 billion short-term and $7.0 billion long-term), up from $7.0 billion at year-end 2023, driven by $4.5 billion of additions in 2024. Accrued insurance reserves increased $2.8 billion in cash flow from operations during 2024. Management uses actuarial methods including historical claim experience and industry data to estimate reserves, and acknowledges inherent variability in the ultimate settlement amounts."
+    },
+    {
+      "topic": "Non-Income Tax Matters — UK VAT",
+      "page_range": "63-64, 123-124",
+      "summary": "HMRC has issued multiple VAT assessments totaling approximately $1.6 billion (£1.3 billion) disputing Uber UK's application of the Value Added (Tour Operators) Order 1987 for the period March 2022 to June 2024. Uber has paid these assessments to proceed with appeals, recording them as receivables on the balance sheet because management believes it will prevail. Additional assessments are expected, which will require further cash payments, reducing operating cash flows but with no income statement impact."
+    }
+  ]
+}

@@ -52,7 +52,8 @@
       "source": "direct_line_item",
       "calculation_note": "Free cash flow — Non-IFRS measures reconciliations and definitions section, Free cash flow table, Six months 2025, page 11. Defined as net cash provided by operating activities less capital expenditures."
     },
-    "total_equity": 1676116,
+    "starting_equity": 1667128,
+    "ending_equity": 1676116,
     "shares_outstanding": {
       "value": null,
       "source": "",
@@ -64,8 +65,7 @@
       "calculation_note": "Derived from EPS disclosure: Net income attributable to shareholders' equity for Six months 2025 = SAR 181,308 million; EPS (basic and diluted) = SAR 0.75 per share; implied weighted average shares = 181,308 / 0.75 = ~241,744 million shares, approximately 242,000 million shares. Source: Condensed consolidated statement of income, page 28."
     }
   },
-  "narrative": {
-    "sections_found": [
+  "narrative": [
       {
         "topic": "Revenue and Profitability Drivers",
         "page_range": "4-5",
@@ -118,4 +118,3 @@
       }
     ]
   }
-}

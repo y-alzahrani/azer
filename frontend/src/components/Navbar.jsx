@@ -4,7 +4,7 @@ const links = [
   { to: '/glossary', label: 'المصطلحات المالية' },
   { to: '/documents', label: 'مستنداتي'          },
   { to: '/dcf',       label: 'تقييم السهم'   },
-  { to: '/chat',      label: 'المساعد المالي'      },
+  { to: '/chatbot',      label: 'المساعد المالي'      },
   { to: '/dashboard', label: 'لوحة المعلومات'     },
   { to: '/',          label: 'الرئيسية', end: true },
 ]

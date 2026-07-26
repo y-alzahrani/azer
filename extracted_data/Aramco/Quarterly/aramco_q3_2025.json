@@ -52,7 +52,8 @@
       "source": "direct_line_item",
       "calculation_note": "Free cash flow — Non-IFRS measures reconciliations and definitions section, page 11, label 'Free cash flow'"
     },
-    "total_equity": 1691628,
+    "starting_equity": 1676116,
+    "ending_equity": 1691628,
     "shares_outstanding": {
       "value": 241878.02,
       "source": "calculated",
@@ -64,8 +65,7 @@
       "calculation_note": "Calculated from EPS and net income attributable to shareholders' equity. Net income attributable to shareholders' equity (Q3 2025) = SAR 97,264 million; EPS basic and diluted = SAR 0.40; implied weighted average shares = 97,264 / 0.40 = 243,160 million shares. Condensed consolidated statement of income, page 27."
     }
   },
-  "narrative": {
-    "sections_found": [
+  "narrative": [
       {
         "topic": "Revenue and Financial Performance",
         "page_range": "4-5",
@@ -123,4 +123,3 @@
       }
     ]
   }
-}

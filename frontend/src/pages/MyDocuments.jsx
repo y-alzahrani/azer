@@ -107,7 +107,7 @@ export default function MyDocuments() {
             cursor: 'pointer',
           }}
         >
-          رفع تقرير
+          إضافة تقرير
         </button>
       </div>
 

@@ -52,7 +52,8 @@
       "source": "calculated",
       "calculation_note": "Operating Cash Flow SAR 537,814 - CapEx SAR 158,308 = SAR 379,506"
     },
-    "total_equity": 1737092,
+    "starting_equity": 1666147,
+    "ending_equity": 1737092,
     "shares_outstanding": {
       "value": 242000,
       "source": "direct_line_item",
@@ -64,8 +65,7 @@
       "calculation_note": "Weighted average number of ordinary shares (in millions) — labeled as such in Note 37 Earnings per share, page 74. Value is 241,933 million shares (basic and diluted are the same as share plans had no significant dilution effect)."
     }
   },
-  "narrative": {
-    "sections_found": [
+  "narrative": [
       {
         "topic": "Revenue and Income Performance",
         "page_range": "12-13",
@@ -118,4 +118,3 @@
       }
     ]
   }
-}

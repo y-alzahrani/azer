@@ -52,7 +52,8 @@
       "source": "calculated",
       "calculation_note": "Operating Cash Flow SAR 508,888 - Capital Expenditures SAR 188,890 = SAR 319,998"
     },
-    "total_equity": 1651355,
+    "starting_equity": 1737092,
+    "ending_equity": 1651355,
     "shares_outstanding": {
       "value": 241894,
       "source": "direct_line_item",
@@ -64,8 +65,7 @@
       "calculation_note": "Exact label: 'Weighted average number of ordinary shares (in millions)' per Note 37, page 69. Basic and diluted are the same as share plans did not have a significant dilution effect. Unit: millions."
     }
   },
-  "narrative": {
-    "sections_found": [
+  "narrative": [
       {
         "topic": "Revenue and Income Performance",
         "page_range": "9",
@@ -118,4 +118,3 @@
       }
     ]
   }
-}

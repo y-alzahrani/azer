@@ -1,0 +1,138 @@
+{
+  "company": "Uber",
+  "ticker": "UBER",
+  "report_type": "Quarterly",
+  "period": "Q1 2026",
+  "period_end_date": "2026-03-31",
+  "currency": "USD",
+  "unit": "Millions",
+  "metrics": {
+    "revenue": {
+      "value": 13203,
+      "source": "direct_line_item",
+      "source_note": "Revenue — Condensed Consolidated Statements of Operations, page 5"
+    },
+    "cost_of_revenue": {
+      "value": 7258,
+      "source": "direct_line_item",
+      "source_note": "Cost of revenue, exclusive of depreciation and amortization shown separately below — Condensed Consolidated Statements of Operations, page 5"
+    },
+    "operating_expenses": {
+      "value": 3038,
+      "source": "calculated",
+      "source_note": "Sum of Operations and support (763) + Sales and marketing (1326) + Research and development (951) + General and administrative (798) + Depreciation and amortization (184) = 4022. Note: No single 'Total operating expenses' line item excluding cost of revenue exists. Summed non-COGS expense lines from Condensed Consolidated Statements of Operations, page 5"
+    },
+    "operating_income": {
+      "value": 1923,
+      "source": "direct_line_item",
+      "source_note": "Income from operations — Condensed Consolidated Statements of Operations, page 5"
+    },
+    "net_income": {
+      "value": 263,
+      "source": "direct_line_item",
+      "source_note": "Net income attributable to Uber Technologies, Inc. — Condensed Consolidated Statements of Operations, page 5"
+    },
+    "eps": {
+      "value": 0.13,
+      "source": "direct_line_item",
+      "source_note": "Diluted net income per share attributable to Uber Technologies, Inc. common stockholders — Condensed Consolidated Statements of Operations, page 5"
+    },
+    "cash_and_equivalents": {
+      "value": 5558,
+      "source": "direct_line_item",
+      "source_note": "Cash and cash equivalents — Condensed Consolidated Balance Sheets as of March 31, 2026, page 4"
+    },
+    "short_term_debt": {
+      "value": null,
+      "source": "direct_line_item",
+      "source_note": "No short-term debt or current portion of long-term debt line item is separately identified on the Condensed Consolidated Balance Sheets, page 4. The 2028 Convertible Notes and 2028 Exchangeable Senior Notes are classified as long-term as conditions for early conversion/exchange had not been met as of March 31, 2026."
+    },
+    "long_term_debt": {
+      "value": 10514,
+      "source": "direct_line_item",
+      "source_note": "Long-term debt, net of current portion — Condensed Consolidated Balance Sheets as of March 31, 2026, page 4"
+    },
+    "net_debt": {
+      "value": 4956,
+      "source": "calculated",
+      "source_note": "Short-term debt (0) + Long-term debt (10,514) - Cash & Cash Equivalents (5,558) = Net debt (4,956), pages 4-5"
+    },
+    "operating_cash_flow": {
+      "value": 2351,
+      "source": "direct_line_item",
+      "source_note": "Net cash provided by operating activities — Condensed Consolidated Statements of Cash Flows, Three Months Ended March 31, 2026, page 9"
+    },
+    "capital_expenditure": {
+      "value": 65,
+      "source": "direct_line_item",
+      "source_note": "Purchases of property and equipment — Condensed Consolidated Statements of Cash Flows, Three Months Ended March 31, 2026, page 9"
+    },
+    "free_cash_flow": {
+      "value": 2286,
+      "source": "direct_line_item",
+      "source_note": "Free cash flow — Reconciliations of Non-GAAP Financial Measures, page 38. Confirmed as Operating Cash Flow (2,351) - CapEx (65) = Free Cash Flow (2,286)"
+    },
+    "starting_equity": {
+      "value": 27918,
+      "source": "direct_line_item",
+      "source_note": "Total equity, Balance as of December 31, 2025 — Condensed Consolidated Statements of Redeemable Non-Controlling Interests and Equity, page 9"
+    },
+    "ending_equity": {
+      "value": 25641,
+      "source": "direct_line_item",
+      "source_note": "Total equity, Balance as of March 31, 2026 — Condensed Consolidated Statements of Redeemable Non-Controlling Interests and Equity, page 9"
+    },
+    "shares_outstanding": {
+      "value": 2036.424,
+      "source": "direct_line_item",
+      "source_note": "2,036,424 shares issued and outstanding as of March 31, 2026 (in thousands) — Condensed Consolidated Balance Sheets, page 4. Converted to millions: 2,036.424"
+    },
+    "shares_weighted_average_diluted": {
+      "value": 2071.391,
+      "source": "direct_line_item",
+      "source_note": "Diluted weighted-average common stock outstanding: 2,071,391 (in thousands) — Condensed Consolidated Statements of Operations, Three Months Ended March 31, 2026, page 5. Converted to millions: 2,071.391"
+    }
+  },
+  "narrative": [
+    {
+      "topic": "Revenue Drivers and Gross Bookings",
+      "page_range": "30-31",
+      "summary": "Revenue grew 14% year-over-year to $13.2 billion in Q1 2026, driven by a 25% increase in Gross Bookings to $53.7 billion (21% on a constant currency basis). The primary growth drivers were increased Mobility and Delivery trip volumes, with MAPCs reaching 199 million (up 17% YoY) and total Trips reaching 3.643 billion (up 20% YoY). Revenue growth was partially offset by a UK business model change effective January 2, 2026 (shifting from gross to net presentation for Mobility services) which negatively impacted revenue by approximately $1.0 billion."
+    },
+    {
+      "topic": "Segment Performance",
+      "page_range": "36-38",
+      "summary": "Mobility Segment Operating Income grew 28% to $2.029 billion, despite revenue only increasing 5% to $6.798 billion, largely due to a $606 million reduction in driver payments from the UK business model change. Delivery Segment Operating Income increased 43% to $961 million on revenue growth of 34% to $5.068 billion, driven by higher trip volumes and $180 million of incremental advertising revenue. The Freight segment saw a modest revenue increase of 6% to $1.337 billion, while its operating loss widened by $5 million to ($30) million due to higher carrier payments outpacing revenue gains."
+    },
+    {
+      "topic": "Cost Structure and Operating Leverage",
+      "page_range": "32-36",
+      "summary": "Total costs and expenses rose to $11.280 billion (from $10.305 billion), but as a percentage of revenue improved from 89% to 85%, reflecting operating leverage. Cost of revenue fell from 60% to 55% of revenue primarily due to the UK business model change reducing Driver payments in cost of revenue and a $165 million decrease in legal/tax/regulatory charges. Sales and marketing increased 25% to $1.326 billion, including a $115 million increase in advertising and a $112 million rise in consumer discounts and promotions. Research and development rose 17% to $951 million and G&A increased 21% to $798 million, both primarily driven by headcount cost increases."
+    },
+    {
+      "topic": "Net Income and Investment Securities Impact",
+      "page_range": "5-6, 19-20, 35",
+      "summary": "Net income attributable to Uber declined sharply to $263 million from $1.776 billion in Q1 2025, primarily due to a $1.474 billion pre-tax unrealized loss on debt and equity securities, including a $713 million loss on Grab and a $674 million loss on Didi. Income from operations, which excludes these fair value movements, increased strongly by 57% to $1.923 billion. The effective tax rate was 39% in Q1 2026 versus (29%) in Q1 2025, as the prior year benefited from a stock loss and capitalized R&D tax benefit."
+    },
+    {
+      "topic": "Cash Flow and Free Cash Flow",
+      "page_range": "9-10, 38-40",
+      "summary": "Operating cash flow remained strong at $2.351 billion (versus $2.324 billion in Q1 2025), supported by non-cash add-backs including $1.474 billion in unrealized losses and $473 million in stock-based compensation, partially offset by a $200 million decrease in working capital. Capital expenditure was modest at $65 million, yielding free cash flow of $2.286 billion (up from $2.250 billion YoY). Net cash used in financing activities increased significantly to $3.091 billion, primarily driven by $3.0 billion in share repurchases under the $20 billion buyback program authorized in July 2025, with approximately $16.2 billion remaining as of March 31, 2026."
+    },
+    {
+      "topic": "Balance Sheet, Liquidity, and Debt",
+      "page_range": "4, 16-19, 39-40",
+      "summary": "As of March 31, 2026, Uber held $5.558 billion in cash and cash equivalents and $6.1 billion in unrestricted cash, cash equivalents, and short-term investments. Total long-term debt was $10.514 billion (net of unamortized discount), consisting of senior notes, convertible notes, and exchangeable senior notes with maturities ranging from 2028 to 2054. No amounts were drawn on the $5.0 billion revolving credit facility. Subsequent to quarter end, approximately $600 million was used to acquire SpotHero on April 16, 2026, reducing available liquidity. Management stated existing cash and credit facilities are sufficient to meet needs for at least the next 12 months."
+    },
+    {
+      "topic": "Pending Acquisitions and Strategic Investments",
+      "page_range": "11-12, 28, 30-31",
+      "summary": "Uber announced two pending acquisitions during the period: an agreement to acquire Getir's food delivery business in Türkiye and a minority grocery delivery stake for $435 million (expected to close H2 2026), and an agreement to acquire Blacklane GmbH for approximately $550 million (expected to close before end of 2026). The company also completed the acquisition of SpotHero, a digital parking aggregator, for approximately $600 million on April 16, 2026 (subsequent event). These acquisitions reflect Uber's strategy of expanding adjacencies in mobility and delivery. Additionally, Uber increased its commitment to purchase Lucid Group vehicles to a minimum of 35,000 in April 2026."
+    },
+    {
+      "topic": "Key Legal and Regulatory Risks",
+      "page_range": "24-27, 43-45",
+      "summary": "Uber faces ongoing driver classification litigation in multiple jurisdictions including California (Attorney General lawsuit remains pending post-Proposition 22), Switzerland (social security rulings), France (URSSAF assessment), and New Jersey (NJDOL audit for 2019–2023). In the UK, HMRC has issued approximately $1.8 billion in VAT assessments disputing Uber's application of the VAT Order 1987 for March 2022 to September 2024; these payments have been made and recorded as receivables as Uber believes it will prevail on appeal. Aggregate legal liabilities recorded were $1.8 billion as of March 31, 2026. These matters collectively represent material contingencies that could adversely affect financial results if resolved adversely."
+    }
+  ]
+}

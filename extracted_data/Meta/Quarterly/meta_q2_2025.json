@@ -52,7 +52,8 @@
       "source": "direct_line_item",
       "calculation_note": "Free cash flow — Reconciliation of GAAP to Non-GAAP Results, page 9. Calculated as Net cash provided by operating activities (25,561) minus Purchases of property and equipment (16,538) minus Principal payments on finance leases (474)."
     },
-    "total_equity": 195070,
+    "starting_equity": 182637,
+    "ending_equity": 195070,
     "shares_outstanding": {
       "value": null,
       "source": "",
@@ -64,8 +65,7 @@
       "calculation_note": "Weighted-average shares used to compute earnings per share — Diluted — Condensed Consolidated Statements of Income, page 5"
     }
   },
-  "narrative": {
-    "sections_found": [
+  "narrative": [
       {
         "topic": "Revenue and Profitability",
         "page_range": "1",
@@ -113,4 +113,3 @@
       }
     ]
   }
-}

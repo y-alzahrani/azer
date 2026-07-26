@@ -7,6 +7,7 @@ import {
 } from 'recharts'
 import SummaryCard from '../components/SummaryCard'
 import SectionHeader from '../components/SectionHeader'
+import COMPANIES from '../companies.json'
 
 const API = 'http://localhost:8000'
 
@@ -97,6 +98,10 @@ export default function Dashboard() {
   const [loading, setLoading]         = useState(false)
   const location = useLocation()
   const navigate = useNavigate()
+  const companyDisplay = (() => {
+    const match = COMPANIES.find(c => c.name === company)
+    return match?.market === 'Tadawul' ? match.name_ar : company
+  })()
 
   // Load company list
   useEffect(() => {
@@ -160,7 +165,7 @@ export default function Dashboard() {
     { label: 'هامش الربح الصافي',    value: fmtPct(current.net_margin) },
     { label: 'التدفق النقدي الحر',   value: current.free_cash_flow ? fmt(current.free_cash_flow, unit) + ` ${fmtCurrency(currency)}` : '—' },
     { label: 'صافي الدين',           value: current.net_debt ? fmt(current.net_debt, unit) + ` ${fmtCurrency(currency)}` : '—' },
-    { label: 'مكرر الأرباح المستقبلي',          value: current.forward_pe_ratio ? (current.forward_pe_ratio).toFixed(1) : '—' },
+    { label: 'مكرر الأرباح المستقبلية',          value: current.forward_pe_ratio ? (current.forward_pe_ratio).toFixed(1) : '—' },
   ] : []
 
   // ── Render ─────────────────────────────────────────────────────────────
@@ -170,7 +175,7 @@ export default function Dashboard() {
     fontSize: '14px',
     background: 'var(--surface)',
     color: 'var(--text-1)',
-    border: '1.6px solid var(--border-2)',
+    border: '2.4px solid var(--border-2)',
     borderRadius: 'var(--radius)',
     padding: '1px 10px',
     marginTop: '2.5px',
@@ -183,7 +188,7 @@ export default function Dashboard() {
   return (
     <div style={{ maxWidth: '1330px', margin: '0 auto', padding: '2rem' }}>
 
-{/* ── Company + Period selector ─── */}
+{/* ── Company ─── */}
       <div style={{
         display: 'flex',
         alignItems: 'center',
@@ -193,11 +198,15 @@ export default function Dashboard() {
       }}>
         <select style={selectStyle} value={company} onChange={e => setCompany(e.target.value)}>
           {companies.map(c => (
-            <option key={c} value={c}>{c}</option>
+            <option key={c} value={c}>
+              {COMPANIES.find(m => m.name === c)?.market === 'Tadawul' 
+                ? COMPANIES.find(m => m.name === c)?.name_ar 
+                : c}
+            </option>
           ))}
         </select>
         <span style={{ fontSize: '35px', fontWeight: '700', color: 'var(--text-1)', marginRight: '22px' }}>
-          {company}
+          {companyDisplay}
         </span>
       </div>
 
@@ -260,7 +269,24 @@ export default function Dashboard() {
                       width={50} 
                     />
                     <Tooltip contentStyle={TOOLTIP_STYLE} formatter={(v) => [fmt(v, unit), 'الإيرادات']} labelFormatter={(label) => label.replace('FY ', '')} cursor={{ fill: 'rgba(255,255,255,0.1)' }}/>
-                    <Bar dataKey="revenue" fill="#F87171" radius={[4,4,0,0]} />
+                    <Bar dataKey="revenue" fill="#ff6666" radius={[4,4,0,0]} />
+                  </BarChart>
+                </ResponsiveContainer>
+              </div>
+
+              <div style={CHART_STYLE}>
+                <ChartLabel>إجمالي الربح</ChartLabel>
+                <ResponsiveContainer width="100%" height={200}>
+                  <BarChart data={annualData} margin={{ right: 15, left: 0, top: 10}}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
+                    <XAxis dataKey="period" tickFormatter={v => v.replace('FY ', '')} tick={{ fill: 'var(--text-2)', fontSize: 13, fontFamily: 'var(--font)' }} />
+                    <YAxis domain={['auto', 'auto']}
+                      tickFormatter={makeTickFormatter(unit)}
+                      tick={{ fill: 'var(--text-2)', fontSize: 13, fontFamily: 'var(--font)', direction: 'ltr' }} 
+                      width={50} 
+                    />
+                    <Tooltip contentStyle={TOOLTIP_STYLE} formatter={(v) => [fmt(v, unit), 'إجمالي الربح']} labelFormatter={(label) => label.replace('FY ', '')} cursor={{ fill: 'rgba(255,255,255,0.1)' }}/>
+                    <Bar dataKey="gross_profit" fill="#60A5FA" radius={[4,4,0,0]} />
                   </BarChart>
                 </ResponsiveContainer>
               </div>
@@ -277,7 +303,7 @@ export default function Dashboard() {
                       width={50} 
                     />
                     <Tooltip contentStyle={TOOLTIP_STYLE} formatter={(v) => [fmt(v, unit), 'الربح التشغيلي']} labelFormatter={(label) => label.replace('FY ', '')} cursor={{ fill: 'rgba(255,255,255,0.1)' }}/>
-                    <Bar dataKey="operating_income" fill="#60A5FA" radius={[4,4,0,0]} />
+                    <Bar dataKey="operating_income" fill="var(--accent)" radius={[4,4,0,0]} />
                   </BarChart>
                 </ResponsiveContainer>
               </div>
@@ -294,7 +320,7 @@ export default function Dashboard() {
                       width={50} 
                     />
                     <Tooltip contentStyle={TOOLTIP_STYLE} formatter={(v) => [fmt(v, unit), 'صافي الربح']} labelFormatter={(label) => label.replace('FY ', '')} cursor={{ fill: 'rgba(255,255,255,0.1)' }}/>
-                    <Bar dataKey="net_income" fill="#34D399" radius={[4,4,0,0]} />
+                    <Bar dataKey="net_income" fill="#46cb5c" radius={[4,4,0,0]} />
                   </BarChart>
                 </ResponsiveContainer>
               </div>
@@ -311,8 +337,21 @@ export default function Dashboard() {
                       width={50} 
                     />
                     <Tooltip contentStyle={TOOLTIP_STYLE} formatter={(v) => [fmt(v, unit), 'التدفق النقدي الحر']} labelFormatter={(label) => label.replace('FY ', '')} cursor={{ fill: 'rgba(255,255,255,0.1)' }}/>
-                    <Bar dataKey="free_cash_flow" fill="#ffd755" radius={[4,4,0,0]} />
+                    <Bar dataKey="free_cash_flow" fill="#ffd23c" radius={[4,4,0,0]} />
                   </BarChart>
+                </ResponsiveContainer>
+              </div>
+
+              <div style={CHART_STYLE}>
+                <ChartLabel>العائد على حقوق الملكية</ChartLabel>
+                <ResponsiveContainer width="100%" height={200}>
+                  <LineChart data={annualData} margin={{ right: 15, left: 0, top: 10}}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
+                    <XAxis dataKey="period" tickFormatter={v => v.replace('FY ', '')} padding={{ left: 30, right: 30 }} tick={{ fill: 'var(--text-2)', fontSize: 13, fontFamily: 'var(--font)' }} />
+                    <YAxis domain={['auto', 'auto']} tickFormatter={v => `${(v*100).toFixed(1)}%`} tick={{ fill: 'var(--text-2)', fontSize: 13, fontFamily: 'var(--font)', direction: 'ltr' }} width={44} />
+                    <Tooltip contentStyle={TOOLTIP_STYLE} formatter={(v) => [fmtPct(v), 'العائد على حقوق الملكية']} labelFormatter={(label) => label.replace('FY ', '')} />
+                    <Line dataKey="return_on_equity" stroke="#fa60ce" strokeWidth={2} dot={{ fill: '#fa60ce', r: 4 }} />
+                  </LineChart>
                 </ResponsiveContainer>
               </div>
 
@@ -370,7 +409,7 @@ export default function Dashboard() {
                       width={50} 
                     />
                     <Tooltip contentStyle={TOOLTIP_STYLE} formatter={(v) => [fmt(v, unit), 'النقد وما يعادله']} labelFormatter={(label) => label.replace('FY ', '')} cursor={{ fill: 'rgba(255,255,255,0.1)' }}/>
-                    <Bar dataKey="cash_and_equivalents" fill="#34D399" radius={[4,4,0,0]} />
+                    <Bar dataKey="cash_and_equivalents" fill="#46cb5c" radius={[4,4,0,0]} />
                   </BarChart>
                 </ResponsiveContainer>
               </div>
@@ -387,7 +426,7 @@ export default function Dashboard() {
                       width={50} 
                     />
                     <Tooltip contentStyle={TOOLTIP_STYLE} formatter={(v) => [fmt(v, unit), 'إجمالي الديون']} labelFormatter={(label) => label.replace('FY ', '')} cursor={{ fill: 'rgba(255,255,255,0.1)' }}/>
-                    <Bar dataKey="total_debt" fill="#F87171" radius={[4,4,0,0]} />
+                    <Bar dataKey="total_debt" fill="#ff6666" radius={[4,4,0,0]} />
                   </BarChart>
                 </ResponsiveContainer>
               </div>
@@ -404,7 +443,7 @@ export default function Dashboard() {
                       width={50} 
                     />
                     <Tooltip contentStyle={TOOLTIP_STYLE} formatter={(v) => [fmt(v, unit), 'صافي الدين']} labelFormatter={(label) => label.replace('FY ', '')} />
-                    <Line dataKey="net_debt" stroke="#FBBF24" strokeWidth={2} dot={{ fill: '#FBBF24', r: 4 }} />
+                    <Line dataKey="net_debt" stroke="#ffd23c" strokeWidth={2} dot={{ fill: '#ffd23c', r: 4 }} />
                   </LineChart>
                 </ResponsiveContainer>
               </div>
@@ -435,10 +474,10 @@ export default function Dashboard() {
             }}>
               {[
                 { label: 'ربحية السهم',        value: current.eps ? `${current.eps.toFixed(2)} ${fmtCurrency(currency)}` : '—' },
-                { label: 'السعر / الأرباح (لآخر 12 شهر)',        value: current.trailing_pe_ratio ? (current.trailing_pe_ratio).toFixed(1) : '—' },
-                { label: 'السعر / الأرباح (للـ 12 شهرًا القادمة)',value: current.forward_pe_ratio ? (current.forward_pe_ratio).toFixed(1) : '—' },
-                { label: 'السعر / الإيرادات',        value: current.ps_ratio ? (current.ps_ratio).toFixed(1) : '—' },
-                { label: 'السعر / القيمة الدفترية',        value: current.pb_ratio ? (current.pb_ratio).toFixed(1) : '—' },
+                { label: 'مكرر الأرباح للـ 12 شهرًا الماضية',        value: current.trailing_pe_ratio ? (current.trailing_pe_ratio).toFixed(1) : '—' },
+                { label: 'مكرر الأرباح للـ 12 شهرًا القادمة',value: current.forward_pe_ratio ? (current.forward_pe_ratio).toFixed(1) : '—' },
+                { label: 'مكرر المبيعات',        value: current.ps_ratio ? (current.ps_ratio).toFixed(1) : '—' },
+                { label: 'مكرر القيمة الدفترية',        value: current.pb_ratio ? (current.pb_ratio).toFixed(1) : '—' },
               ].map(card => (
                 <SummaryCard key={card.label} label={card.label} value={card.value} />
               ))}
@@ -588,7 +627,7 @@ export default function Dashboard() {
 
       {/* ── Floating chatbot button ─── */}
       <button
-        onClick={() => navigate('/chat')}
+        onClick={() => navigate('/chatbot')}
         style={{
           position: 'fixed',
           bottom: '28px',

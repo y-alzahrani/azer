@@ -52,7 +52,8 @@
       "source": "direct_line_item",
       "calculation_note": "Free cash flow — explicitly reported in Liquidity and Capital Resources section, page 71. Defined as net cash provided by operating activities (57,683) less purchases of property and equipment (18,567) less principal payments on finance leases (677)."
     },
-    "total_equity": 124879,
+    "starting_equity": 128290,
+    "ending_equity": 124879,
     "shares_outstanding": {
       "value": 2741,
       "source": "direct_line_item",
@@ -64,8 +65,7 @@
       "calculation_note": "Shares used in computation of diluted earnings per share (Class A diluted) — Consolidated Statements of Income and Note 3 Earnings per Share, pages 80 and 95"
     }
   },
-  "narrative": {
-    "sections_found": [
+  "narrative": [
       {
         "topic": "Revenue Drivers and Segment Performance",
         "page_range": "50-52, 65-66",
@@ -118,4 +118,3 @@
       }
     ]
   }
-}

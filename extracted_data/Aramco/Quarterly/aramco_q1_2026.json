@@ -52,7 +52,8 @@
       "source": "direct_line_item",
       "calculation_note": "Free cash flow — Non-IFRS measures reconciliations section, page 9. Label: 'Free cash flow'"
     },
-    "total_equity": 1758311,
+    "starting_equity": 1721744,
+    "ending_equity": 1758311,
     "shares_outstanding": {
       "value": 242105.88,
       "source": "calculated",
@@ -64,8 +65,7 @@
       "calculation_note": "Derived from EPS calculation on page 23: Net income attributable to shareholders' equity SAR 120,131 million / Earnings per share (basic and diluted) SAR 0.50 = 240,262 million weighted average diluted shares. Reported in millions."
     }
   },
-  "narrative": {
-    "sections_found": [
+  "narrative": [
       {
         "topic": "Revenue and Financial Performance Overview",
         "page_range": "3",
@@ -118,4 +118,3 @@
       }
     ]
   }
-}

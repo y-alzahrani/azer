@@ -1,0 +1,143 @@
+{
+  "company": "Sipchem",
+  "ticker": "2310.SR",
+  "report_type": "Quarterly",
+  "period": "Q1 2026",
+  "period_end_date": "2026-03-31",
+  "currency": "SAR",
+  "unit": "Thousands",
+  "metrics": {
+    "revenue": {
+      "value": 1227085,
+      "source": "direct_line_item",
+      "source_note": "Total revenue — Condensed Consolidated Interim Statement of Profit or Loss, page 4"
+    },
+    "cost_of_revenue": {
+      "value": -1149083,
+      "source": "direct_line_item",
+      "source_note": "Cost of revenues — Condensed Consolidated Interim Statement of Profit or Loss, page 4"
+    },
+    "operating_expenses": {
+      "value": -146703,
+      "source": "calculated",
+      "source_note": "Selling and distribution expenses (-25,213) + General and administrative expenses (-121,490) = -146,703 — Condensed Consolidated Interim Statement of Profit or Loss, page 4"
+    },
+    "operating_income": {
+      "value": -68701,
+      "source": "direct_line_item",
+      "source_note": "Operating loss — Condensed Consolidated Interim Statement of Profit or Loss, page 4"
+    },
+    "net_income": {
+      "value": -210988,
+      "source": "direct_line_item",
+      "source_note": "(Loss) profit for the period — Condensed Consolidated Interim Statement of Profit or Loss, page 4"
+    },
+    "eps": {
+      "value": -0.29,
+      "source": "direct_line_item",
+      "source_note": "Diluted (loss) earnings per share — Condensed Consolidated Interim Statement of Profit or Loss, page 4"
+    },
+    "cash_and_equivalents": {
+      "value": 2350714,
+      "source": "direct_line_item",
+      "source_note": "Cash and cash equivalents — Condensed Consolidated Interim Statement of Financial Position, page 4 (current assets section)"
+    },
+    "short_term_debt": {
+      "value": 1125142,
+      "source": "calculated",
+      "source_note": "Current portion of long-term borrowings (575,142) + Short term borrowings (550,000) = 1,125,142 — Note 9, Borrowings, page 17; Statement of Financial Position pages 4-5"
+    },
+    "long_term_debt": {
+      "value": 2504686,
+      "source": "direct_line_item",
+      "source_note": "Total non-current borrowings (Shari'a compliant loans 2,504,686) — Note 9, Borrowings, page 17; Statement of Financial Position page 4"
+    },
+    "net_debt": {
+      "value": 1279114,
+      "source": "calculated",
+      "source_note": "Short-term debt (1,125,142) + Long-term debt (2,504,686) - Cash & Cash Equivalents (2,350,714) = Net debt (1,279,114)"
+    },
+    "operating_cash_flow": {
+      "value": 228234,
+      "source": "direct_line_item",
+      "source_note": "Net cash generated from operating activities — Condensed Consolidated Interim Statement of Cash Flows, page 7"
+    },
+    "capital_expenditure": {
+      "value": -120588,
+      "source": "direct_line_item",
+      "source_note": "Payments for purchase of property, plant and equipment and intangible assets — Condensed Consolidated Interim Statement of Cash Flows, page 7"
+    },
+    "free_cash_flow": {
+      "value": 107646,
+      "source": "calculated",
+      "source_note": "Operating Cash Flow (228,234) - CapEx (120,588) = Free Cash Flow (107,646)"
+    },
+    "starting_equity": {
+      "value": 14332775,
+      "source": "direct_line_item",
+      "source_note": "Total equity as at 1 January 2026 (Audited) — Condensed Consolidated Interim Statement of Changes in Equity, page 6"
+    },
+    "ending_equity": {
+      "value": 14123121,
+      "source": "direct_line_item",
+      "source_note": "Total equity as at 31 March 2026 (Unaudited) — Condensed Consolidated Interim Statement of Financial Position, page 4-5"
+    },
+    "shares_outstanding": {
+      "value": 733333,
+      "source": "direct_line_item",
+      "source_note": "Share capital of SAR 7,333,333 thousands at SAR 10 par value implies 733,333 thousands shares; Weighted average number of shares used in calculating dilutive earnings per share — Note 15, Earnings Per Share, page 21"
+    },
+    "shares_weighted_average_diluted": {
+      "value": 733333,
+      "source": "direct_line_item",
+      "source_note": "Weighted average number of shares used in calculating dilutive earnings per share — Note 15, Earnings Per Share, page 21"
+    }
+  },
+  "narrative": [
+    {
+      "topic": "Revenue and Gross Profit Performance",
+      "page_range": "4, 11-12",
+      "summary": "Revenue declined 37.7% year-on-year to SAR 1,227 million in Q1 2026 compared to SAR 1,970 million in Q1 2025, driven primarily by lower sales of petrochemical products at provisional prices (SAR 1,272 million vs SAR 1,921 million) and a negative provisional-to-final price movement of SAR 45.8 million. Gross profit fell sharply to SAR 78 million from SAR 160 million, reflecting a compressed gross margin of approximately 6.4% versus 8.1% in the prior period. The Marketing segment contributed the largest share of external revenue at SAR 945 million (inter-segment), while the Intermediate Chemicals segment posted the largest gross loss of SAR 93.7 million."
+    },
+    {
+      "topic": "Operating Loss and Below-the-Line Items",
+      "page_range": "4",
+      "summary": "The Group reported an operating loss of SAR 68.7 million in Q1 2026 compared to an operating loss of SAR 55.6 million in Q1 2025, as selling and distribution expenses declined to SAR 25.2 million (from SAR 92.1 million) but were offset by continued general and administrative costs of SAR 121.5 million. The Group recorded a share of loss from equity accounted investees of SAR 88.3 million, a significant reversal from the SAR 387 million profit contribution in Q1 2025. Finance costs of SAR 52.8 million and the combined effect of these items resulted in a loss before zakat and tax of SAR 195.6 million, compared to a profit of SAR 297.1 million a year earlier."
+    },
+    {
+      "topic": "Net Loss and Earnings Per Share",
+      "page_range": "4, 21",
+      "summary": "The Group reported a net loss of SAR 211 million for Q1 2026, compared to a net profit of SAR 230.3 million in Q1 2025. The loss attributable to equity holders of the Company was SAR 215.3 million, while non-controlling interests contributed SAR 4.3 million profit. Basic loss per share was SAR (0.30) and diluted loss per share was SAR (0.29), compared to basic and diluted earnings of SAR 0.27 per share in Q1 2025, based on a weighted average diluted share count of 733.3 million shares."
+    },
+    {
+      "topic": "Segment Performance",
+      "page_range": "13-14",
+      "summary": "The Basic Chemicals segment was the strongest performer with operating profit of SAR 67 million and pre-tax profit of SAR 55.5 million, supported by SAR 373.9 million in total revenue. The Intermediate Chemicals segment posted the largest operating loss at SAR 120.6 million and pre-tax loss of SAR 135.6 million. The Corporate and Others segment reported a pre-tax loss of SAR 351.9 million, significantly impacted by a SAR 400.8 million share of loss from equity accounted investees (partially offset by inter-segment eliminations). The Polymers segment reported an operating loss of SAR 27.7 million while Marketing remained marginally profitable at SAR 5.9 million operating profit."
+    },
+    {
+      "topic": "Cash Flow and Liquidity",
+      "page_range": "7-8",
+      "summary": "Operating cash flow was SAR 228.2 million for Q1 2026, a decline from SAR 382.5 million in Q1 2025, supported by trade receivable collections of SAR 258.8 million partially offset by inventory build-up and prepayment increases. Investing activities consumed SAR 115.5 million primarily for property, plant and equipment purchases. Financing activities generated SAR 899.7 million net, driven by proceeds from long-term borrowings of SAR 625 million and short-term borrowings of SAR 550 million, partially offset by repayment of SAR 250 million short-term borrowings and finance costs paid of SAR 24.7 million. Cash and cash equivalents increased significantly from SAR 1,338.7 million to SAR 2,350.7 million during the quarter."
+    },
+    {
+      "topic": "Debt and Capital Structure",
+      "page_range": "17",
+      "summary": "Total borrowings increased to SAR 3,629.8 million at 31 March 2026 from SAR 2,704.7 million at 31 December 2025, reflecting new Shari'a compliant long-term loans raising non-current borrowings to SAR 2,504.7 million and increased short-term borrowings to SAR 550 million. The Group was in compliance with borrowing covenants except for SAT, which has been non-compliant since 31 December 2025, resulting in reclassification of its non-current borrowings to current liabilities. Total equity declined slightly to SAR 14.1 billion from SAR 14.3 billion, reflecting the Q1 2026 net loss."
+    },
+    {
+      "topic": "Impairment Assessment and Equity Accounted Investees",
+      "page_range": "15-16",
+      "summary": "Management identified impairment indicators for the IMC and Acetyls CGUs due to adverse performance versus budget; however, a value-in-use assessment using an 8.25% discount rate and 2.5% terminal growth rate concluded that recoverable amounts exceeded carrying values with no impairment required. Investment in equity accounted investees declined to SAR 3,545.9 million from SAR 3,632.8 million, primarily due to a reduction in the TSOC associate investment from SAR 3,284.9 million to SAR 3,199.9 million. SAMAPCO and LSIG joint ventures carry nil values as cumulative losses exceed the Group's investment; an additional SAR 46.2 million of unrecognized losses arose in Q1 2026."
+    },
+    {
+      "topic": "Middle East Geopolitical Risk",
+      "page_range": "10",
+      "summary": "The Group disclosed that geopolitical tensions in the Middle East escalated during Q1 2026, creating uncertainty in regional economic and business conditions. Potential operational impacts include disruptions to transportation routes, plant underutilization, increased logistics and freight costs, and feedstock availability fluctuations. Management stated it is actively monitoring the situation and has implemented mitigation measures leveraging operational flexibility, while also assessing impacts on key accounting estimates including asset impairment, trade receivable recoverability, and inventory valuation."
+    },
+    {
+      "topic": "Capital Expenditure and Commitments",
+      "page_range": "7, 15, 19",
+      "summary": "Capital expenditure for Q1 2026 totaled SAR 120.6 million (payments basis from cash flow) or SAR 127.1 million on a cost basis per Note 6, compared to SAR 144.8 million in Q1 2025. Capital work-in-progress grew to SAR 1,433.2 million from SAR 1,309.9 million, reflecting ongoing construction and expansion projects. Remaining contracted but unincurred capital expenditure stood at SAR 1,111.9 million at 31 March 2026, down from SAR 1,153.8 million at year-end 2025. The Polymers segment was the largest capex spender at SAR 67.4 million."
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "company": "Sipchem",
+  "ticker": "2310.SR",
+  "report_type": "Annual",
+  "period": "FY 2022",
+  "period_end_date": "2022-12-31",
+  "currency": "SAR",
+  "unit": "Thousands",
+  "metrics": {
+    "revenue": {
+      "value": 10253628,
+      "source": "direct_line_item",
+      "source_note": "Revenue — Consolidated statement of profit or loss, page 9"
+    },
+    "cost_of_revenue": {
+      "value": 5414953,
+      "source": "direct_line_item",
+      "source_note": "Cost of revenues — Consolidated statement of profit or loss, page 9"
+    },
+    "operating_expenses": {
+      "value": 791686,
+      "source": "calculated",
+      "source_note": "Selling and distribution expenses (295,988) + General and administrative expenses (495,698) = 791,686. No single 'total operating expenses' line item exists. Impairment of non-financial assets was nil in 2022 and thus not included. Source: Consolidated statement of profit or loss, page 9"
+    },
+    "operating_income": {
+      "value": 4046989,
+      "source": "direct_line_item",
+      "source_note": "Operating profit — Consolidated statement of profit or loss, page 9"
+    },
+    "net_income": {
+      "value": 3953075,
+      "source": "direct_line_item",
+      "source_note": "Profit for the year — Consolidated statement of profit or loss, page 9"
+    },
+    "eps": {
+      "value": 4.9,
+      "source": "direct_line_item",
+      "source_note": "Diluted earnings per share — Consolidated statement of profit or loss, page 9"
+    },
+    "cash_and_equivalents": {
+      "value": 2455935,
+      "source": "direct_line_item",
+      "source_note": "Cash and cash equivalents — Consolidated statement of financial position, page 7"
+    },
+    "short_term_debt": {
+      "value": 284385,
+      "source": "direct_line_item",
+      "source_note": "Total current loans and borrowings (Current portion of long term borrowings 284,385; short term borrowings nil in 2022) — Note 20.2, page 58. Operating lease liabilities excluded."
+    },
+    "long_term_debt": {
+      "value": 3049133,
+      "source": "direct_line_item",
+      "source_note": "Total non-current loans and borrowings — Note 20.2, page 58. Operating lease liabilities excluded."
+    },
+    "net_debt": {
+      "value": 877583,
+      "source": "calculated",
+      "source_note": "Short-term debt (284,385) + Long-term debt (3,049,133) - Cash & Cash Equivalents (2,455,935) = Net debt (877,583)"
+    },
+    "operating_cash_flow": {
+      "value": 5319284,
+      "source": "direct_line_item",
+      "source_note": "Net cash generated from operating activities — Consolidated statement of cash flows, page 13"
+    },
+    "capital_expenditure": {
+      "value": 631584,
+      "source": "calculated",
+      "source_note": "Additions to property, plant and equipment (584,714) + Additions to intangibles (46,872) = 631,586 per segment note 4 (631,584 stated directly). Source: Consolidated statement of cash flows page 13 and Segment information Note 4, page 37"
+    },
+    "free_cash_flow": {
+      "value": 4687700,
+      "source": "calculated",
+      "source_note": "Operating Cash Flow (5,319,284) - CapEx (631,584) = Free Cash Flow (4,687,700)"
+    },
+    "starting_equity": {
+      "value": 15722078,
+      "source": "direct_line_item",
+      "source_note": "Total equity as at 1 January 2022 — Consolidated statement of changes in equity, page 11"
+    },
+    "ending_equity": {
+      "value": 16736823,
+      "source": "direct_line_item",
+      "source_note": "Total equity as at 31 December 2022 — Consolidated statement of financial position, page 7"
+    },
+    "shares_outstanding": {
+      "value": 733333.3,
+      "source": "direct_line_item",
+      "source_note": "Authorized, issued and fully paid shares as at 31 December 2022: 733,333,300 shares — Note 19, page 55. Expressed in thousands: 733,333.300"
+    },
+    "shares_weighted_average_diluted": {
+      "value": 733333,
+      "source": "direct_line_item",
+      "source_note": "Weighted average number of shares used in calculating dilutive earnings per share: 733,333 (thousands) — Note 32, page 70"
+    }
+  },
+  "narrative": [
+    {
+      "topic": "Revenue and Gross Profit Performance",
+      "page_range": "9, 37-38",
+      "summary": "The Group reported revenue of SR 10.25 billion in 2022, up from SR 9.69 billion in 2021, driven primarily by higher volumes and pricing across the Basic Chemicals, Intermediate Chemicals, and Polymers segments. Foreign country revenues accounted for SR 9.36 billion (91%) of total revenue. Gross profit was SR 4.84 billion (47.2% gross margin) versus SR 5.34 billion (55.2%) in 2021, reflecting higher cost of inventories (SR 3.93 billion in 2022 vs SR 2.79 billion in 2021). The decline in gross margin was primarily attributable to rising input costs despite higher selling prices."
+    },
+    {
+      "topic": "Segment Performance",
+      "page_range": "37-38",
+      "summary": "The Group operates five reportable segments: Basic Chemicals, Intermediate Chemicals, Polymers, Trading, and Corporate and Others. Basic Chemicals generated operating profit of SR 1.66 billion and Intermediate Chemicals contributed SR 1.31 billion in 2022. Polymers segment operating profit declined to SR 763 million from SR 1.04 billion in 2021, partly due to margin compression. The Trading segment contributed SR 260 million to operating profit. Corporate and Others recorded a loss of SR 97 million reflecting central costs and eliminations."
+    },
+    {
+      "topic": "Operating Expenses and Profitability",
+      "page_range": "9, 69",
+      "summary": "Selling and distribution expenses were SR 296 million in 2022, up from SR 230 million in 2021. General and administrative expenses declined to SR 496 million from SR 651 million, partly due to lower depreciation and amortization charges within G&A (SR 110 million vs SR 183 million in 2021). Operating profit was SR 4.05 billion, down slightly from SR 4.30 billion in 2021. Net profit attributable to equity holders was SR 3.60 billion, broadly in line with SR 3.59 billion in 2021."
+    },
+    {
+      "topic": "Equity Accounted Investees and Share of Profit",
+      "page_range": "47-49",
+      "summary": "The Group's share of profit from equity accounted investees was SR 365 million in 2022, down from SR 480 million in 2021, primarily due to lower contributions from TSOC (SR 272 million in 2022 vs SR 378 million in 2021) as TSOC's revenues declined from SR 1.10 billion to SR 986 million. SAMAPCO contributed SR 106 million to the share of profit in 2022, a decline from SR 158 million, consistent with lower revenues. The carrying value of equity-accounted investments was SR 3.96 billion at year-end 2022."
+    },
+    {
+      "topic": "Cash Flow and Liquidity",
+      "page_range": "13-14",
+      "summary": "Net cash from operating activities was SR 5.32 billion, slightly higher than SR 4.88 billion in 2021. Investing activities used SR 262 million, compared to SR 240 million in the prior year, primarily due to property and equipment additions of SR 585 million offset by dividend income from TSOC of SR 399 million. Financing activities used SR 5.26 billion, driven by loan repayments of SR 2.25 billion and dividends paid to shareholders of SR 2.36 billion. Closing cash and cash equivalents declined to SR 2.46 billion from SR 2.67 billion."
+    },
+    {
+      "topic": "Debt and Capital Structure",
+      "page_range": "58-59",
+      "summary": "Total loans and borrowings decreased significantly to SR 3.33 billion at year-end 2022 from SR 5.37 billion in 2021, reflecting repayment of Shari'a compliant bank loans and SIDF loans. All borrowings are non-conventional (Shari'a compliant). Loans carry financial charges at SAIBOR plus a fixed margin. The Group maintained compliance with financial covenants except for SAT subsidiary, which was in covenant breach of certain SIDF ratios; accordingly, SAT's SIDF balance was reclassified to current liabilities. The gearing ratio remained within the Group's policy limit of 3:1."
+    },
+    {
+      "topic": "Dividend Policy",
+      "page_range": "70",
+      "summary": "The Board of Directors approved two cash dividend distributions for 2022: SR 1.75 per share (SR 1.27 billion) for the first half paid in July 2022, and SR 1.50 per share (SR 1.09 billion) for the second half paid in December 2022, totaling SR 2.36 billion in dividends to shareholders. Dividends to non-controlling interest shareholders amounted to SR 393 million. The Company's statutory reserve appropriation is 10% of net income until the reserve equals 30% of share capital."
+    },
+    {
+      "topic": "GACI Reclassification and Restatement",
+      "page_range": "3-4, 17, 73-74",
+      "summary": "During 2022, the Group re-assessed its control over Gulf Advanced Cable Insulation Company (GACI) and concluded that GACI is a joint venture rather than a subsidiary, requiring deconsolidation and reclassification to the equity method under IFRS 10 and IFRS 11. This change was applied retrospectively under IAS 8, restating the 2021 comparative financial statements. The restatement increased equity accounted investees by SR 27 million and reduced total assets by SR 39 million as of 31 December 2021. Three additional reclassifications were also made to the 2021 comparatives: impairment charges (SR 160 million) moved to a separate line, shipping costs (SR 223 million) reclassified from selling expenses to revenue, and precious metals provision separately presented."
+    },
+    {
+      "topic": "Key Accounting Estimates — Impairment and Useful Lives",
+      "page_range": "35-36, 44, 52-53",
+      "summary": "The Group tests goodwill annually using a discounted cash flow model with a 10% discount rate and 2% long-term growth rate; sensitivity analysis confirmed substantial headroom even with a 1% change in either assumption. A 10% change in PP&E useful lives would impact profit by SR 79.4 million. PBT operations were mothballed in 2021 resulting in a SR 160 million impairment; no new impairment indicators were identified in 2022 across other CGUs. SSPC plant assets of SR 26.8 million were written off in 2022."
+    },
+    {
+      "topic": "Employees' Benefits and Post-Employment Obligations",
+      "page_range": "65-66",
+      "summary": "The defined benefit obligation for end-of-service benefits stood at SR 535.7 million at year-end 2022, marginally up from SR 531 million in 2021. The actuarial gain of SR 42.4 million recognized in OCI was driven by changes in financial assumptions, reflecting a significant increase in the discount rate from 2.48% to 4.20%. Current service cost declined to SR 65.9 million from SR 74.0 million. Sensitivity analysis shows that a 0.5% increase in the discount rate would reduce the obligation to SR 521.5 million, while the same increase in salary growth would raise it to SR 596.5 million."
+    }
+  ]
+}

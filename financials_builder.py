@@ -84,25 +84,34 @@ def calculate_metrics(doc):
     net_income = _get(m, "net_income")
     short_term_debt = _get(m, "short_term_debt")
     long_term_debt = _get(m, "long_term_debt")
-    total_equity = _get(m, "total_equity")
+    starting_equity = _get(m, "starting_equity")
+    ending_equity = _get(m, "ending_equity")
+    gross_profit = revenue - cost_of_revenue if revenue is not None and cost_of_revenue is not None else None
     gross_margin = _round(_safe_divide(revenue - cost_of_revenue, revenue)
                               if revenue is not None and cost_of_revenue is not None else None)
     operating_margin = _round(_safe_divide(operating_income, revenue))
     net_margin = _round(_safe_divide(net_income, revenue))
+
+    if starting_equity is not None or ending_equity is not None:
+        average_equity = _round(((starting_equity or 0) + (ending_equity or 0)) / 2)
+    else:
+        average_equity = None
 
     if short_term_debt is not None or long_term_debt is not None:
         total_debt = (short_term_debt or 0) + (long_term_debt or 0)
     else:
         total_debt = None
     
-    debt_to_equity = _round(_safe_divide(total_debt, total_equity))
-    return_on_equity = _round(_safe_divide(net_income, total_equity))
+    debt_to_equity = _round(_safe_divide(total_debt, average_equity))
+    return_on_equity = _round(_safe_divide(net_income, average_equity))
  
     return {
+        "gross_profit": gross_profit,
         "gross_margin": gross_margin,
         "operating_margin": operating_margin,
         "net_margin": net_margin,
         "total_debt": total_debt,
+        "average_equity": average_equity,
         "debt_to_equity": debt_to_equity,
         "return_on_equity": return_on_equity,
     }
@@ -127,21 +136,23 @@ def build_report_financials(doc):
         "period_end_date": doc["period_end_date"],
         "currency": doc["currency"],
         "unit": doc["unit"],
-        "revenue": m["revenue"],
+        "revenue": _get(m, "revenue"),
         "cost_of_revenue": _get(m, "cost_of_revenue"),
+        "gross_profit": derived["gross_profit"],
         "operating_expenses": _get(m, "operating_expenses"),
-        "operating_income": m["operating_income"],
-        "net_income": m["net_income"],
+        "operating_income": _get(m, "operating_income"),
+        "net_income": _get(m, "net_income"),
         "operating_margin": derived["operating_margin"],
         "net_margin": derived["net_margin"],
-        "eps": m["eps"],
-        "operating_cash_flow": m["operating_cash_flow"],
+        "eps": _get(m, "eps"),
+        "operating_cash_flow": _get(m, "operating_cash_flow"),
         "capital_expenditure": _get(m, "capital_expenditure"),
         "free_cash_flow": _get(m, "free_cash_flow"),
         "cash_and_equivalents": _get(m, "cash_and_equivalents"),
         "total_debt": derived["total_debt"],
         "net_debt": _get(m, "net_debt"),
-        "total_equity": m["total_equity"],
+        "ending_equity": _get(m, "ending_equity"),
+        "average_equity": derived["average_equity"],
         "share_price": None,
         "market_cap": None,
         "shares_outstanding": _get(m, "shares_outstanding"),
@@ -253,12 +264,12 @@ def populate_price_metrics(financials, docs):
         shares = most_recent_entry.get("shares_outstanding") or most_recent_entry.get("shares_weighted_average_diluted")
         market_cap = share_price * shares if share_price and shares else None
         revenue = most_recent_entry.get("revenue")
-        total_equity = most_recent_entry.get("total_equity")
+        ending_equity = most_recent_entry.get("ending_equity")
         
         most_recent_entry["share_price"] = share_price
         most_recent_entry["market_cap"] = round(market_cap, 1) if market_cap else None
         most_recent_entry["ps_ratio"] = round(market_cap / revenue, 2) if market_cap and revenue else None
-        most_recent_entry["pb_ratio"] = round(market_cap / total_equity, 2) if market_cap and total_equity else None
+        most_recent_entry["pb_ratio"] = round(market_cap / ending_equity, 2) if market_cap and ending_equity else None
 
 
 def build_all_narratives(docs):
