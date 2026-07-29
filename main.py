@@ -133,6 +133,13 @@ def get_financials(company: str):
     return financials[company]
 
 
+@app.post("/prices/refresh")
+def refresh_prices():
+    """Refreshes live price data for all companies."""
+    populate_price_metrics(app_state["financials"], app_state["docs"])
+    return {"status": "ok"}
+
+
 # ---------------------------------------------------------------------------
 # Summary
 # ---------------------------------------------------------------------------

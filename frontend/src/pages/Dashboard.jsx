@@ -118,6 +118,11 @@ export default function Dashboard() {
       })
   }, [])
 
+  // Runs once when Dashboard mounts
+  useEffect(() => {
+    fetch(`${API}/prices/refresh`, { method: 'POST' })
+  }, [])
+  
   // Load financials when company changes
   useEffect(() => {
     if (!company) return

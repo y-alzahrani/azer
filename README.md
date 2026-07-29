@@ -2,11 +2,11 @@
 
 ## Overview
 
-AZER is an AI-powered financial analysis platform that extracts key metrics and insights from companies' financial reports, generates analytical summaries, and provides an interactive dashboard and AI chatbot to help retail investors make informed decisions based on actual financial data.
+AZER is an AI-powered platform that extracts key metrics and insights from companies' financial reports, generates analytical summaries, and provides an interactive dashboard and AI chatbot to help retail investors make informed decisions based on actual financial data.
 
 ## The Problem
 
-Retail investors in Arabic-speaking countries lack professional, accessible financial analysis tools that deliver insights in **Arabic** based on companies' published financial reports; leading to investment decisions built on incomplete or inaccurate information. Financial reports can exceed 150 pages in length, making it difficult for non-specialist investors to access and absorb the information that matters. Investors with limited English language skills face an additional obstacle, as financial reports from companies in foreign stock markets are rarely published in Arabic, limiting their ability to properly analyze and evaluate non-local companies.
+Retail investors in Arabic-speaking countries lack professional, accessible financial analysis tools that deliver insights in **Arabic** based on companies' published financial reports; leading to investment decisions built on incomplete or inaccurate information. Financial reports can exceed 150 pages in length, making it difficult for inexperienced investors to access and absorb the information that matters. Investors with limited English language skills face an additional obstacle, as financial reports from companies in foreign stock markets are rarely published in Arabic, limiting their ability to properly analyze and evaluate foreign companies.
 
 ## The Solution
 

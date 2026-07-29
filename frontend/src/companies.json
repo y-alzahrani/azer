@@ -1,5 +1,5 @@
 [
-  { "name": "Aramco", "name_ar": "أرامكو السعودية", "ticker": "2222", "market": "Tadawul"},
+  { "name": "Saudi Aramco", "name_ar": "أرامكو السعودية", "ticker": "2222", "market": "Tadawul"},
   { "name": "STC", "name_ar": "الإتصالات السعودية", "ticker": "7010", "market": "Tadawul" },
   { "name": "Alrajhi", "name_ar": "مصرف الراجحي", "ticker": "1120", "market": "Tadawul" },
   { "name": "SABIC", "name_ar": "سابك", "ticker": "2010", "market": "Tadawul" },
